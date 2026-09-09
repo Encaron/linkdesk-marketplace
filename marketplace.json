@@ -1,19 +1,24 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-08T23:57:14.000Z",
+  "updatedAt": "2026-09-09T01:33:14.386Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
       "name": "Hello LinkDesk",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "官方市场第一只真实发布的插件——问候卡。First real plugin on the official marketplace — a greeting card.",
       "author": {
         "name": "Encaron"
       },
-      "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.0/hello-linkdesk.linkdesk-plugin",
-      "size": 3564,
-      "publishedAt": "2026-09-08T23:56:01.056Z",
+      "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.1/hello-linkdesk.linkdesk-plugin",
+      "size": 3570,
+      "publishedAt": "2026-09-09T01:33:14.386Z",
       "versions": [
+        {
+          "version": "0.1.1",
+          "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.1/hello-linkdesk.linkdesk-plugin",
+          "publishedAt": "2026-09-09T01:33:14.386Z"
+        },
         {
           "version": "0.1.0",
           "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.0/hello-linkdesk.linkdesk-plugin",
