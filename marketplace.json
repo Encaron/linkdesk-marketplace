@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-10T08:03:51.809Z",
+  "updatedAt": "2026-09-10T19:19:11.871Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -24,6 +24,28 @@
           "version": "0.1.0",
           "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.0/hello-linkdesk.linkdesk-plugin",
           "publishedAt": "2026-09-08T23:56:01.056Z"
+        }
+      ]
+    },
+    {
+      "id": "first-run-setup",
+      "name": "首次配置",
+      "version": "1.0.0",
+      "description": "官方样板——装到本机后做一次性配置（把本机路径落成自己的配置档案），配完发一条带自己来源的通知。示范「装好了」与「配好了」是两条互不掩盖的通知。",
+      "author": {
+        "name": "官方"
+      },
+      "icon": "https://raw.githubusercontent.com/Encaron/first-run-setup/main/resources/icon.svg",
+      "iconSource": "url",
+      "downloadUrl": "https://github.com/Encaron/first-run-setup/releases/download/v1.0.0/first-run-setup.linkdesk-plugin",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/first-run-setup/main/README.md",
+      "size": 9859,
+      "publishedAt": "2026-09-10T19:18:22.771Z",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "downloadUrl": "https://github.com/Encaron/first-run-setup/releases/download/v1.0.0/first-run-setup.linkdesk-plugin",
+          "publishedAt": "2026-09-10T19:18:22.771Z"
         }
       ]
     }
