@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-09T01:33:14.386Z",
+  "updatedAt": "2026-09-10T08:03:51.809Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -11,6 +11,7 @@
         "name": "Encaron"
       },
       "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.1/hello-linkdesk.linkdesk-plugin",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/hello-linkdesk/main/README.md",
       "size": 3570,
       "publishedAt": "2026-09-09T01:33:14.386Z",
       "versions": [
