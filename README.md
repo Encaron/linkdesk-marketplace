@@ -24,6 +24,7 @@ LinkDesk 官方插件市场的**目录清单仓库**。根目录 `marketplace.js
 - 官方商店是**精选索引，不会自动收录**。想让全部用户默认看到，就在**本仓库** `marketplace.json` 的 `plugins[]` 加一条记录：内容照抄你仓库 `marketplace.json` 里那条，`downloadUrl` 指向你 Release 的下载直链（提交本仓库让维护者合入）。
 - 收录后，用户在软件「探索插件」刷新即可看到，点「安装」= 真下载真安装。
 - **现成范例**：官方首发插件 https://github.com/Encaron/hello-linkdesk —— 它自己仓库的 `marketplace.json` 和本仓库 `plugins[]` 两条同构，照着抄即可；带图标的范例见 https://github.com/Encaron/first-run-setup 。
+- 📌 **详情页「仓库」那一行想指对地方，就写 `repository`。** 插件详情页资源组的「仓库 / 问题」默认从你的 `downloadUrl` / `readmeUrl` **反推 GitHub 仓库主页**——托管在 GitHub 的插件**不用写**（本仓库两条已收录的都是这种情况）。只有当你的插件包不在 GitHub（CDN、Gitee、自有官网）时才需要显式写 `"repository": "https://你的主页"`——**必须是完整 URL**（`owner/repo` 这种简写不认）。两边都推不出时，那一行**不显示**——不给一个点开指错路的链接。
 - ⚠️ **`icon` 要写成能直接打开的东西。** 你 `plugin.json` 里的 `icon` 是相对插件包的路径（如 `resources/icon.svg`），那套解析只对**已安装**的插件有效。目录条目里的 `icon` 若不声明 `iconSource`，会被当成插件内部路径解析——**在商店里（还没装）就是一张裂图**。想让商店显示你的图标：`"icon": "<图标直链>"` + `"iconSource": "url"`（或 `"iconSource": "codicon"` 配 codicon 名）。不填就留空，商店会用默认图标。
 
 > 备注：`plugins: []` = 官方商店暂未收录插件（软件显示「暂无插件」，属正常空态）。当前已收录：`hello-linkdesk`、`first-run-setup`。

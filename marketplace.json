@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-10T19:19:11.871Z",
+  "updatedAt": "2026-09-10T20:35:12.962Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -12,6 +12,7 @@
       },
       "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.1/hello-linkdesk.linkdesk-plugin",
       "readmeUrl": "https://raw.githubusercontent.com/Encaron/hello-linkdesk/main/README.md",
+      "repository": "https://github.com/Encaron/hello-linkdesk",
       "size": 3570,
       "publishedAt": "2026-09-09T01:33:14.386Z",
       "versions": [
@@ -39,6 +40,7 @@
       "iconSource": "url",
       "downloadUrl": "https://github.com/Encaron/first-run-setup/releases/download/v1.0.0/first-run-setup.linkdesk-plugin",
       "readmeUrl": "https://raw.githubusercontent.com/Encaron/first-run-setup/main/README.md",
+      "repository": "https://github.com/Encaron/first-run-setup",
       "size": 9859,
       "publishedAt": "2026-09-10T19:18:22.771Z",
       "versions": [
