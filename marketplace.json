@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-14T10:05:03.664Z",
+  "updatedAt": "2026-09-14T17:32:58.943Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -264,17 +264,24 @@
     {
       "id": "theme-aurora-glass",
       "name": "极光玻璃",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.4/resources/icon.svg",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.4/theme-aurora-glass.linkdesk-plugin",
-      "size": 8329,
-      "publishedAt": "2026-09-14T02:36:42.595Z",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.5/resources/icon.svg",
+      "iconSource": "url",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.5/theme-aurora-glass.linkdesk-plugin",
+      "size": 9571,
+      "publishedAt": "2026-09-14T17:30:26.357Z",
       "versions": [
+        {
+          "version": "1.0.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.5/theme-aurora-glass.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:30:26.357Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）\n- 配方归位 `themes/`（此前摊在仓根，与作者文档「配方只许住 themes/、摊到仓根是禁止项」相反）"
+        },
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.4/theme-aurora-glass.linkdesk-plugin",
@@ -282,22 +289,27 @@
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass",
-      "iconSource": "url"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass"
     },
     {
       "id": "theme-defaults",
       "name": "官方主题",
-      "version": "1.0.2",
-      "description": "出厂暗色/亮色主题——内置工厂插件，不可卸载",
+      "version": "1.0.3",
+      "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的 Light/Dark 兜底配方",
       "author": {
         "name": "官方"
       },
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.2/theme-defaults.linkdesk-plugin",
-      "size": 2571,
-      "publishedAt": "2026-09-14T02:36:49.840Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.3/theme-defaults.linkdesk-plugin",
+      "size": 4027,
+      "publishedAt": "2026-09-14T17:30:06.934Z",
       "versions": [
+        {
+          "version": "1.0.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.3/theme-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:30:06.934Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）\n- README 与描述订正：原写「出厂自带（`core: true`）—— 不显示卸载按钮」，与实现相反（清单里从来没有 `core` 字段）。实际是**可卸载**的插件，卸载后界面回落到壳内置的 Light/Dark 兜底配方"
+        },
         {
           "version": "1.0.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.2/theme-defaults.linkdesk-plugin",
@@ -310,16 +322,22 @@
     {
       "id": "theme-iconset-pastel",
       "name": "粉彩图标集",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "精简彩色图标集——Material Icon Theme 常用精选（MIT，139 条映射 + 5 默认图标，含文件夹/新建文件/根文件夹彩色图标），图像资产形态应用（E5.8#133 图标主题闭环实例）",
       "author": {
         "name": "LinkDesk"
       },
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.1/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.1/theme-iconset-pastel.linkdesk-plugin",
-      "size": 50475,
-      "publishedAt": "2026-09-14T02:36:56.611Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.2/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.2/theme-iconset-pastel.linkdesk-plugin",
+      "size": 51884,
+      "publishedAt": "2026-09-14T17:31:49.598Z",
       "versions": [
+        {
+          "version": "1.0.2",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.2/theme-iconset-pastel.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:31:49.598Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）\n- 上游许可正本改名保留（`LICENSE-material-icon-theme.md`，MIT © Material Extensions）——本仓自己的许可是 `LICENSE`\n- README 订正：转换脚本 `convert-material-icons.mjs` **不在本仓**（住 LinkDesk 壳仓 `scripts/`）"
+        },
         {
           "version": "1.0.1",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.1/theme-iconset-pastel.linkdesk-plugin",
@@ -332,17 +350,24 @@
     {
       "id": "theme-mint-soda",
       "name": "薄荷苏打",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "清凉薄荷色系主题合集——薄荷冰露/海盐薄荷/青柠薄荷/薄荷苏打，Claymorphism 软萌风，全系亮色",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.3/resources/icon.svg",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.3/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.3/theme-mint-soda.linkdesk-plugin",
-      "size": 3922,
-      "publishedAt": "2026-09-14T02:37:02.855Z",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.4/resources/icon.svg",
+      "iconSource": "url",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.4/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.4/theme-mint-soda.linkdesk-plugin",
+      "size": 5084,
+      "publishedAt": "2026-09-14T17:30:48.557Z",
       "versions": [
+        {
+          "version": "1.0.4",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.4/theme-mint-soda.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:30:48.557Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）\n- 补 `plugin.json` 的 `$schema`（本仓原先缺这一行，编辑器无字段补全/校验）"
+        },
         {
           "version": "1.0.3",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.3/theme-mint-soda.linkdesk-plugin",
@@ -350,22 +375,27 @@
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 补上并指向本仓 `node_modules/@linkdesk/plugin-sdk`（本插件原先**没有**这个字段，是 18 只里唯一一只；补上后编辑器补全/校验与本仓其余插件一致）"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda",
-      "iconSource": "url"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda"
     },
     {
       "id": "theme-panorama",
       "name": "整窗主视觉",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.2/theme-panorama.linkdesk-plugin",
-      "size": 1538184,
-      "publishedAt": "2026-09-14T02:37:09.812Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.3/theme-panorama.linkdesk-plugin",
+      "size": 1539260,
+      "publishedAt": "2026-09-14T17:30:56.041Z",
       "versions": [
+        {
+          "version": "1.0.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.3/theme-panorama.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:30:56.041Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）"
+        },
         {
           "version": "1.0.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.2/theme-panorama.linkdesk-plugin",
@@ -378,16 +408,22 @@
     {
       "id": "theme-pill",
       "name": "全胶囊",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "极限壳主题——radius 域：圆角八档全拉到 999px 全胶囊 + 悬浮形态（留缝/圆角/投影/发丝光边）+ 泡泡糖配色（#50.27 效果验收端到端裁决，gallery ① 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.2/theme-pill.linkdesk-plugin",
-      "size": 2800,
-      "publishedAt": "2026-09-14T02:37:19.669Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.3/theme-pill.linkdesk-plugin",
+      "size": 3877,
+      "publishedAt": "2026-09-14T17:31:03.290Z",
       "versions": [
+        {
+          "version": "1.0.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.3/theme-pill.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:31:03.290Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）"
+        },
         {
           "version": "1.0.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.2/theme-pill.linkdesk-plugin",
@@ -400,16 +436,22 @@
     {
       "id": "theme-songti",
       "name": "宋体印刷体",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "极限壳主题——font 域·字族轴：全 UI 宋体 SimSun + 纸白墨黑文档感（#50.27 效果验收端到端裁决，gallery ⑩ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.2/theme-songti.linkdesk-plugin",
-      "size": 2654,
-      "publishedAt": "2026-09-14T02:37:26.780Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.3/theme-songti.linkdesk-plugin",
+      "size": 3726,
+      "publishedAt": "2026-09-14T17:31:22.668Z",
       "versions": [
+        {
+          "version": "1.0.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.3/theme-songti.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:31:22.668Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）"
+        },
         {
           "version": "1.0.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.2/theme-songti.linkdesk-plugin",
@@ -422,17 +464,24 @@
     {
       "id": "theme-terminal",
       "name": "终端机",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "极限壳主题——font 域·字族轴：ui/mono 双键全指 Cascadia Mono 等宽族 + 绿字黑底终端配色（#50.27 效果验收端到端裁决，gallery ⑨ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.4/resources/icon.svg",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.4/theme-terminal.linkdesk-plugin",
-      "size": 6970,
-      "publishedAt": "2026-09-14T02:37:33.549Z",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.5/resources/icon.svg",
+      "iconSource": "url",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.5/theme-terminal.linkdesk-plugin",
+      "size": 8036,
+      "publishedAt": "2026-09-14T17:31:29.568Z",
       "versions": [
+        {
+          "version": "1.0.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.5/theme-terminal.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:31:29.568Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）"
+        },
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.4/theme-terminal.linkdesk-plugin",
@@ -440,22 +489,27 @@
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-terminal",
-      "iconSource": "url"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-terminal"
     },
     {
       "id": "theme-twilight-forest",
       "name": "暮色森林",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "暗色主题合集——青澜/暮紫/翠微，森林色系",
       "author": {
         "name": "Encaron"
       },
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.2/theme-twilight-forest.linkdesk-plugin",
-      "size": 3097,
-      "publishedAt": "2026-09-14T02:37:39.991Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.3/theme-twilight-forest.linkdesk-plugin",
+      "size": 4175,
+      "publishedAt": "2026-09-14T17:31:37.203Z",
       "versions": [
+        {
+          "version": "1.0.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.3/theme-twilight-forest.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:31:37.203Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）"
+        },
         {
           "version": "1.0.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.2/theme-twilight-forest.linkdesk-plugin",
@@ -468,17 +522,24 @@
     {
       "id": "theme-zones",
       "name": "分区纹理示例主题",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "per-surface 背景机制示例主题——⑬ 纸纹分区（surface.texture 平铺纹理）+ ⑭ 影像分区（background.mode:zones 连续切片），#50.28-#50.31 壳机制第一个真实消费者",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.2/resources/icon.svg",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.2/theme-zones.linkdesk-plugin",
-      "size": 6047,
-      "publishedAt": "2026-09-14T02:37:46.280Z",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.3/resources/icon.svg",
+      "iconSource": "url",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.3/theme-zones.linkdesk-plugin",
+      "size": 7325,
+      "publishedAt": "2026-09-14T17:30:38.833Z",
       "versions": [
+        {
+          "version": "1.0.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.3/theme-zones.linkdesk-plugin",
+          "publishedAt": "2026-09-14T17:30:38.833Z",
+          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）\n- 配方归位 `themes/`（两份皆然，此前摊在仓根，与作者文档「配方只许住 themes/」相反）"
+        },
         {
           "version": "1.0.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.2/theme-zones.linkdesk-plugin",
@@ -486,8 +547,7 @@
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-zones",
-      "iconSource": "url"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-zones"
     },
     {
       "id": "my-cool-plugin",
