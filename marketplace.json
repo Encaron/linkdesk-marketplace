@@ -1,22 +1,28 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-14T18:10:36.183Z",
+  "updatedAt": "2026-09-14T18:12:34.622Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
       "name": "Hello LinkDesk",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "description": "官方市场第一只真实发布的插件——问候卡。First real plugin on the official marketplace — a greeting card.",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/hello-linkdesk/v0.1.2/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/hello-linkdesk/v0.1.3/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/hello-linkdesk/v0.1.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.2/hello-linkdesk.linkdesk-plugin",
-      "size": 5736,
-      "publishedAt": "2026-09-14T17:50:50.705Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/hello-linkdesk/v0.1.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.3/hello-linkdesk.linkdesk-plugin",
+      "size": 8582,
+      "publishedAt": "2026-09-14T18:12:20.835Z",
       "versions": [
+        {
+          "version": "0.1.3",
+          "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.3/hello-linkdesk.linkdesk-plugin",
+          "publishedAt": "2026-09-14T18:12:20.835Z",
+          "changelog": "- 补 **MIT LICENSE** 并随包分发——本仓一直缺它；MIT 要求「副本里带声明」，而 zip 才是用户真正拿到的那份。它是官方市场样板仓，第三方作者从这里抄起手式\n- 补**场景封面** `resources/cover.svg` 并嵌进 README（E6#69b 三图模型：整幅场景封面住 README，市场展示位走 Type-2 彩色身份图）——这张封面此前只在工作副本里，既没提交也没被任何地方引用\n- 无功能变化：问候卡本身一个字没改"
+        },
         {
           "version": "0.1.2",
           "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.2/hello-linkdesk.linkdesk-plugin",
