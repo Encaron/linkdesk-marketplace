@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-15T20:05:16.524Z",
+  "updatedAt": "2026-09-15T20:53:43.555Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -276,20 +276,26 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.13",
+      "version": "1.0.14",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.13/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.14/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.13/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.14/resources/icon.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.13/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.13/serial-monitor.linkdesk-plugin",
-      "size": 561445,
-      "publishedAt": "2026-09-15T20:04:32.792Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.14/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.14/serial-monitor.linkdesk-plugin",
+      "size": 562096,
+      "publishedAt": "2026-09-15T20:52:07.955Z",
       "versions": [
+        {
+          "version": "1.0.14",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.14/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-09-15T20:52:07.955Z",
+          "changelog": "- **随包依赖对齐：`@linkdesk/ui` 由 `0.2.0` 升到 `0.2.1`。** 与 `settings` v1.0.13 同批——宿主 `.input → .ldk-input` 那次改名同时动了 `@linkdesk/ui` 这根轴，而本仓 lock 把 `0.2.0` 钉着（`npm install` 只要满足 `^0.2.0` 区间就不会动）⇒ 必须显式 `npm update @linkdesk/ui`。\n- **本插件零可见变化，这一点是查过的、不是猜的**：解包 v1.0.13 与 v1.0.14 两份产物逐文件扫 `className` 字面量 ⇒ **裸 `input` 命中数两版都是 0**——本插件不消费 `@linkdesk/ui` 的 `NumberInput` / `FilePathInput`（那两个组件是唯一被改到渲染点的），所以「宿主改名」这件事对本插件**从来没有过功能影响**。两版差异只在**内嵌的 ui CSS/JS 那一层**：CSS 里裸 `.input` 选择器 3 → **0**、`.ldk-input` 0 → **3**（本插件渲染点没动，仍是 `ldk-input` 4 处 ＋ `ldk-setting-group` 4 处）。\n- **那为什么还要发这一版**：让 18 只官方插件包里嵌的 `@linkdesk/ui` **停在同一版**（`0.2.1`）——否则下次谁再动共享组件，「这只包里的 dist 是哪一版」就得逐个解包才知道。本版付的是**一次版本号**，买的是**账目可读**。\n- 复核判据（解包真产物）：两版裸 `input` 均零命中，本版 CSS `.ldk-input` 命中 3。\n- 无功能变化、无视觉变化"
+        },
         {
           "version": "1.0.13",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.13/serial-monitor.linkdesk-plugin",
@@ -326,20 +332,26 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.12",
+      "version": "1.0.13",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.12/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.13/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.12/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.13/resources/icon.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.12/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.12/settings.linkdesk-plugin",
-      "size": 330958,
-      "publishedAt": "2026-09-15T20:04:10.093Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.13/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.13/settings.linkdesk-plugin",
+      "size": 331598,
+      "publishedAt": "2026-09-15T20:47:55.455Z",
       "versions": [
+        {
+          "version": "1.0.13",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.13/settings.linkdesk-plugin",
+          "publishedAt": "2026-09-15T20:47:55.455Z",
+          "changelog": "- **补上 v1.0.12 漏掉的一半：随包依赖也升到 `@linkdesk/ui@0.2.1`。** v1.0.12 只改了本插件自己的 6 处渲染点，但**打进包里的 `@linkdesk/ui` 还是 `0.2.0`**——那一版的 `NumberInput` / `FilePathInput` 渲染的仍是 `className=\"input\"` / `\"input number-input-field\"`（解包 v1.0.12 实测：`index.bundle.js` 与 `views/SettingsView.bundle.js` **各 2 处**）。⇒ **对象编辑器的值输入框（`FilePathInput`）与 `renderControl` 的数字输入框（`NumberInput`）在新壳上仍会丢样式**——底色 / 边框 / 圆角 / 内边距全没，看着像浏览器原生输入框。**它们不在本插件源码里，所以 v1.0.12 的 grep 扫不到。**\n- **根因是依赖而不是代码**：`@linkdesk/ui` 是共享组件的 npm 分发（真源在壳仓 `src/components/shared`），`.input → .ldk-input` 那次改名**同时动的是这根轴**（`0.2.0 → 0.2.1`，两版差异经解包比对 = **只有这一个类名**：CSS 一个类令牌 ＋ JS 两处 `className`）。本仓 lock 把 `0.2.0` 钉着，`npm install` 只要满足 `^0.2.0` 区间就**不会动** ⇒ 必须显式 `npm update @linkdesk/ui`。\n- 本版 = **升依赖 ＋ 重打一次包**，插件源码零改动（除版本号与 `AGENTS.md` 的版本行）。\n- 复核判据（解包真产物，`npm run check` 看不见它）：扫全部 `className` 字面量 ⇒ **裸 `input` 零命中**；`ldk-input` 由 6 处升至 **8 处**（自有 6 ＋ `@linkdesk/ui` 的 2）；CSS 侧裸 `.input` 选择器 2 → **0**、`.ldk-input` 0 → **2**。\n- ⚠️ **教训（写给出包的人）**：宿主共享组件改名时，「插件源码 grep 归零」**不等于产物干净**——还要问一句「这个 repo 里有没有别人的 dist 被我打进去了」。"
+        },
         {
           "version": "1.0.12",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.12/settings.linkdesk-plugin",
