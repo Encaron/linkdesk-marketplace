@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-15T20:53:43.555Z",
+  "updatedAt": "2026-09-16T03:03:40.510Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -98,20 +98,26 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.9",
+      "version": "1.0.10",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.9/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.10/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.9/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.10/resources/icon.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.9/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.9/file-tree.linkdesk-plugin",
-      "size": 343699,
-      "publishedAt": "2026-09-15T14:31:25.431Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.10/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.10/file-tree.linkdesk-plugin",
+      "size": 344314,
+      "publishedAt": "2026-09-16T03:01:16.383Z",
       "versions": [
+        {
+          "version": "1.0.10",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.10/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-09-16T03:01:16.383Z",
+          "changelog": "- **适配宿主 E6#109l-b 的共享组件类名归一（`@linkdesk/ui` 0.3.0）**：共享组件余下的 52 个类名一律收进 `ldk-` 前缀——`colorpicker-*` / `ctx-*` / `form-row` / `inline-input*` / `number-input*` / `segmented-radio*` / `sidebar-section*` / `theme-picker*` / `theme-card` / `theme-preview` / `.tbadge` / `.tname` / `.pv-*`，外加关键帧 `selectbox-in → ldk-selectbox-in`。至此**宿主与共享组件自己定义的类名 100% 是 `ldk-` 开头**（258 ＋ 89 个独立定义，零例外），规则只剩一句、不再有任何登记表。\n- **本仓源码零改动**：本仓自己的 CSS 与 TSX 对这批共享组件类名的引用逐条核过 = **0 处**（本仓用组件本身，没有用后代选择器去微调它们）。\n- **依赖**：`@linkdesk/ui` `^0.2.0 → ^0.3.0`（**必须手动放宽区间**——0.x 的 caret 只在上界之内挑版本，`^0.2.0` 永远够不到 0.3.0）＋ 随包 `@linkdesk/plugin-sdk` `0.1.23 → 0.1.25`。\n- **解包复核（真产物）**：解开本版的 `file-tree.linkdesk-plugin` ⇒ 本仓自己的 CSS/JS **旧名 0 命中**；随包 `@linkdesk/ui` 的 CSS 里新名有命中。\n- 无功能变化、无视觉变化。"
+        },
         {
           "version": "1.0.9",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.9/file-tree.linkdesk-plugin",
@@ -196,20 +202,26 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.0.33",
+      "version": "1.0.34",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.33/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.34/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.33/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.34/resources/icon-brand.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.33/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.33/marketplace.linkdesk-plugin",
-      "size": 1189789,
-      "publishedAt": "2026-09-15T17:44:37.880Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.34/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.34/marketplace.linkdesk-plugin",
+      "size": 1190548,
+      "publishedAt": "2026-09-16T03:01:45.681Z",
       "versions": [
+        {
+          "version": "1.0.34",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.34/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-16T03:01:45.681Z",
+          "changelog": "- **适配宿主 E6#109l-b 的共享组件类名归一（`@linkdesk/ui` 0.3.0）**：共享组件余下的 52 个类名一律收进 `ldk-` 前缀——`colorpicker-*` / `ctx-*` / `form-row` / `inline-input*` / `number-input*` / `segmented-radio*` / `sidebar-section*` / `theme-picker*` / `theme-card` / `theme-preview` / `.tbadge` / `.tname` / `.pv-*`，外加关键帧 `selectbox-in → ldk-selectbox-in`。至此**宿主与共享组件自己定义的类名 100% 是 `ldk-` 开头**（258 ＋ 89 个独立定义，零例外），规则只剩一句、不再有任何登记表。\n- **本仓源码零改动**：本仓自己的 CSS 与 TSX 对这批共享组件类名的引用逐条核过 = **0 处**（本仓用组件本身，没有用后代选择器去微调它们）。\n- **依赖**：`@linkdesk/ui` `^0.2.0 → ^0.3.0`（**必须手动放宽区间**——0.x 的 caret 只在上界之内挑版本，`^0.2.0` 永远够不到 0.3.0）＋ 随包 `@linkdesk/plugin-sdk` `0.1.23 → 0.1.25`。\n- **解包复核（真产物）**：解开本版的 `marketplace.linkdesk-plugin` ⇒ 本仓自己的 CSS/JS **旧名 0 命中**；随包 `@linkdesk/ui` 的 CSS 里新名有命中。\n- 无功能变化、无视觉变化。"
+        },
         {
           "version": "1.0.33",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.33/marketplace.linkdesk-plugin",
@@ -276,20 +288,26 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.14",
+      "version": "1.0.15",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.14/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.15/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.14/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.15/resources/icon.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.14/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.14/serial-monitor.linkdesk-plugin",
-      "size": 562096,
-      "publishedAt": "2026-09-15T20:52:07.955Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.15/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.15/serial-monitor.linkdesk-plugin",
+      "size": 563396,
+      "publishedAt": "2026-09-16T03:00:51.098Z",
       "versions": [
+        {
+          "version": "1.0.15",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.15/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-09-16T03:00:51.098Z",
+          "changelog": "- **适配宿主 E6#109l-b 的共享组件类名归一（`@linkdesk/ui` 0.3.0）**：共享组件余下的 52 个类名一律收进 `ldk-` 前缀——`colorpicker-*` / `ctx-*` / `form-row` / `inline-input*` / `number-input*` / `segmented-radio*` / `sidebar-section*` / `theme-picker*` / `theme-card` / `theme-preview` / `.tbadge` / `.tname` / `.pv-*`，外加关键帧 `selectbox-in → ldk-selectbox-in`。至此**宿主与共享组件自己定义的类名 100% 是 `ldk-` 开头**（258 ＋ 89 个独立定义，零例外），规则只剩一句、不再有任何登记表。\n- **本仓源码零改动**：本仓自己的 CSS 与 TSX 对这批共享组件类名的引用逐条核过 = **0 处**（本仓用组件本身，没有用后代选择器去微调它们）。唯一的文字性残留是 `src/styles/SerialMonitorView-receive.css:166` 一句注释里提到的 `.ctx-overlay`——那是**早就不存在的旧名**，注释本身也是陈旧的，不影响任何行为（本次不改，避免混入非必要改动）。\n- **依赖**：`@linkdesk/ui` `^0.2.0 → ^0.3.0`（**必须手动放宽区间**——0.x 的 caret 只在上界之内挑版本，`^0.2.0` 永远够不到 0.3.0）＋ 随包 `@linkdesk/plugin-sdk` `0.1.23 → 0.1.25`。\n- **解包复核（真产物）**：解开本版的 `serial-monitor.linkdesk-plugin` ⇒ 本仓自己的 CSS/JS **旧名 0 命中**；随包 `@linkdesk/ui` 的 CSS 里新名有命中。\n- `package.json` 的 `version` 顺带对齐到 `1.0.15`（此前停在 1.0.12、与 `plugin.json` 不同步）。\n- 无功能变化、无视觉变化。"
+        },
         {
           "version": "1.0.14",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.14/serial-monitor.linkdesk-plugin",
@@ -332,20 +350,26 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.13",
+      "version": "1.0.14",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.13/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.14/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.13/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.14/resources/icon.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.13/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.13/settings.linkdesk-plugin",
-      "size": 331598,
-      "publishedAt": "2026-09-15T20:47:55.455Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.14/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.14/settings.linkdesk-plugin",
+      "size": 333374,
+      "publishedAt": "2026-09-16T03:00:11.054Z",
       "versions": [
+        {
+          "version": "1.0.14",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.14/settings.linkdesk-plugin",
+          "publishedAt": "2026-09-16T03:00:11.054Z",
+          "changelog": "- **适配宿主 E6#109l-b 的共享组件类名归一（`@linkdesk/ui` 0.3.0）**：共享组件余下的 52 个类名一律收进 `ldk-` 前缀——`colorpicker-*` / `ctx-*` / `form-row` / `inline-input*` / `number-input*` / `segmented-radio*` / `sidebar-section*` / `theme-picker*` / `theme-card` / `theme-preview` / `.tbadge` / `.tname` / `.pv-*`，外加关键帧 `selectbox-in → ldk-selectbox-in`。至此**宿主与共享组件自己定义的类名 100% 是 `ldk-` 开头**（258 ＋ 89 个独立定义，零例外），规则只剩一句、不再有任何登记表。\n- **本仓的源码改动只有 1 处（2 行）**：主题选择器那两张设置行的版式——`.settings-row:has(.theme-picker)` → **`.settings-row:has(.ldk-theme-picker)`**。不改就是**静默失配**：`.settings-row` 不再 `flex-wrap`、`.settings-row-control` 不再占满整行，主题卡片网格会被挤在半行里，**不报错**。\n- **依赖**：`@linkdesk/ui` `^0.2.0 → ^0.3.0`（**必须手动放宽区间**——0.x 的 caret 只在上界之内挑版本，`^0.2.0` 永远够不到 0.3.0）＋ 随包 `@linkdesk/plugin-sdk` `0.1.23 → 0.1.25`。此外无任何逻辑改动。\n- **解包复核（真产物——`npm run verify` 与壳仓 `npm run check` 都看不见这一层）**：解开本版的 `settings.linkdesk-plugin` ⇒ `index.bundle.css` **旧名 0 命中 / 新名 44 命中**；两个 `*.bundle.js` **旧名 0 / 新名 39**；`@keyframes ldk-selectbox-in` **定义与引用同在**（零悬空）；`:has(.theme-picker)` 残留 **false**、`:has(.ldk-theme-picker)` **true**。\n- `package.json` 的 `version` 顺带对齐到 `1.0.14`（此前停在 1.0.11、与 `plugin.json` 长期不同步——发布链路读的是 `plugin.json`，这次一并抹平）。\n- 无功能变化、无视觉变化（名字换了、规则落在同一个元素上）。"
+        },
         {
           "version": "1.0.13",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.13/settings.linkdesk-plugin",
