@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-17T13:40:19.812Z",
+  "updatedAt": "2026-09-17T16:31:33.378Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -460,18 +460,24 @@
     {
       "id": "theme-aurora-glass",
       "name": "极光玻璃",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.6/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.7/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.6/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.6/theme-aurora-glass.linkdesk-plugin",
-      "size": 10576,
-      "publishedAt": "2026-09-14T17:50:35.918Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.7/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.7/theme-aurora-glass.linkdesk-plugin",
+      "size": 11148,
+      "publishedAt": "2026-09-17T16:29:15.463Z",
       "versions": [
+        {
+          "version": "1.0.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.7/theme-aurora-glass.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:29:15.463Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配方 id `aurora-glass` → `theme-aurora-glass.aurora-glass`\n- 配色 id `aurora` → `theme-aurora-glass.aurora`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.6",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.6/theme-aurora-glass.linkdesk-plugin",
@@ -496,18 +502,24 @@
     {
       "id": "theme-defaults",
       "name": "官方主题",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的 Light/Dark 兜底配方",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.4/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.5/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.4/theme-defaults.linkdesk-plugin",
-      "size": 5758,
-      "publishedAt": "2026-09-14T17:49:40.712Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.5/theme-defaults.linkdesk-plugin",
+      "size": 6327,
+      "publishedAt": "2026-09-17T16:15:38.024Z",
       "versions": [
+        {
+          "version": "1.0.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.5/theme-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:15:38.024Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配色 id `dark` → `theme-defaults.dark`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.4/theme-defaults.linkdesk-plugin",
@@ -532,18 +544,24 @@
     {
       "id": "theme-iconset-pastel",
       "name": "粉彩图标集",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "精简彩色图标集——Material Icon Theme 常用精选（MIT，139 条映射 + 5 默认图标，含文件夹/新建文件/根文件夹彩色图标），图像资产形态应用（E5.8#133 图标主题闭环实例）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.3/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.4/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.3/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.3/theme-iconset-pastel.linkdesk-plugin",
-      "size": 53304,
-      "publishedAt": "2026-09-14T17:49:56.531Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.4/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.4/theme-iconset-pastel.linkdesk-plugin",
+      "size": 53959,
+      "publishedAt": "2026-09-17T16:17:38.009Z",
       "versions": [
+        {
+          "version": "1.0.4",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.4/theme-iconset-pastel.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:17:38.009Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 图标主题 id `ld-iconset-pastel` → `theme-iconset-pastel.ld-iconset-pastel`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- ⚠️ **图标主题 id 走**它自己那张表（独立 id 空间：既不进配方表、也不进配色表）——`normalizeIconThemeId` 是唯一的归一入口。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.3",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.3/theme-iconset-pastel.linkdesk-plugin",
@@ -568,18 +586,24 @@
     {
       "id": "theme-mint-soda",
       "name": "薄荷苏打",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "清凉薄荷色系主题合集——薄荷冰露/海盐薄荷/青柠薄荷/薄荷苏打，Claymorphism 软萌风，全系亮色",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.4/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.5/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.4/theme-mint-soda.linkdesk-plugin",
-      "size": 5084,
-      "publishedAt": "2026-09-14T17:30:48.557Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.5/theme-mint-soda.linkdesk-plugin",
+      "size": 5691,
+      "publishedAt": "2026-09-17T16:29:21.317Z",
       "versions": [
+        {
+          "version": "1.0.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.5/theme-mint-soda.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:29:21.317Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配方 id `mint-soda` → `theme-mint-soda.mint-soda`\n- 配色 id `mint-soda` → `theme-mint-soda.mint-soda`\n- 配色 id `mint-dew` → `theme-mint-soda.mint-dew`\n- 配色 id `sea-salt-mint` → `theme-mint-soda.sea-salt-mint`\n- 配色 id `lime-mint` → `theme-mint-soda.lime-mint`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.4/theme-mint-soda.linkdesk-plugin",
@@ -598,18 +622,24 @@
     {
       "id": "theme-panorama",
       "name": "整窗主视觉",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.4/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.5/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.4/theme-panorama.linkdesk-plugin",
-      "size": 1540885,
-      "publishedAt": "2026-09-14T17:50:07.438Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.5/theme-panorama.linkdesk-plugin",
+      "size": 1541471,
+      "publishedAt": "2026-09-17T16:19:15.116Z",
       "versions": [
+        {
+          "version": "1.0.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.5/theme-panorama.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:19:15.116Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配方 id `panorama` → `theme-panorama.panorama`\n- 配色 id `moonlight` → `theme-panorama.moonlight`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.4/theme-panorama.linkdesk-plugin",
@@ -634,18 +664,24 @@
     {
       "id": "theme-pill",
       "name": "全胶囊",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "极限壳主题——radius 域：圆角八档全拉到 999px 全胶囊 + 悬浮形态（留缝/圆角/投影/发丝光边）+ 泡泡糖配色（#50.27 效果验收端到端裁决，gallery ① 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.4/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.5/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.4/theme-pill.linkdesk-plugin",
-      "size": 5461,
-      "publishedAt": "2026-09-14T17:50:14.562Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.5/theme-pill.linkdesk-plugin",
+      "size": 6046,
+      "publishedAt": "2026-09-17T16:19:48.559Z",
       "versions": [
+        {
+          "version": "1.0.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.5/theme-pill.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:19:48.559Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配方 id `pill-bubble` → `theme-pill.pill-bubble`\n- 配色 id `bubble` → `theme-pill.bubble`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.4/theme-pill.linkdesk-plugin",
@@ -670,18 +706,24 @@
     {
       "id": "theme-songti",
       "name": "宋体印刷体",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "极限壳主题——font 域·字族轴：全 UI 宋体 SimSun + 纸白墨黑文档感（#50.27 效果验收端到端裁决，gallery ⑩ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.4/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.5/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.4/theme-songti.linkdesk-plugin",
-      "size": 5511,
-      "publishedAt": "2026-09-14T17:50:21.573Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.5/theme-songti.linkdesk-plugin",
+      "size": 6098,
+      "publishedAt": "2026-09-17T16:20:20.928Z",
       "versions": [
+        {
+          "version": "1.0.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.5/theme-songti.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:20:20.928Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配方 id `songti-print` → `theme-songti.songti-print`\n- 配色 id `paper` → `theme-songti.paper`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.4/theme-songti.linkdesk-plugin",
@@ -706,18 +748,24 @@
     {
       "id": "theme-terminal",
       "name": "终端机",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "description": "极限壳主题——font 域·字族轴：ui/mono 双键全指 Cascadia Mono 等宽族 + 绿字黑底终端配色（#50.27 效果验收端到端裁决，gallery ⑨ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.5/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.6/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.5/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.5/theme-terminal.linkdesk-plugin",
-      "size": 8036,
-      "publishedAt": "2026-09-14T17:31:29.568Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.6/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.6/theme-terminal.linkdesk-plugin",
+      "size": 8644,
+      "publishedAt": "2026-09-17T16:29:26.937Z",
       "versions": [
+        {
+          "version": "1.0.6",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.6/theme-terminal.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:29:26.937Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配方 id `terminal-monofont` → `theme-terminal.terminal-monofont`\n- 配色 id `phosphor` → `theme-terminal.phosphor`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.5",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.5/theme-terminal.linkdesk-plugin",
@@ -736,18 +784,24 @@
     {
       "id": "theme-twilight-forest",
       "name": "暮色森林",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "暗色主题合集——青澜/暮紫/翠微，森林色系",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.4/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.5/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.4/theme-twilight-forest.linkdesk-plugin",
-      "size": 5789,
-      "publishedAt": "2026-09-14T17:50:28.825Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.5/theme-twilight-forest.linkdesk-plugin",
+      "size": 6420,
+      "publishedAt": "2026-09-17T16:21:52.627Z",
       "versions": [
+        {
+          "version": "1.0.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.5/theme-twilight-forest.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:21:52.627Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配方 id `twilight-forest` → `theme-twilight-forest.twilight-forest`\n- 配色 id `sunset` → `theme-twilight-forest.sunset`\n- 配色 id `teal` → `theme-twilight-forest.teal`\n- 配色 id `twilight-purple` → `theme-twilight-forest.twilight-purple`\n- 配色 id `verdant` → `theme-twilight-forest.verdant`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.4/theme-twilight-forest.linkdesk-plugin",
@@ -772,18 +826,24 @@
     {
       "id": "theme-zones",
       "name": "分区纹理示例主题",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "per-surface 背景机制示例主题——⑬ 纸纹分区（surface.texture 平铺纹理）+ ⑭ 影像分区（background.mode:zones 连续切片），#50.28-#50.31 壳机制第一个真实消费者",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.3/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.4/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.3/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.3/theme-zones.linkdesk-plugin",
-      "size": 7325,
-      "publishedAt": "2026-09-14T17:30:38.833Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.4/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.4/theme-zones.linkdesk-plugin",
+      "size": 7930,
+      "publishedAt": "2026-09-17T16:23:02.520Z",
       "versions": [
+        {
+          "version": "1.0.4",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.4/theme-zones.linkdesk-plugin",
+          "publishedAt": "2026-09-17T16:23:02.520Z",
+          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配方 id `paper-zones` → `theme-zones.paper-zones`\n- 配方 id `image-zones` → `theme-zones.image-zones`\n- 配色 id `image` → `theme-zones.image`\n- 配色 id `kraft` → `theme-zones.kraft`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
+        },
         {
           "version": "1.0.3",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.3/theme-zones.linkdesk-plugin",
