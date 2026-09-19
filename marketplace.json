@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-19T01:51:49.942Z",
+  "updatedAt": "2026-09-19T06:04:27.636Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -104,20 +104,27 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.12",
+      "version": "1.0.13",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.12/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.13/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.12/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.13/resources/icon.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.12/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.12/file-tree.linkdesk-plugin",
-      "size": 67189,
-      "publishedAt": "2026-09-19T01:46:53.643Z",
+      "minAppVersion": "0.2.13",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.13/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.13/file-tree.linkdesk-plugin",
+      "size": 67495,
+      "publishedAt": "2026-09-19T06:01:37.801Z",
       "versions": [
+        {
+          "version": "1.0.13",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.13/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-09-19T06:01:37.801Z",
+          "changelog": "- **声明最低壳版本 `minAppVersion: \"0.2.13\"`**（E6#128 · L9 收尾补正）：本仓自上一版起改由**壳池集中供给** `@linkdesk/ui`（构建时 external、运行时向壳要同一份实例）⇒ 需要 **≥ 0.2.13** 的壳（该版本起池里才有 `@linkdesk/ui` 这件货）。此前本清单**没写这个字段** ⇒ 市场与加载期都拦不住「新插件 × 旧壳」的组合（旧壳上插件视图打不开，壳被 ErrorBoundary 兜住、不崩）。本版**只加这一行清单字段 + 版本 PATCH**，源码与产物行为零变化。"
+        },
         {
           "version": "1.0.12",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.12/file-tree.linkdesk-plugin",
@@ -220,20 +227,27 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.38/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.39/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.38/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.39/resources/icon-brand.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.38/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.38/marketplace.linkdesk-plugin",
-      "size": 113811,
-      "publishedAt": "2026-09-19T01:50:19.814Z",
+      "minAppVersion": "0.2.13",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.39/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.39/marketplace.linkdesk-plugin",
+      "size": 114576,
+      "publishedAt": "2026-09-19T06:01:44.842Z",
       "versions": [
+        {
+          "version": "1.0.39",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.39/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-19T06:01:44.842Z",
+          "changelog": "- **声明最低壳版本 `minAppVersion: \"0.2.13\"`**（E6#128 · L9 收尾补正）：本仓自上一版起改由**壳池集中供给** `@linkdesk/ui`（构建时 external、运行时向壳要同一份实例）⇒ 需要 **≥ 0.2.13** 的壳（该版本起池里才有 `@linkdesk/ui` 这件货）。此前本清单**没写这个字段** ⇒ 市场与加载期都拦不住「新插件 × 旧壳」的组合（旧壳上插件视图打不开，壳被 ErrorBoundary 兜住、不崩）。本版**只加这一行清单字段 + 版本 PATCH**，源码与产物行为零变化。"
+        },
         {
           "version": "1.0.38",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.38/marketplace.linkdesk-plugin",
@@ -324,21 +338,27 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.19",
+      "version": "1.0.20",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.19/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.20/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.19/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.20/resources/icon.svg",
       "marketIconSource": "url",
-      "minAppVersion": "0.2.0",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.19/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.19/serial-monitor.linkdesk-plugin",
-      "size": 158422,
-      "publishedAt": "2026-09-19T01:49:00.939Z",
+      "minAppVersion": "0.2.13",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.20/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.20/serial-monitor.linkdesk-plugin",
+      "size": 159190,
+      "publishedAt": "2026-09-19T06:01:52.620Z",
       "versions": [
+        {
+          "version": "1.0.20",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.20/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-09-19T06:01:52.620Z",
+          "changelog": "- **声明最低壳版本 `minAppVersion: \"0.2.13\"`**（E6#128 · L9 收尾补正）：本仓自上一版起改由**壳池集中供给** `@linkdesk/ui`（构建时 external、运行时向壳要同一份实例）⇒ 需要 **≥ 0.2.13** 的壳（该版本起池里才有 `@linkdesk/ui` 这件货）。此前本清单**没写这个字段** ⇒ 市场与加载期都拦不住「新插件 × 旧壳」的组合（旧壳上插件视图打不开，壳被 ErrorBoundary 兜住、不崩）。本版**只加这一行清单字段 + 版本 PATCH**，源码与产物行为零变化。"
+        },
         {
           "version": "1.0.19",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.19/serial-monitor.linkdesk-plugin",
@@ -411,21 +431,27 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.15",
+      "version": "1.0.16",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.15/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.16/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.15/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.16/resources/icon.svg",
       "marketIconSource": "url",
-      "minAppVersion": "0.2.0",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.15/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.15/settings.linkdesk-plugin",
-      "size": 39780,
-      "publishedAt": "2026-09-19T01:51:15.356Z",
+      "minAppVersion": "0.2.13",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.16/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.16/settings.linkdesk-plugin",
+      "size": 40553,
+      "publishedAt": "2026-09-19T06:02:00.484Z",
       "versions": [
+        {
+          "version": "1.0.16",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.16/settings.linkdesk-plugin",
+          "publishedAt": "2026-09-19T06:02:00.484Z",
+          "changelog": "- **声明最低壳版本 `minAppVersion: \"0.2.13\"`**（E6#128 · L9 收尾补正）：本仓自上一版起改由**壳池集中供给** `@linkdesk/ui`（构建时 external、运行时向壳要同一份实例）⇒ 需要 **≥ 0.2.13** 的壳（该版本起池里才有 `@linkdesk/ui` 这件货）。此前本清单**没写这个字段** ⇒ 市场与加载期都拦不住「新插件 × 旧壳」的组合（旧壳上插件视图打不开，壳被 ErrorBoundary 兜住、不崩）。本版**只加这一行清单字段 + 版本 PATCH**，源码与产物行为零变化。"
+        },
         {
           "version": "1.0.15",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.15/settings.linkdesk-plugin",
