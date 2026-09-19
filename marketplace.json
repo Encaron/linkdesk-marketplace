@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-18T18:09:05.900Z",
+  "updatedAt": "2026-09-19T01:51:49.942Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -104,20 +104,26 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.11",
+      "version": "1.0.12",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.11/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.12/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.11/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.12/resources/icon.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.11/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.11/file-tree.linkdesk-plugin",
-      "size": 345169,
-      "publishedAt": "2026-09-17T12:31:06.122Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.12/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.12/file-tree.linkdesk-plugin",
+      "size": 67189,
+      "publishedAt": "2026-09-19T01:46:53.643Z",
       "versions": [
+        {
+          "version": "1.0.12",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.12/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-09-19T01:46:53.643Z",
+          "changelog": "- **换轨到「壳池集中供给」（E6#125 · L9 第 9.4 轮）**：`@linkdesk/ui` 不再编译进本插件 bundle——构建时 external，运行时由壳池供给同一份实例。本仓源码 `import` 一行未改，只把依赖从 `^0.3.0` 换到重锚号 `^0.2.13`（`@linkdesk/ui` 自此与壳同号锁步）＋ `@linkdesk/plugin-sdk` `^0.1.19 → ^0.1.41`，重新构建发布。\n- **读数（产物前后对照）**：包 **345,169 → 66,744 字节（−80.7%）**；根 bundle JS **622,881 → 83,967 字节**。产物里组件实现痕迹（`data-overlay-wrapper` / `overlay-root` / `ldk-*` 类名）grep **零命中**，只剩 `from \"@linkdesk/ui\"` 裸 specifier 交给壳解析。\n- **行为零变化**：组件与样式改由壳统一供给 ⇒ 以后壳改共享件样式，本插件**自动跟随**，不必为此重发。"
+        },
         {
           "version": "1.0.11",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.11/file-tree.linkdesk-plugin",
@@ -214,20 +220,26 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.0.37",
+      "version": "1.0.38",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.37/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.38/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.37/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.38/resources/icon-brand.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.37/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.37/marketplace.linkdesk-plugin",
-      "size": 1196836,
-      "publishedAt": "2026-09-18T18:08:05.856Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.38/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.38/marketplace.linkdesk-plugin",
+      "size": 113811,
+      "publishedAt": "2026-09-19T01:50:19.814Z",
       "versions": [
+        {
+          "version": "1.0.38",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.38/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-19T01:50:19.814Z",
+          "changelog": "- **换轨到「壳池集中供给」（E6#125 · L9 第 9.4 轮）**：`@linkdesk/ui` 不再编译进本插件 bundle——构建时 external，运行时由壳池供给同一份实例。源码 `import` 一行未改，只把依赖从 `^0.3.1` 换到重锚号 `^0.2.13`（`@linkdesk/ui` 自此与壳同号锁步）＋ `@linkdesk/plugin-sdk` `^0.1.19 → ^0.1.41`，重新构建发布。\n- **读数（产物前后对照）**：包 **1,196,836 → 113,811 字节（−90.5%）**；根 bundle JS **546,865 → 25,839 字节**。8 张视图 bundle 里的组件实现痕迹（`data-overlay-wrapper` / `overlay-root` / `ldk-button` / `ldk-form-row` / `ldk-toggle` / `ldk-hint-card`）grep **零命中**；只剩 `from \"@linkdesk/ui\"` 裸 specifier 交给壳解析。\n- **本仓自己借用的宿主类名照旧生效**：`CompatStatus` 的 `className=\"ldk-badge\"` 与 `.marketplace-mpd-title-row .ldk-badge .codicon` 选择器没动——那些类名的**定义**现在由壳池全局供给（过去靠自带一份），写法不变、结果不变。"
+        },
         {
           "version": "1.0.37",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.37/marketplace.linkdesk-plugin",
@@ -312,20 +324,27 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.18",
+      "version": "1.0.19",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.18/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.19/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.18/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.19/resources/icon.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.18/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.18/serial-monitor.linkdesk-plugin",
-      "size": 565358,
-      "publishedAt": "2026-09-17T13:39:13.453Z",
+      "minAppVersion": "0.2.0",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.19/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.19/serial-monitor.linkdesk-plugin",
+      "size": 158422,
+      "publishedAt": "2026-09-19T01:49:00.939Z",
       "versions": [
+        {
+          "version": "1.0.19",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.19/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-09-19T01:49:00.939Z",
+          "changelog": "- **换轨到「壳池集中供给」（E6#125 · L9 第 9.4 轮）**：`@linkdesk/ui` 不再编译进本插件 bundle——构建时 external，运行时由壳池供给同一份实例。源码 `import` 一行未改，只把依赖从 `^0.3.0` 换到重锚号 `^0.2.13`（`@linkdesk/ui` 自此与壳同号锁步）＋ `@linkdesk/plugin-sdk` `^0.1.19 → ^0.1.41`，重新构建发布。\n- **读数（产物前后对照）**：包 **565,358 → 158,422 字节（−72.0%）**；根 bundle JS **978,655 → 435,217 字节**，CSS **→ 21,890 字节**。产物里组件实现痕迹（`data-overlay-wrapper` / `overlay-root` / `ldk-badge` / `ldk-button` / `ldk-form-row` / `ldk-toggle`）grep **零命中**；只剩 `from \"@linkdesk/ui\"` 裸 specifier 交给壳解析。\n- **本仓 CSS 里对宿主类名的定位照旧生效**：`ControlPanel.css` 的 `.ldk-selectbox-trigger` / `.ldk-combobox*` 与 `className=\"ldk-input\"` 一类写法没动——那些类名的**定义**现在由壳池全局供给，比过去「自带一份」更不容易漂。"
+        },
         {
           "version": "1.0.18",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.18/serial-monitor.linkdesk-plugin",
@@ -392,20 +411,27 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.14",
+      "version": "1.0.15",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.14/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.15/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.14/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.15/resources/icon.svg",
       "marketIconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.14/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.14/settings.linkdesk-plugin",
-      "size": 333374,
-      "publishedAt": "2026-09-16T03:00:11.054Z",
+      "minAppVersion": "0.2.0",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.15/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.15/settings.linkdesk-plugin",
+      "size": 39780,
+      "publishedAt": "2026-09-19T01:51:15.356Z",
       "versions": [
+        {
+          "version": "1.0.15",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.15/settings.linkdesk-plugin",
+          "publishedAt": "2026-09-19T01:51:15.356Z",
+          "changelog": "- **换轨到「壳池集中供给」（E6#125 · L9 第 9.4 轮）**：`@linkdesk/ui` 不再编译进本插件 bundle——构建时 external，运行时由壳池供给同一份实例。源码 `import` 一行未改，只把依赖从 `^0.3.0` 换到重锚号 `^0.2.13`（`@linkdesk/ui` 自此与壳同号锁步）＋ `@linkdesk/plugin-sdk` `^0.1.19 → ^0.1.41`，重新构建发布。\n- **读数（产物前后对照）**：包 **333,374 → 39,780 字节（−88.1%）**；根 bundle JS **607,777 → 45,114 字节**，CSS **→ 28,384 字节**。产物里组件实现痕迹（`data-overlay-wrapper` / `overlay-root` / `ldk-badge` / `ldk-button` / `ldk-form-row` / `ldk-toggle` / `ldk-colorpicker`）grep **零命中**；只剩 `from \"@linkdesk/ui\"` 裸 specifier 交给壳解析。\n- **本仓自己借用的宿主类名照旧生效**：`className=\"ldk-input\"` 与 `.ldk-slider` / `.ldk-theme-picker` 选择器没动——那些类名的**定义**现在由壳池全局供给（过去靠自带一份），写法不变、结果不变。"
+        },
         {
           "version": "1.0.14",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.14/settings.linkdesk-plugin",
