@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-19T10:06:52.000Z",
+  "updatedAt": "2026-09-19T12:50:11.210Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -68,18 +68,24 @@
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.12",
+      "version": "1.0.13",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.12/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.13/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.12/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.12/editor.linkdesk-plugin",
-      "size": 8653644,
-      "publishedAt": "2026-09-17T13:39:01.425Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.13/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.13/editor.linkdesk-plugin",
+      "size": 8653751,
+      "publishedAt": "2026-09-19T12:49:02.793Z",
       "versions": [
+        {
+          "version": "1.0.13",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.13/editor.linkdesk-plugin",
+          "publishedAt": "2026-09-19T12:49:02.793Z",
+          "changelog": "- **重打可复现**：@linkdesk/plugin-sdk 0.1.42 起 zip 目录条目时间戳钉死，同一份源码重打逐字节一致。插件内容零变化（仅 plugin.json 版本号随包更新）。"
+        },
         {
           "version": "1.0.12",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.12/editor.linkdesk-plugin",
@@ -104,25 +110,31 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.14",
+      "version": "1.0.15",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.14/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.15/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.14/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.15/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.13",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.14/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.14/file-tree.linkdesk-plugin",
-      "size": 67495,
-      "publishedAt": "2026-09-19T10:04:29.829Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.15/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.15/file-tree.linkdesk-plugin",
+      "size": 67822,
+      "publishedAt": "2026-09-19T12:46:22.862Z",
       "versions": [
+        {
+          "version": "1.0.15",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.15/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-09-19T12:46:22.862Z",
+          "changelog": "- **重打可复现**：@linkdesk/plugin-sdk 0.1.42 起 zip 目录条目时间戳钉死，同一份源码重打逐字节一致。插件内容零变化（仅 plugin.json 版本号随包更新）。"
+        },
         {
           "version": "1.0.14",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.14/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-19T10:04:29.829Z",
+          "publishedAt": "2026-09-19T10:12:13.191Z",
           "changelog": "- **删 5 处「有规则、无渲染方」的 CSS 死类**（E6#113）：`.file-tree-sidebar`／`.file-tree-header`／`.file-tree-breadcrumb`／`.file-tree-breadcrumb-icon`／`.file-tree-breadcrumb-path`——旧 `sidebar.tsx` 的容器／头部／面包屑（E36#10 拆除后侧栏外壳由壳的 `SidePanel`／`SidebarSection` 接管，插件侧 JSX 不再画那些节点，当年为其写的 CSS 未同笔删）。删前实机 CDP 普查：三仓视图真开状态下候选类名在 DOM **零存在** ⇒ 删除像素级零视觉变化；删后仓内 src 零残留、`verify`／`test` 全绿。无功能变化。"
         },
         {
@@ -173,18 +185,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.18",
+      "version": "1.0.19",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.18/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.19/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.18/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.18/lang-defaults.linkdesk-plugin",
-      "size": 23079,
-      "publishedAt": "2026-09-14T18:09:21.544Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.19/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.19/lang-defaults.linkdesk-plugin",
+      "size": 23178,
+      "publishedAt": "2026-09-19T12:45:25.695Z",
       "versions": [
+        {
+          "version": "1.0.19",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.19/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-19T12:45:25.695Z",
+          "changelog": "- **重打可复现**：@linkdesk/plugin-sdk 0.1.42 起 zip 目录条目时间戳钉死，同一份源码重打逐字节一致。插件内容零变化（仅 plugin.json 版本号随包更新）。"
+        },
         {
           "version": "1.0.18",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.18/lang-defaults.linkdesk-plugin",
@@ -233,25 +251,31 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.0.40",
+      "version": "1.0.41",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.40/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.41/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.40/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.41/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.13",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.40/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.40/marketplace.linkdesk-plugin",
-      "size": 114576,
-      "publishedAt": "2026-09-19T10:04:38.413Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.41/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.41/marketplace.linkdesk-plugin",
+      "size": 114852,
+      "publishedAt": "2026-09-19T12:49:27.445Z",
       "versions": [
+        {
+          "version": "1.0.41",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.41/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-19T12:49:27.445Z",
+          "changelog": "- **重打可复现**：@linkdesk/plugin-sdk 0.1.42 起 zip 目录条目时间戳钉死，同一份源码重打逐字节一致。插件内容零变化（仅 plugin.json 版本号随包更新）。"
+        },
         {
           "version": "1.0.40",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.40/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-09-19T10:04:38.413Z",
+          "publishedAt": "2026-09-19T10:12:24.090Z",
           "changelog": "- **删 4 处「有规则、无渲染方」的 CSS 死类**（E6#113）：`.marketplace-sidebar`／`.marketplace-ms-extensions`／`.marketplace-ms-section-header`（含 `:hover` 与 `.codicon` 后代共 3 条规则）／`.marketplace-ms-section-title`——旧自画侧栏与分节头的迁移遗留（侧栏外壳由壳的 `SidePanel`／`SidebarSection` 接管后，插件侧 JSX 不再画那些节点，CSS 未同笔删）。⚠️ `.marketplace-ms-section-items` 是**被用未定义**的合法标记类（detail-shell.css 有登记），不在删除范围。实机 CDP 普查 DOM 零存在 ⇒ 像素级零视觉变化。无功能变化。"
         },
         {
@@ -362,13 +386,13 @@
       "minAppVersion": "0.2.13",
       "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.21/README.md",
       "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.21/serial-monitor.linkdesk-plugin",
-      "size": 159190,
-      "publishedAt": "2026-09-19T10:04:46.619Z",
+      "size": 159380,
+      "publishedAt": "2026-09-19T10:12:35.346Z",
       "versions": [
         {
           "version": "1.0.21",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.21/serial-monitor.linkdesk-plugin",
-          "publishedAt": "2026-09-19T10:04:46.619Z",
+          "publishedAt": "2026-09-19T10:12:35.346Z",
           "changelog": "- **删 `.serial-monitor-sidebar` 规则本体＋收两条指向它的陈旧注释**（E6#113）：1.24（v1.0.17）已实证该类在实机 DOM 里不存在、并把 token 挪到三个真实根类之下，但规则本体留到今天；本轮删规则、退役 `SerialMonitorView.css` 的「别用它」警告、订正 `SerialMonitorSidebar.css` 头注的根类表述。删后仓内 src 零残留、`verify`／`test` 全绿。无功能变化。"
         },
         {
@@ -449,21 +473,27 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.16",
+      "version": "1.0.17",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.16/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.17/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.16/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.17/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.13",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.16/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.16/settings.linkdesk-plugin",
-      "size": 40553,
-      "publishedAt": "2026-09-19T06:02:00.484Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.17/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.17/settings.linkdesk-plugin",
+      "size": 40652,
+      "publishedAt": "2026-09-19T12:45:57.903Z",
       "versions": [
+        {
+          "version": "1.0.17",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.17/settings.linkdesk-plugin",
+          "publishedAt": "2026-09-19T12:45:57.903Z",
+          "changelog": "- **重打可复现**：@linkdesk/plugin-sdk 0.1.42 起 zip 目录条目时间戳钉死，同一份源码重打逐字节一致。插件内容零变化（仅 plugin.json 版本号随包更新）。"
+        },
         {
           "version": "1.0.16",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.16/settings.linkdesk-plugin",
@@ -578,18 +608,24 @@
     {
       "id": "theme-defaults",
       "name": "官方主题",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的 Light/Dark 兜底配方",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.5/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.6/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.5/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.5/theme-defaults.linkdesk-plugin",
-      "size": 6327,
-      "publishedAt": "2026-09-17T16:15:38.024Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.6/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.6/theme-defaults.linkdesk-plugin",
+      "size": 6437,
+      "publishedAt": "2026-09-19T12:44:08.207Z",
       "versions": [
+        {
+          "version": "1.0.6",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.6/theme-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-19T12:44:08.207Z",
+          "changelog": "- **重打可复现**：@linkdesk/plugin-sdk 0.1.42 起 zip 目录条目时间戳钉死，同一份源码重打逐字节一致。插件内容零变化（仅 plugin.json 版本号随包更新）。"
+        },
         {
           "version": "1.0.5",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.5/theme-defaults.linkdesk-plugin",
