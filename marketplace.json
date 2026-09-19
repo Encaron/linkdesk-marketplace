@@ -167,7 +167,8 @@
           "publishedAt": "2026-09-14T02:35:58.751Z",
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
-      ]
+      ],
+      "repository": "https://github.com/Encaron/linkdesk-plugin-file-tree"
     },
     {
       "id": "lang-defaults",
@@ -313,7 +314,8 @@
           "publishedAt": "2026-09-14T02:36:19.060Z",
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
-      ]
+      ],
+      "repository": "https://github.com/Encaron/linkdesk-plugin-marketplace"
     },
     {
       "id": "python",
@@ -441,7 +443,8 @@
           "publishedAt": "2026-09-14T02:36:36.417Z",
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
-      ]
+      ],
+      "repository": "https://github.com/Encaron/linkdesk-plugin-serial-monitor"
     },
     {
       "id": "settings",
