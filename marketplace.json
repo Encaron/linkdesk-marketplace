@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-20T00:10:08.423Z",
+  "updatedAt": "2026-09-20T00:10:57.437Z",
   "plugins": [
     {
       "id": "hello-linkdesk",
@@ -68,18 +68,24 @@
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.13",
+      "version": "1.0.14",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.13/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.14/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.13/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.13/editor.linkdesk-plugin",
-      "size": 8653751,
-      "publishedAt": "2026-09-19T12:49:02.793Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.14/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.14/editor.linkdesk-plugin",
+      "size": 8654003,
+      "publishedAt": "2026-09-20T00:07:53.716Z",
       "versions": [
+        {
+          "version": "1.0.14",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.14/editor.linkdesk-plugin",
+          "publishedAt": "2026-09-20T00:07:53.716Z",
+          "changelog": "- **删四处死类名引用**（E6#136 普查裁决）：`editor-container`／`editor-empty`／`editor-error`／`editor-loading` 在仓内 CSS 零定义、querySelector 式消费零处——SDK 新腿（0.1.44 自有类名引用悬空判据）指出它们是「挂了名但没有样式」的死引用（分属 `src/index.tsx`、`src/components/EditorTab.tsx`、`src/views/DiffEditor.tsx`）。删掉 className 里的死名，DOM 结构与渲染结果零变化，无功能变化。"
+        },
         {
           "version": "1.0.13",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.13/editor.linkdesk-plugin",
@@ -104,8 +110,7 @@
           "publishedAt": "2026-09-14T02:35:51.977Z",
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-editor"
+      ]
     },
     {
       "id": "file-tree",
@@ -257,21 +262,27 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.0.42",
+      "version": "1.0.43",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.42/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.43/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.42/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.43/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.13",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.42/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.42/marketplace.linkdesk-plugin",
-      "size": 115031,
-      "publishedAt": "2026-09-19T13:46:55.372Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.0.43/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.43/marketplace.linkdesk-plugin",
+      "size": 115255,
+      "publishedAt": "2026-09-20T00:08:04.441Z",
       "versions": [
+        {
+          "version": "1.0.43",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.43/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-20T00:08:04.441Z",
+          "changelog": "- **删三处死类名引用**（E6#136 普查裁决）：`marketplace-mpd-version-select`（版本下拉两处，SelectBox 的 className 入参）与 `marketplace-ms-section-items`（侧栏四个列表视图的容器标记类）在仓内 CSS 零定义、无任何 querySelector 式消费——SDK 新腿（0.1.44 自有类名引用悬空判据）指出它们是死引用；四处按命名一致性**一并删净**，并订正 `detail-shell.css` 头注里拿旧类名举例的那句。DOM 结构与渲染结果零变化，无功能变化。"
+        },
         {
           "version": "1.0.42",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.42/marketplace.linkdesk-plugin",
@@ -350,8 +361,7 @@
           "publishedAt": "2026-09-14T02:36:19.060Z",
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-marketplace"
+      ]
     },
     {
       "id": "python",
@@ -386,21 +396,27 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.21",
+      "version": "1.0.22",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.21/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.22/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.21/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.22/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.13",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.21/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.21/serial-monitor.linkdesk-plugin",
-      "size": 159380,
-      "publishedAt": "2026-09-19T10:12:35.346Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.22/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.22/serial-monitor.linkdesk-plugin",
+      "size": 159718,
+      "publishedAt": "2026-09-20T00:08:14.323Z",
       "versions": [
+        {
+          "version": "1.0.22",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.22/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-09-20T00:08:14.323Z",
+          "changelog": "- **删四处死类名引用**（E6#136 普查裁决）：`serial-monitor-session-list-toolbar`／`serial-monitor-session-count`／`serial-monitor-session-list`／`serial-monitor-status-text` 在仓内 CSS 零定义、无消费（`SessionList.tsx` 的 F2 容器 `tabIndex`／`onKeyDown` 保留不动）——SDK 新腿（0.1.44 自有类名引用悬空判据）指出它们是死引用。删掉后渲染结果零变化。\n- **SearchBar 两处 window keydown 补豁免理由注释**（E6#137 普查裁决）：Ctrl+F 全局打开与搜索开着时的 Esc/Enter 属「焦点在任何地方都要响应」的正当形态（搜索框未渲染或焦点可能已点走），判据本身无白名单——按腿的豁免出口加 disable 注释写明理由，行为零变化。"
+        },
         {
           "version": "1.0.21",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.21/serial-monitor.linkdesk-plugin",
@@ -479,27 +495,32 @@
           "publishedAt": "2026-09-14T02:36:36.417Z",
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-serial-monitor"
+      ]
     },
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.17",
+      "version": "1.0.18",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.17/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.18/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.17/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.18/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.13",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.17/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.17/settings.linkdesk-plugin",
-      "size": 40652,
-      "publishedAt": "2026-09-19T12:45:57.903Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.18/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.18/settings.linkdesk-plugin",
+      "size": 40934,
+      "publishedAt": "2026-09-20T00:08:24.822Z",
       "versions": [
+        {
+          "version": "1.0.18",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.18/settings.linkdesk-plugin",
+          "publishedAt": "2026-09-20T00:08:24.822Z",
+          "changelog": "- **删一处死类名引用**（E6#136 普查裁决）：`settings-keybindings-col-key-cell` 在仓内 CSS 零定义、无消费——SDK 新腿（0.1.44 自有类名引用悬空判据）指出它是死引用。删掉后渲染结果零变化。\n- **快捷键录制器 window keydown 补豁免理由注释**（E6#137 普查裁决）：录制器要 capture=true 在输入被吞前抓原始键，容器 onKeyDown 收不到被吞输入——正当形态豁免，判据本身无白名单，按腿的豁免出口加 disable 注释写明理由，行为零变化。"
+        },
         {
           "version": "1.0.17",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.17/settings.linkdesk-plugin",
@@ -572,8 +593,7 @@
           "publishedAt": "2026-09-14T02:35:15.124Z",
           "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
         }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-settings"
+      ]
     },
     {
       "id": "theme-aurora-glass",
