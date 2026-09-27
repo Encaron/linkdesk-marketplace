@@ -1,70 +1,7 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-27T18:11:20.606Z",
+  "updatedAt": "2026-09-27T19:42:18.170Z",
   "plugins": [
-    {
-      "id": "hello-linkdesk",
-      "name": "Hello LinkDesk",
-      "version": "0.1.3",
-      "description": "官方市场第一只真实发布的插件——问候卡。First real plugin on the official marketplace — a greeting card.",
-      "author": {
-        "name": "Encaron"
-      },
-      "icon": "https://raw.githubusercontent.com/Encaron/hello-linkdesk/v0.1.3/resources/icon.svg",
-      "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/hello-linkdesk/v0.1.3/README.md",
-      "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.3/hello-linkdesk.linkdesk-plugin",
-      "size": 8582,
-      "publishedAt": "2026-09-14T18:12:20.835Z",
-      "versions": [
-        {
-          "version": "0.1.3",
-          "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.3/hello-linkdesk.linkdesk-plugin",
-          "publishedAt": "2026-09-14T18:12:20.835Z",
-          "changelog": "- 补 **MIT LICENSE** 并随包分发——本仓一直缺它；MIT 要求「副本里带声明」，而 zip 才是用户真正拿到的那份。它是官方市场样板仓，第三方作者从这里抄起手式\n- 补**场景封面** `resources/cover.svg` 并嵌进 README（E6#69b 三图模型：整幅场景封面住 README，市场展示位走 Type-2 彩色身份图）——这张封面此前只在工作副本里，既没提交也没被任何地方引用\n- 无功能变化：问候卡本身一个字没改"
-        },
-        {
-          "version": "0.1.2",
-          "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.2/hello-linkdesk.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:50:50.705Z",
-          "changelog": "- 新增市场身份图 `resources/icon.svg`（Type-2 彩色身份图，E6#68a）——此前 `plugin.json` 没有 `icon` 字段，市场里显的是**统一默认彩块**\n- 意象：问候卡 + 一道手写签名 + 右上首发暖金点（呼应它 640 封面的深夜紫舞台与 hello 笔迹）\n- 形态照 [06-图标.md](https://github.com/Encaron/linkdesk/blob/electron/docs/02-Electron%E6%9E%B6%E6%9E%84/E6_%E6%8F%92%E4%BB%B6%E7%94%9F%E6%80%81%E4%B8%8E%E5%8F%91%E5%B8%83/03-%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA/06-%E5%9B%BE%E6%A0%87.md)：SVG / 透明底 / 48×48 正方形 viewBox / 零 `<text>`（不绑字体）\n- `@linkdesk/plugin-sdk` 升到 0.1.19（^0.1.0 → ^0.1.19）——SDK 0.1.16 之前的 `publish` 没有 E6#106 的身份图 URL 化：包内相对路径写进目录条目后，**未装用户看到的图标恒 404**\n- 本笔同时把 **0.1.1 的源码改动**（README 与插件内显示的版本号）落进版本历史——0.1.1 当初只发了 Release，源改动一直挂在工作副本未提交（HEAD 停在 0.1.0）。顺带把两处显示号对齐到 0.1.2，并新建本 `CHANGELOG.md`（此前没有 ⇒ 目录条目里一直没有 `changelog`）"
-        },
-        {
-          "version": "0.1.1",
-          "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.1/hello-linkdesk.linkdesk-plugin",
-          "publishedAt": "2026-09-09T01:32:37.751Z"
-        },
-        {
-          "version": "0.1.0",
-          "downloadUrl": "https://github.com/Encaron/hello-linkdesk/releases/download/v0.1.0/hello-linkdesk.linkdesk-plugin",
-          "publishedAt": "2026-09-08T23:56:01.056Z"
-        }
-      ],
-      "repository": "https://github.com/Encaron/hello-linkdesk"
-    },
-    {
-      "id": "first-run-setup",
-      "name": "首次配置",
-      "version": "1.0.0",
-      "description": "官方样板——装到本机后做一次性配置（把本机路径落成自己的配置档案），配完发一条带自己来源的通知。示范「装好了」与「配好了」是两条互不掩盖的通知。",
-      "author": {
-        "name": "官方"
-      },
-      "icon": "https://raw.githubusercontent.com/Encaron/first-run-setup/main/resources/icon.svg",
-      "iconSource": "url",
-      "downloadUrl": "https://github.com/Encaron/first-run-setup/releases/download/v1.0.0/first-run-setup.linkdesk-plugin",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/first-run-setup/main/README.md",
-      "repository": "https://github.com/Encaron/first-run-setup",
-      "size": 9859,
-      "publishedAt": "2026-09-10T19:18:22.771Z",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "downloadUrl": "https://github.com/Encaron/first-run-setup/releases/download/v1.0.0/first-run-setup.linkdesk-plugin",
-          "publishedAt": "2026-09-10T19:18:22.771Z"
-        }
-      ]
-    },
     {
       "id": "editor",
       "name": "编辑器",
@@ -283,36 +220,6 @@
         }
       ],
       "repository": "https://github.com/Encaron/linkdesk-plugin-lang-defaults"
-    },
-    {
-      "id": "lang-test-ja",
-      "name": "日本語テスト",
-      "version": "1.0.4",
-      "description": "单语言插件测试——E3c #42 验证",
-      "author": {
-        "name": "测试"
-      },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-test-ja/v1.0.4/resources/icon.svg",
-      "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-test-ja/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-test-ja/releases/download/v1.0.4/lang-test-ja.linkdesk-plugin",
-      "size": 4380,
-      "publishedAt": "2026-09-14T17:50:42.659Z",
-      "versions": [
-        {
-          "version": "1.0.4",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-test-ja/releases/download/v1.0.4/lang-test-ja.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:50:42.659Z",
-          "changelog": "- 新增市场身份图 `resources/icon.svg`（Type-2 彩色身份图，E6#68a）——此前 `plugin.json` 没有 `icon` 字段，市场里显的是**统一默认彩块**\n- 意象：两枚对开语言卡（与 lang-defaults 同族同构）+ 前卡一枚日之丸；刻意不写「あ」，SVG 里排文字会绑字体\n- 形态照 [06-图标.md](https://github.com/Encaron/linkdesk/blob/electron/docs/02-Electron%E6%9E%B6%E6%9E%84/E6_%E6%8F%92%E4%BB%B6%E7%94%9F%E6%80%81%E4%B8%8E%E5%8F%91%E5%B8%83/03-%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA/06-%E5%9B%BE%E6%A0%87.md)：SVG / 透明底 / 48×48 正方形 viewBox / 零 `<text>`（不绑字体）\n- `@linkdesk/plugin-sdk` 升到 0.1.19（^0.1.14 → ^0.1.19）——SDK 0.1.16 之前的 `publish` 没有 E6#106 的身份图 URL 化：包内相对路径写进目录条目后，**未装用户看到的图标恒 404**"
-        },
-        {
-          "version": "1.0.3",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-test-ja/releases/download/v1.0.3/lang-test-ja.linkdesk-plugin",
-          "publishedAt": "2026-09-14T02:36:11.528Z",
-          "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
-        }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-lang-test-ja"
     },
     {
       "id": "marketplace",
@@ -1066,42 +973,6 @@
         }
       ],
       "repository": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest"
-    },
-    {
-      "id": "theme-zones",
-      "name": "分区纹理示例主题",
-      "version": "1.0.4",
-      "description": "per-surface 背景机制示例主题——⑬ 纸纹分区（surface.texture 平铺纹理）+ ⑭ 影像分区（background.mode:zones 连续切片），#50.28-#50.31 壳机制第一个真实消费者",
-      "author": {
-        "name": "LinkDesk"
-      },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.4/resources/icon.svg",
-      "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-zones/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.4/theme-zones.linkdesk-plugin",
-      "size": 7930,
-      "publishedAt": "2026-09-17T16:23:02.520Z",
-      "versions": [
-        {
-          "version": "1.0.4",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.4/theme-zones.linkdesk-plugin",
-          "publishedAt": "2026-09-17T16:23:02.520Z",
-          "changelog": "- **E6#111n-6 外观族 id 带归属**（本轴「非样式命名空间归一化」清账 · 主题族）——本仓名额全在下面；**词干一字未动**，只加了「<插件 id>.」归属前缀：\n- 配方 id `paper-zones` → `theme-zones.paper-zones`\n- 配方 id `image-zones` → `theme-zones.image-zones`\n- 配色 id `image` → `theme-zones.image`\n- 配色 id `kraft` → `theme-zones.kraft`\n- 🔴 **显示名（`label` / `name`）一字未动** —— 设置页看到的主题名与配色名**没有变化**；主题的颜色 / 玻璃 / 字体等一切外观内容也**一字未动**（这是「改名 ≠ 改样子」的机械保证）。\n- **旧 id 不会被丢**：壳侧读时归一（`normalizeRecipeId` / `normalizeColorwayId` / `normalizeIconThemeId`，**解析器门控**＝新名在册且旧名不在册才映）＋ 配置迁移**版本 12** 把盘上的旧值改写掉；用户已选的主题 / 配色 / 图标主题在升级后**照旧生效**（含「插件比壳晚到」的顺序，两问门控保证任一时刻都只有一种解释成立）。"
-        },
-        {
-          "version": "1.0.3",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.3/theme-zones.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:30:38.833Z",
-          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）\n- 配方归位 `themes/`（两份皆然，此前摊在仓根，与作者文档「配方只许住 themes/」相反）"
-        },
-        {
-          "version": "1.0.2",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-zones/releases/download/v1.0.2/theme-zones.linkdesk-plugin",
-          "publishedAt": "2026-09-14T02:37:46.280Z",
-          "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
-        }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-zones"
     },
     {
       "id": "my-cool-plugin",
