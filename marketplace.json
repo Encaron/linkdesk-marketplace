@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-27T19:42:18.170Z",
+  "updatedAt": "2026-09-28T04:27:50.154Z",
   "plugins": [
     {
       "id": "editor",
@@ -140,18 +140,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.27",
+      "version": "1.0.28",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.27/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.28/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.27/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.27/lang-defaults.linkdesk-plugin",
-      "size": 24824,
-      "publishedAt": "2026-09-27T06:28:26.433Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.28/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.28/lang-defaults.linkdesk-plugin",
+      "size": 25115,
+      "publishedAt": "2026-09-28T04:27:39.197Z",
       "versions": [
+        {
+          "version": "1.0.28",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.28/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-28T04:27:39.197Z",
+          "changelog": "- **新增英文词条 6 条**（04「AI 操作手册」随包与软件内入口）：手册标签页——AI 操作手册 / 章节 / 没有可读的手册内容 / 本构建未随包发货手册，或手册目录不存在。/ 手册目录： / 随本版本发货 · 内容是当前版本 v{{version}}。zh 回退 key 本身即中文原文。"
+        },
         {
           "version": "1.0.27",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.27/lang-defaults.linkdesk-plugin",
