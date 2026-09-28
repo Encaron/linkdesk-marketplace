@@ -1,22 +1,28 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-28T14:38:29.330Z",
+  "updatedAt": "2026-09-28T17:00:52.331Z",
   "plugins": [
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.14",
+      "version": "1.0.15",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.14/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.15/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.14/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.14/editor.linkdesk-plugin",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.15/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.15/editor.linkdesk-plugin",
       "size": 8654003,
-      "publishedAt": "2026-09-20T00:07:53.716Z",
+      "publishedAt": "2026-09-28T16:57:57.666Z",
       "versions": [
+        {
+          "version": "1.0.15",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.15/editor.linkdesk-plugin",
+          "publishedAt": "2026-09-28T16:57:57.666Z",
+          "changelog": "- **删两条死命令声明**（M2 AI#28 尺子附带名单的复核裁决）：`editor.reopenClosedEditor`／`editor.compareFiles` 在 plugin.json 里挂着标题、却在**任何地方都没有 handler**——本仓源码零处 `registerCommand`，壳侧也没有这两条 id（\"重新打开已关闭的编辑器\"真正的实现是壳命令 `workbench.action.reopenClosedEditor`，Ctrl+Shift+T；\"比较文件\"那件事的实现是 file-tree 的 `file-tree.selectForCompare` ＋ `file-tree.compareWithSelected`）。这两条是编辑器内迁插件仓之前、命令 id 还是 `editor.*` 时代的残留。\n- **为什么不补 description 而是删**：声明会进命令索引（AI 选命令、快捷键列表都看得到）——给一条**永远不会执行成功**的命令补说明，等于在索引里立两块指向空地的路牌，比没有更糟。删掉之后索引少两条假条目；真实能力**一条没少**（两条都各自有活的等价命令，且都有快捷键/命令路径）。仓库外若有人把用户快捷键绑到这两条旧 id 上，它们在今天也同样从未生效过——删除不改变任何行为。\n- 版本 1.0.14 → **1.0.15**（PATCH）。无代码变化，纯 manifest 订正。"
+        },
         {
           "version": "1.0.14",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.14/editor.linkdesk-plugin",
@@ -53,21 +59,27 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.17",
+      "version": "1.0.18",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.17/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.18/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.17/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.18/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.17/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.17/file-tree.linkdesk-plugin",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.18/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.18/file-tree.linkdesk-plugin",
       "size": 68977,
-      "publishedAt": "2026-09-27T07:10:18.178Z",
+      "publishedAt": "2026-09-28T16:56:52.641Z",
       "versions": [
+        {
+          "version": "1.0.18",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.18/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-09-28T16:56:52.641Z",
+          "changelog": "- **新增命令 `file-tree.openSearchResult`（打开搜索结果）**——把「打开一条搜索匹配」这条**原本只有鼠标**的动作接进命令面：界面上它只能靠**双击结果行**（`SearchResults.tsx` 的 `onDoubleClick`），F4 那条键盘路要先让搜索框拿到焦点、且本身不是命令 ⇒ AI、快捷键、命令面板都够不着它。判定目标这一半（`searchSession.ts` 解析规则）与开标签页那一半（走与双击**同一个** `openMatch`，不另写第二份 `tabs.create`）都是纯逻辑/复用，故无并行实现。\n- **目标从哪来**：搜索结果本体住在 `useSearch` 的 React state 里，命令 handler 不在 React 上下文——现在搜索/导航变化时把 `(matches, index)` 投影进模块级快照，命令缺省打开**当前高亮那一条**，也可按 `filePath`（可再带 `lineNumber`）点名要哪条。视图卸载即清空 ⇒ 命令如实回「没有搜索结果」，⛔ 不给一个界面上早已不存在的陈旧目标。\n  - 注册点在**入口顶层**（`src/index.tsx`）而非视图 `useEffect`：无视图时 AI 经 `exec` 打进来靠池的 on-command 激活 `import()` 入口，顶层的副作用才是唯一注册时机。右键菜单那批既有命令仍由 `FoldersView` mount 时注册——本笔**只加不减**。\n- **补齐 21 条既有命令的说明（`description`）**：本仓命令只声明了 `title`，命令索引里一行说明都没有。检查命令清单的使用者（AI、未来的命令面板检索）只能看到名字。21 条按各自 handler 的**真实行为**逐条写（含「占位、未接实现」两条与「与『打开』走同一条链路」这类**如实**读数），并给新命令补 `params`。\n- **说明与参数只写在声明面**：`title` / `description` / `params` 一律只进 `plugin.json` 的 `contributes.commands[]`；运行时 `registerCommand` **不带 meta**（本仓既有惯例——两处各写一份文案迟早分叉）。壳加载器会把声明面的说明与参数注册进命令索引，池侧不带这两项时不会抹掉声明面那份。\n- **新命令不进运行时 meta 面**，命令面板的可见性由 `when` 管；本命令不设 `when`（无门）。若面板列出它而当前没有搜索结果，如实在面板里报「没有搜索结果」，不静默。\n- **`i18n/en.json` 补 1 键**（`打开搜索结果` → `Open Search Result`，字典 72 → 73）。其余 21 条标题的英文键此前已在。\n- **测试**：新增 `src/__tests__/searchSession.test.ts`（16 例）——解析规则 9 例（空会话／缺省高亮／索引 `-1` 与越界的兜底／反斜杠与正斜杠等价／同行号唯一确定／点名不存在的文件为 `null`／卸载即清空）＋ 命令面 7 例（注册 1 条且 id 正确／`commands` 面缺失时返回 0 而不抛／缺省打开的是高亮那条并回报 `index`+`total`／点名优先于高亮／两条负控「不存在的文件」「扩展名没有属主插件」都必须**不碰** `tabs.create`）。\n- **既有读数**：`vitest run` 16 文件 149 例全绿；`npm run verify` 六段全绿（声明面 22 名 / 运行时面 25 名，命令归属零偏离；字典 73 键；纯逻辑单元 14 个全部有测试）。`npx tsc --noEmit` 零错误。无用户可见的既有行为变化。"
+        },
         {
           "version": "1.0.17",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.17/file-tree.linkdesk-plugin",
@@ -389,21 +401,27 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.24",
+      "version": "1.0.25",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.24/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.25/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.24/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.25/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.24/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.24/serial-monitor.linkdesk-plugin",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.25/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.25/serial-monitor.linkdesk-plugin",
       "size": 162071,
-      "publishedAt": "2026-09-27T07:10:08.588Z",
+      "publishedAt": "2026-09-28T16:55:56.570Z",
       "versions": [
+        {
+          "version": "1.0.25",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.25/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-09-28T16:55:56.570Z",
+          "changelog": "- **补一批「只有鼠标路径」的动作：打开端口 / 关端口 / 关会话 / 改发送编码 / 快捷发送编辑删除**（M2 AI 友好化 · `AI#23`）。这五件事此前各自只有一个入口——打开端口是控制面板的按钮＋下拉、关会话是**悬停才出现**的那颗 ✕、快捷发送编辑/删除是药丸右键菜单、发送编码是侧栏下拉。命令面补齐后，AI 与外部调用方（`linkdeskctl exec` / MCP）也能做这些事。\n- **声明面 12 → 17 条**：新增 `serial-monitor.openPort`（可指定 COM ＋ 波特率 ＋ 帧格式，即用户点名的「让 AI 选串口和波特率」）、`closePort`、`closeSession`、`setSendCoding`、`send`（此前只在运行时注册、清单里没有）五条；同时给**全部 17 条**补上 `description`（此前 12 条一条都没有）——命令说明随 `getCommands()` / `describe` 出契约，AI 靠它才知道这条命令干什么。`params` 声明补在需要实参的那几条上。\n- 🔴 **命令本体走插件自己的写入咽喉，不绕过插件**：`openPortFromModule` / `closePortFromModule` / 会话写入咽喉（`getters.ts`）——与界面手点是**同一条链**，侧栏灯（`pluginState <port>:isOpen` ＋ contextKey `serial-monitor.sourceOpen`）、会话表、`serial.system` 消息三处一起动。⛔ 直调 `linkdesk.serial.openPort` 会「口开了、灯不亮、会话面板不知道」——那正是本版要防的新不一致。\n- **归口**：新文件 `src/services/serialCommands.ts` 收「不需要视图在场」的插件级命令，由 `src/index.tsx` **入口顶层**注册（无视图时 AI 打进来，池的 on-command 激活 import 入口即命中）。⚠️ 视图卸载时的 `unregisterCommands` 是**粗粒度**的，会把入口顶层那批一并摘掉 ⇒ `useViewCommands` 的 cleanup 里**原样再调一次**同一份注册函数（幂等）——不补这一步，最后一个串口标签页关掉后这批命令会永久消失。\n- **顺手归一化，不留第二份实现**：`openPort` / `refreshPorts` 的 React action 与会话的 create/remove 改为委托到同一处模块级咽喉；发送编码取值抽成 `SERIAL_CODINGS`（下拉与命令同一个值集，防「命令设得进、下拉选不出」）；`send` 补 `encoding` 实参（不传则用目标会话的发送编码），`portName` 缺省仍走原来的「缺省唯一口」语义——旧调用方一个字没改。\n- **关会话的确认口径与手点一致**：`serial-monitor.confirmOnClose` 开着且未传 `confirm` 时先弹确认框；用户不点头 = 不做，且**如实回** `{closed:false, denied:true}`（不是「账面无错、实际没做」）。程序化调用方可传 `confirm:true` 跳过——否则无人应答的模态会把 AI 调用挂死。\n- **回归钉子**（新文件 `src/__tests__/serialCommands.test.ts`，19 例）：① 三处一起动——命令开的口，灯 ＋ 会话表 ＋ `serial.system` 消息面逐条与手点一致，并断言**命令腿与手点腿的灯写序列逐字相同**（顺序敏感）；② **负控**——直调 `linkdesk.serial.openPort` 必须不绿（口开了但三处一处没动），这条防的就是「只断言口开了」的假绿。另覆盖：已开再开＝不动、无可用口如实报错、关会话的三步顺序、否认路径、编码白名单、`send` 的编码优先级、无视图删快捷发送、编辑快捷发送给可读报错（不是 null 解引用）。\n- **依赖**：显式声明 `@linkdesk/contracts ^0.1.23`（原先靠 `@linkdesk/plugin-sdk` 传递拿到 0.1.13）——`meta.description` / `meta.params` 这两个字段的**类型面** 0.1.13 还没有，壳侧早就在用（`preload-pool/commands.ts`），不升级就是类型错、且旧类型会让人误以为这字段不存在。\n- 无视觉变化。⚠️ 新增命令挂 `when: \"activeEditor == 'serial-monitor'\"` 只影响**命令面板显隐**；AI / CLI 执行不看 `when`（壳侧白名单只查命令 id 是否存在）。\n- 读数：`npm run test` 25 文件 / 281 例全绿；`npm run verify` 六段全绿（声明面 17 名归属零偏离、字典 133 key）。"
+        },
         {
           "version": "1.0.24",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.24/serial-monitor.linkdesk-plugin",
@@ -506,21 +524,27 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.20",
+      "version": "1.0.22",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.20/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.22/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.20/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.22/resources/icon.svg",
       "marketIconSource": "url",
-      "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.20/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.20/settings.linkdesk-plugin",
-      "size": 42475,
-      "publishedAt": "2026-09-27T16:41:35.469Z",
+      "minAppVersion": "0.2.22",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.22/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.22/settings.linkdesk-plugin",
+      "size": 43529,
+      "publishedAt": "2026-09-28T16:57:25.029Z",
       "versions": [
+        {
+          "version": "1.0.22",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.22/settings.linkdesk-plugin",
+          "publishedAt": "2026-09-28T16:57:25.029Z",
+          "changelog": "- **新增命令 `settings.editKeybinding`（修改快捷键…，M2 `AI#25`）**——把「进入改键编辑态」这条**原本只有鼠标**的动作接进命令面：界面上它只能靠**双击绑定行**（`KeybindingSettingsView.tsx` 的 `onDoubleClick`）。（行内的 ✕／点外部＝取消、Enter＝落地，那几步是编辑态**内**的动作。）\n- **两种调用形**：带 `command`（命令 id）⇒ 直接对那条进编辑态（AI / CLI 一条命令直达）；不带 ⇒ 先弹命令选择器让使用者挑（命令面板给不了参数，但选择器本身**键盘可操作** ⇒ 不用鼠标也能走完全程，条目的 `detail` 顺带显示该命令当前绑定）。两条路都先用壳命令 `workbench.action.openKeybindingsSettings`（`query` = 命令 id）把设置页开出来并切到「快捷键」页、搜索框预填，再写意图。\n- **意图怎么送达视图**：编辑态住在视图里（`useKeybindingEditor` 的 `editingRow`），而命令 handler 不在 React 上下文 ⇒ 新增模块级意图槽 `keybindingEditRequest.ts`——**双通道**（照壳侧 `openKeybindingsSettings` 的 pending + Emitter 先例）：视图在场 → 订阅当场投递；视图不在场 → 存待办，视图挂载时领取（设置页正是命令自己开出来的，请求早于视图）。落进编辑态那一步等**那一行真在表里**（rows 是异步拉的、且受搜索框过滤），不在就继续等。\n- **消费即清 ＋ 时效 30 秒**：意图不是状态，读一次就没了；过期的待办作废——AI 发过请求而用户当时没开设置页，事后自己打开设置页**不该**突然有一行跳进编辑态。两处失败模式（投递丢了／过期没作废）都不报错，故单测逐条钉住。\n- 🔴 **边界：只把那一行切进编辑态**——按键录制与落地仍是人在视图里完成（按新键 → Enter 落地、Esc 取消）。⛔ 不做「AI 代按／代存」的通道：改键是用户的绑定意图（与 M2 `AI#29` 同款口径）。命令读数因此如实写「编辑态已就绪」而不是「已改完」。\n- **注册点在入口顶层**（`src/index.tsx`）而非视图 `useEffect`——无视图时 AI 经 `exec` 打进来靠池的 on-command 激活 `import()` 入口，顶层的副作用才是唯一注册时机；「设置页还没开就让 AI 进改键编辑态」恰恰是本命令要治的场景。\n- **审计读数**：`npm run audit:plugin-commands` 里本仓由「**有视图零命令**」转为 ✅（声明面 1 命令 / 1 视图）——该名单现只剩 marketplace（另一格）。\n- **测试**：新增 `keybindingEditRequest.test.ts`（11 例：待办领取／消费即清／TTL 边界含「刚好等于 TTL」与「过期同样清掉」／后写顶先写／订阅当场投递且不留待办／退订只解自己）＋ `keybindingEditCommand.test.ts`（7 例：注册与 id／`commands` 面缺失返回 0／点名直达并断言壳命令的 `{ query }` 字面量／**三条负控**——命令 id 不存在时「不抛之外什么都没做」即不开页面不写意图、空白 command 视同没给、选择器取消时不写意图不开页面）。\n- **读数**：`vitest run` 12 文件 87 例全绿；`npm run verify` 六段全过（命令归属 声明面 1 / 运行时 0 零偏离；声明自洽含 floatingPanel 三向；纯逻辑单元 9 个全部有测试）；`npx tsc --noEmit` 零错误。无既有行为变化。"
+        },
         {
           "version": "1.0.20",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.20/settings.linkdesk-plugin",
