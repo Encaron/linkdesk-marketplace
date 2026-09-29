@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-29T05:11:13.707Z",
+  "updatedAt": "2026-09-29T05:25:53.840Z",
   "plugins": [
     {
       "id": "editor",
@@ -152,18 +152,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.31",
+      "version": "1.0.32",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.31/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.32/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.31/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.31/lang-defaults.linkdesk-plugin",
-      "size": 31074,
-      "publishedAt": "2026-09-29T05:10:45.810Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.32/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.32/lang-defaults.linkdesk-plugin",
+      "size": 31209,
+      "publishedAt": "2026-09-29T05:25:08.199Z",
       "versions": [
+        {
+          "version": "1.0.32",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.32/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-29T05:25:08.199Z",
+          "changelog": "- **新增英文词条 1 条**（AI 友好化 M2 生长格 `AI#53`）：命令面板新命令标题「设置分屏比例」（Set Split Sizes）——分屏比例**精确设**（把某条分支设成 [70,30]，与只能整树回均分的「重置分屏比例」互补）。消费方 = 壳 `src/core/commands/shell/tabCommands.ts`。zh 回退 key 本身即中文原文。"
+        },
         {
           "version": "1.0.31",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.31/lang-defaults.linkdesk-plugin",
