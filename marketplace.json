@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-28T17:18:28.538Z",
+  "updatedAt": "2026-09-29T05:11:13.707Z",
   "plugins": [
     {
       "id": "editor",
@@ -152,18 +152,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.30",
+      "version": "1.0.31",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.30/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.31/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.30/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.30/lang-defaults.linkdesk-plugin",
-      "size": 30858,
-      "publishedAt": "2026-09-28T14:38:04.098Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.31/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.31/lang-defaults.linkdesk-plugin",
+      "size": 31074,
+      "publishedAt": "2026-09-29T05:10:45.810Z",
       "versions": [
+        {
+          "version": "1.0.31",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.31/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-29T05:10:45.810Z",
+          "changelog": "- **新增英文词条 4 条**（AI 友好化 M2 `AI#62` 读数命令族）：命令面板新命令的标题——读取配置项 / 列出全部配置项 / 读取布局 / 列出容器与视图（Read Configuration Setting · List All Configuration Settings · Read Layout · List Containers and Views）。消费方 = 壳 `src/core/commands/shell/readCommands.ts`（「写侧有、读侧无」的补齐：配置读 / 布局尺寸读 / 容器与视图清单读）。zh 回退 key 本身即中文原文。"
+        },
         {
           "version": "1.0.30",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.30/lang-defaults.linkdesk-plugin",
