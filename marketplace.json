@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-29T09:33:26.523Z",
+  "updatedAt": "2026-09-29T11:26:58.275Z",
   "plugins": [
     {
       "id": "editor",
@@ -152,18 +152,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.34",
+      "version": "1.0.35",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.34/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.35/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.34/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.34/lang-defaults.linkdesk-plugin",
-      "size": 31925,
-      "publishedAt": "2026-09-29T09:33:03.936Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.35/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.35/lang-defaults.linkdesk-plugin",
+      "size": 32161,
+      "publishedAt": "2026-09-29T11:26:41.474Z",
       "versions": [
+        {
+          "version": "1.0.35",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.35/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-29T11:26:41.474Z",
+          "changelog": "- **新增英文词条 1 条**（AI 友好化 M2 生长格 `AI#70` 配置覆盖清单）：命令面板新命令标题「列出被改过的配置项」（List Overridden Configuration Settings）——`AI#66` 的「写入配置项」与 `AI#68` 的「清除配置项覆盖」都住在**一个键**上，要问「到底哪些键被改过、值各是什么」以前只能逐键 `getConfiguration`（实测 102 个已声明键 ⇒ 102 次调用）；这条只列**有覆盖**的键与值，空表即「谁都没改过」。消费方 = 壳 `src/core/commands/shell/readCommands.ts`。zh 回退 key 本身即中文原文。"
+        },
         {
           "version": "1.0.34",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.34/lang-defaults.linkdesk-plugin",
