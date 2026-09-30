@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-30T01:26:32.869Z",
+  "updatedAt": "2026-09-30T02:45:30.559Z",
   "plugins": [
     {
       "id": "editor",
@@ -164,18 +164,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.35",
+      "version": "1.0.36",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.35/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.36/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.35/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.35/lang-defaults.linkdesk-plugin",
-      "size": 32161,
-      "publishedAt": "2026-09-29T11:26:41.474Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.36/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.36/lang-defaults.linkdesk-plugin",
+      "size": 33494,
+      "publishedAt": "2026-09-30T02:45:06.301Z",
       "versions": [
+        {
+          "version": "1.0.36",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.36/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T02:45:06.301Z",
+          "changelog": "- **补译设置插件的「自己的声明项」5 条**（用户实机立案：设置插件自己的翻译没做全——英文界面下左栏那组「设置插件 / 打开方式」仍是中文）：`软件设置——主题、语言、插件管理`（Software settings — theme, language, and plugin management）· `修改快捷键…`（Change Keybinding…）· `设置插件`（Settings —— `contributes.configuration.title`，就是设置页左栏那个分组名）· `打开方式`（Opening mode —— `settings.openForm` 的 `group` 二级标题）· 以及 `settings.openForm` 那条键说明。消费方 = 壳设置页三处渲染点（`loadSettingsData` 的 `t(contrib.title)` / `GroupedKeys` 的 `t(bucket.group)` / `SettingRow` 的 `t(prop.description)`，全在 `settings` 插件侧且早已走 t()）＋ 命令面板与插件详情的 `t(name)` / `t(description)`。\n- **为什么补在这本字典里**：设置插件**自己仓里一个 i18n 键都没有**——它的文案一律「`plugin.json` 保留中文原文、渲染时才 `t()`」（E5#109 方案 B），英文则全部住 lang-defaults。声明项此前没有对应译名，英文界面下就回落成中文键原文（`parseMissingKeyHandler` 返回 key）——本版按同一条契约把 5 条补进同一本字典，本插件 `settings` 侧**零代码改动**。\n- ⛔ **两条命令说明不在本次范围**：`settings.editKeybinding` 的 `description` 与 `params[].description` —— 按 2026-09-28 裁决（M1 `AI#8`，见壳仓 CLAUDE.md 硬约束 2 与 `scripts/audit-i18n.mjs` §0 属性名级排除），命令元数据的说明是**声明数据、不是 UI 文字**（消费方 = 契约 → AI，今天零渲染消费方）。**撤销条件同款**：命令说明一旦进 UI，那条排除扫本批补译同笔撤销。\n- ⚠️ **一处仍会显中文（不属于本字典）**：插件市场**列表行**的简介（`marketplace` 插件的 `ExtensionItem.tsx` / `DisabledListView.tsx` 直接渲染 `m.description`，**没走 `t()`**）——那边补的是一行 `t()`，不是词典条目；插件**详情页**已是 `t(description)`，本版补译在详情页即时生效。"
+        },
         {
           "version": "1.0.35",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.35/lang-defaults.linkdesk-plugin",
