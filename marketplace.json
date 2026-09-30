@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-30T20:57:44.380Z",
+  "updatedAt": "2026-09-30T21:45:45.438Z",
   "plugins": [
     {
       "id": "editor",
@@ -176,18 +176,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.40",
+      "version": "1.0.41",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.40/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.41/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.40/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.40/lang-defaults.linkdesk-plugin",
-      "size": 34715,
-      "publishedAt": "2026-09-30T12:50:29.694Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.41/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.41/lang-defaults.linkdesk-plugin",
+      "size": 28952,
+      "publishedAt": "2026-09-30T21:44:53.268Z",
       "versions": [
+        {
+          "version": "1.0.41",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.41/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T21:44:53.268Z",
+          "changelog": "- **跟上壳侧一条新文案 ＋ 一条改键**（E6#165 去双语化续篇）：壳侧 `app.iconTheme` 下拉打通显示面后，设置页多出两条文案——`内置图标集`（内置那档的显示名，codicon 保底）与说明行 `图标主题——文件图标集（内置图标集 = codicon 保底）`；本包补英文译名 **Built-in Icon Set** / **Icon Theme — file icon set (built-in icon set = codicon fallback)**。\n- **清两条僵尸键**：`图标主题——文件图标集（default = 内置 codicon 保底）`（壳侧说明行本轮改写，旧键无人引用）＋ `粉彩图标集 Pastel Icons`（`theme-iconset-pastel` 1.0.6 起该显示名的译名住它自己仓的字典，双语字面量作废——字典里留着它就是给一条不存在的 key 备译文）。\n- 零行为变化：其余 653 条目一字未动。"
+        },
         {
           "version": "1.0.40",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.40/lang-defaults.linkdesk-plugin",
@@ -215,116 +221,97 @@
         {
           "version": "1.0.36",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.36/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-30T02:45:06.301Z",
-          "changelog": "- **补译设置插件的「自己的声明项」5 条**（用户实机立案：设置插件自己的翻译没做全——英文界面下左栏那组「设置插件 / 打开方式」仍是中文）：`软件设置——主题、语言、插件管理`（Software settings — theme, language, and plugin management）· `修改快捷键…`（Change Keybinding…）· `设置插件`（Settings —— `contributes.configuration.title`，就是设置页左栏那个分组名）· `打开方式`（Opening mode —— `settings.openForm` 的 `group` 二级标题）· 以及 `settings.openForm` 那条键说明。消费方 = 壳设置页三处渲染点（`loadSettingsData` 的 `t(contrib.title)` / `GroupedKeys` 的 `t(bucket.group)` / `SettingRow` 的 `t(prop.description)`，全在 `settings` 插件侧且早已走 t()）＋ 命令面板与插件详情的 `t(name)` / `t(description)`。\n- **为什么补在这本字典里**：设置插件**自己仓里一个 i18n 键都没有**——它的文案一律「`plugin.json` 保留中文原文、渲染时才 `t()`」（E5#109 方案 B），英文则全部住 lang-defaults。声明项此前没有对应译名，英文界面下就回落成中文键原文（`parseMissingKeyHandler` 返回 key）——本版按同一条契约把 5 条补进同一本字典，本插件 `settings` 侧**零代码改动**。\n- ⛔ **两条命令说明不在本次范围**：`settings.editKeybinding` 的 `description` 与 `params[].description` —— 按 2026-09-28 裁决（M1 `AI#8`，见壳仓 CLAUDE.md 硬约束 2 与 `scripts/audit-i18n.mjs` §0 属性名级排除），命令元数据的说明是**声明数据、不是 UI 文字**（消费方 = 契约 → AI，今天零渲染消费方）。**撤销条件同款**：命令说明一旦进 UI，那条排除扫本批补译同笔撤销。\n- ⚠️ **一处仍会显中文（不属于本字典）**：插件市场**列表行**的简介（`marketplace` 插件的 `ExtensionItem.tsx` / `DisabledListView.tsx` 直接渲染 `m.description`，**没走 `t()`**）——那边补的是一行 `t()`，不是词典条目；插件**详情页**已是 `t(description)`，本版补译在详情页即时生效。"
+          "publishedAt": "2026-09-30T02:45:06.301Z"
         },
         {
           "version": "1.0.35",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.35/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-29T11:26:41.474Z",
-          "changelog": "- **新增英文词条 1 条**（AI 友好化 M2 生长格 `AI#70` 配置覆盖清单）：命令面板新命令标题「列出被改过的配置项」（List Overridden Configuration Settings）——`AI#66` 的「写入配置项」与 `AI#68` 的「清除配置项覆盖」都住在**一个键**上，要问「到底哪些键被改过、值各是什么」以前只能逐键 `getConfiguration`（实测 102 个已声明键 ⇒ 102 次调用）；这条只列**有覆盖**的键与值，空表即「谁都没改过」。消费方 = 壳 `src/core/commands/shell/readCommands.ts`。zh 回退 key 本身即中文原文。"
+          "publishedAt": "2026-09-29T11:26:41.474Z"
         },
         {
           "version": "1.0.34",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.34/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-29T09:33:03.936Z",
-          "changelog": "- **新增英文词条 3 条**（AI 友好化 M2 生长格 `AI#68` 清配置覆盖）：命令面板新命令标题「清除配置项覆盖」（Clear Configuration Override）——与 `AI#66` 的「写入配置项」成对：那条写字，这条**删掉这条字**（回到无覆盖 ⇒ 落回默认值／主题）；另两条是该命令的两句用户可见说明：`null` 值的报错尾巴（「；想「删掉这条覆盖、回到默认」用 workbench.action.clearConfiguration」，把外部 AI 最容易试错的那条正门直接指出来）与 `resetsToDefault` 键的 `notice`（说清「删覆盖」与设置页那枚「重置为默认项」终点不同）。消费方 = 壳 `src/core/commands/shell/settingsCommands.ts`。zh 回退 key 本身即中文原文。"
+          "publishedAt": "2026-09-29T09:33:03.936Z"
         },
         {
           "version": "1.0.33",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.33/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-29T08:22:28.261Z",
-          "changelog": "- **新增英文词条 1 条**（AI 友好化 M2 生长格 `AI#66` 通用配置写）：命令面板新命令标题「写入配置项」（Write Configuration Setting）——与 `AI#62` 的读侧三条（读取配置项 / 列出全部配置项 / …）同一个族。消费方 = 壳 `src/core/commands/shell/settingsCommands.ts`（门③ 从此改得动设置：读得回来、也写得进去）。zh 回退 key 本身即中文原文。"
+          "publishedAt": "2026-09-29T08:22:28.261Z"
         },
         {
           "version": "1.0.32",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.32/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-29T05:25:08.199Z",
-          "changelog": "- **新增英文词条 1 条**（AI 友好化 M2 生长格 `AI#53`）：命令面板新命令标题「设置分屏比例」（Set Split Sizes）——分屏比例**精确设**（把某条分支设成 [70,30]，与只能整树回均分的「重置分屏比例」互补）。消费方 = 壳 `src/core/commands/shell/tabCommands.ts`。zh 回退 key 本身即中文原文。"
+          "publishedAt": "2026-09-29T05:25:08.199Z"
         },
         {
           "version": "1.0.31",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.31/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-29T05:10:45.810Z",
-          "changelog": "- **新增英文词条 4 条**（AI 友好化 M2 `AI#62` 读数命令族）：命令面板新命令的标题——读取配置项 / 列出全部配置项 / 读取布局 / 列出容器与视图（Read Configuration Setting · List All Configuration Settings · Read Layout · List Containers and Views）。消费方 = 壳 `src/core/commands/shell/readCommands.ts`（「写侧有、读侧无」的补齐：配置读 / 布局尺寸读 / 容器与视图清单读）。zh 回退 key 本身即中文原文。"
+          "publishedAt": "2026-09-29T05:10:45.810Z"
         },
         {
           "version": "1.0.30",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.30/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-28T14:38:04.098Z",
-          "changelog": "- **新增英文词条 8 条**（AI 友好化 M2 操作面）：命令面板新命令的标题——设置侧栏宽度 / 重置侧栏宽度 / 设置面板尺寸 / 重置面板尺寸 / 设置悬浮面板位置与大小 / 重置悬浮面板位置与大小 / 读取悬浮面板位置与大小 / 重置分屏比例（Set/Reset Sidebar Width · Set/Reset Panel Size · Set/Reset/Read Floating Panel Position and Size · Reset Split Sizes）。消费方 = 壳 `src/core/commands/shell/panelCommands.ts` 与 `tabCommands.ts`（「拖一下」的非鼠标路径）。zh 回退 key 本身即中文原文。"
+          "publishedAt": "2026-09-28T14:38:04.098Z"
         },
         {
           "version": "1.0.29",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.29/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-28T11:21:51.935Z",
-          "changelog": "- **AI 接入分区词条 70 条**（M4 `AI#38` 设置页壳宣言）：分区标题/副标题、四个分节名与说明、18 键描述、12 条命令标题与状态话术（运行中/已关闭/已就绪…）的中英对照——消费方 = 壳 `src/App/config/aiBridge.ts` ＋ `aiBridgeCommands.ts`（语言切换重跑注册取对应语言）。\n- **无键值新增面**：全部是既有 `ai.*`/`aiBridge.*` 面的译名，schema/命令面零变化。"
+          "publishedAt": "2026-09-28T11:21:51.935Z"
         },
         {
           "version": "1.0.27",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.27/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-27T06:28:26.433Z",
-          "changelog": "- **新增英文词条 1 条**（04「悬停提示系统」件 1）：设置页「界面」组新增提示条总开关，其说明文案「悬停提示——鼠标停在图标/按钮上时显示名称与快捷键」（Hover hints — show the name and shortcut when the pointer rests on an icon or button）。zh 回退 key 本身即中文原文。"
+          "publishedAt": "2026-09-27T06:28:26.433Z"
         },
         {
           "version": "1.0.26",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.26/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-26T19:27:06.742Z",
-          "changelog": "- **新增英文词条 1 条**（04「面板右键隐藏项」）：面板标签栏右键菜单新增「隐藏」（Hide Panel）——不用绕顶栏即可收起面板。zh 回退 key 本身即中文原文。"
+          "publishedAt": "2026-09-26T19:27:06.742Z"
         },
         {
           "version": "1.0.25",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.25/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-26T17:43:38.408Z",
-          "changelog": "- **改写英文词条 2 条**（04「更新检查遇匿名限流」）：限流文案不再说「无需处理」——「更新服务暂时限流——稍后会自动重试」（删「无需处理」）与「更新源额度已用尽——将于 {{time}} 自动恢复，届时会自动重试」（新增，恢复时刻走 `{{time}}` 词条参数）。zh 回退 key 本身即中文原文，无需词条。"
+          "publishedAt": "2026-09-26T17:43:38.408Z"
         },
         {
           "version": "1.0.24",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.24/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-26T15:38:54.682Z",
-          "changelog": "- **新增英文词条 4 条**（04「工作区导入导出-布局恢复断线」）：导入工作区的反馈 toast——工作区已导入——布局与设置已恢复 / 导入失败：不是有效的工作区文件 / 导入失败：不支持的工作区文件版本 / 导入失败：文件里没有可恢复的内容。zh 回退 key 本身即中文原文。"
+          "publishedAt": "2026-09-26T15:38:54.682Z"
         },
         {
           "version": "1.0.23",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.23/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-26T15:11:31.969Z",
-          "changelog": "- **新增英文词条 10 条**（04「关于 LinkDesk 标签页重设计」）：关于页四区改版——本版本 / 运行环境 / 作者 / 姓名 / 邮箱 / 通道 / 预览版 / 一个容器，装下你所有的工作方式 / MIT 全文 / 在 GitHub 查看源码。zh 回退 key 本身即中文原文，无需词条；作者姓名与邮箱是值、不翻译。"
+          "publishedAt": "2026-09-26T15:11:31.969Z"
         },
         {
           "version": "1.0.22",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.22/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-26T13:54:56.384Z",
-          "changelog": "- **新增英文词条 6 条**（04「发行说明刷新按钮」）：发行说明标签页新增「刷新」按钮——刷新 / 刷新中… / 忽略缓存，重新获取版本列表 / 已是最新 / 已发现新版本 {{version}}——在左侧选择查看 / 刷新失败 · 正在显示本地缓存。zh 回退 key 本身即中文原文，无需词条。"
+          "publishedAt": "2026-09-26T13:54:56.384Z"
         },
         {
           "version": "1.0.21",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.21/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-26T12:57:22.803Z",
-          "changelog": "- **新增英文词条「系统集成」**：壳设置页「通用」组新二级节「系统集成」（OS 集成三开关：文件右键菜单 / 文件夹右键菜单 / 文件类型关联）的英文译文。zh 回退 key 本身即中文原文，无需词条。配套壳侧「设置页通用归类」（docs/04-软件更新，2026-09-26 拍板）——「更新」两键并入「通用」组；原「检查更新」「发行说明」两条节标题词条退役不再被引用（保留不删）。"
+          "publishedAt": "2026-09-26T12:57:22.803Z"
         },
         {
           "version": "1.0.20",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.20/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-19T13:45:48.731Z",
-          "changelog": "- **重打可复现**：@linkdesk/plugin-sdk 0.1.42 起 zip 目录条目时间戳钉死，同一份源码重打逐字节一致。插件内容零变化（仅 plugin.json 版本号随包更新）。"
+          "publishedAt": "2026-09-19T13:45:48.731Z"
         },
         {
           "version": "1.0.19",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.19/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-19T12:45:25.695Z",
-          "changelog": "- **重打可复现**：@linkdesk/plugin-sdk 0.1.42 起 zip 目录条目时间戳钉死，同一份源码重打逐字节一致。插件内容零变化（仅 plugin.json 版本号随包更新）。"
+          "publishedAt": "2026-09-19T12:45:25.695Z"
         },
         {
           "version": "1.0.18",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.18/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-14T18:09:21.544Z",
-          "changelog": "- **分发件补上 MIT LICENSE**：`LICENSE` 早就在本仓里（E6#108g 那批加的），但**已发布的那版产物比它早** ⇒ 用户手上那份 zip 里一直没有版权声明。MIT 要求「副本里带声明」，而 zip 才是用户真正拿到的那份\n- **不再夹带仓库面文件**：`@linkdesk/plugin-sdk` 升到 0.1.19（^0.1.14 → ^0.1.19）——旧 SDK 的打包通道会把 `marketplace.json` / `scripts/ci-verify.mjs` / `AGENTS.md` 这类**仓库面文件**一起装进 zip（那是给仓库看的，不是给用户看的），0.1.19 的排除表已覆盖\n- 无功能变化——本版只为让「用户拿到的产物」与仓库对齐"
+          "publishedAt": "2026-09-14T18:09:21.544Z"
         },
         {
           "version": "1.0.17",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.17/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-14T02:36:05.197Z",
-          "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
+          "publishedAt": "2026-09-14T02:36:05.197Z"
         }
       ],
       "repository": "https://github.com/Encaron/linkdesk-plugin-lang-defaults"
@@ -959,18 +946,24 @@
     {
       "id": "theme-iconset-pastel",
       "name": "粉彩图标集",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "description": "精简彩色图标集——Material Icon Theme 常用精选（MIT，139 条映射 + 5 默认图标，含文件夹/新建文件/根文件夹彩色图标），图像资产形态应用（E5.8#133 图标主题闭环实例）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.5/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.6/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.5/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.5/theme-iconset-pastel.linkdesk-plugin",
-      "size": 55014,
-      "publishedAt": "2026-09-30T03:48:42.530Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.0.6/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.6/theme-iconset-pastel.linkdesk-plugin",
+      "size": 55233,
+      "publishedAt": "2026-09-30T21:44:12.427Z",
       "versions": [
+        {
+          "version": "1.0.6",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.6/theme-iconset-pastel.linkdesk-plugin",
+          "publishedAt": "2026-09-30T21:44:12.427Z",
+          "changelog": "- **图标主题显示名去双语化**：`contributes.iconThemes[].label` 由双语字面量「粉彩图标集 Pastel Icons」改为**纯中文**「粉彩图标集」——按「谁声明谁译文」正典，字面量只写源语言，英文译名住**本仓字典** `i18n/en.json`（该键原值 `Pastel Icon Set`，**键与值一字未改**）。\n- **触发**：壳侧 `app.iconTheme` 下拉打通显示面（从「只列原始 id」改为「id ＋ 显示名」，`label` 经 `enumDescriptions` 进设置页、由设置页 `t()` 解析）——`label` 从「零消费方」变成用户看得见的一行，双语字面量到此才会真的露到界面上。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` ^0.1.61 → **^0.1.66**——`contributes.iconThemes[].label` 从**豁免**改为**可渲染串**（显示面打通 ⇒ 同笔纳入），漏译由 `npm run verify` 第 ⑧ 段判红；本仓该条已住字典。\n- 零行为变化：图标数据 / 图标 id / 其余文案一字未动。"
+        },
         {
           "version": "1.0.5",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.5/theme-iconset-pastel.linkdesk-plugin",
@@ -998,8 +991,7 @@
         {
           "version": "1.0.1",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.1/theme-iconset-pastel.linkdesk-plugin",
-          "publishedAt": "2026-09-14T02:36:56.611Z",
-          "changelog": "- 源码迁入独立仓（E6#99，L7 第 7.2 轮）——从壳仓 `Encaron/linkdesk` 抽出本插件子树，历史全保（hash 变）\n- 随包 `plugin.json` 显式声明 `pluginId`（E6#98g）：插件身份不再靠目录名兜底，独立仓构建出的包名与身份稳定\n- `$schema` 改指本仓 `node_modules/@linkdesk/plugin-sdk`（脱离壳仓后原相对路径指到仓外，编辑器补全/校验会失效）"
+          "publishedAt": "2026-09-14T02:36:56.611Z"
         }
       ],
       "repository": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel"
