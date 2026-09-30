@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-30T11:43:58.226Z",
+  "updatedAt": "2026-09-30T12:22:49.977Z",
   "plugins": [
     {
       "id": "editor",
@@ -176,18 +176,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.38/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.39/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.38/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.38/lang-defaults.linkdesk-plugin",
-      "size": 34417,
-      "publishedAt": "2026-09-30T11:40:31.867Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.39/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.39/lang-defaults.linkdesk-plugin",
+      "size": 34563,
+      "publishedAt": "2026-09-30T12:22:23.324Z",
       "versions": [
+        {
+          "version": "1.0.39",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.39/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T12:22:23.324Z",
+          "changelog": "- **口径订正**（同日用户拍板）：壳侧**不做来源行**了 —— 3 条上一版刚加的词条**撤回**\n  （「内置深色」/「壳自带」/「来自 {{name}}」）。区分两张卡改为**靠名字本身**：壳那张叫「内置」、\n  官方主题插件的配方叫「官方主题」。\n- **新增 2 条**：壳兜底配方里两个配色的名字「深色」/「浅色」。「内置」与「内置浅色」两条本就在册，不动。"
+        },
         {
           "version": "1.0.38",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.38/lang-defaults.linkdesk-plugin",
@@ -857,18 +863,24 @@
     {
       "id": "theme-defaults",
       "name": "官方主题",
-      "version": "1.0.9",
-      "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的「内置深色／内置浅色」兜底配方",
+      "version": "1.0.10",
+      "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的「内置／内置浅色」兜底配方",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.9/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.10/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.9/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.9/theme-defaults.linkdesk-plugin",
-      "size": 8167,
-      "publishedAt": "2026-09-30T11:42:38.535Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.10/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.10/theme-defaults.linkdesk-plugin",
+      "size": 8343,
+      "publishedAt": "2026-09-30T12:22:35.055Z",
       "versions": [
+        {
+          "version": "1.0.10",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.10/theme-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T12:22:35.055Z",
+          "changelog": "- **配方名再订正**（同日用户拍板口径）：「官方默认 Official Default」→ **「官方主题 Official Themes」**——\n  与插件本体同名，一眼看出这是官方那只（壳那张兜底卡同日改叫「内置」，两张卡从名字上就分得开）。\n- **说明/README 跟到新称呼**：兜底配方由「内置深色／内置浅色」改述为「**内置／内置浅色**」。\n- 🔴 **id 依旧一字未动**（配方 `light`、配色 `light` / `theme-defaults.dark`）⇒ 用户设置零迁移。"
+        },
         {
           "version": "1.0.9",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.9/theme-defaults.linkdesk-plugin",
