@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-30T12:50:58.396Z",
+  "updatedAt": "2026-09-30T20:57:44.380Z",
   "plugins": [
     {
       "id": "editor",
@@ -827,18 +827,24 @@
     {
       "id": "theme-aurora-glass",
       "name": "极光玻璃",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.8/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.9/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.8/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.8/theme-aurora-glass.linkdesk-plugin",
-      "size": 12126,
-      "publishedAt": "2026-09-30T03:48:18.655Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.9/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.9/theme-aurora-glass.linkdesk-plugin",
+      "size": 12509,
+      "publishedAt": "2026-09-30T20:47:15.430Z",
       "versions": [
+        {
+          "version": "1.0.9",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.9/theme-aurora-glass.linkdesk-plugin",
+          "publishedAt": "2026-09-30T20:47:15.430Z",
+          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配方名与配色名 2 条现在都是纯中文（配色名「极光紫」本来就纯中文，此前它没有英文译名，本轮随判据扩域一起补进本仓字典）。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+        },
         {
           "version": "1.0.8",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.8/theme-aurora-glass.linkdesk-plugin",
@@ -875,18 +881,24 @@
     {
       "id": "theme-defaults",
       "name": "官方主题",
-      "version": "1.0.10",
+      "version": "1.0.11",
       "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的「内置／内置浅色」兜底配方",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.10/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.11/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.10/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.10/theme-defaults.linkdesk-plugin",
-      "size": 8343,
-      "publishedAt": "2026-09-30T12:22:35.055Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.11/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.11/theme-defaults.linkdesk-plugin",
+      "size": 8717,
+      "publishedAt": "2026-09-30T20:47:39.832Z",
       "versions": [
+        {
+          "version": "1.0.11",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.11/theme-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T20:47:39.832Z",
+          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 两只出厂配方的配色名（浅色/深色）与主题名一样纯中文化；译名「Light」/「Dark」与壳内置兜底、语言包里的同名词条取值一致（同键同值 ⇒ 运行时零变化）。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+        },
         {
           "version": "1.0.10",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.10/theme-defaults.linkdesk-plugin",
@@ -995,18 +1007,24 @@
     {
       "id": "theme-mint-soda",
       "name": "薄荷苏打",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "清凉薄荷色系主题合集——薄荷冰露/海盐薄荷/青柠薄荷/薄荷苏打，Claymorphism 软萌风，全系亮色",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.6/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.7/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.6/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.6/theme-mint-soda.linkdesk-plugin",
-      "size": 6614,
-      "publishedAt": "2026-09-30T03:48:54.680Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.7/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.7/theme-mint-soda.linkdesk-plugin",
+      "size": 6997,
+      "publishedAt": "2026-09-30T20:46:41.841Z",
       "versions": [
+        {
+          "version": "1.0.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.7/theme-mint-soda.linkdesk-plugin",
+          "publishedAt": "2026-09-30T20:46:41.841Z",
+          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 四个配色名全部纯中文化；英文译名沿用本仓详情说明里既有的那套（Mint Frost / Sea-Salt Mint / Lime Mint / Mint Soda），口径与旧双语字面量一致。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+        },
         {
           "version": "1.0.6",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.6/theme-mint-soda.linkdesk-plugin",
@@ -1037,18 +1055,24 @@
     {
       "id": "theme-panorama",
       "name": "整窗主视觉",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.6/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.7/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.6/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.6/theme-panorama.linkdesk-plugin",
-      "size": 1542515,
-      "publishedAt": "2026-09-30T03:49:07.101Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.7/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.7/theme-panorama.linkdesk-plugin",
+      "size": 1542867,
+      "publishedAt": "2026-09-30T20:54:34.743Z",
       "versions": [
+        {
+          "version": "1.0.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.7/theme-panorama.linkdesk-plugin",
+          "publishedAt": "2026-09-30T20:54:34.743Z",
+          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配色名「月夜主视觉」此前纯中文、无英文译名，本轮随判据扩域补进本仓字典。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+        },
         {
           "version": "1.0.6",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.6/theme-panorama.linkdesk-plugin",
@@ -1085,18 +1109,24 @@
     {
       "id": "theme-pill",
       "name": "全胶囊",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "极限壳主题——radius 域：圆角八档全拉到 999px 全胶囊 + 悬浮形态（留缝/圆角/投影/发丝光边）+ 泡泡糖配色（#50.27 效果验收端到端裁决，gallery ① 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.6/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.7/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.6/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.6/theme-pill.linkdesk-plugin",
-      "size": 7126,
-      "publishedAt": "2026-09-30T03:49:19.271Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.7/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.7/theme-pill.linkdesk-plugin",
+      "size": 7468,
+      "publishedAt": "2026-09-30T20:48:23.751Z",
       "versions": [
+        {
+          "version": "1.0.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.7/theme-pill.linkdesk-plugin",
+          "publishedAt": "2026-09-30T20:48:23.751Z",
+          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配色名「泡泡糖」此前纯中文、无英文译名，本轮随判据扩域补进本仓字典。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+        },
         {
           "version": "1.0.6",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.6/theme-pill.linkdesk-plugin",
@@ -1133,18 +1163,24 @@
     {
       "id": "theme-songti",
       "name": "宋体印刷体",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "极限壳主题——font 域·字族轴：全 UI 宋体 SimSun + 纸白墨黑文档感（#50.27 效果验收端到端裁决，gallery ⑩ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.6/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.7/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.6/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.6/theme-songti.linkdesk-plugin",
-      "size": 7124,
-      "publishedAt": "2026-09-30T03:49:30.424Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.7/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.7/theme-songti.linkdesk-plugin",
+      "size": 7471,
+      "publishedAt": "2026-09-30T20:49:49.141Z",
       "versions": [
+        {
+          "version": "1.0.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.7/theme-songti.linkdesk-plugin",
+          "publishedAt": "2026-09-30T20:49:49.141Z",
+          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配色名「纸白墨黑」此前纯中文、无英文译名，本轮随判据扩域补进本仓字典。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+        },
         {
           "version": "1.0.6",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.6/theme-songti.linkdesk-plugin",
@@ -1181,18 +1217,24 @@
     {
       "id": "theme-terminal",
       "name": "终端机",
-      "version": "1.0.7",
+      "version": "1.0.8",
       "description": "极限壳主题——font 域·字族轴：ui/mono 双键全指 Cascadia Mono 等宽族 + 绿字黑底终端配色（#50.27 效果验收端到端裁决，gallery ⑨ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.7/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.8/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.7/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.7/theme-terminal.linkdesk-plugin",
-      "size": 9681,
-      "publishedAt": "2026-09-30T03:49:42.176Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.8/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.8/theme-terminal.linkdesk-plugin",
+      "size": 10041,
+      "publishedAt": "2026-09-30T20:50:24.249Z",
       "versions": [
+        {
+          "version": "1.0.8",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.8/theme-terminal.linkdesk-plugin",
+          "publishedAt": "2026-09-30T20:50:24.249Z",
+          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配色名「磷光绿」此前纯中文、无英文译名，本轮随判据扩域补进本仓字典。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+        },
         {
           "version": "1.0.7",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.7/theme-terminal.linkdesk-plugin",
@@ -1223,18 +1265,24 @@
     {
       "id": "theme-twilight-forest",
       "name": "暮色森林",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "暗色主题合集——青澜/暮紫/翠微，森林色系",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.6/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.7/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.6/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.6/theme-twilight-forest.linkdesk-plugin",
-      "size": 7281,
-      "publishedAt": "2026-09-30T03:49:53.709Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.7/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.7/theme-twilight-forest.linkdesk-plugin",
+      "size": 7676,
+      "publishedAt": "2026-09-30T20:50:47.982Z",
       "versions": [
+        {
+          "version": "1.0.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.7/theme-twilight-forest.linkdesk-plugin",
+          "publishedAt": "2026-09-30T20:50:47.982Z",
+          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 主题名此前已是纯中文（无需改）；本轮四个配色名纯中文化，英文译名沿用旧双语字面量的后半段。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+        },
         {
           "version": "1.0.6",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.6/theme-twilight-forest.linkdesk-plugin",
