@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-09-30T22:03:29.891Z",
+  "updatedAt": "2026-10-01T14:01:39.913Z",
   "plugins": [
     {
       "id": "editor",
@@ -174,18 +174,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.41",
+      "version": "1.0.42",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.41/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.42/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.41/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.41/lang-defaults.linkdesk-plugin",
-      "size": 28952,
-      "publishedAt": "2026-09-30T21:44:53.268Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.42/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.42/lang-defaults.linkdesk-plugin",
+      "size": 28632,
+      "publishedAt": "2026-10-01T14:01:14.661Z",
       "versions": [
+        {
+          "version": "1.0.42",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.42/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-01T14:01:14.661Z",
+          "changelog": "- **补一条壳侧用到的词条**：壳新命令 `app.openWelcome`（欢迎页重设计 W4a）的显示名「欢迎页」——标题/帮助菜单/标签栏「+」菜单三处共用；本包补英文译名 **Welcome**。此前只有中文回退（等于英文界面下显示中文）。\n- 零行为变化：其余 655 条目一字未动。"
+        },
         {
           "version": "1.0.41",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.41/lang-defaults.linkdesk-plugin",
@@ -213,8 +219,7 @@
         {
           "version": "1.0.37",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.37/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:47:36.869Z",
-          "changelog": "- **自有翻译归位（E6#161「谁的仓谁译文」）**：本仓 2 条可渲染文案的英文译名住进**本仓字典** `en.json`（新增 2 条）——不再依赖 `lang-defaults` 代管：文案在本仓声明、译名却在别的仓的字典里，本仓加一条声明那只仓无从跟上（跨仓追不上）。译名取值：池里现成的照抄（同键同值 ⇒ 按 E6#161「同值覆盖不出声」规则运行时零变化），池里没有的 2 条新写。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` ^0.1.19 → **^0.1.61**——`npm run verify` 第 ⑧ 段「自有字典覆盖度」（manifest 渲染串缺口 🔴 / 源码 `t()` 缺口 ⚠️）由 `@linkdesk/plugin-sdk/own-dict-coverage` 判定（判据本体在 SDK，⛔ 不在本仓复制）。"
+          "publishedAt": "2026-09-30T03:47:36.869Z"
         },
         {
           "version": "1.0.36",
