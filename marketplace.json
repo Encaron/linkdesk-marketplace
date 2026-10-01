@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-01T14:01:39.913Z",
+  "updatedAt": "2026-10-01T15:05:33.146Z",
   "plugins": [
     {
       "id": "editor",
@@ -174,18 +174,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.42",
+      "version": "1.0.43",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.42/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.43/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.42/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.42/lang-defaults.linkdesk-plugin",
-      "size": 28632,
-      "publishedAt": "2026-10-01T14:01:14.661Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.43/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.43/lang-defaults.linkdesk-plugin",
+      "size": 28969,
+      "publishedAt": "2026-10-01T15:04:01.248Z",
       "versions": [
+        {
+          "version": "1.0.43",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.43/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-01T15:04:01.248Z",
+          "changelog": "- **补七条壳侧用到的词条**（欢迎页重设计 W3b/W4c）：最近区的失效反馈与手动移除——`最近文件夹` / `已删除` / `从最近移除 {{name}}` / `此文件夹已不存在，已从最近移除` / `此视图的插件已卸载，已从最近移除` / `最近列表不可用`；帮助区「使用文档」的指路句 `用户文档整理中——先看「帮助 → AI 操作手册」（随包发货、离线可读）`。本包补英文译名 **Recent Folders** / **Deleted** / **Remove {{name}} from recent** / **This folder no longer exists — removed from recent** / **This view's plugin has been uninstalled — removed from recent** / **Recent list unavailable** / **Docs are being organized — see \"Help → AI Manual\" for now (ships with the app, readable offline)**。\n- 零行为变化：其余 656 条目一字未动。"
+        },
         {
           "version": "1.0.42",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.42/lang-defaults.linkdesk-plugin",
@@ -213,8 +219,7 @@
         {
           "version": "1.0.38",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.38/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-30T11:40:31.867Z",
-          "changelog": "- **新增英文词条 4 条**（用户实机立案「app.theme 卡片 Dark/Light 指认不明」）：壳的内置兜底配方显示名\n  「内置深色」/「内置浅色」（原为颜色词 `Dark`/`Light`，与插件配方并列时被读成同一套的深浅搭子），\n  以及主题卡片新的**来源行**文案「壳自带」/「来自 {{name}}」。消费方 = 壳\n  `src/core/services/ui/ThemeEngine/source.ts`（宿主名字显示期 t()）、`ThemePicker` 卡片与\n  `theme.pick` 命令面。**弃用名 `Dark`/`Light` 不进本字典**：那是配方显示名的历史值，不再由壳产出。"
+          "publishedAt": "2026-09-30T11:40:31.867Z"
         },
         {
           "version": "1.0.37",
