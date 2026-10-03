@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-03T18:29:41.288Z",
+  "updatedAt": "2026-10-03T19:17:54.656Z",
   "plugins": [
     {
       "id": "editor",
@@ -186,18 +186,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.48",
+      "version": "1.0.49",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.48/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.49/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.48/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.48/lang-defaults.linkdesk-plugin",
-      "size": 29887,
-      "publishedAt": "2026-10-03T18:22:10.126Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.49/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.49/lang-defaults.linkdesk-plugin",
+      "size": 30150,
+      "publishedAt": "2026-10-03T19:16:28.590Z",
       "versions": [
+        {
+          "version": "1.0.49",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.49/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T19:16:28.590Z",
+          "changelog": "- **补四条壳侧用到的词条**（设置行-控制只读同行：伴生只读补「待重启」态）。病根：伴生只读在「监听活着」时**无条件报地址**，于是关掉 `ai.mcp.enabled` 之后右边仍写「运行中」——**它真的还在跑**（内核只在启动时读开关，监听要重启才松手），但那句「重启生效」藏在描述里 ⇒ 贴脸看像 bug。壳侧按「本行键 ＋ 兄弟键」拆三态，本包补两条**带占位符**的话术模板：`{{state}} · 重启软件后关闭`（本行开关已关、监听是启动时的残留）／`{{state}} · 与 {{peer}} 共用`（监听由另一条通道的开关撑着，**重启也不会停**——不这么说就成假承诺），另补两条通道名 `MCP 通道` / `CLI 通道` 供 `{{peer}}` 取用。本包补英文译名四条。\n- ⚠️ **纯追加、不删旧条**：壳侧这一版**尚未发版**（2026-10-03 收窄授权后只落仓攒批），已发布的旧壳仍按旧串取译名；删旧条会让旧壳用户看到中文原文。\n- 零行为变化：键数 676 → 680（纯追加四条），其余 676 条目一字未动。"
+        },
         {
           "version": "1.0.48",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.48/lang-defaults.linkdesk-plugin",
@@ -225,8 +231,7 @@
         {
           "version": "1.0.44",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.44/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-03T13:47:35.451Z",
-          "changelog": "- **补五条壳侧用到的词条**（设置页-打开缓存目录：通用组「存储」分节两行）：组名 `存储`；按钮行 `打开缓存目录` 与只读行的标题 `缓存目录`；只读行描述 `缓存目录——缓存文件实际存放的位置（只读，软件内不可改）`；动作失败提示 `打开缓存目录失败`。本包补英文译名 **Storage** / **Open Cache Folder** / **Cache Folder** / **Cache folder — where cache files actually live (read-only; cannot be changed in the app)** / **Failed to open the cache folder**。\n- 零行为变化：其余 663 条目一字未动。"
+          "publishedAt": "2026-10-03T13:47:35.451Z"
         },
         {
           "version": "1.0.43",
