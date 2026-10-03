@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-03T16:10:38.303Z",
+  "updatedAt": "2026-10-03T18:29:41.288Z",
   "plugins": [
     {
       "id": "editor",
@@ -186,18 +186,36 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.45",
+      "version": "1.0.48",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.45/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.48/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.45/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.45/lang-defaults.linkdesk-plugin",
-      "size": 29732,
-      "publishedAt": "2026-10-03T16:10:22.924Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.48/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.48/lang-defaults.linkdesk-plugin",
+      "size": 29887,
+      "publishedAt": "2026-10-03T18:22:10.126Z",
       "versions": [
+        {
+          "version": "1.0.48",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.48/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T18:22:10.126Z",
+          "changelog": "- **补五条壳侧用到的词条**（设置行-控制只读同行 2.5：AI 接入分区四组「开关 ＋ 状态行」并成一行，`statusCommand` 从「只配只读行」升为可与任意主控件共存的**伴生声明**）：四条开关描述改写为**双语义**（说明右侧灰字是实时读数）＋「通道」组说明改指伴生读数。本包补英文译名五条。\n- ⚠️ **纯追加、不删旧条**（与 v1.0.45 不同）：被替换的四条旧描述、以及四个退役状态键（`ai.mcp.status` 等）的描述译名**一律原样保留**——壳侧这一版**尚未发版**（2026-10-03 收窄授权后只落仓攒批），已发布的旧壳仍按旧串取译名；删掉会让旧壳用户看到中文原文。\n- 零行为变化：键数 671 → 676（纯追加五条），其余 671 条目一字未动。"
+        },
+        {
+          "version": "1.0.47",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.47/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T18:03:57.288Z",
+          "changelog": "- **补一条壳侧用到的词条**（数字步进件-主题适配：`NumberInput` 的输入框补可访问名称，[02 E9]）：`数值`。本包补英文译名 **Value**。\n- 零行为变化：键数 670 → 671（纯追加一条），其余 670 条目一字未动。"
+        },
+        {
+          "version": "1.0.46",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.46/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T17:10:12.808Z",
+          "changelog": "- **补两条壳侧用到的词条**（设置控件-词表正典与共享化 4.3：换套逃生舱命令 `core.resetSettingsToBuiltin`）：命令标题 `回退内置设置页`；槽空时的结论句 `没有任何插件声明 factoryRole:\"settings\"——没有可回退的内置设置页`。本包补英文译名 **Revert to Built-in Settings Page** / **No plugin declares factoryRole:\"settings\" — there is no built-in settings page to revert to**。\n- 零行为变化：键数 668 → 670（纯追加两条），其余 668 条目一字未动。"
+        },
         {
           "version": "1.0.45",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.45/lang-defaults.linkdesk-plugin",
@@ -213,20 +231,17 @@
         {
           "version": "1.0.43",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.43/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-01T15:04:01.248Z",
-          "changelog": "- **补七条壳侧用到的词条**（欢迎页重设计 W3b/W4c）：最近区的失效反馈与手动移除——`最近文件夹` / `已删除` / `从最近移除 {{name}}` / `此文件夹已不存在，已从最近移除` / `此视图的插件已卸载，已从最近移除` / `最近列表不可用`；帮助区「使用文档」的指路句 `用户文档整理中——先看「帮助 → AI 操作手册」（随包发货、离线可读）`。本包补英文译名 **Recent Folders** / **Deleted** / **Remove {{name}} from recent** / **This folder no longer exists — removed from recent** / **This view's plugin has been uninstalled — removed from recent** / **Recent list unavailable** / **Docs are being organized — see \"Help → AI Manual\" for now (ships with the app, readable offline)**。\n- 零行为变化：其余 656 条目一字未动。"
+          "publishedAt": "2026-10-01T15:04:01.248Z"
         },
         {
           "version": "1.0.42",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.42/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-01T14:01:14.661Z",
-          "changelog": "- **补一条壳侧用到的词条**：壳新命令 `app.openWelcome`（欢迎页重设计 W4a）的显示名「欢迎页」——标题/帮助菜单/标签栏「+」菜单三处共用；本包补英文译名 **Welcome**。此前只有中文回退（等于英文界面下显示中文）。\n- 零行为变化：其余 655 条目一字未动。"
+          "publishedAt": "2026-10-01T14:01:14.661Z"
         },
         {
           "version": "1.0.41",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.41/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-30T21:44:53.268Z",
-          "changelog": "- **跟上壳侧一条新文案 ＋ 一条改键**（E6#165 去双语化续篇）：壳侧 `app.iconTheme` 下拉打通显示面后，设置页多出两条文案——`内置图标集`（内置那档的显示名，codicon 保底）与说明行 `图标主题——文件图标集（内置图标集 = codicon 保底）`；本包补英文译名 **Built-in Icon Set** / **Icon Theme — file icon set (built-in icon set = codicon fallback)**。\n- **清两条僵尸键**：`图标主题——文件图标集（default = 内置 codicon 保底）`（壳侧说明行本轮改写，旧键无人引用）＋ `粉彩图标集 Pastel Icons`（`theme-iconset-pastel` 1.0.6 起该显示名的译名住它自己仓的字典，双语字面量作废——字典里留着它就是给一条不存在的 key 备译文）。\n- 零行为变化：其余 653 条目一字未动。"
+          "publishedAt": "2026-09-30T21:44:53.268Z"
         },
         {
           "version": "1.0.40",
@@ -699,25 +714,37 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.27",
+      "version": "1.0.29",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.27/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.29/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.27/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.29/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.32",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.27/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.27/settings.linkdesk-plugin",
-      "size": 28482,
-      "publishedAt": "2026-10-03T13:15:54Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.29/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.29/settings.linkdesk-plugin",
+      "size": 30121,
+      "publishedAt": "2026-10-03T18:26:05.290Z",
       "versions": [
+        {
+          "version": "1.0.29",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.29/settings.linkdesk-plugin",
+          "publishedAt": "2026-10-03T18:26:05.290Z",
+          "changelog": "- **设置行会摆「伴生件」了**（随「设置行-控制只读同行」）：同一个配置项上可同时声明**主控件**与它右侧的伴生按钮／伴生只读读数——例如「一个按钮 ＋ 右边同排显示路径」「一个开关 ＋ 右边同排显示实时状态」。此前「只读状态」与「动作按钮」只能各自独占一行（`renderHint` 单选互斥）；现在它们升为可与**任意**主控件共存的伴生声明，渲染顺序 `[主控件][伴生按钮][伴生只读]`，而 `renderHint:\"readonly\"/\"action\"` 退化为「主控件就是它」的简写。\n- **未声明伴生件的设置行，外观与行为一字不变**（绝大多数键两个字段都不声明 ⇒ 直接走改造前的渲染路径）。\n- **伴生只读不承载编辑**：读数仍取自运行时命令（3 秒轮询、空值不占位、抛错保现值），不落配置存储——「一键一值」存储模型未动；超长读数按既有只读底座的省略号截断。\n- **行尾生效徽标与控件自带值标签不再同屏**：滑杆行在「跟随主题」态收起自带值标签、让位给行尾生效徽标，「自定义」态反之——同一行不再出现两个含义不同的数字。\n- 布局护栏：主控件 ＋ 伴生件 ＋ 生效徽标三件并存时，伴生件收缩到 120px（无头 Edge 真渲染实测：主窗最窄 800px 下零横向溢出；降级形态是标签截断，不是整行撑破）。\n- 要求 LinkDesk **0.2.32 或更高**（未变）。本轮落的是**渲染能力**——用户可见的变化要等壳侧声明（缓存目录一行／AI 接入四组）随软件发版。"
+        },
+        {
+          "version": "1.0.28",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.28/settings.linkdesk-plugin",
+          "publishedAt": "2026-10-03T16:29:03.811Z",
+          "changelog": "- **设置控件收编进共享层（随「设置控件-词表正典与共享化」）**：只读状态行、背景图选择器、来源徽标（✏️ 用户覆盖／🔀 混搭域）、「生效：」徽标——这四件改由共享件 `@linkdesk/ui` 提供，与本软件其他界面同一套控件、同一条样式来源。**行为与 1.0.27 一致**；在尚未装上新版共享件的软件上（壳 < 0.2.37）自动继续用本插件自带的同款实现——不会崩、不留白。\n- **不认识的控件类型不再可编辑**：某个配置项声明了本插件不认识的控件类型时，改为「只读显示当前值 ＋ 悬停说明」，不再落进可编辑文本框——此前那种情况会把 `__none__` 这类内部标记当普通文字显示、甚至被改坏。**没声明控件类型的配置项**（绝大多数设置项）**行为一字不变**。\n- 生效值徽标里「生效值」的显示形态（颜色带色块／字体只显首个字族）改从共享件取——显示结果不变。\n- 要求 LinkDesk **0.2.32 或更高**（未变）；共享件能力在 **0.2.37 或更高**的软件上自动启用。"
+        },
         {
           "version": "1.0.27",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.27/settings.linkdesk-plugin",
-          "publishedAt": "2026-10-03T13:15:54Z",
+          "publishedAt": "2026-10-03T13:15:57.345Z",
           "changelog": "- **滑杆行换装全能力版 Slider（随滑杆件能力扩展）**：值标签（当前值＋单位）与轨道两侧 −/＋ 细调按钮已下沉进共享件 `@linkdesk/ui` 的 Slider 组件本体——本插件删掉自己的包裹层与值标签格式化器（`sliderValueLabel`），只把配置键上的声明原样直传。外观组七根滑杆（圆角×2 / 玻璃模糊 / 不透明度×3 / 圆角标尺）声明了细调，行内出现常驻 −/＋；无单位键照旧显示裸数值（如玻璃不透明度 `0.5`）。依赖 `@linkdesk/ui ≥ 0.2.36`。"
         },
         {
@@ -735,20 +762,17 @@
         {
           "version": "1.0.24",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.24/settings.linkdesk-plugin",
-          "publishedAt": "2026-09-30T12:49:12.202Z",
-          "changelog": "- **图标栏底部不再由本插件提供齿轮图标**：此前「左下角那颗齿轮」是靠本插件声明 `appearsIn.iconBar: \"bottom\"` 出现的——插件缺失或停用，齿轮就跟着消失。现在这颗齿轮改由**软件本体自带**（永远可见、与插件装卸/配置切换无关），本插件相应撤掉那条声明，只保留自己的标签页图标（`icon` 一字未动）。\n- **要求 LinkDesk 0.2.32 或更高**（`minAppVersion` 随之抬高）：新行为靠壳自带的齿轮；在旧版软件上会看到「底部多出一颗齿轮」的中间态——请先更新软件、再更新本插件。\n- **行为面零变化**：设置页、悬浮面板、`Ctrl+,`、以及齿轮菜单里的「设置」条目照旧由本插件渲染；`factoryRole: \"settings\"` 的可替换槽位语义不变（换一套第三方设置 UI 仍然照常工作）。"
+          "publishedAt": "2026-09-30T12:49:12.202Z"
         },
         {
           "version": "1.0.23",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.23/settings.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:33:41.037Z",
-          "changelog": "- **自有翻译归位（E6#161「谁的仓谁译文」）**：本仓首次带自己的字典 **`i18n/en.json`（48 条）** ＋ `contributes.i18n` 声明——设置页的**声明项**（配置分组名「打开方式」/ 属性说明 / 命令标题「修改快捷键…」/ 视图与容器标题 / 插件名与描述）与 `src` 里 **43 条 `t()` 中文 key** 的英文译名，从此住本仓，**不再依赖 `lang-defaults` 代管**。根因是跨仓：文案在本仓声明、译名在另一只仓的字典里，本仓加一条声明时那只仓无从跟上（2026-09-30 用户实机立案）。\n- **译名逐字节取自 `lang-defaults` 现成英文**（同一把尺：`@linkdesk/plugin-sdk/own-dict-coverage` 判出 49 条缺口，去重 48 条）⇒ 两本字典同键同值，按 E6#161 的「同值覆盖不出声」规则**运行时行为零变化**（后注册者胜的语义不变，只是不再有静默分歧）。\n- **`@linkdesk/plugin-sdk` ^0.1.50 → ^0.1.61**：`npm run verify` 新增第 ⑧ 段「自有字典覆盖度」（manifest 渲染串缺口 = 红 / 源码 `t()` 缺口 = 黄）随 SDK 0.1.61 下发，本仓铺开即绿。\n- **版本真源同步**：`package.json` 的 `1.0.21`（此前落后 `plugin.json` 一格，本仓卫生）随本笔对齐到 **1.0.23**。"
+          "publishedAt": "2026-09-30T03:33:41.037Z"
         },
         {
           "version": "1.0.22",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.22/settings.linkdesk-plugin",
-          "publishedAt": "2026-09-28T17:17:10.695Z",
-          "changelog": "- **新增命令 `settings.editKeybinding`（修改快捷键…，M2 `AI#25`）**——把「进入改键编辑态」这条**原本只有鼠标**的动作接进命令面：界面上它只能靠**双击绑定行**（`KeybindingSettingsView.tsx` 的 `onDoubleClick`）。（行内的 ✕／点外部＝取消、Enter＝落地，那几步是编辑态**内**的动作。）\n- **两种调用形**：带 `command`（命令 id）⇒ 直接对那条进编辑态（AI / CLI 一条命令直达）；不带 ⇒ 先弹命令选择器让使用者挑（命令面板给不了参数，但选择器本身**键盘可操作** ⇒ 不用鼠标也能走完全程，条目的 `detail` 顺带显示该命令当前绑定）。两条路都先用壳命令 `workbench.action.openKeybindingsSettings`（`query` = 命令 id）把设置页开出来并切到「快捷键」页、搜索框预填，再写意图。\n- **意图怎么送达视图**：编辑态住在视图里（`useKeybindingEditor` 的 `editingRow`），而命令 handler 不在 React 上下文 ⇒ 新增模块级意图槽 `keybindingEditRequest.ts`——**双通道**（照壳侧 `openKeybindingsSettings` 的 pending + Emitter 先例）：视图在场 → 订阅当场投递；视图不在场 → 存待办，视图挂载时领取（设置页正是命令自己开出来的，请求早于视图）。落进编辑态那一步等**那一行真在表里**（rows 是异步拉的、且受搜索框过滤），不在就继续等。\n- **消费即清 ＋ 时效 30 秒**：意图不是状态，读一次就没了；过期的待办作废——AI 发过请求而用户当时没开设置页，事后自己打开设置页**不该**突然有一行跳进编辑态。两处失败模式（投递丢了／过期没作废）都不报错，故单测逐条钉住。\n- 🔴 **边界：只把那一行切进编辑态**——按键录制与落地仍是人在视图里完成（按新键 → Enter 落地、Esc 取消）。⛔ 不做「AI 代按／代存」的通道：改键是用户的绑定意图（与 M2 `AI#29` 同款口径）。命令读数因此如实写「编辑态已就绪」而不是「已改完」。\n- **注册点在入口顶层**（`src/index.tsx`）而非视图 `useEffect`——无视图时 AI 经 `exec` 打进来靠池的 on-command 激活 `import()` 入口，顶层的副作用才是唯一注册时机；「设置页还没开就让 AI 进改键编辑态」恰恰是本命令要治的场景。\n- **审计读数**：`npm run audit:plugin-commands` 里本仓由「**有视图零命令**」转为 ✅（声明面 1 命令 / 1 视图）——该名单现只剩 marketplace（另一格）。\n- **测试**：新增 `keybindingEditRequest.test.ts`（11 例：待办领取／消费即清／TTL 边界含「刚好等于 TTL」与「过期同样清掉」／后写顶先写／订阅当场投递且不留待办／退订只解自己）＋ `keybindingEditCommand.test.ts`（7 例：注册与 id／`commands` 面缺失返回 0／点名直达并断言壳命令的 `{ query }` 字面量／**三条负控**——命令 id 不存在时「不抛之外什么都没做」即不开页面不写意图、空白 command 视同没给、选择器取消时不写意图不开页面）。\n- **读数**：`vitest run` 12 文件 87 例全绿；`npm run verify` 六段全过（命令归属 声明面 1 / 运行时 0 零偏离；声明自洽含 floatingPanel 三向；纯逻辑单元 9 个全部有测试）；`npx tsc --noEmit` 零错误。无既有行为变化。"
+          "publishedAt": "2026-09-28T17:17:10.695Z"
         },
         {
           "version": "1.0.20",
