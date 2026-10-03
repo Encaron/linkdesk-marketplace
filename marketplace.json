@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-03T13:48:36.208Z",
+  "updatedAt": "2026-10-03T15:37:11.339Z",
   "plugins": [
     {
       "id": "editor",
@@ -826,18 +826,24 @@
     {
       "id": "theme-aurora-glass",
       "name": "极光玻璃",
-      "version": "1.0.10",
+      "version": "1.0.11",
       "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.10/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.11/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.10/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.10/theme-aurora-glass.linkdesk-plugin",
-      "size": 11796,
-      "publishedAt": "2026-09-30T21:59:34.680Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.11/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.11/theme-aurora-glass.linkdesk-plugin",
+      "size": 12265,
+      "publishedAt": "2026-10-03T15:35:05.593Z",
       "versions": [
+        {
+          "version": "1.0.11",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.11/theme-aurora-glass.linkdesk-plugin",
+          "publishedAt": "2026-10-03T15:35:05.593Z",
+          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
+        },
         {
           "version": "1.0.10",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.10/theme-aurora-glass.linkdesk-plugin",
@@ -865,8 +871,7 @@
         {
           "version": "1.0.6",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.6/theme-aurora-glass.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:50:35.918Z",
-          "changelog": "- **替换**市场身份图 `resources/icon.svg`（Type-2 彩色身份图，E6#68a）——原 `icon.svg` 只有一块渐变、**没有任何识别符**——市场里跟「统一默认彩块」几乎分不出来，等于没脸。本次保留它原有的极光渐变（3 档），前面压一块磨砂玻璃面板 + 一道镜面斜光，把「glass」说出来"
+          "publishedAt": "2026-09-14T17:50:35.918Z"
         },
         {
           "version": "1.0.5",
@@ -884,18 +889,24 @@
     {
       "id": "theme-defaults",
       "name": "官方主题",
-      "version": "1.0.12",
+      "version": "1.0.13",
       "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的「内置／内置浅色」兜底配方",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.12/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.13/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.12/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.12/theme-defaults.linkdesk-plugin",
-      "size": 6726,
-      "publishedAt": "2026-09-30T21:40:56.262Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.13/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.13/theme-defaults.linkdesk-plugin",
+      "size": 6985,
+      "publishedAt": "2026-10-03T15:35:16.914Z",
       "versions": [
+        {
+          "version": "1.0.13",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.13/theme-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T15:35:16.914Z",
+          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
+        },
         {
           "version": "1.0.12",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.12/theme-defaults.linkdesk-plugin",
@@ -923,8 +934,7 @@
         {
           "version": "1.0.8",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.8/theme-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-30T11:41:07.371Z",
-          "changelog": "- **配方/配色改名（改名不改 id）**：用户实机立案「app.theme 卡片 Dark/Light 指认不明」——本仓的配方\n  名叫 `Light`，而壳内置的兜底配方叫 `Dark`，两张卡并列时被读成同一套的深浅搭子，实际一个来自壳、\n  一个来自本仓（本仓的配方**同时**提供浅色与深色两个配色）。现改：\n  - 配方名 `Light` → **`官方默认 Official Default`**（本仓 = 宿主亮兜底的官方实现者，这条配方承载\n    的是「官方默认外观」，不是某一种明暗）；\n  - 配色名 `Light` → `浅色 Light`、`Dark` → `深色 Dark`（照官方主题仓的「中文 English」惯例）。\n- 🔴 **id 一字未动**：`light`（配方，宿主证照位）与 `theme-defaults.dark`（配色）照旧 ⇒ 用户\n  `settings.json` 里的 `app.theme`/`app.themeColor` 零迁移、零感知。\n- 同笔：壳侧给主题卡片加了**来源行**（「壳自带」/「来自 X 插件」），归属从此进数据（不再靠名字猜）。"
+          "publishedAt": "2026-09-30T11:41:07.371Z"
         },
         {
           "version": "1.0.7",
@@ -1015,18 +1025,24 @@
     {
       "id": "theme-mint-soda",
       "name": "薄荷苏打",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "description": "清凉薄荷色系主题合集——薄荷冰露/海盐薄荷/青柠薄荷/薄荷苏打，Claymorphism 软萌风，全系亮色",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.8/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.9/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.8/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.8/theme-mint-soda.linkdesk-plugin",
-      "size": 6618,
-      "publishedAt": "2026-09-30T21:59:43.422Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.9/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.9/theme-mint-soda.linkdesk-plugin",
+      "size": 6940,
+      "publishedAt": "2026-10-03T15:35:27.109Z",
       "versions": [
+        {
+          "version": "1.0.9",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.9/theme-mint-soda.linkdesk-plugin",
+          "publishedAt": "2026-10-03T15:35:27.109Z",
+          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
+        },
         {
           "version": "1.0.8",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.8/theme-mint-soda.linkdesk-plugin",
@@ -1054,8 +1070,7 @@
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.4/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:30:48.557Z",
-          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）\n- 补 `plugin.json` 的 `$schema`（本仓原先缺这一行，编辑器无字段补全/校验）"
+          "publishedAt": "2026-09-14T17:30:48.557Z"
         },
         {
           "version": "1.0.3",
@@ -1068,18 +1083,24 @@
     {
       "id": "theme-panorama",
       "name": "整窗主视觉",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.8/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.9/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.8/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.8/theme-panorama.linkdesk-plugin",
-      "size": 1542291,
-      "publishedAt": "2026-09-30T21:59:54.949Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.9/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.9/theme-panorama.linkdesk-plugin",
+      "size": 1542607,
+      "publishedAt": "2026-10-03T15:35:38.949Z",
       "versions": [
+        {
+          "version": "1.0.9",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.9/theme-panorama.linkdesk-plugin",
+          "publishedAt": "2026-10-03T15:35:38.949Z",
+          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
+        },
         {
           "version": "1.0.8",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.8/theme-panorama.linkdesk-plugin",
@@ -1107,8 +1128,7 @@
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.4/theme-panorama.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:50:07.438Z",
-          "changelog": "- 新增市场身份图 `resources/icon.svg`（Type-2 彩色身份图，E6#68a）——此前 `plugin.json` 没有 `icon` 字段，市场里显的是**统一默认彩块**\n- 意象：月夜装进一扇 40×28 的宽幅窗（该主题就是整窗一张主视觉），暖金月为唯一亮点\n- 形态照 [06-图标.md](https://github.com/Encaron/linkdesk/blob/electron/docs/02-Electron%E6%9E%B6%E6%9E%84/E6_%E6%8F%92%E4%BB%B6%E7%94%9F%E6%80%81%E4%B8%8E%E5%8F%91%E5%B8%83/03-%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA/06-%E5%9B%BE%E6%A0%87.md)：SVG / 透明底 / 48×48 正方形 viewBox / 零 `<text>`（不绑字体）"
+          "publishedAt": "2026-09-14T17:50:07.438Z"
         },
         {
           "version": "1.0.3",
@@ -1126,18 +1146,24 @@
     {
       "id": "theme-pill",
       "name": "全胶囊",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "description": "极限壳主题——radius 域：圆角八档全拉到 999px 全胶囊 + 悬浮形态（留缝/圆角/投影/发丝光边）+ 泡泡糖配色（#50.27 效果验收端到端裁决，gallery ① 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.8/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.9/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.8/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.8/theme-pill.linkdesk-plugin",
-      "size": 6905,
-      "publishedAt": "2026-09-30T22:00:07.677Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.9/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.9/theme-pill.linkdesk-plugin",
+      "size": 7220,
+      "publishedAt": "2026-10-03T15:35:48.871Z",
       "versions": [
+        {
+          "version": "1.0.9",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.9/theme-pill.linkdesk-plugin",
+          "publishedAt": "2026-10-03T15:35:48.871Z",
+          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
+        },
         {
           "version": "1.0.8",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.8/theme-pill.linkdesk-plugin",
@@ -1165,8 +1191,7 @@
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.4/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:50:14.562Z",
-          "changelog": "- 新增市场身份图 `resources/icon.svg`（Type-2 彩色身份图，E6#68a）——此前 `plugin.json` 没有 `icon` 字段，市场里显的是**统一默认彩块**\n- 意象：真全圆端胶囊 + 内圈留缝 + 上方一枚悬浮小胶囊（对应 radius 八档全拉 999px 与悬浮形态）\n- 形态照 [06-图标.md](https://github.com/Encaron/linkdesk/blob/electron/docs/02-Electron%E6%9E%B6%E6%9E%84/E6_%E6%8F%92%E4%BB%B6%E7%94%9F%E6%80%81%E4%B8%8E%E5%8F%91%E5%B8%83/03-%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA/06-%E5%9B%BE%E6%A0%87.md)：SVG / 透明底 / 48×48 正方形 viewBox / 零 `<text>`（不绑字体）"
+          "publishedAt": "2026-09-14T17:50:14.562Z"
         },
         {
           "version": "1.0.3",
@@ -1184,18 +1209,24 @@
     {
       "id": "theme-songti",
       "name": "宋体印刷体",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "description": "极限壳主题——font 域·字族轴：全 UI 宋体 SimSun + 纸白墨黑文档感（#50.27 效果验收端到端裁决，gallery ⑩ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.8/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.9/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.8/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.8/theme-songti.linkdesk-plugin",
-      "size": 6900,
-      "publishedAt": "2026-09-30T22:00:16.296Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.9/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.9/theme-songti.linkdesk-plugin",
+      "size": 7204,
+      "publishedAt": "2026-10-03T15:35:59.083Z",
       "versions": [
+        {
+          "version": "1.0.9",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.9/theme-songti.linkdesk-plugin",
+          "publishedAt": "2026-10-03T15:35:59.083Z",
+          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
+        },
         {
           "version": "1.0.8",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.8/theme-songti.linkdesk-plugin",
@@ -1223,8 +1254,7 @@
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.4/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:50:21.573Z",
-          "changelog": "- 新增市场身份图 `resources/icon.svg`（Type-2 彩色身份图，E6#68a）——此前 `plugin.json` 没有 `icon` 字段，市场里显的是**统一默认彩块**\n- 意象：右上折角纸页 + 一横一竖两笔墨，取宋体三处字形特征（横细竖粗 / 横的三角顿角 / 竖的悬针收笔）\n- 形态照 [06-图标.md](https://github.com/Encaron/linkdesk/blob/electron/docs/02-Electron%E6%9E%B6%E6%9E%84/E6_%E6%8F%92%E4%BB%B6%E7%94%9F%E6%80%81%E4%B8%8E%E5%8F%91%E5%B8%83/03-%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA/06-%E5%9B%BE%E6%A0%87.md)：SVG / 透明底 / 48×48 正方形 viewBox / 零 `<text>`（不绑字体）"
+          "publishedAt": "2026-09-14T17:50:21.573Z"
         },
         {
           "version": "1.0.3",
@@ -1242,18 +1272,24 @@
     {
       "id": "theme-terminal",
       "name": "终端机",
-      "version": "1.0.9",
+      "version": "1.0.10",
       "description": "极限壳主题——font 域·字族轴：ui/mono 双键全指 Cascadia Mono 等宽族 + 绿字黑底终端配色（#50.27 效果验收端到端裁决，gallery ⑨ 壳真实落地）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.9/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.10/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.9/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.9/theme-terminal.linkdesk-plugin",
-      "size": 9735,
-      "publishedAt": "2026-09-30T22:00:25.167Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.10/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.10/theme-terminal.linkdesk-plugin",
+      "size": 10104,
+      "publishedAt": "2026-10-03T15:36:09.575Z",
       "versions": [
+        {
+          "version": "1.0.10",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.10/theme-terminal.linkdesk-plugin",
+          "publishedAt": "2026-10-03T15:36:09.575Z",
+          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
+        },
         {
           "version": "1.0.9",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.9/theme-terminal.linkdesk-plugin",
@@ -1281,8 +1317,7 @@
         {
           "version": "1.0.5",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.5/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:31:29.568Z",
-          "changelog": "- 配方 `$schema` 改**文档唯一认可的写法**（`./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json`，相对工程根）——原来用的是已作废的越界相对路径（`../..` 一路指到壳仓 `public/schemas/`，脱离壳仓后编辑器的补全与校验全失效）\n- 分发件随包带 **MIT 许可证**（`LICENSE`）——MIT 要求副本里带版权声明，而 zip 才是用户真正拿到的那份\n- 新增 `AGENTS.md`：在这个仓里单开 AI 干活时的进场说明（这只插件是什么 / 规矩在哪 / 命令怎么敲）"
+          "publishedAt": "2026-09-14T17:31:29.568Z"
         },
         {
           "version": "1.0.4",
@@ -1295,18 +1330,24 @@
     {
       "id": "theme-twilight-forest",
       "name": "暮色森林",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "description": "暗色主题合集——青澜/暮紫/翠微，森林色系",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.8/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.9/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.8/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.8/theme-twilight-forest.linkdesk-plugin",
-      "size": 7111,
-      "publishedAt": "2026-09-30T22:00:36.980Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.9/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.9/theme-twilight-forest.linkdesk-plugin",
+      "size": 7514,
+      "publishedAt": "2026-10-03T15:36:19.482Z",
       "versions": [
+        {
+          "version": "1.0.9",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.9/theme-twilight-forest.linkdesk-plugin",
+          "publishedAt": "2026-10-03T15:36:19.482Z",
+          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
+        },
         {
           "version": "1.0.8",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.8/theme-twilight-forest.linkdesk-plugin",
@@ -1334,8 +1375,7 @@
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.4/theme-twilight-forest.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:50:28.825Z",
-          "changelog": "- 新增市场身份图 `resources/icon.svg`（Type-2 彩色身份图，E6#68a）——此前 `plugin.json` 没有 `icon` 字段，市场里显的是**统一默认彩块**\n- 意象：天边四道色带（暮光金/青澜/暮紫/翠微 四 colorway）+ 前方三株针叶树影\n- 形态照 [06-图标.md](https://github.com/Encaron/linkdesk/blob/electron/docs/02-Electron%E6%9E%B6%E6%9E%84/E6_%E6%8F%92%E4%BB%B6%E7%94%9F%E6%80%81%E4%B8%8E%E5%8F%91%E5%B8%83/03-%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA/06-%E5%9B%BE%E6%A0%87.md)：SVG / 透明底 / 48×48 正方形 viewBox / 零 `<text>`（不绑字体）"
+          "publishedAt": "2026-09-14T17:50:28.825Z"
         },
         {
           "version": "1.0.3",
