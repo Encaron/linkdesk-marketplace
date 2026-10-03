@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-03T13:34:04.000Z",
+  "updatedAt": "2026-10-03T13:48:36.208Z",
   "plugins": [
     {
       "id": "editor",
@@ -186,18 +186,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.43",
+      "version": "1.0.44",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.43/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.44/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.43/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.43/lang-defaults.linkdesk-plugin",
-      "size": 28969,
-      "publishedAt": "2026-10-01T15:04:01.248Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.44/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.44/lang-defaults.linkdesk-plugin",
+      "size": 29206,
+      "publishedAt": "2026-10-03T13:47:35.451Z",
       "versions": [
+        {
+          "version": "1.0.44",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.44/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T13:47:35.451Z",
+          "changelog": "- **补五条壳侧用到的词条**（设置页-打开缓存目录：通用组「存储」分节两行）：组名 `存储`；按钮行 `打开缓存目录` 与只读行的标题 `缓存目录`；只读行描述 `缓存目录——缓存文件实际存放的位置（只读，软件内不可改）`；动作失败提示 `打开缓存目录失败`。本包补英文译名 **Storage** / **Open Cache Folder** / **Cache Folder** / **Cache folder — where cache files actually live (read-only; cannot be changed in the app)** / **Failed to open the cache folder**。\n- 零行为变化：其余 663 条目一字未动。"
+        },
         {
           "version": "1.0.43",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.43/lang-defaults.linkdesk-plugin",
@@ -225,8 +231,7 @@
         {
           "version": "1.0.39",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.39/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-30T12:22:23.324Z",
-          "changelog": "- **口径订正**（同日用户拍板）：壳侧**不做来源行**了 —— 3 条上一版刚加的词条**撤回**\n  （「内置深色」/「壳自带」/「来自 {{name}}」）。区分两张卡改为**靠名字本身**：壳那张叫「内置」、\n  官方主题插件的配方叫「官方主题」。\n- **新增 2 条**：壳兜底配方里两个配色的名字「深色」/「浅色」。「内置」与「内置浅色」两条本就在册，不动。"
+          "publishedAt": "2026-09-30T12:22:23.324Z"
         },
         {
           "version": "1.0.38",
