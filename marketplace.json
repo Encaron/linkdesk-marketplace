@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-03T15:37:11.339Z",
+  "updatedAt": "2026-10-03T16:10:38.303Z",
   "plugins": [
     {
       "id": "editor",
@@ -186,18 +186,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.44",
+      "version": "1.0.45",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.44/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.45/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.44/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.44/lang-defaults.linkdesk-plugin",
-      "size": 29206,
-      "publishedAt": "2026-10-03T13:47:35.451Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.45/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.45/lang-defaults.linkdesk-plugin",
+      "size": 29732,
+      "publishedAt": "2026-10-03T16:10:22.924Z",
       "versions": [
+        {
+          "version": "1.0.45",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.45/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T16:10:22.924Z",
+          "changelog": "- **改五条设置页文案的英文译名**（主题案第 3 刀·旋钮正名，壳侧同一批改的中文原文）：玻璃面不透明度（补「只管表面合成比例」）／组件圆角（补「只管输入框/按钮/卡片」）／分区圆角（补「只管五个分区」）／强调色来源（补「独立轴」）／背景图遮罩明暗（补「数值越大越暗」）。旧键随壳侧原文变更删除，新键补上对应英文。\n- 零行为变化：键数 668 不变（五条原地换键），其余 663 条目一字未动。"
+        },
         {
           "version": "1.0.44",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.44/lang-defaults.linkdesk-plugin",
@@ -225,8 +231,7 @@
         {
           "version": "1.0.40",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.40/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-30T12:50:29.694Z",
-          "changelog": "- **补一条壳侧用到的词条**：左下角齿轮的悬停提示 / 无障碍名 `管理`（VS Code 同款措辞）——此前只有中文回退（等于英文界面下显示中文），现在有正式译名 **Manage**。\n- 零行为变化：纯字典补条目，已有键一个未动。"
+          "publishedAt": "2026-09-30T12:50:29.694Z"
         },
         {
           "version": "1.0.39",
