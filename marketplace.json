@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-03T12:52:16.000Z",
+  "updatedAt": "2026-10-03T13:34:04.000Z",
   "plugins": [
     {
       "id": "editor",
@@ -68,21 +68,27 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.23",
+      "version": "1.0.24",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.23/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.24/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.23/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.24/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.23/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.23/file-tree.linkdesk-plugin",
-      "size": 46983,
-      "publishedAt": "2026-10-03T12:50:12.622Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.24/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.24/file-tree.linkdesk-plugin",
+      "size": 44388,
+      "publishedAt": "2026-10-03T13:33:40.796Z",
       "versions": [
+        {
+          "version": "1.0.24",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.24/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-10-03T13:33:40.796Z",
+          "changelog": "- **补刀：筛选输入框（「要包含的文件」／「要排除的文件」）对齐 `.ldk-input` 契约**——1.0.23 治了搜索/替换两行，这两个筛选框是同 section 的漏网之鱼：原先**连 `border-radius` 声明都没有**（恒直角，`app.surfaceRadius` 调多大都不动）。补 `--radius-sm`（跟主题圆角走）＋ 底色 `--bg-card` → `--bg-input`（与搜索/替换字段同源）＋ 聚焦 accent 边＋2px 焦点环。仅 CSS，零逻辑、零结构改动。\n- **读数**：`npm run verify` 八段全绿 · `vitest run` 16 文件 149 例全绿 · `npm run build` 4/4 表面。"
+        },
         {
           "version": "1.0.23",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.23/file-tree.linkdesk-plugin",
