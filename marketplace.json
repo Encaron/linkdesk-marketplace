@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-04T17:58:44.176Z",
+  "updatedAt": "2026-10-04T19:45:33.635Z",
   "plugins": [
     {
       "id": "editor",
@@ -83,21 +83,27 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.25",
+      "version": "1.0.26",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.25/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.26/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.25/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.26/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.25/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.25/file-tree.linkdesk-plugin",
-      "size": 44484,
-      "publishedAt": "2026-10-04T15:14:06.503Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.26/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.26/file-tree.linkdesk-plugin",
+      "size": 44352,
+      "publishedAt": "2026-10-04T19:44:14.807Z",
       "versions": [
+        {
+          "version": "1.0.26",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.26/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-10-04T19:44:14.807Z",
+          "changelog": "- **说明**：在文件上右键时，文件树现在会把「这是不是文件、扩展名是什么」公开给宿主——第三方插件的右键菜单项可以据此**只对某类文件出现**（例如一个 Markdown 插件只在 `.md` 上显示它的菜单项）。文件树自己的 18 项右键菜单行为、单击/双击打开方式均不变。"
+        },
         {
           "version": "1.0.25",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.25/file-tree.linkdesk-plugin",
