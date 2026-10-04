@@ -198,18 +198,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.52",
+      "version": "1.0.53",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.52/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.53/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.52/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.52/lang-defaults.linkdesk-plugin",
-      "size": 31145,
-      "publishedAt": "2026-10-04T14:51:48.595Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.53/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.53/lang-defaults.linkdesk-plugin",
+      "size": 31140,
+      "publishedAt": "2026-10-04T16:12:34.808Z",
       "versions": [
+        {
+          "version": "1.0.53",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.53/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-04T16:12:34.808Z",
+          "changelog": "- **补 4 条「枚举显示名」英译**（配置项短名案·第 3 波·D7 收尾）：壳 `src/App/startup.ts` 给 `app.language`／`app.menuStyle` 两行补上 `enumDescriptions`（此前下拉裸显 `zh`／`titlebar` 这类英文值），新增 4 条：`中文 → Chinese`、`标题栏 → Title Bar`、`汉堡菜单 → Hamburger Menu`、`两者都显示 → Both`。\n- ⚠️ **纯追加、不删旧条**：716 → 720 键（净增 4），既有条目一字未动。\n- 零行为变化：纯数据词条追加，无源码改动。"
+        },
         {
           "version": "1.0.52",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.52/lang-defaults.linkdesk-plugin",
