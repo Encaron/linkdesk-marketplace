@@ -186,18 +186,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.50",
+      "version": "1.0.51",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.50/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.51/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.50/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.50/lang-defaults.linkdesk-plugin",
-      "size": 30713,
-      "publishedAt": "2026-10-04T14:16:08.030Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.51/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.51/lang-defaults.linkdesk-plugin",
+      "size": 30688,
+      "publishedAt": "2026-10-04T14:28:57.406Z",
       "versions": [
+        {
+          "version": "1.0.51",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.51/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-04T14:28:57.406Z",
+          "changelog": "- **补 1 条壳侧词条**：`复制设置名称 → Copy Setting Name`（配置项短名案 T5 齿轮新项的**命令标题**——壳 `coreCommands.ts` 新命令 `workbench.action.copySettingName`，齿轮槽 `SettingItemGear`、`when=settingHasTitle` 门控；命令标题是壳侧可渲染中文串，`audit-i18n --strict` 要求有译名）。\n- ⚠️ **纯追加、不删旧条**：708 → 709 键（净增 1），既有条目一字未动。\n- 零行为变化：纯数据词条追加，无源码改动。"
+        },
         {
           "version": "1.0.50",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.50/lang-defaults.linkdesk-plugin",
@@ -225,8 +231,7 @@
         {
           "version": "1.0.46",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.46/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-03T17:10:12.808Z",
-          "changelog": "- **补两条壳侧用到的词条**（设置控件-词表正典与共享化 4.3：换套逃生舱命令 `core.resetSettingsToBuiltin`）：命令标题 `回退内置设置页`；槽空时的结论句 `没有任何插件声明 factoryRole:\"settings\"——没有可回退的内置设置页`。本包补英文译名 **Revert to Built-in Settings Page** / **No plugin declares factoryRole:\"settings\" — there is no built-in settings page to revert to**。\n- 零行为变化：键数 668 → 670（纯追加两条），其余 668 条目一字未动。"
+          "publishedAt": "2026-10-03T17:10:12.808Z"
         },
         {
           "version": "1.0.45",
