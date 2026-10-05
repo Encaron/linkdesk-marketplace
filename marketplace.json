@@ -89,21 +89,27 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.26",
+      "version": "1.0.27",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.26/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.27/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.26/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.27/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.26/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.26/file-tree.linkdesk-plugin",
-      "size": 44352,
-      "publishedAt": "2026-10-04T19:44:14.807Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.27/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.27/file-tree.linkdesk-plugin",
+      "size": 48093,
+      "publishedAt": "2026-10-05T02:01:35.248Z",
       "versions": [
+        {
+          "version": "1.0.27",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.27/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-10-05T02:01:35.248Z",
+          "changelog": "- **「打开方式…」从占位转正为真选择器（T2/F1 · 文件打开方式与贡献点案第 3 波）**：右键文件 →「打开方式…」现列出声明了该扩展名的**全部**插件（含官方与第三方），每行「打开（仅此一次）」（不落盘）与「设为默认」（写用户覆盖表 `workbench.fileAssociations`，重启仍生效）；有用户覆盖时顶部出现「当前默认」行与「恢复自动」。空态（该扩展名无任何声明者，命令面板直调可达）提供「在市场搜索阅读器」。设置页「默认打开方式」管理器（第 4 波）与本选择器同写一个真相源，改动即时互见（E31）。\n- **菜单项收敛（E12/E13）**：无 handler、目录、根节点上不显示该项（`when` 增 `file-tree.hasHandler`，右键时刻现读宿主）；**旧宿主特性降级**——宿主缺 `listHandlersFor` 面时命令 no-op、菜单项不出现，不留「点了就报错」的面（07 §六）。\n- **打开行为归一（F3）由宿主侧完成**：`getPluginFor` 升级为覆盖表感知解析（覆盖 → 声明 → 角色），本仓单击/搜索双击两个入口零改动即吃到同一解析（旧宿主行为不变）。\n- 依赖随宿主契约升级：`@linkdesk/contracts` 0.1.36 / `@linkdesk/plugin-sdk` 0.1.75。\n- **读数**：`npm run verify` 九段全绿 · `vitest run` 17 文件 152 例全绿（新增 openWithStore 3 例）· `npx tsc --noEmit` 零错误。"
+        },
         {
           "version": "1.0.26",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.26/file-tree.linkdesk-plugin",
@@ -131,32 +137,27 @@
         {
           "version": "1.0.22",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.22/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-30T21:43:22.088Z",
-          "changelog": "- **安装包瘦身**：包内更新日志只带最近 5 版（更早的更新记录仍在本插件仓库里）——由 SDK 自动施加，用户无需任何操作。"
+          "publishedAt": "2026-09-30T21:43:22.088Z"
         },
         {
           "version": "1.0.21",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.21/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:47:25.364Z",
-          "changelog": "- **自有翻译归位（E6#161「谁的仓谁译文」）**：本仓 6 条可渲染文案的英文译名住进**本仓字典** `i18n/en.json`（新增 6 条） ＋ `contributes.i18n` 声明——不再依赖 `lang-defaults` 代管：文案在本仓声明、译名却在别的仓的字典里，本仓加一条声明那只仓无从跟上（跨仓追不上）。译名取值：池里现成的照抄（同键同值 ⇒ 按 E6#161「同值覆盖不出声」规则运行时零变化），池里没有的 3 条新写。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` ^0.1.56 → **^0.1.61**——`npm run verify` 第 ⑧ 段「自有字典覆盖度」（manifest 渲染串缺口 🔴 / 源码 `t()` 缺口 ⚠️）由 `@linkdesk/plugin-sdk/own-dict-coverage` 判定（判据本体在 SDK，⛔ 不在本仓复制）。"
+          "publishedAt": "2026-09-30T03:47:25.364Z"
         },
         {
           "version": "1.0.20",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.20/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-29T15:14:27.100Z",
-          "changelog": "- **修：侧栏「打开文件夹」section 的悬停/按下态落到 `unset`——悬停时主按钮把底丢掉、最近项零反馈。** 起因是 FT#4 的 216px 视觉走查：`OpenFolderView.css` 的 `:hover`/`:active` 用了 `var(--tree-bg-hover)` / `var(--tree-bg-selected)`，而这两个 token 定义在 `.file-tree-root`（`file-tree-shell.css` §设计 Token）——本 section 挂在 `ldk-sidebar-section-body` 下，**祖先链里没有 `.file-tree-root`**（实测链：`file-tree-open-folder-btn → file-tree-open-folder → ldk-sidebar-section-body → …`）。`var()` 在这种作用域取到空串 ⇒ 该声明在**计算值期**非法 ⇒ 落 `unset`。\n  - **实测（`CSS.forcePseudoState` 强制 `:hover`，非目测）**：主按钮 `background-color` `rgb(45,45,45)`（`--bg-card`）→ **`rgba(0,0,0,0)`**，即不是「叠一层悬停底色」而是**把底清空**；最近项背景恒 `rgba(0,0,0,0)` ⇒ **悬停毫无反馈**。`border-color: var(--accent)` 不受影响（`--accent` 全局定义）⇒ 悬停时只剩边框变色、底反被抹掉。\n  - **修法**：三处声明带 fallback（`var(--tree-bg-hover, color-mix(in srgb, var(--text-primary) 6%, transparent))`、selected 为 15% accent）——与同仓 `SearchView.css` 四处**既有写法一致**。⛔ 不动 token 定义位置（那是树节点的作用域）、不动骨架与类名。\n  - **读数**：`npx tsc --noEmit` 零错误 · `npm run verify` 六段全绿（lint 严格腿 75 文件零偏离）· `vitest run` 16 文件 **149 例** · `npm run build` **4/4 表面 / 74.9 KB**。"
+          "publishedAt": "2026-09-29T15:14:27.100Z"
         },
         {
           "version": "1.0.19",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.19/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-29T14:37:59.863Z",
-          "changelog": "- **修：文件菜单里的 5 项 file-tree 贡献「从来没有过」**（用户 2026-08-11 起就发现菜单项不见了，一直以为是自己误删——**不是**）。真因可指认到具体一行：`af2ef5712`（E5.6#11.5 Path B 池核心隔离）为切断插件对 `@src/core` 的 import，把 `MenuId` 内联成字符串字面量时，**把枚举的「成员名」当成了「值」**——写成 `MenuId = { FileContext: \"FileContext\", MenuBar: \"MenuBar\" }`，而壳侧 `MENU_SLOTS.MenuBar` 的值当时已经是 `\"menuBar\"`（小驼峰）。壳的菜单表是精确字符串键、零归一化，只按 `MENU_SLOTS.*` 的值取 ⇒ 贡献落进**另一个键**，无消费者、无报错、无日志，界面表现就是「这条菜单不存在」。历次重构只把这两处死键原样搬家，因为**没有一条判据看菜单槽位 id 的大小写**。\n- **修法：菜单项改声明式**。删掉 `src/components/FileTreeContextMenu/commands/menuItems.ts`（命令式 `menu.registerItems(...)` 的唯一内容），改由 `plugin.json` 的 `contributes.menus` 承载：`menuBar` = 5 项（新建文件 / 新建文件夹 / 打开文件夹… / 关闭所有编辑器 / 关闭文件夹）＋ 一个「编辑」子菜单（`command: \"\"` ＋ `children`，`group` 由 `edit` 改 `file`，并进「文件」组渲染成 `文件 ▸ […, 编辑 ▸]`，**顶级菜单集合一个不增**）；`fileContext` = 原 18 项原样搬（各 `when` / `label` / `group` 一字未动）。消费端 `Menu.tsx` 的 `menuId={\"FileContext\"}` 同笔改 `\"fileContext\"`——两处原先靠**读写同一个错键**自洽，只改一边会弄坏右键菜单。`file-tree.closeAllEditors` 补进 `contributes.commands`（它原先只运行时注册，不在声明面）。\n- **修：「装了就显示」的另一半——点了要真能动**。菜单声明面由加载器在**插件装载时**注册（与视图是否 mount 无关，卸载由加载器 disposer 回收）；但命令 **handler** 原先只在 `FoldersView` mount 时注册 ⇒ 在**从没打开过文件树视图**的会话里，那 5 项是「点得着、点了没反应」。本版把 `activateFileTreeContextMenu()` 提到入口顶层（`src/index.tsx`）——与既有的 `registerSearchCommands()` 同一时机，走池的 on-command 激活契约（命令 miss ⇒ 池 `import()` 入口 ⇒ 顶层副作用注册 handler ⇒ 重试即命中）。`FoldersView` 那处调用**保留不动**（它是 dev-host / 纯浏览器预览里唯一的注册路径），函数自带 `_registered` 幂等闸。\n- **新增：侧栏 explorer 容器的常驻 section「打开文件夹」**（`order 2`，排在搜索下方）。起因是**唯一 UI 入口原在欢迎页**——而欢迎页是可关闭的标签页保底，关掉它、或把文件树目录清空之后，全软件再没有一处 UI 能打开文件夹。section 内容 = 主按钮「打开文件夹…」＋ 最近 5 条（点最近项走 `workspace.addFolder`，**添加**语义，与欢迎页同一个 API）。主按钮打 `file-tree.openFolder` 命令——与文件菜单、命令面板**同一条链**，不写第二份逻辑。\n  - **只有数据是借来的**：最近列表**只读**消费欢迎页写在 `pluginState(\"app\",\"recentFolders\")` 的那份（形如 `{ path, name }[]`，上限 10）。不写回——两个写方各写一份必然互相覆盖。订阅走 `pluginState.onChange`（回调**直接带新值**）而不是 `onDidChangeFolders`：后者是「广播在前、落盘在后」，在同一条广播里重读读到的是上一版，表现为「刚打开的目录不在最近里」。\n- **`FoldersView` 空态补一行 muted 占位**（原来无工作区根时是**纯空白**，连占位都没有）。只做**组件内部条件渲染**，组件本体（含 `onDidChangeFolders` 订阅）始终挂载——`registerViewEmptyContent` 那种「外部替换整个组件」的形态 2026-08-03 造成过死锁（视图被替换 ⇒ 订阅随 unmount 注销 ⇒ 点「打开文件夹」后无人听广播 ⇒ 永久空白，见 `docs/05-插件更新/文件树/01-打开文件夹入口-设计.md` §二·五），本版不碰那条路。不带按钮——按钮职责归上面的常驻 section。\n- **删孤儿 `src/views/WelcomeView.tsx`**（119 行，自 2026-08-03 `231257d16` 起无人 import 的死代码；其最近列表素材已折进常驻 section）＋ `file-tree-node.css` 里只为它存在的 12 条规则（`.file-tree-welcome*` / `.file-tree-recent*` / `.file-tree-dragover-hint`）＋ 1 个孤儿字典键（`释放以打开文件夹`）。\n- **`i18n/en.json` 净 +1 键（73 → 74）**：新增 `最近` → `Recent`、`打开文件夹` → `Open Folder`（后者是侧栏 section 标题——`contributes.views[].title` 是原样下发的、加载器不翻，运行时注册那一笔才补译文），删 1 个孤儿键。\n- **读数**：`npm run verify` 六段全绿（lint 严格腿 75 文件零偏离；声明自洽「3 个视图的 render 全部兑现」；字典 74 键；纯逻辑单元 14 个全部有测试）；`npx tsc --noEmit` 零错误；`vitest run` 16 文件 149 例全绿；`npm run build` 产出 4/4 表面（新增 `views/OpenFolderView.bundle.js`）。\n- **配套的机械门禁在 SDK 里**（本版 devDependency 起 `@linkdesk/plugin-sdk` 0.1.56 新增腿 `linkdesk/no-menu-slot-case`）：菜单槽位 id 与宿主 `MENU_SLOTS` 的某个值**仅大小写不同** ⇒ 判红。这条判据刚好能判死本版的病根（`\"MenuBar\"` / `\"FileContext\"`），而 `MenuId` 是开放字符串、第三方可自造注册点 ⇒「未知 id」不判——所以它既严格又零假红。本仓 `npm run verify` 的 lint 严格腿自动吃这条。"
+          "publishedAt": "2026-09-29T14:37:59.863Z"
         },
         {
           "version": "1.0.18",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.18/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-28T17:17:00.464Z",
-          "changelog": "- **新增命令 `file-tree.openSearchResult`（打开搜索结果）**——把「打开一条搜索匹配」这条**原本只有鼠标**的动作接进命令面：界面上它只能靠**双击结果行**（`SearchResults.tsx` 的 `onDoubleClick`），F4 那条键盘路要先让搜索框拿到焦点、且本身不是命令 ⇒ AI、快捷键、命令面板都够不着它。判定目标这一半（`searchSession.ts` 解析规则）与开标签页那一半（走与双击**同一个** `openMatch`，不另写第二份 `tabs.create`）都是纯逻辑/复用，故无并行实现。\n- **目标从哪来**：搜索结果本体住在 `useSearch` 的 React state 里，命令 handler 不在 React 上下文——现在搜索/导航变化时把 `(matches, index)` 投影进模块级快照，命令缺省打开**当前高亮那一条**，也可按 `filePath`（可再带 `lineNumber`）点名要哪条。视图卸载即清空 ⇒ 命令如实回「没有搜索结果」，⛔ 不给一个界面上早已不存在的陈旧目标。\n  - 注册点在**入口顶层**（`src/index.tsx`）而非视图 `useEffect`：无视图时 AI 经 `exec` 打进来靠池的 on-command 激活 `import()` 入口，顶层的副作用才是唯一注册时机。右键菜单那批既有命令仍由 `FoldersView` mount 时注册——本笔**只加不减**。\n- **补齐 21 条既有命令的说明（`description`）**：本仓命令只声明了 `title`，命令索引里一行说明都没有。检查命令清单的使用者（AI、未来的命令面板检索）只能看到名字。21 条按各自 handler 的**真实行为**逐条写（含「占位、未接实现」两条与「与『打开』走同一条链路」这类**如实**读数），并给新命令补 `params`。\n- **说明与参数只写在声明面**：`title` / `description` / `params` 一律只进 `plugin.json` 的 `contributes.commands[]`；运行时 `registerCommand` **不带 meta**（本仓既有惯例——两处各写一份文案迟早分叉）。壳加载器会把声明面的说明与参数注册进命令索引，池侧不带这两项时不会抹掉声明面那份。\n- **新命令不进运行时 meta 面**，命令面板的可见性由 `when` 管；本命令不设 `when`（无门）。若面板列出它而当前没有搜索结果，如实在面板里报「没有搜索结果」，不静默。\n- **`i18n/en.json` 补 1 键**（`打开搜索结果` → `Open Search Result`，字典 72 → 73）。其余 21 条标题的英文键此前已在。\n- **测试**：新增 `src/__tests__/searchSession.test.ts`（16 例）——解析规则 9 例（空会话／缺省高亮／索引 `-1` 与越界的兜底／反斜杠与正斜杠等价／同行号唯一确定／点名不存在的文件为 `null`／卸载即清空）＋ 命令面 7 例（注册 1 条且 id 正确／`commands` 面缺失时返回 0 而不抛／缺省打开的是高亮那条并回报 `index`+`total`／点名优先于高亮／两条负控「不存在的文件」「扩展名没有属主插件」都必须**不碰** `tabs.create`）。\n- **既有读数**：`vitest run` 16 文件 149 例全绿；`npm run verify` 六段全绿（声明面 22 名 / 运行时面 25 名，命令归属零偏离；字典 73 键；纯逻辑单元 14 个全部有测试）。`npx tsc --noEmit` 零错误。无用户可见的既有行为变化。"
+          "publishedAt": "2026-09-28T17:17:00.464Z"
         },
         {
           "version": "1.0.17",
