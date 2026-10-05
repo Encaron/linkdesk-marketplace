@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-05T04:13:25.878Z",
+  "updatedAt": "2026-10-05T05:00:25.028Z",
   "plugins": [
     {
       "id": "editor",
@@ -231,18 +231,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.55",
+      "version": "1.0.56",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.55/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.56/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.55/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.55/lang-defaults.linkdesk-plugin",
-      "size": 30861,
-      "publishedAt": "2026-10-05T04:12:56.312Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.56/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.56/lang-defaults.linkdesk-plugin",
+      "size": 30794,
+      "publishedAt": "2026-10-05T04:59:17.909Z",
       "versions": [
+        {
+          "version": "1.0.56",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.56/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-05T04:59:17.909Z",
+          "changelog": "- **补 1 条壳侧共享件词条**：`已停用 → Disabled`（文件打开方式案第 4 波 · 共享件 `PluginCard` 的停用态徽标——壳仓共享组件内的可渲染中文串，`audit-i18n --strict` 要求有译名）。\n- ⚠️ **纯追加、不删旧条**：723 → 724 键（净增 1），既有条目一字未动。\n- 零行为变化：纯数据词条追加，无源码改动。"
+        },
         {
           "version": "1.0.55",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.55/lang-defaults.linkdesk-plugin",
