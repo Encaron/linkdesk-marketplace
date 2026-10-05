@@ -5,18 +5,24 @@
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.21",
+      "version": "1.0.22",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.21/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.22/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.21/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.21/editor.linkdesk-plugin",
-      "size": 8655649,
-      "publishedAt": "2026-10-04T19:50:30.755Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.22/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.22/editor.linkdesk-plugin",
+      "size": 8655960,
+      "publishedAt": "2026-10-05T02:03:19.601Z",
       "versions": [
+        {
+          "version": "1.0.22",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.22/editor.linkdesk-plugin",
+          "publishedAt": "2026-10-05T02:03:19.601Z",
+          "changelog": "- **「打开方式…」钮上屏（T1 特性开关合龙）**：1.0.20 起二进制提示块里的「打开方式…」钮被 `OPEN_WITH_WIRED=false` 钉着不显示——当时 file-tree 的同名命令还是占位（真机撞出死钮的第 1 波教训）。现在 file-tree 1.0.27 已真接选择器（列全部 handler＋仅此一次/设为默认/恢复自动），本版把开关翻 true，二进制文件标签内的「打开方式…」从此可用。命令以裸 filePath 字符串首参调用，无文件/旧宿主时命令自身 no-op，不留死响应。\n- **读数**：`npm run verify` 九段全绿 · `npm test` 78 例全绿。"
+        },
         {
           "version": "1.0.21",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.21/editor.linkdesk-plugin",
@@ -89,27 +95,21 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.27",
+      "version": "1.0.26",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.27/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.26/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.27/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.26/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.27/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.27/file-tree.linkdesk-plugin",
-      "size": 48093,
-      "publishedAt": "2026-10-05T02:01:35.248Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.26/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.26/file-tree.linkdesk-plugin",
+      "size": 44352,
+      "publishedAt": "2026-10-04T19:44:14.807Z",
       "versions": [
-        {
-          "version": "1.0.27",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.27/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-10-05T02:01:35.248Z",
-          "changelog": "- **「打开方式…」从占位转正为真选择器（T2/F1 · 文件打开方式与贡献点案第 3 波）**：右键文件 →「打开方式…」现列出声明了该扩展名的**全部**插件（含官方与第三方），每行「打开（仅此一次）」（不落盘）与「设为默认」（写用户覆盖表 `workbench.fileAssociations`，重启仍生效）；有用户覆盖时顶部出现「当前默认」行与「恢复自动」。空态（该扩展名无任何声明者，命令面板直调可达）提供「在市场搜索阅读器」。设置页「默认打开方式」管理器（第 4 波）与本选择器同写一个真相源，改动即时互见（E31）。\n- **菜单项收敛（E12/E13）**：无 handler、目录、根节点上不显示该项（`when` 增 `file-tree.hasHandler`，右键时刻现读宿主）；**旧宿主特性降级**——宿主缺 `listHandlersFor` 面时命令 no-op、菜单项不出现，不留「点了就报错」的面（07 §六）。\n- **打开行为归一（F3）由宿主侧完成**：`getPluginFor` 升级为覆盖表感知解析（覆盖 → 声明 → 角色），本仓单击/搜索双击两个入口零改动即吃到同一解析（旧宿主行为不变）。\n- 依赖随宿主契约升级：`@linkdesk/contracts` 0.1.36 / `@linkdesk/plugin-sdk` 0.1.75。\n- **读数**：`npm run verify` 九段全绿 · `vitest run` 17 文件 152 例全绿（新增 openWithStore 3 例）· `npx tsc --noEmit` 零错误。"
-        },
         {
           "version": "1.0.26",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.26/file-tree.linkdesk-plugin",
