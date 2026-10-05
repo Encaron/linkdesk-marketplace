@@ -5,24 +5,18 @@
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.22",
+      "version": "1.0.21",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.22/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.21/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.22/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.22/editor.linkdesk-plugin",
-      "size": 8655960,
-      "publishedAt": "2026-10-05T02:03:19.601Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.21/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.21/editor.linkdesk-plugin",
+      "size": 8655649,
+      "publishedAt": "2026-10-04T19:50:30.755Z",
       "versions": [
-        {
-          "version": "1.0.22",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.22/editor.linkdesk-plugin",
-          "publishedAt": "2026-10-05T02:03:19.601Z",
-          "changelog": "- **「打开方式…」钮上屏（T1 特性开关合龙）**：1.0.20 起二进制提示块里的「打开方式…」钮被 `OPEN_WITH_WIRED=false` 钉着不显示——当时 file-tree 的同名命令还是占位（真机撞出死钮的第 1 波教训）。现在 file-tree 1.0.27 已真接选择器（列全部 handler＋仅此一次/设为默认/恢复自动），本版把开关翻 true，二进制文件标签内的「打开方式…」从此可用。命令以裸 filePath 字符串首参调用，无文件/旧宿主时命令自身 no-op，不留死响应。\n- **读数**：`npm run verify` 九段全绿 · `npm test` 78 例全绿。"
-        },
         {
           "version": "1.0.21",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.21/editor.linkdesk-plugin",
@@ -225,18 +219,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.53",
+      "version": "1.0.54",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.53/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.54/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.53/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.53/lang-defaults.linkdesk-plugin",
-      "size": 31140,
-      "publishedAt": "2026-10-04T16:12:34.808Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.54/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.54/lang-defaults.linkdesk-plugin",
+      "size": 30979,
+      "publishedAt": "2026-10-05T02:04:09.016Z",
       "versions": [
+        {
+          "version": "1.0.54",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.54/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-05T02:04:09.016Z",
+          "changelog": "- **新增壳侧通知串两条（文件打开方式案第 3 波 · E1/E2 第二竞争者提示）**：装上第二只能打开同类文件的插件时，壳弹一次提示「当前默认仍为 X，可右键「打开方式」更改」——中文原文即 key，本包补英译。纯数据插件，零行为变化。"
+        },
         {
           "version": "1.0.53",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.53/lang-defaults.linkdesk-plugin",
