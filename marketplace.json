@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-05T05:00:25.028Z",
+  "updatedAt": "2026-10-05T05:57:40.934Z",
   "plugins": [
     {
       "id": "editor",
@@ -231,18 +231,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.56",
+      "version": "1.0.57",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.56/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.57/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.56/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.56/lang-defaults.linkdesk-plugin",
-      "size": 30794,
-      "publishedAt": "2026-10-05T04:59:17.909Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.57/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.57/lang-defaults.linkdesk-plugin",
+      "size": 30806,
+      "publishedAt": "2026-10-05T05:57:40.934Z",
       "versions": [
+        {
+          "version": "1.0.57",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.57/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-05T05:57:40.934Z",
+          "changelog": "- **补 3 条壳侧设置页词条（文件打开方式案第 4 波 · 设置页「默认打开方式」分组）**：新增分组的组名 `默认打开方式 → Default Open With`、组副标题（文件树右键选择器与本页同写一处）与键描述（按类型/按插件管理 ＋「恢复自动」＝交回声明序）——三条都是壳侧 `src/App/config/fileAssociations.ts` 的声明串，`audit-i18n --strict` 要求有译名。管理视图自身的文案住设置插件仓（随其仓 `i18n/en.json`）。\n- ⚠️ **纯追加、不删旧条**：724 → 727 键（净增 3），既有条目一字未动。\n- 零行为变化：纯数据词条追加，无源码改动。"
+        },
         {
           "version": "1.0.56",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.56/lang-defaults.linkdesk-plugin",
@@ -270,38 +276,32 @@
         {
           "version": "1.0.52",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.52/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-04T14:51:48.595Z",
-          "changelog": "- **补 7 条壳侧配置项短名（title）英译**（配置项短名案·第 1 波收尾·2026-10-04 用户拍板扩面）：壳 `src/App/startup.ts` 通用组 7 条配置项（`app.language` / `app.menuStyle` / `app.hint.enabled` / `app.osIntegration.fileMenu` / `app.osIntegration.dirMenu` / `app.osIntegration.fileAssoc` / `window.zoomLevel`）落 `title: t(\"…\")`——此前这 7 条只有组名与描述有译名，行名短名是本笔新落。新增 7 条：`显示语言 → Display Language`（⛔ 没叫「界面语言」：与本行 description 同字，行名与副文本会重复成一行废话；「显示语言」= VS Code zh 界面同款叫法）、`菜单栏样式 → Menu Bar Style`、`悬停提示 → Hover Hints`、`窗口缩放级别 → Window Zoom Level`、`文件右键菜单 → File Context Menu`、`文件夹右键菜单 → Folder Context Menu`、`文件关联 → File Associations`。\n- ⚠️ **纯追加、不删旧条**：709 → 716 键（净增 7），既有条目一字未动；壳侧这一版照旧 dev 攒批不发版，已发布旧壳不受影响。\n- 零行为变化：纯数据词条追加，无源码改动。"
+          "publishedAt": "2026-10-04T14:51:48.595Z"
         },
         {
           "version": "1.0.51",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.51/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-04T14:28:57.406Z",
-          "changelog": "- **补 1 条壳侧词条**：`复制设置名称 → Copy Setting Name`（配置项短名案 T5 齿轮新项的**命令标题**——壳 `coreCommands.ts` 新命令 `workbench.action.copySettingName`，齿轮槽 `SettingItemGear`、`when=settingHasTitle` 门控；命令标题是壳侧可渲染中文串，`audit-i18n --strict` 要求有译名）。\n- ⚠️ **纯追加、不删旧条**：708 → 709 键（净增 1），既有条目一字未动。\n- 零行为变化：纯数据词条追加，无源码改动。"
+          "publishedAt": "2026-10-04T14:28:57.406Z"
         },
         {
           "version": "1.0.50",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.50/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-04T14:16:08.030Z",
-          "changelog": "- **补 28 条壳侧配置项短名（title）英译**（配置项短名案·壳 41 条 title 落仓同笔）：壳 `src/App/config/` 四文件 41 条配置项行名短名全部落 `title: t(\"…\")`，英文界面经本包取译（壳侧译名唯一住点）。本包净新增 28 条（如 `外观模式 → Appearance Mode`、`玻璃模糊 → Glass Blur`、`分区圆角 → Zone Corner Radius`、`复位整体配方 → Reset to Whole Recipe`、`更新方式 → Update Mode`）；另 13 条复用既有词条（`主题配方`/`配色`/`强调色`/`强调色来源`/`文字极性`/`通道详情`/`AI 操作手册`/`开放范围明细`/`完整操作清单`/`操作日志`/`缓存目录`/`MCP 通道`/`CLI 通道`——41/41 全覆盖，零缺译）。\n- ⚠️ **纯追加、不删旧条**：680 → 708 键（净增 28），既有条目一字未动；壳侧这一版照旧 dev 攒批不发版，已发布旧壳不受影响。\n- 零行为变化：纯数据词条追加，无源码改动。"
+          "publishedAt": "2026-10-04T14:16:08.030Z"
         },
         {
           "version": "1.0.49",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.49/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-03T19:16:28.590Z",
-          "changelog": "- **补四条壳侧用到的词条**（设置行-控制只读同行：伴生只读补「待重启」态）。病根：伴生只读在「监听活着」时**无条件报地址**，于是关掉 `ai.mcp.enabled` 之后右边仍写「运行中」——**它真的还在跑**（内核只在启动时读开关，监听要重启才松手），但那句「重启生效」藏在描述里 ⇒ 贴脸看像 bug。壳侧按「本行键 ＋ 兄弟键」拆三态，本包补两条**带占位符**的话术模板：`{{state}} · 重启软件后关闭`（本行开关已关、监听是启动时的残留）／`{{state}} · 与 {{peer}} 共用`（监听由另一条通道的开关撑着，**重启也不会停**——不这么说就成假承诺），另补两条通道名 `MCP 通道` / `CLI 通道` 供 `{{peer}}` 取用。本包补英文译名四条。\n- ⚠️ **纯追加、不删旧条**：壳侧这一版**尚未发版**（2026-10-03 收窄授权后只落仓攒批），已发布的旧壳仍按旧串取译名；删旧条会让旧壳用户看到中文原文。\n- 零行为变化：键数 676 → 680（纯追加四条），其余 676 条目一字未动。"
+          "publishedAt": "2026-10-03T19:16:28.590Z"
         },
         {
           "version": "1.0.48",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.48/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-03T18:22:10.126Z",
-          "changelog": "- **补五条壳侧用到的词条**（设置行-控制只读同行 2.5：AI 接入分区四组「开关 ＋ 状态行」并成一行，`statusCommand` 从「只配只读行」升为可与任意主控件共存的**伴生声明**）：四条开关描述改写为**双语义**（说明右侧灰字是实时读数）＋「通道」组说明改指伴生读数。本包补英文译名五条。\n- ⚠️ **纯追加、不删旧条**（与 v1.0.45 不同）：被替换的四条旧描述、以及四个退役状态键（`ai.mcp.status` 等）的描述译名**一律原样保留**——壳侧这一版**尚未发版**（2026-10-03 收窄授权后只落仓攒批），已发布的旧壳仍按旧串取译名；删掉会让旧壳用户看到中文原文。\n- 零行为变化：键数 671 → 676（纯追加五条），其余 671 条目一字未动。"
+          "publishedAt": "2026-10-03T18:22:10.126Z"
         },
         {
           "version": "1.0.47",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.47/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-03T18:03:57.288Z",
-          "changelog": "- **补一条壳侧用到的词条**（数字步进件-主题适配：`NumberInput` 的输入框补可访问名称，[02 E9]）：`数值`。本包补英文译名 **Value**。\n- 零行为变化：键数 670 → 671（纯追加一条），其余 670 条目一字未动。"
+          "publishedAt": "2026-10-03T18:03:57.288Z"
         },
         {
           "version": "1.0.46",
