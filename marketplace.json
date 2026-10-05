@@ -276,22 +276,26 @@
         {
           "version": "1.0.50",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.50/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-04T14:16:08.030Z"
+          "publishedAt": "2026-10-04T14:16:08.030Z",
+          "changelog": "- **补 28 条壳侧配置项短名（title）英译**（配置项短名案·壳 41 条 title 落仓同笔）：壳 `src/App/config/` 四文件 41 条配置项行名短名全部落 `title: t(\"…\")`，英文界面经本包取译（壳侧译名唯一住点）。本包净新增 28 条（如 `外观模式 → Appearance Mode`、`玻璃模糊 → Glass Blur`、`分区圆角 → Zone Corner Radius`、`复位整体配方 → Reset to Whole Recipe`、`更新方式 → Update Mode`）；另 13 条复用既有词条（`主题配方`/`配色`/`强调色`/`强调色来源`/`文字极性`/`通道详情`/`AI 操作手册`/`开放范围明细`/`完整操作清单`/`操作日志`/`缓存目录`/`MCP 通道`/`CLI 通道`——41/41 全覆盖，零缺译）。\n- ⚠️ **纯追加、不删旧条**：680 → 708 键（净增 28），既有条目一字未动；壳侧这一版照旧 dev 攒批不发版，已发布旧壳不受影响。\n- 零行为变化：纯数据词条追加，无源码改动。"
         },
         {
           "version": "1.0.49",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.49/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-03T19:16:28.590Z"
+          "publishedAt": "2026-10-03T19:16:28.590Z",
+          "changelog": "- **补四条壳侧用到的词条**（设置行-控制只读同行：伴生只读补「待重启」态）。病根：伴生只读在「监听活着」时**无条件报地址**，于是关掉 `ai.mcp.enabled` 之后右边仍写「运行中」——**它真的还在跑**（内核只在启动时读开关，监听要重启才松手），但那句「重启生效」藏在描述里 ⇒ 贴脸看像 bug。壳侧按「本行键 ＋ 兄弟键」拆三态，本包补两条**带占位符**的话术模板：`{{state}} · 重启软件后关闭`（本行开关已关、监听是启动时的残留）／`{{state}} · 与 {{peer}} 共用`（监听由另一条通道的开关撑着，**重启也不会停**——不这么说就成假承诺），另补两条通道名 `MCP 通道` / `CLI 通道` 供 `{{peer}}` 取用。本包补英文译名四条。\n- ⚠️ **纯追加、不删旧条**：壳侧这一版**尚未发版**（2026-10-03 收窄授权后只落仓攒批），已发布的旧壳仍按旧串取译名；删旧条会让旧壳用户看到中文原文。\n- 零行为变化：键数 676 → 680（纯追加四条），其余 676 条目一字未动。"
         },
         {
           "version": "1.0.48",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.48/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-03T18:22:10.126Z"
+          "publishedAt": "2026-10-03T18:22:10.126Z",
+          "changelog": "- **补五条壳侧用到的词条**（设置行-控制只读同行 2.5：AI 接入分区四组「开关 ＋ 状态行」并成一行，`statusCommand` 从「只配只读行」升为可与任意主控件共存的**伴生声明**）：四条开关描述改写为**双语义**（说明右侧灰字是实时读数）＋「通道」组说明改指伴生读数。本包补英文译名五条。\n- ⚠️ **纯追加、不删旧条**（与 v1.0.45 不同）：被替换的四条旧描述、以及四个退役状态键（`ai.mcp.status` 等）的描述译名**一律原样保留**——壳侧这一版**尚未发版**（2026-10-03 收窄授权后只落仓攒批），已发布的旧壳仍按旧串取译名；删掉会让旧壳用户看到中文原文。\n- 零行为变化：键数 671 → 676（纯追加五条），其余 671 条目一字未动。"
         },
         {
           "version": "1.0.47",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.47/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-03T18:03:57.288Z"
+          "publishedAt": "2026-10-03T18:03:57.288Z",
+          "changelog": "- **补一条壳侧用到的词条**（数字步进件-主题适配：`NumberInput` 的输入框补可访问名称，[02 E9]）：`数值`。本包补英文译名 **Value**。\n- 零行为变化：键数 670 → 671（纯追加一条），其余 670 条目一字未动。"
         },
         {
           "version": "1.0.46",
