@@ -1,22 +1,28 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-05T12:47:46.889Z",
+  "updatedAt": "2026-10-05T14:01:40.437Z",
   "plugins": [
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.22",
+      "version": "1.0.23",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.22/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.23/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.22/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.22/editor.linkdesk-plugin",
-      "size": 8655960,
-      "publishedAt": "2026-10-05T02:03:19.601Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.23/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.23/editor.linkdesk-plugin",
+      "size": 8656275,
+      "publishedAt": "2026-10-05T13:57:04.487Z",
       "versions": [
+        {
+          "version": "1.0.23",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.23/editor.linkdesk-plugin",
+          "publishedAt": "2026-10-05T13:57:04.487Z",
+          "changelog": "- **二进制提示块的两颗按钮改用软件自己的按钮**（此前是编辑器自绘的一套样式）——主题、字号、悬停反馈现在与其他地方的按钮完全一致，不再是「编辑器里长着另一副样子」。\n- 「**打开方式…**」按钮改走**软件自己的「打开方式」命令**（以前借文件树的命令，那条要的是「文件树里选中的文件」，从编辑器点有歧义）。现在它带着**你正在看的这个文件**打开选择面板，由你挑用哪个插件打开。\n- 这颗按钮的出现方式也改了：以前靠编辑器内部一个**写死的开关**决定显不显示（那种开关迟早会跟软件实际能力对不上）；现在改为**问软件「这条命令在不在」**，在才显示、不在就整颗不出现——老软件上**不会**出现一颗点了没反应的按钮。\n- 要求 LinkDesk **0.2.48 或更高**才有「打开方式…」这颗按钮（更低的软件上它整颗不显示，其余功能一字不变，本插件仍可正常使用）。\n- 内部：`SHELL_COMMANDS` / `openWith()` 从 SDK **子路径** `@linkdesk/plugin-sdk/shell-commands` 取（`@linkdesk/plugin-sdk` ^0.1.81）——从根入口取会把 SDK 的构建工具链（vite → rollup）一起打进插件包，Windows 上直接 build 不过。\n\n# 更新日志"
+        },
         {
           "version": "1.0.22",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.22/editor.linkdesk-plugin",
@@ -95,21 +101,27 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.27",
+      "version": "1.0.28",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.27/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.28/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.27/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.28/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.27/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.27/file-tree.linkdesk-plugin",
-      "size": 48093,
-      "publishedAt": "2026-10-05T02:01:35.248Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.28/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.28/file-tree.linkdesk-plugin",
+      "size": 46569,
+      "publishedAt": "2026-10-05T13:56:25.064Z",
       "versions": [
+        {
+          "version": "1.0.28",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.28/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-10-05T13:56:25.064Z",
+          "changelog": "- **「打开方式…」面板移交宿主（文件打开方式与贡献点案 4.5 纠正案 · 住错层纠正）**：选择器面板与它的数据组装（扩展名归一、处理器表、图标裁决）整体搬到宿主侧——新宿主命令 `workbench.action.openWith` 承接；本仓删除私有面板、私有 store 与配套 CSS，右键「打开方式…」改为**转发**该宿主命令。外观与行为不变（锚定弹出、就近定位），但**数据来源归一**：行主标签是插件名、行图标与设置页同源、宿主不再依赖本插件也能升起面板。\n- **兼容过渡（⛔ 有到期日）**：`file-tree.openWith` 仍注册，仅把老调用方（旧版 editor/settings 传裸文件路径字符串）的入参收敛成宿主请求再转发；到期条件＝官方目录中所有插件的最低支持版本 ≥ 本版，届时整条删除（尾账记在主案任务清单）。\n- **右键这一项的前置条件多了一条**：除了「这个扩展名确实有人认领」（旧口径），还要**宿主命令 `workbench.action.openWith` 在册**——中间那版软件（有处理器查询面、还没有这条命令）上，本项**整条不显示**，不会出现一颗点下去没反应的项（与编辑器按钮同一律：探测不到就隐藏，⛔ 不留死钮）。\n- 依赖随宿主契约升级：`@linkdesk/contracts` ^0.1.39 / `@linkdesk/plugin-sdk` ^0.1.81（新增 `SHELL_COMMANDS` / `openWith()` 宿主命令调用面）。🔴 运行时代码从 SDK **子路径** `@linkdesk/plugin-sdk/shell-commands` 取这两个值——从根入口取会把 SDK 的构建工具链（vite → rollup）一起打进插件包，Windows 上直接 build 不过（SDK 0.1.81 的更正；0.1.80 的根入口写法是死路）。\n- **读数**：`npx tsc --noEmit` 零错误 · `npm run build` 出一个 ≈45 KB 的 `.linkdesk-plugin`（4 表面）· 自有九段自检全过 · 149 测试全过 · 私有面板 3 个文件 ＋ 2 个测试文件删除（`grep -rn \"OpenWithPanel\\|open-with.css\" src` = 0）。"
+        },
         {
           "version": "1.0.27",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.27/file-tree.linkdesk-plugin",
@@ -816,21 +828,27 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.35",
+      "version": "1.0.36",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.35/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.36/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.35/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.36/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.32",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.35/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.35/settings.linkdesk-plugin",
-      "size": 44501,
-      "publishedAt": "2026-10-05T07:36:14.320Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.36/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.36/settings.linkdesk-plugin",
+      "size": 44994,
+      "publishedAt": "2026-10-05T13:56:44.596Z",
       "versions": [
+        {
+          "version": "1.0.36",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.36/settings.linkdesk-plugin",
+          "publishedAt": "2026-10-05T13:56:44.596Z",
+          "changelog": "- **竞争行齿轮里的那一条改了语义：从「在文件树中打开选择器」改成「打开方式…（.扩展名）」**——以前这一项点下去，要么去开**文件树里碰巧选中的那个文件**（跟你点的那一行毫无关系），要么弹一句「没有选中的文件」，看着就是「点了没反应」。原因是它借用的是文件树的命令，而那条命令要的是「一个文件」，设置页这一行给的却是「一个类型」。现在它走**软件自己的「打开方式」命令**，按**这一行的类型**开面板，列出所有能处理该类文件的插件任你挑——**不需要先有文件**。这一项仍然只在**装了对应能力的新版软件**上才出现，老软件上**整条不显示**（不是灰的、更不是点了没反应）。\n- **同一批的候选名字改正**：行内下拉与「默认：X」里显示的**是插件的名字**，不再是**文件类型的名字**（如「Rust」）——这两个以前串了位，于是一只叫 Rust 的处理插件会和类型名撞在一起。下拉现在能一眼分清是哪只插件。\n- 🔴 **修复：插件卡齿轮里的「复制插件 ID」点了没反应**。这一条的回执写在复制动作**之后**，而复制这一步一旦失败（剪贴板不可用 / 被系统拒绝），异常会把回执整个吞掉——于是**既没复制成功、也没有任何提示**。现在**先探测**剪贴板是否可用（不可用就明说「剪贴板不可用」），复制失败则给出失败原因；三条齿轮命令的回执写法就此对齐。新增单测钉住「成功 / 失败 / 面缺失」三态。\n- 内部：宿主命令 id 不再写死在本插件里（改从插件 SDK 的常量取），并补上回归测——「宿主命令 id 不许再被硬编码回设置插件」。🔴 运行时代码从 SDK **子路径** `@linkdesk/plugin-sdk/shell-commands` 取常量（`@linkdesk/plugin-sdk` ^0.1.81）——从根入口取会把 SDK 的构建工具链（vite → rollup）一起打进插件包，Windows 上直接 build 不过。\n- 要求 LinkDesk **0.2.48 或更高**才能看到「打开方式…」这一项与改正后的候选名；更低的软件上这两处**按老样子**工作，本插件其余功能一字不变。"
+        },
         {
           "version": "1.0.35",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.35/settings.linkdesk-plugin",
