@@ -1,22 +1,28 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-05T16:49:16.677Z",
+  "updatedAt": "2026-10-05T19:04:56.923Z",
   "plugins": [
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.23",
+      "version": "1.0.24",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.23/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.24/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.23/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.23/editor.linkdesk-plugin",
-      "size": 8656275,
-      "publishedAt": "2026-10-05T13:57:04.487Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.24/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.24/editor.linkdesk-plugin",
+      "size": 8656479,
+      "publishedAt": "2026-10-05T19:03:47.665Z",
       "versions": [
+        {
+          "version": "1.0.24",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.24/editor.linkdesk-plugin",
+          "publishedAt": "2026-10-05T19:03:47.665Z",
+          "changelog": "- **二进制文件提示里那句说明，现在跟真的显示出来的按钮对得上了**：以前不论按钮在不在，都写「可右键选择打开方式或在市场搜索阅读器」——而在**没有任何插件认领这类文件**的时候，右键里那一项其实是**隐藏的**，这句话就是假话。现在按两颗按钮**实际的探测结果**选文案：两枚都在 / 只剩「打开方式…」/ 只剩「在市场搜索阅读器」/ 一枚都没有——四种说法各写各的。\n- **同一处还有时序问题**：以前提示是**先照「两枚按钮都在」说一句**，探测回来后按钮可能消失、话却已经说出去了。现在**等两个探测都落定**再弹这一句，不会再出现「提示里写了、界面上却没有」。\n- 内部：文案选键抽成纯函数（`binaryNoticeToastKey`）＋单测钉住四种组合（并逐句断言这四句话里**不出现「右键」**）；本插件字典新增四条整句译名。"
+        },
         {
           "version": "1.0.23",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.23/editor.linkdesk-plugin",
@@ -44,26 +50,22 @@
         {
           "version": "1.0.19",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.19/editor.linkdesk-plugin",
-          "publishedAt": "2026-10-04T17:56:50.750Z",
-          "changelog": "- **打开非文本文件不再满屏乱码**：用编辑器打开 pdf、图片、压缩包这类文件时，过去会把字节硬按文本解码、标签页里刷出一片乱码；现在这类文件显示一段带文件名的说明，并给出下一步入口（去插件市场找能打开它的插件）。\n- **误存不再毁文件**：这类文件上的保存被停用——此前一次保存就会把原始字节覆写成文本，文件当场损坏。\n- 本轮落的是**呈现能力**——用户可见的变化要等宿主更新（二进制判定能力在宿主侧）。在尚未带该能力的软件上，编辑器自动退回今天的行为（照旧按文本打开），不报错。"
+          "publishedAt": "2026-10-04T17:56:50.750Z"
         },
         {
           "version": "1.0.18",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.18/editor.linkdesk-plugin",
-          "publishedAt": "2026-10-04T15:16:17.719Z",
-          "changelog": "- **配置项行名短名**（配置项短名案）：设置页「编辑器」组 26 条设置此前行名只能裸显英文配置键（`editor.autoSave` 这类），现补声明式短名——如 `autoSave` → 「自动保存」、`fontSize` → 「字号」、`wordWrap` → 「自动换行」、`cursorStyle` → 「光标样式」。中文原文即 i18n key，英文界面走本仓 i18n 译名。\n- **枚举下拉不再裸显英文值**：8 组枚举（`autoSave`／`fontWeight`／`wordWrap`／`lineNumbers`／`renderWhitespace`／`cursorStyle`／`cursorBlinking`／`autoClosingBrackets`）此前无 `enumDescriptions`，下拉直接显 `onFocusChange`、`wordWrapColumn` 这类英文值；现补对象形态显示名（「延迟自动」「按列宽」等）＋英译。`fontWeight` 的 100–900 数值档按原样显示，不另起名。\n- 第三方存量声明不受影响：无短名者照旧回退显配置键。"
+          "publishedAt": "2026-10-04T15:16:17.719Z"
         },
         {
           "version": "1.0.17",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.17/editor.linkdesk-plugin",
-          "publishedAt": "2026-09-30T21:46:10.067Z",
-          "changelog": "- **安装包瘦身**：包内更新日志只带最近 5 版（更早的更新记录仍在本插件仓库里）——由 SDK 自动施加，用户无需任何操作。"
+          "publishedAt": "2026-09-30T21:46:10.067Z"
         },
         {
           "version": "1.0.16",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.16/editor.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:47:13.648Z",
-          "changelog": "- **自有翻译归位（E6#161「谁的仓谁译文」）**：本仓 7 条可渲染文案的英文译名住进**本仓字典** `i18n/en.json`（新增 7 条） ＋ `contributes.i18n` 声明——不再依赖 `lang-defaults` 代管：文案在本仓声明、译名却在别的仓的字典里，本仓加一条声明那只仓无从跟上（跨仓追不上）。译名取值：池里现成的照抄（同键同值 ⇒ 按 E6#161「同值覆盖不出声」规则运行时零变化），池里没有的 1 条新写。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` ^0.1.46 → **^0.1.61**——`npm run verify` 第 ⑧ 段「自有字典覆盖度」（manifest 渲染串缺口 🔴 / 源码 `t()` 缺口 ⚠️）由 `@linkdesk/plugin-sdk/own-dict-coverage` 判定（判据本体在 SDK，⛔ 不在本仓复制）。\n- **版本真源同步**：`package.json` 1.0.13（此前与 `plugin.json` 1.0.15 不同步）随本笔对齐到 **1.0.16**。"
+          "publishedAt": "2026-09-30T03:47:13.648Z"
         },
         {
           "version": "1.0.15",
@@ -840,21 +842,27 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.37",
+      "version": "1.0.38",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.37/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.38/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.37/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.38/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.32",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.37/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.37/settings.linkdesk-plugin",
-      "size": 45914,
-      "publishedAt": "2026-10-05T15:42:44.752Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.38/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.38/settings.linkdesk-plugin",
+      "size": 46148,
+      "publishedAt": "2026-10-05T19:03:37.701Z",
       "versions": [
+        {
+          "version": "1.0.38",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.38/settings.linkdesk-plugin",
+          "publishedAt": "2026-10-05T19:03:37.701Z",
+          "changelog": "- 🔴 **修复：「默认打开方式」管理器两处齿轮菜单的三条命令从 1.0.35 起点了完全没反应**（不报错、不提示，什么都不发生）——行齿轮「恢复自动（本格 N 类）」、插件卡齿轮「清除相关默认覆盖」与「复制插件 ID」三条都中招。原因不在命令本体（三条逻辑都是对的、单测也一直全绿），而在**入参的收法**：软件调插件命令时是**把每一枚实参逐枚展开交给函数**（`handler(...args)`），这三条却按「整包一个」去收——于是收到的永远只有**第一枚**（行齿轮拿到的是「类型数组本身」、卡齿轮拿到的是「身份对象本身」），解析函数按设计判空 ⇒ 走到「没有目标就什么都不做」那一句，静默收场。\n- **修法**：三条命令改为按软件**实际的传参方式**收参（rest 形式），解析函数一行未动（它本来就是对的，错的是喂法）；并**照软件真实的调用形状**补了端到端测试（此前的测试是把整个数组当**一枚**实参喂进去的——形状不对，所以一直绿着却与线上相反，这正是这次翻车的原因）。同时给仓里三条命令与解析函数各加了一段「载荷形状」警示注释，避免下一个人再踩。\n- 兼容性：新旧软件上行为一致（改的是插件自己怎么收参，不依赖任何新面）——不需要更新版本的软件。"
+        },
         {
           "version": "1.0.37",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.37/settings.linkdesk-plugin",
@@ -882,20 +890,17 @@
         {
           "version": "1.0.33",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.33/settings.linkdesk-plugin",
-          "publishedAt": "2026-10-04T20:46:22.153Z",
-          "changelog": "- 🔴 **修复上一版（1.0.32）的一个问题：齿轮菜单里的「复制快捷键」「复制为 JSON」「重置为默认」三项根本不显示**——点开菜单只看到另外三项（修改快捷键… / 复制命令 ID / 复制命令名称）。原因是这三项的出现条件所用的名字，与插件实际递过去的「本行信息」字段名对不上，而软件是按名字精确查表的（查不到就当条件不成立）⇒ 静默失效、不报错、看着像「这三项没做」。现已对齐，**六项按原设计全部出现**：有绑定的行多出两条复制，你改过的行多出「重置为默认」。\n- 新增一道回归校验：把菜单声明与插件实际递出的字段逐字对账，同类「名字对不上就静默不显示」的问题不会再溜过测试。\n- 其余（齿轮常显、键盘焦点样式、复制内容与 JSON 形状）与 1.0.32 一字不变。\n- 要求 LinkDesk **0.2.32 或更高**（未变）。"
+          "publishedAt": "2026-10-04T20:46:22.153Z"
         },
         {
           "version": "1.0.32",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.32/settings.linkdesk-plugin",
-          "publishedAt": "2026-10-04T20:28:39.446Z",
-          "changelog": "- **快捷键页每一行都出齿轮了，点开是一个菜单**：此前齿轮只在「这条被改过」的行上出现，而且一个齿轮 = 一个动作（重置）。现在**每一行**（内置／插件／用户，含没有绑定的行）都有齿轮，外观与设置页的齿轮一致（鼠标扫过去淡入）。\n- **齿轮菜单六项**：**修改快捷键…**、复制命令 ID、复制命令名称、复制快捷键、复制为 JSON、重置为默认。\n  - **「修改快捷键…」补的是一条隐形路径**：以前改一条绑定的键只能**双击那一行**，现在从菜单点同一项即可（效果与双击完全相同）；**没有绑定的行也能用**——原来没有绑定、现在想加一个，走这一项。\n  - 点它会把快捷键页的搜索框预填成该命令 ID（列表收窄到那一行）——这是软件侧「AI/CLI 直达改键」的同一条路；想保留整表视图，把搜索框清空即可。\n  - **「复制快捷键」「复制为 JSON」只在有绑定（不是 `—`）的行上出现**，「重置为默认」只在**你改过**（来源 = 用户）的行上出现——不留点了没反应的死项。\n  - 「复制快捷键」复制的是**原样键位串**（组合键保留中间的空格，如 `ctrl+k ctrl+l`）；「复制为 JSON」按 `keybindings.json` 的**存储形状**（带条件绑定的行连 `when` 一起复制），可以**直接粘回该文件生效**。\n- **键盘可达性修好**：齿轮常显后它每一行都在 Tab 顺序里，而此前没有任何键盘焦点样式——纯键盘操作会停在一个**看不见**的按钮上。现在 Tab 到齿轮时会显形并带焦点框。\n- 要求 LinkDesk **0.2.32 或更高**（未变）。"
+          "publishedAt": "2026-10-04T20:28:39.446Z"
         },
         {
           "version": "1.0.31",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.31/settings.linkdesk-plugin",
-          "publishedAt": "2026-10-04T15:07:57.758Z",
-          "changelog": "- **设置页的每一行改显「人话名字」**（随「配置项短名」）：行名改为取配置项声明里的**短名**（`title`），不再直接显示 `editor.autoSave` 这样的配置键。**没有声明短名的第三方配置项照旧显示配置键**——存量插件零影响。配置键仍可从齿轮菜单「复制设置 ID」取到。\n- **搜索框也能按短名搜**：此前只匹配配置键、说明文字与分组名，现在输入「自动保存」这类**行名**同样命中该行。\n- **齿轮菜单新增「复制设置名称」**：本行有短名时，齿轮里会出现这一项，把**当前界面语言**的行名复制到剪贴板；**没有短名的行不出现**（不留复制空的死项）。该菜单项由软件侧提供，需 **LinkDesk 0.2.43 或更高**；在更低版本的软件上齿轮里不出现这一项，其余行为一字不变。\n- **插件声明的枚举档显示名此前从未生效，现已修复**：`enumDescriptions` 按 manifest schema 是「值 → 显示名」的**对象**形态，而本渲染器此前只按下标读数组 ⇒ 别家插件按 schema 声明的中文档名被整片忽略、下拉一直裸显 `powershell` 这类英文值（file-tree「外部终端」今天就长这样）。现在**两种形态都认**——插件按 schema 写的对象形态就此生效，壳侧自用的数组形态行为一字不变。\n- 本插件自己的「打开形态」（`settings.openForm`）配置项补上短名与两个枚举档的中文显示名（「悬浮面板」/「标签页」），下拉框不再裸显 `floatingPanel` / `tab`。\n- 要求 LinkDesk **0.2.32 或更高**（未变）。"
+          "publishedAt": "2026-10-04T15:07:57.758Z"
         },
         {
           "version": "1.0.30",
