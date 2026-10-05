@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-05T19:04:56.923Z",
+  "updatedAt": "2026-10-05T20:05:34.418Z",
   "plugins": [
     {
       "id": "editor",
@@ -1174,18 +1174,24 @@
     {
       "id": "theme-iconset-pastel",
       "name": "粉彩图标集",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "精简彩色图标集——Material Icon Theme 常用精选（MIT，303 条映射 + 5 默认图标，含文件夹/新建文件/根文件夹彩色图标与自绘的 Keil 单片机工程图标），图像资产形态应用（E5.8#133 图标主题闭环实例）",
       "author": {
         "name": "LinkDesk"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.0/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.1/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.0/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.0/theme-iconset-pastel.linkdesk-plugin",
-      "size": 109907,
-      "publishedAt": "2026-10-05T12:45:15.980Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.1/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.1/theme-iconset-pastel.linkdesk-plugin",
+      "size": 113229,
+      "publishedAt": "2026-10-05T19:53:11.492Z",
       "versions": [
+        {
+          "version": "1.1.1",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.1/theme-iconset-pastel.linkdesk-plugin",
+          "publishedAt": "2026-10-05T19:53:11.492Z",
+          "changelog": "- **图标清单的「图纸」搬回本仓（自足性收口）**：转换 material 图标集的那只脚本原先住在 LinkDesk 壳仓（`scripts/convert-material-icons.mjs`），本仓只留产物 ⇒ 换人／换机想加一批图标，得先去壳仓改那只脚本（而壳仓不是作者的仓）。现在同一件事由 **`@linkdesk/plugin-sdk` 的 `import-icon-theme` 命令**做（公开 npm，**任何图标主题作者可用**），而**本主题「选哪些图标」的编辑决定**住本仓 **`icon-import.json`**（三张表 ＋ 两条改指 ＋ 自绘资产白名单）。\n  - 重跑（例如升上游 material-icon-theme）：`npm pack material-icon-theme` → 解包 → `npm run icons:import -- package/dist/material-icons.json`。本次实测：产物与现 `icons/pastel.json` **逐字节一致**（303 条映射 / 180 个 SVG 全部对上）。\n  - `package.json` 的 devDep `@linkdesk/plugin-sdk` 随之抬到 `^0.1.84`（`import-icon-theme` 自该版起可用）；壳仓侧同笔撤掉 `icons:convert` 入口与那只脚本——**⛔ 不再有「图纸住壳仓」这回事**。\n- **功能零变更**：图标、映射、配色、id、显示名一律未动——升级后看到的图标与 v1.1.0 完全一样（本次只动工具链与说明）。"
+        },
         {
           "version": "1.1.0",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.0/theme-iconset-pastel.linkdesk-plugin",
