@@ -251,18 +251,30 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.58",
+      "version": "1.0.60",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.58/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.60/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.58/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.58/lang-defaults.linkdesk-plugin",
-      "size": 31079,
-      "publishedAt": "2026-10-05T15:34:06.567Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.60/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.60/lang-defaults.linkdesk-plugin",
+      "size": 32007,
+      "publishedAt": "2026-10-06T10:45:17.211Z",
       "versions": [
+        {
+          "version": "1.0.60",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.60/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-06T10:45:17.211Z",
+          "changelog": "- **补 v1.0.59 的漏项：一条「整句改名」词条**。壳侧「设置重置按钮称呼」归一化要把 `删除外观覆盖` 回执里引用的按钮名改成真名——那句话是**一条完整的可渲染串**（不是拼接），故词条必须整条换名：`该键在设置页还有一枚「重置为默认项」…` → `该键在设置页还有一枚「重置此设置」…`（英文同步 `“Reset to default”` → `“Reset Setting”`）。漏了它 = `audit-i18n --strict` 判「新句缺译 ＋ 旧句成孤儿」两条。\n- ⚠️ **v1.0.59 是本批的中间态**（6 增 12 删已就位，缺这条整句改名）——两版**都未进官方目录**，用户可见的只有最终版。已发布的 tag 一律不动（改写已发布 tag 是维护者的手）。\n- 键数 725（增 1 删 1，净 0）。零行为变化：纯数据词条。"
+        },
+        {
+          "version": "1.0.59",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.59/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-06T10:43:25.314Z",
+          "changelog": "- **归一化夹第二批（文案与称呼）词条同步——本档首次「带删」发版**：壳侧 12 条归一化收口连带 `en.json` 增删。\n  - ＋6：`选择主题 → Select Theme`、`暂无主题配方 → No theme recipes available`、`暂无视图 → No views. Search the plugin marketplace.`、`内存使用率偏高（{{used}} MB / {{limit}} MB） → High memory usage ({{used}} MB / {{limit}} MB)`、`复位外观覆盖… → Reset Appearance Overrides...`、`复位为整体配方… → Reset to Whole Recipe...`（后两条是 theme 三条命令 title 去「分类：」手写前缀后的新键）。\n  - −12（旧写法废词条，跨 16 个官方仓 grep 过、除本仓自身**零源码引用**）：`切换主题`、`无可用主题配方`、`暂无可用视图`、`输入命令名称搜索…`、`切换插件 DevTools`、`切换 DevTools`、`开发者`、`Pool 池窗口`、`当前`、`主题：选择主题…`、`外观：复位外观覆盖…`、`混搭：复位为整体配方…`。\n  - 🔁 **改键名保留一条**：`zh.json` 的例外译文 `暂无可用视图` → 键名改 `暂无视图`，**译文一字不动**（「暂无视图，请在插件市场搜索安装」）——中文用户可见文案只少「可用」二字，下半句提示语完整保留。\n- 键数 731 → 725（删 12 补 6）。⚠️ **本档打破「纯追加、不删旧条」惯例**：本批判据就是「废词条同笔删除，不留孤儿」（用户 2026-10-06 明令）。\n- 顺带修一处文档缺陷：本文件原有两个逐字相同的 `# 更新日志` 标题（重复 H1），删其一。\n- 零行为变化：纯数据词条增删，本仓无源码。"
+        },
         {
           "version": "1.0.58",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.58/lang-defaults.linkdesk-plugin",
