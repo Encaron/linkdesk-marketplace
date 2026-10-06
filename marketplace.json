@@ -251,18 +251,24 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.60",
+      "version": "1.0.61",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.60/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.61/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.60/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.60/lang-defaults.linkdesk-plugin",
-      "size": 32007,
-      "publishedAt": "2026-10-06T10:45:17.211Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.61/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.61/lang-defaults.linkdesk-plugin",
+      "size": 32179,
+      "publishedAt": "2026-10-06T11:26:09.822Z",
       "versions": [
+        {
+          "version": "1.0.61",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.61/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-06T11:26:09.822Z",
+          "changelog": "- **补 v1.0.59 漏项：内存告警那条词条的键写短了**。壳侧源串是一整句 `内存使用率偏高（{{used}} MB / {{limit}} MB），建议关闭不活跃的插件`（`src/hooks/useMemoryMonitor.ts`），而 v1.0.59 建键时漏了后半句「，建议关闭不活跃的插件」⇒ 键对不上源串，`audit-i18n --strict` 仍判缺译。本版把键改成源串原文、译文补全整句。\n- 键数 725（增 1 删 1，净 0）：`内存使用率偏高（{{used}} MB / {{limit}} MB）` → `内存使用率偏高（{{used}} MB / {{limit}} MB），建议关闭不活跃的插件`。\n- ⚠️ **v1.0.59／v1.0.60 均为中间态、都未进官方目录**——用户可见的只有本版（收录链只认最新版）。已发布的 tag 一律不动。\n- 零行为变化：纯数据词条。"
+        },
         {
           "version": "1.0.60",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.60/lang-defaults.linkdesk-plugin",
