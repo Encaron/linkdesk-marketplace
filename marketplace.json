@@ -5,18 +5,25 @@
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.24",
+      "version": "1.0.25",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.24/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.25/resources/icon.svg",
       "iconSource": "url",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.24/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.24/editor.linkdesk-plugin",
-      "size": 8656479,
-      "publishedAt": "2026-10-05T19:03:47.665Z",
+      "minAppVersion": "0.2.13",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.25/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.25/editor.linkdesk-plugin",
+      "size": 8658551,
+      "publishedAt": "2026-10-07T07:17:02.196Z",
       "versions": [
+        {
+          "version": "1.0.25",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.25/editor.linkdesk-plugin",
+          "publishedAt": "2026-10-07T07:17:02.196Z",
+          "changelog": "- **二进制提示页新增第三颗按钮「仍旧以该编辑器插件打开」**：以前提示页只有「打开方式…」「在市场搜索阅读器」两条路，没有一条是「我就要按文本看」。新按钮把文件**按文本强制打开**——乱码照实显示，照常编辑；**保存前会确认一次**（写回会用文本内容覆盖原二进制文件，本标签页只问这一遍）。\n- 强制打开后顶部有一条**细警示条**说明当前状态，右侧「退回提示页」随时回到原提示页；再点第三颗按钮直接回来，不重新读盘。\n- 这颗按钮同时有**命令面板路径**：`editor.forceOpenAsText`（不用鼠标也能走到）。\n- 右下角提示语同步修正：四种组合都会提到「或仍以文本方式打开」这条**永远在**的出路（以前两颗按钮都不在时，提示里一条出路都不提）。\n- 内部：`EditorModel.load` 新增 `forceText` 选项——「是二进制」（壳判定的事实）与「用户选择按文本打开」（用户的选择）分成两个标记记；外部文件变更重载保持强制态、不再退回提示页模型。\n\n# 更新日志"
+        },
         {
           "version": "1.0.24",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.24/editor.linkdesk-plugin",
@@ -44,8 +51,7 @@
         {
           "version": "1.0.20",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.20/editor.linkdesk-plugin",
-          "publishedAt": "2026-10-04T18:23:20.792Z",
-          "changelog": "- **不显示点了没反应的入口**：上一版给二进制文件配了「打开方式…」入口，但宿主侧那个动作还没做出来——按钮点了什么也不会发生。这一版先把它收起来（接线留着，动作到位就放出来）。\n- 二进制文件的说明文字与「在市场搜索阅读器」入口不受影响；文本文件照旧。"
+          "publishedAt": "2026-10-04T18:23:20.792Z"
         },
         {
           "version": "1.0.19",
@@ -97,27 +103,32 @@
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.10/editor.linkdesk-plugin",
           "publishedAt": "2026-09-14T02:35:51.977Z"
         }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-editor"
+      ]
     },
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.30",
+      "version": "1.0.31",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.30/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.31/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.30/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.31/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.30/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.30/file-tree.linkdesk-plugin",
-      "size": 48489,
-      "publishedAt": "2026-10-06T18:05:22.736Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.31/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.31/file-tree.linkdesk-plugin",
+      "size": 48708,
+      "publishedAt": "2026-10-07T07:15:19.752Z",
       "versions": [
+        {
+          "version": "1.0.31",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.31/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-10-07T07:15:19.752Z",
+          "changelog": "- **修复：新建的无后缀文档（以及 Makefile 这类无扩展名文件）双击后打开的是「欢迎页」，而不是编辑器**——根因是文件树对「没有扩展名」的文件根本不去问系统该用谁打开，直接短路进了兜底欢迎页。现在一律照常询问，按系统裁决开标签（默认落到编辑器，直接可编辑）。\n- **修复：搜索结果里双击无后缀文件完全没有反应**（同一条短路的另一头）。顺手修了一个潜伏问题：搜索打开此前把**整条路径**（而非文件名）喂给扩展名判断，路径里的目录名带点时（如 `v1.2`）会算出错误的扩展名。\n- 要等软件本体下次发版后才看得到效果；在当前版本软件上行为与从前完全一致（不会更坏）。\n\n# 更新日志"
+        },
         {
           "version": "1.0.30",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.30/file-tree.linkdesk-plugin",
@@ -145,56 +156,47 @@
         {
           "version": "1.0.26",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.26/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-10-04T19:44:14.807Z",
-          "changelog": "- **说明**：在文件上右键时，文件树现在会把「这是不是文件、扩展名是什么」公开给宿主——第三方插件的右键菜单项可以据此**只对某类文件出现**（例如一个 Markdown 插件只在 `.md` 上显示它的菜单项）。文件树自己的 18 项右键菜单行为、单击/双击打开方式均不变。"
+          "publishedAt": "2026-10-04T19:44:14.807Z"
         },
         {
           "version": "1.0.25",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.25/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-10-04T15:14:06.503Z",
-          "changelog": "- **配置项行名短名**（配置项短名案）：设置页「资源管理器」组 18 条设置此前行名只能裸显英文配置键，现补声明式短名（如 `sortOrder` → 「排序方式」、`compactFolders` → 「紧凑文件夹」、`external.windowsExec` → 「外部终端」），中文原文即 i18n key，英文界面走本仓 i18n 译名。\n- **枚举下拉不裸显英文值**：`sortOrder`（6 档）与 `incrementalNaming`（2 档）此前无 `enumDescriptions`，下拉直接显 `foldersNestsFiles` / `disabled` 这类英文值——现补对象形态显示名（「文件优先」「重名自动编号」等），并补英译。\n- 第三方存量声明不受影响：无短名者照旧回退显配置键。"
+          "publishedAt": "2026-10-04T15:14:06.503Z"
         },
         {
           "version": "1.0.24",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.24/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-10-03T13:33:40.796Z",
-          "changelog": "- **补刀：筛选输入框（「要包含的文件」／「要排除的文件」）对齐 `.ldk-input` 契约**——1.0.23 治了搜索/替换两行，这两个筛选框是同 section 的漏网之鱼：原先**连 `border-radius` 声明都没有**（恒直角，`app.surfaceRadius` 调多大都不动）。补 `--radius-sm`（跟主题圆角走）＋ 底色 `--bg-card` → `--bg-input`（与搜索/替换字段同源）＋ 聚焦 accent 边＋2px 焦点环。仅 CSS，零逻辑、零结构改动。\n- **读数**：`npm run verify` 八段全绿 · `vitest run` 16 文件 149 例全绿 · `npm run build` 4/4 表面。"
+          "publishedAt": "2026-10-03T13:33:40.796Z"
         },
         {
           "version": "1.0.23",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.23/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-10-03T12:50:12.622Z",
-          "changelog": "- **侧栏「搜索」section UI 重设计（案A · 零件版）**——病灶是 SearchView 全部自绘、不吃主题 token：「输入框不随圆角变化」「替换钮没有按钮边缘、看着不像按钮」。设计档案住壳仓 `docs/05-插件更新/文件树-搜索重设计/`（2026-10-03 拍板：案A ＋ 四项细化）。\n  - **「全部替换」换共享 `Button`**（`@linkdesk/ui`，实心 accent——按钮双轨约定「做什么用实心钮」）：四态齐了（禁用 / 可用 / hover / 替换中进度文案），本地 `.file-tree-search-replace-btn` 样式整块退休。\n  - **输入壳契约对齐壳侧 `.ldk-input`**：`--bg-input` / `--border` / `--radius-sm` / 聚焦 accent 边＋2px accent 环——圆角跟主题走了。高度改内容驱动（竖 padding 4px 与 `.ldk-input` 同），与共享 Button 同一条自然高公式 ⇒ 同行等高，--ui-scale 由字号 token 自带（原 28px 死值退休）。\n  - **Aa/ab/.* 选项钮收进输入框内右端**（VS Code 同款）：ghost 态＋激活 accent 淡底，~80px 还给输入框，170px 最小侧栏宽下仍可用。\n  - **替换字段幽灵降级**：常显但透明底无框、聚焦才现框——治「两框贴在一起」（拍板 D6＝常显＋幽灵降级）。\n  - **行距 4px→8px**（触点间距 ≥8px 节奏）＋ 结果行匹配段高亮（`<mark>` accent 淡底，切片用 wire 契约自带的 `matchStart/matchEnd` 列区间——纯视图，零搜索逻辑）。\n  - ⛔ 搜索纯逻辑（useSearch / useReplaceAll / searchCommands 等）零接触；⛔ 壳仓与 `@linkdesk/ui` 零改动。\n- **读数**：`npx tsc --noEmit` 零错误 · `npm run verify` 八段全绿 · `vitest run` 16 文件 149 例全绿 · `npm run build` 4/4 表面 46.5 KB。"
+          "publishedAt": "2026-10-03T12:50:12.622Z"
         },
         {
           "version": "1.0.22",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.22/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-30T21:43:22.088Z",
-          "changelog": "- **安装包瘦身**：包内更新日志只带最近 5 版（更早的更新记录仍在本插件仓库里）——由 SDK 自动施加，用户无需任何操作。"
+          "publishedAt": "2026-09-30T21:43:22.088Z"
         },
         {
           "version": "1.0.21",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.21/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:47:25.364Z",
-          "changelog": "- **自有翻译归位（E6#161「谁的仓谁译文」）**：本仓 6 条可渲染文案的英文译名住进**本仓字典** `i18n/en.json`（新增 6 条） ＋ `contributes.i18n` 声明——不再依赖 `lang-defaults` 代管：文案在本仓声明、译名却在别的仓的字典里，本仓加一条声明那只仓无从跟上（跨仓追不上）。译名取值：池里现成的照抄（同键同值 ⇒ 按 E6#161「同值覆盖不出声」规则运行时零变化），池里没有的 3 条新写。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` ^0.1.56 → **^0.1.61**——`npm run verify` 第 ⑧ 段「自有字典覆盖度」（manifest 渲染串缺口 🔴 / 源码 `t()` 缺口 ⚠️）由 `@linkdesk/plugin-sdk/own-dict-coverage` 判定（判据本体在 SDK，⛔ 不在本仓复制）。"
+          "publishedAt": "2026-09-30T03:47:25.364Z"
         },
         {
           "version": "1.0.20",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.20/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-29T15:14:27.100Z",
-          "changelog": "- **修：侧栏「打开文件夹」section 的悬停/按下态落到 `unset`——悬停时主按钮把底丢掉、最近项零反馈。** 起因是 FT#4 的 216px 视觉走查：`OpenFolderView.css` 的 `:hover`/`:active` 用了 `var(--tree-bg-hover)` / `var(--tree-bg-selected)`，而这两个 token 定义在 `.file-tree-root`（`file-tree-shell.css` §设计 Token）——本 section 挂在 `ldk-sidebar-section-body` 下，**祖先链里没有 `.file-tree-root`**（实测链：`file-tree-open-folder-btn → file-tree-open-folder → ldk-sidebar-section-body → …`）。`var()` 在这种作用域取到空串 ⇒ 该声明在**计算值期**非法 ⇒ 落 `unset`。\n  - **实测（`CSS.forcePseudoState` 强制 `:hover`，非目测）**：主按钮 `background-color` `rgb(45,45,45)`（`--bg-card`）→ **`rgba(0,0,0,0)`**，即不是「叠一层悬停底色」而是**把底清空**；最近项背景恒 `rgba(0,0,0,0)` ⇒ **悬停毫无反馈**。`border-color: var(--accent)` 不受影响（`--accent` 全局定义）⇒ 悬停时只剩边框变色、底反被抹掉。\n  - **修法**：三处声明带 fallback（`var(--tree-bg-hover, color-mix(in srgb, var(--text-primary) 6%, transparent))`、selected 为 15% accent）——与同仓 `SearchView.css` 四处**既有写法一致**。⛔ 不动 token 定义位置（那是树节点的作用域）、不动骨架与类名。\n  - **读数**：`npx tsc --noEmit` 零错误 · `npm run verify` 六段全绿（lint 严格腿 75 文件零偏离）· `vitest run` 16 文件 **149 例** · `npm run build` **4/4 表面 / 74.9 KB**。"
+          "publishedAt": "2026-09-29T15:14:27.100Z"
         },
         {
           "version": "1.0.19",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.19/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-29T14:37:59.863Z",
-          "changelog": "- **修：文件菜单里的 5 项 file-tree 贡献「从来没有过」**（用户 2026-08-11 起就发现菜单项不见了，一直以为是自己误删——**不是**）。真因可指认到具体一行：`af2ef5712`（E5.6#11.5 Path B 池核心隔离）为切断插件对 `@src/core` 的 import，把 `MenuId` 内联成字符串字面量时，**把枚举的「成员名」当成了「值」**——写成 `MenuId = { FileContext: \"FileContext\", MenuBar: \"MenuBar\" }`，而壳侧 `MENU_SLOTS.MenuBar` 的值当时已经是 `\"menuBar\"`（小驼峰）。壳的菜单表是精确字符串键、零归一化，只按 `MENU_SLOTS.*` 的值取 ⇒ 贡献落进**另一个键**，无消费者、无报错、无日志，界面表现就是「这条菜单不存在」。历次重构只把这两处死键原样搬家，因为**没有一条判据看菜单槽位 id 的大小写**。\n- **修法：菜单项改声明式**。删掉 `src/components/FileTreeContextMenu/commands/menuItems.ts`（命令式 `menu.registerItems(...)` 的唯一内容），改由 `plugin.json` 的 `contributes.menus` 承载：`menuBar` = 5 项（新建文件 / 新建文件夹 / 打开文件夹… / 关闭所有编辑器 / 关闭文件夹）＋ 一个「编辑」子菜单（`command: \"\"` ＋ `children`，`group` 由 `edit` 改 `file`，并进「文件」组渲染成 `文件 ▸ […, 编辑 ▸]`，**顶级菜单集合一个不增**）；`fileContext` = 原 18 项原样搬（各 `when` / `label` / `group` 一字未动）。消费端 `Menu.tsx` 的 `menuId={\"FileContext\"}` 同笔改 `\"fileContext\"`——两处原先靠**读写同一个错键**自洽，只改一边会弄坏右键菜单。`file-tree.closeAllEditors` 补进 `contributes.commands`（它原先只运行时注册，不在声明面）。\n- **修：「装了就显示」的另一半——点了要真能动**。菜单声明面由加载器在**插件装载时**注册（与视图是否 mount 无关，卸载由加载器 disposer 回收）；但命令 **handler** 原先只在 `FoldersView` mount 时注册 ⇒ 在**从没打开过文件树视图**的会话里，那 5 项是「点得着、点了没反应」。本版把 `activateFileTreeContextMenu()` 提到入口顶层（`src/index.tsx`）——与既有的 `registerSearchCommands()` 同一时机，走池的 on-command 激活契约（命令 miss ⇒ 池 `import()` 入口 ⇒ 顶层副作用注册 handler ⇒ 重试即命中）。`FoldersView` 那处调用**保留不动**（它是 dev-host / 纯浏览器预览里唯一的注册路径），函数自带 `_registered` 幂等闸。\n- **新增：侧栏 explorer 容器的常驻 section「打开文件夹」**（`order 2`，排在搜索下方）。起因是**唯一 UI 入口原在欢迎页**——而欢迎页是可关闭的标签页保底，关掉它、或把文件树目录清空之后，全软件再没有一处 UI 能打开文件夹。section 内容 = 主按钮「打开文件夹…」＋ 最近 5 条（点最近项走 `workspace.addFolder`，**添加**语义，与欢迎页同一个 API）。主按钮打 `file-tree.openFolder` 命令——与文件菜单、命令面板**同一条链**，不写第二份逻辑。\n  - **只有数据是借来的**：最近列表**只读**消费欢迎页写在 `pluginState(\"app\",\"recentFolders\")` 的那份（形如 `{ path, name }[]`，上限 10）。不写回——两个写方各写一份必然互相覆盖。订阅走 `pluginState.onChange`（回调**直接带新值**）而不是 `onDidChangeFolders`：后者是「广播在前、落盘在后」，在同一条广播里重读读到的是上一版，表现为「刚打开的目录不在最近里」。\n- **`FoldersView` 空态补一行 muted 占位**（原来无工作区根时是**纯空白**，连占位都没有）。只做**组件内部条件渲染**，组件本体（含 `onDidChangeFolders` 订阅）始终挂载——`registerViewEmptyContent` 那种「外部替换整个组件」的形态 2026-08-03 造成过死锁（视图被替换 ⇒ 订阅随 unmount 注销 ⇒ 点「打开文件夹」后无人听广播 ⇒ 永久空白，见 `docs/05-插件更新/文件树/01-打开文件夹入口-设计.md` §二·五），本版不碰那条路。不带按钮——按钮职责归上面的常驻 section。\n- **删孤儿 `src/views/WelcomeView.tsx`**（119 行，自 2026-08-03 `231257d16` 起无人 import 的死代码；其最近列表素材已折进常驻 section）＋ `file-tree-node.css` 里只为它存在的 12 条规则（`.file-tree-welcome*` / `.file-tree-recent*` / `.file-tree-dragover-hint`）＋ 1 个孤儿字典键（`释放以打开文件夹`）。\n- **`i18n/en.json` 净 +1 键（73 → 74）**：新增 `最近` → `Recent`、`打开文件夹` → `Open Folder`（后者是侧栏 section 标题——`contributes.views[].title` 是原样下发的、加载器不翻，运行时注册那一笔才补译文），删 1 个孤儿键。\n- **读数**：`npm run verify` 六段全绿（lint 严格腿 75 文件零偏离；声明自洽「3 个视图的 render 全部兑现」；字典 74 键；纯逻辑单元 14 个全部有测试）；`npx tsc --noEmit` 零错误；`vitest run` 16 文件 149 例全绿；`npm run build` 产出 4/4 表面（新增 `views/OpenFolderView.bundle.js`）。\n- **配套的机械门禁在 SDK 里**（本版 devDependency 起 `@linkdesk/plugin-sdk` 0.1.56 新增腿 `linkdesk/no-menu-slot-case`）：菜单槽位 id 与宿主 `MENU_SLOTS` 的某个值**仅大小写不同** ⇒ 判红。这条判据刚好能判死本版的病根（`\"MenuBar\"` / `\"FileContext\"`），而 `MenuId` 是开放字符串、第三方可自造注册点 ⇒「未知 id」不判——所以它既严格又零假红。本仓 `npm run verify` 的 lint 严格腿自动吃这条。"
+          "publishedAt": "2026-09-29T14:37:59.863Z"
         },
         {
           "version": "1.0.18",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.18/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-09-28T17:17:00.464Z",
-          "changelog": "- **新增命令 `file-tree.openSearchResult`（打开搜索结果）**——把「打开一条搜索匹配」这条**原本只有鼠标**的动作接进命令面：界面上它只能靠**双击结果行**（`SearchResults.tsx` 的 `onDoubleClick`），F4 那条键盘路要先让搜索框拿到焦点、且本身不是命令 ⇒ AI、快捷键、命令面板都够不着它。判定目标这一半（`searchSession.ts` 解析规则）与开标签页那一半（走与双击**同一个** `openMatch`，不另写第二份 `tabs.create`）都是纯逻辑/复用，故无并行实现。\n- **目标从哪来**：搜索结果本体住在 `useSearch` 的 React state 里，命令 handler 不在 React 上下文——现在搜索/导航变化时把 `(matches, index)` 投影进模块级快照，命令缺省打开**当前高亮那一条**，也可按 `filePath`（可再带 `lineNumber`）点名要哪条。视图卸载即清空 ⇒ 命令如实回「没有搜索结果」，⛔ 不给一个界面上早已不存在的陈旧目标。\n  - 注册点在**入口顶层**（`src/index.tsx`）而非视图 `useEffect`：无视图时 AI 经 `exec` 打进来靠池的 on-command 激活 `import()` 入口，顶层的副作用才是唯一注册时机。右键菜单那批既有命令仍由 `FoldersView` mount 时注册——本笔**只加不减**。\n- **补齐 21 条既有命令的说明（`description`）**：本仓命令只声明了 `title`，命令索引里一行说明都没有。检查命令清单的使用者（AI、未来的命令面板检索）只能看到名字。21 条按各自 handler 的**真实行为**逐条写（含「占位、未接实现」两条与「与『打开』走同一条链路」这类**如实**读数），并给新命令补 `params`。\n- **说明与参数只写在声明面**：`title` / `description` / `params` 一律只进 `plugin.json` 的 `contributes.commands[]`；运行时 `registerCommand` **不带 meta**（本仓既有惯例——两处各写一份文案迟早分叉）。壳加载器会把声明面的说明与参数注册进命令索引，池侧不带这两项时不会抹掉声明面那份。\n- **新命令不进运行时 meta 面**，命令面板的可见性由 `when` 管；本命令不设 `when`（无门）。若面板列出它而当前没有搜索结果，如实在面板里报「没有搜索结果」，不静默。\n- **`i18n/en.json` 补 1 键**（`打开搜索结果` → `Open Search Result`，字典 72 → 73）。其余 21 条标题的英文键此前已在。\n- **测试**：新增 `src/__tests__/searchSession.test.ts`（16 例）——解析规则 9 例（空会话／缺省高亮／索引 `-1` 与越界的兜底／反斜杠与正斜杠等价／同行号唯一确定／点名不存在的文件为 `null`／卸载即清空）＋ 命令面 7 例（注册 1 条且 id 正确／`commands` 面缺失时返回 0 而不抛／缺省打开的是高亮那条并回报 `index`+`total`／点名优先于高亮／两条负控「不存在的文件」「扩展名没有属主插件」都必须**不碰** `tabs.create`）。\n- **既有读数**：`vitest run` 16 文件 149 例全绿；`npm run verify` 六段全绿（声明面 22 名 / 运行时面 25 名，命令归属零偏离；字典 73 键；纯逻辑单元 14 个全部有测试）。`npx tsc --noEmit` 零错误。无用户可见的既有行为变化。"
+          "publishedAt": "2026-09-28T17:17:00.464Z"
         },
         {
           "version": "1.0.17",
@@ -251,8 +253,7 @@
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.7/file-tree.linkdesk-plugin",
           "publishedAt": "2026-09-14T02:35:58.751Z"
         }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-file-tree"
+      ]
     },
     {
       "id": "lang-defaults",
