@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-10-07T17:38:17.416Z",
+  "updatedAt": "2026-11-04T23:50:24.534Z",
   "plugins": [
     {
       "id": "editor",
@@ -511,21 +511,27 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.1.10",
+      "version": "1.2.0",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "官方"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.1.10/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.2.0/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.1.10/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.2.0/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.1.10/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.10/marketplace.linkdesk-plugin",
-      "size": 62231,
-      "publishedAt": "2026-10-04T15:10:19.877Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.2.0/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.2.0/marketplace.linkdesk-plugin",
+      "size": 62199,
+      "publishedAt": "2026-11-04T23:50:24.534Z",
       "versions": [
+        {
+          "version": "1.2.0",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.2.0/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-04T23:50:24.534Z",
+          "changelog": "- **详情页元数据侧栏滚动吸顶**：右侧「标识符／作者／版本／兼容性…」那栏滚动时**钉在原地**，不再跟着正文滚走；「详情／功能／更改日志」三个 tab 都生效（侧栏本就三 tab 常驻，一处生效全吃）。\n- **装前版本门补缝（minAppVersion）**：此前只有详情页「安装」会拦「需要更高版本 LinkDesk」的插件，**侧栏行内安装和手动更新都能装上、装完却用不了**（重启软件后报错跳过）。现在四个入口走**同一道门**——行内安装、手动更新同样先比对并说明原因；降级到旧版不受此门影响（旧版自身的要求由软件加载时核对包内声明）。\n- **自动更新遇「需要更高版本 LinkDesk」的候选 ⇒ 停在旧版**，并发一条通知说明原因（每个版本只提醒一次，不重复打扰），不再自动装上一个用不了的版本。\n- 要求 LinkDesk **0.2.20 或更高**（未变）。"
+        },
         {
           "version": "1.1.10",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.10/marketplace.linkdesk-plugin",
