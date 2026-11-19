@@ -7,6 +7,16 @@ LinkDesk 官方插件市场的**目录清单仓库**。根目录 `marketplace.js
 - `marketplace.json` — 顶层 `{ version?, updatedAt?, plugins[] }`；`plugins[]` 每项为一条可安装插件（`id` / `name` / `version` / `downloadUrl` / `description` / `author` / `icon` 等）。
 - 插件包本体（`.linkdesk-plugin`）托管在对应版本附件，`downloadUrl` 指向真实下载直链。
 
+## v2 目录骨架（Marketplace-Store · 2026-11-20 起）
+
+> 旧市场插件读本仓只认 `version/updatedAt/plugins`——下面这些新文件/新键**全部可选**，旧消费者静默忽略、不炸（双向兼容，06-数据设计 §二·3）。字段形状的唯一真源 = SDK 包内 `marketplace.schema.json`（$defs：authorBlock / vendor 等）。
+
+- `authors/<authorId>.json` — **作者块**：作者域门面声明（authorId 聚合键 / 多仓归属 repos / 主页板块声明 homepage.sections / publicKey）。同 authorId 跨仓聚合，⛔ 无中心注册。当前 `geek.json` 是 R4-0.3 指定的**演示最小件**，真实作者块落位时整档替换或删除。
+- `collections/` — 合集声明（可从主文件根级 `collections[]` 拆出，两读兼容）；现空（.gitkeep 占位）。
+- `vendors.json` — **厂商注册表**：「官方 ✓」判定链唯一来源（条目 authorId 命中 ⇒ 官方，未命中 ⇒ 社区）；只有官方运营者可写，申请走 PR（规程待批 13）。
+- `marketplace.json` 根级 `sources[]` — 已审核第三方源清单（收录 = 背书不复制条目；PR 只许动自己那行）。当前空数组占位。
+- ⚠️ publish 收录链对根级新键**原样带过**（SDK upsertCatalogEntry R4-0.2 起）——收录发布不会抹掉 `sources` 等。
+
 ## 作者上架（大白话——第一次上架照这篇走）
 
 想让你写的插件出现在 LinkDesk 内置「官方商店」，分两步：**先发布到你自己的 GitHub 仓库，再让官方商店收录一条指向它的记录**。两步都做完，所有用户开箱即见。

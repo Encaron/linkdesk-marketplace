@@ -1,0 +1,10 @@
+[
+  {
+    "vendorId": "linkdesk",
+    "name": "LinkDesk",
+    "domains": ["embeddesk.app"],
+    "githubOrgs": [],
+    "verifiedBy": "manual",
+    "verifiedAt": "2026-11-20"
+  }
+]

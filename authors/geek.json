@@ -1,0 +1,12 @@
+{
+  "authorId": "geek",
+  "name": "极客工坊",
+  "intro": "演示用最小作者块（v2 目录骨架验收件）——真实作者块落位时整档替换或删除。",
+  "repos": [
+    {
+      "id": "official",
+      "name": "官方目录仓",
+      "sourceUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/marketplace.json"
+    }
+  ]
+}
