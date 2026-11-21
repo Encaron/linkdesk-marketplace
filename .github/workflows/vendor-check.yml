@@ -1,0 +1,119 @@
+name: vendor-check
+
+# 收录申请校验（R4-5.1 / I19·K9·#22）——逻辑全在 scripts/vendor-check.mjs（本地可跑，CI 同款）。
+# 触发：带 vendor-application 标签的 PR（详案正典）＋ 每周复验 schedule（09-API设计 §一·补2 #5）。
+# 🔴 合并永远是人工动作——CI 只校验＋贴评论，⛔ 不自动合并（代批边界见 AGENTS.md §5.4）。
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+    paths:
+      - marketplace.json
+      - vendors.json
+  schedule:
+    - cron: "37 3 * * 1" # 每周一 03:37 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  pr:
+    name: 收录申请校验（贴评论）
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # pr 腿要 git show 基准分支的两份数据文件
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 门槛——只跑收录申请 PR（vendor-application 标签）
+        id: gate
+        env:
+          PR_LABELS: ${{ join(github.event.pull_request.labels.*.name, ' ') }}
+          EVENT_LABEL: ${{ github.event.label.name }}
+        run: |
+          if printf '%s %s\n' "$PR_LABELS" "$EVENT_LABEL" | grep -qw vendor-application; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "缺 vendor-application 标签——非收录申请 PR，跳过收录校验"
+          fi
+
+      - name: 跑校验（五腿——scope/URL/schema/id/vendors）
+        if: steps.gate.outputs.run == 'true'
+        run: node scripts/vendor-check.mjs pr --base-ref "origin/${{ github.base_ref }}" --report-file vendor-check-report.md
+
+      - name: 贴评论（失败也贴——报告即证据）
+        if: steps.gate.outputs.run == 'true' && always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const file = 'vendor-check-report.md';
+            const body = fs.existsSync(file)
+              ? fs.readFileSync(file, 'utf8')
+              : '<!-- vendor-check report -->\n## 收录申请校验报告（vendor-check）\n\n⚠️ 校验脚本未能产出报告（脚本崩溃或环境异常）——查 Actions 日志。';
+            const marker = '<!-- vendor-check report -->';
+            const { data: comments } = await github.rest.issues.listComments({
+              ...context.repo,
+              issue_number: context.issue.number,
+            });
+            const prev = comments.find((c) => c.body && c.body.includes(marker));
+            const payload = body.includes(marker) ? body : marker + '\n' + body;
+            if (prev) {
+              await github.rest.issues.updateComment({ ...context.repo, comment_id: prev.id, body: payload });
+            } else {
+              await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body: payload });
+            }
+
+  weekly:
+    name: 每周复验（失败开 issue）
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 复验（vendors domain 自证＋sources 全行可达＋schema 漂移）
+        id: check
+        run: |
+          if node scripts/vendor-check.mjs weekly --report-file weekly-report.md; then
+            echo "failed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "failed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 失败开 issue 提醒运营者（幂等——已有在案 issue 则追加评论；⛔ 不自动降级，人决定撤否）
+        if: steps.check.outputs.failed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.existsSync('weekly-report.md')
+              ? fs.readFileSync('weekly-report.md', 'utf8')
+              : 'weekly 复验失败且无报告文件——查 Actions 日志。';
+            const title = '每周复验失败（domain 自证／源可达）';
+            const label = 'vendor-weekly-check';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              ...context.repo,
+              state: 'open',
+              labels: label,
+            });
+            if (issues.length > 0) {
+              await github.rest.issues.createComment({ ...context.repo, issue_number: issues[0].number, body });
+            } else {
+              await github.rest.issues.create({ ...context.repo, title, body, labels: [label] });
+            }

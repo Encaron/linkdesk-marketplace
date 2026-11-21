@@ -33,6 +33,64 @@ linkdesk-marketplace/
 - 主文件根级键（sources/collections/categoryRail）由运营维护；发布工具（SDK publish）只 upsert 作者自己仓的条目，**不拥有本仓根级键**。
 - ⛔ 运营位内容（首页 hero/官方合集）不是 AI 可自拟的——按运营指令落笔。
 
-## 5. 收录申请与认证审查（规程指针）
+## 5. 收录申请与认证审查（规程——本节即正文，R4-5.2 / K11）
 
-收录 PR（作者把自己的源加进 `sources[]`）的**受理与审查规程**（资格、三种认证方式 domain/github-org/manual、PR 模板、CI 校验、AI 审查四要素与代批边界）住在**收录规程文档与 CI 校验**里——本仓 AI 在处理 `vendor-application` 类 PR 时按该规程执行；本节只立指针，规程正文随收录机制落地同笔到位。
+> 正典 = 09-API设计 §一·补（sources[] 收录＝背书不复制）＋ §一·补2（vendors[] 三档认证＋端到端申请流）。
+> 机械腿 = `scripts/vendor-check.mjs`（本地可跑）＋ `.github/workflows/vendor-check.yml`（CI 同款）＋ PR 模板 `.github/PULL_REQUEST_TEMPLATE/vendor-application.md`（双表单：sources 行必填＋vendors 行可选）。
+> 申请 PR 一律打 **`vendor-application`** 标签——通知面 = GitHub 原生（owner 邮件＋站内）＋ AI 主动查（下条命令）。
+
+### 5.1 待审清单（用户说「查认证申请」即出清单）
+
+```bash
+gh pr list --repo Encaron/linkdesk-marketplace --label vendor-application
+gh pr view <N> --repo Encaron/linkdesk-marketplace --json author,title,body,labels
+```
+
+### 5.2 CI 校验五腿（PR 自动跑并贴评论；本地复跑同款）
+
+| 腿 | 判什么 | 正典 |
+|---|---|---|
+| ① scope | 只许动 `marketplace.json` 的 `sources[]`（增自己行）＋ `vendors.json`（自己行）；`plugins[]`/`authors`/`collections`/根级键深等不动 | 第三方条目逐字节不动（§4）；收录 = 背书不复制 |
+| ② URL 可达 | github 仓主页 → raw HEAD `marketplace.json`；404 → 同目录 `plugin.json` 合成 1 条（K5 回落）；都缺 = missing-manifest | 与商店拉取同款（`sourceUrl.ts` 语义抄录） |
+| ③ schema 合法 | 拉到的目录过 `schemas/marketplace.schema.json`（SDK/kit 字节同源拷贝） | kit validate 同源 |
+| ④ id 不撞 | 对既有收录源 / PR 内撞 = **错误**；对官方 `plugins[]` 撞 = **警告**（收录复制历史路径的影子，运营者判） | 09 §一·补「id 不撞」 |
+| ⑤ vendors 行 | vendorId 不撞＋与 sources 行 `authorId` 成对＋domain 自证（well-known 内容＝vendorId）；github-org/manual = 标注待人工 | 09 §一·补2 三档认证 |
+
+```bash
+# 本地复跑（复核 CI 评论 / 取证——GitHub 侧 PR/CI 未就绪前以本地跑为准）
+node scripts/vendor-check.mjs pr --base-ref origin/main
+node scripts/vendor-check.mjs pr --base-file <基准marketplace.json> --head-file <改动后>  # 离线对比
+node scripts/vendor-check.mjs validate-file marketplace.json                             # 改完自查
+```
+
+> 本机直连 raw.githubusercontent 不稳（ECONNRESET）时带代理跑：`NODE_USE_ENV_PROXY=1 HTTPS_PROXY=http://127.0.0.1:7890 node scripts/vendor-check.mjs …`（Node ≥24；GitHub runner 直连无需代理）。
+
+### 5.3 AI 审查报告（四要素——用户指定；声明面核查，⛔ 不跑第三方代码）
+
+每份待审 PR 出一段四要素报告（CI 评论之外的判读，给用户看）：
+
+1. **是谁**：PR 作者 GitHub 账号；domain 自证结果（CI ②⑤ 腿读数）／org 归属（人工核对谁能发）。
+2. **想干什么**：vendorId 与认证方式（domain / github-org / manual）；sources 行指向哪个仓。
+3. **做什么类型**：插件清单＋类别＋权限面摘要——从 PR 表单与拉取到的目录**声明**读。
+4. **安不安全**：声明面核查——CI 五腿全绿？声明里有无 `core: true` 冒充壳件、无危险 contributes、包结构合法。深度审计（行为面）v1 只抽查，列为后续增强（09 §一·补2 原话）。
+
+```bash
+gh pr diff <N> --repo Encaron/linkdesk-marketplace
+curl -s https://raw.githubusercontent.com/<owner>/<repo>/HEAD/marketplace.json   # 直读申请源声明面
+```
+
+### 5.4 代批边界（🔴 硬闸——09 §一·补2 #4 原话）
+
+- **⛔ AI 不得自行合并。** 四要素报告交用户 → **用户明示「通过」** → AI 执行：
+
+```bash
+gh pr merge <N> --repo Encaron/linkdesk-marketplace
+```
+
+- 用户未表态 = 挂起不动；用户说「不通过」→ AI 留评论说明理由，不合并。
+
+### 5.5 周期复验与撤销
+
+- Actions schedule 每周跑 `vendor-check.mjs weekly`：vendors 全行 domain 自证重跑＋sources 全行可达复验＋schema 拷贝对 npm 最新版漂移警告；失败自动开 issue（`vendor-weekly-check` 标签，幂等追加）——**人决定撤否，⛔ 不自动降级**（防抖动）。
+- 撤销收录/认证 = 删 `sources[]`/`vendors.json` 对应行（运营动作）；已装插件照常可用——收录只是背书。
+- schema 拷贝刷新纪律：SDK schema 改 ⇒ cp 进 kit＋两包同批 publish ⇒ **本仓 `schemas/` 拷贝同笔刷新**（`cmp` 三处一致；weekly ③ 腿自动报警）。
