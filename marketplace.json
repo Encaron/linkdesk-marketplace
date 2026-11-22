@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-22T18:49:02.326Z",
+  "updatedAt": "2026-11-22T19:13:16.124Z",
   "sources": [],
   "collections": [
     {
@@ -619,12 +619,12 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.1/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.2/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
       "screenshots": [
@@ -632,15 +632,21 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
       ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.1/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.2/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.1/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.1/marketplace.linkdesk-plugin",
-      "size": 179420,
-      "publishedAt": "2026-11-22T18:46:47.072Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.2/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.2/marketplace.linkdesk-plugin",
+      "size": 180477,
+      "publishedAt": "2026-11-22T19:13:07.614Z",
       "versions": [
+        {
+          "version": "1.4.2",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.2/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:13:07.614Z",
+          "changelog": "- **作者头像从 GitHub 来**：官方作者显示 **Encaron 的 GitHub 头像**（不再跟市场自己的品牌图标混用）；第三方作者没声明头像时，自动用 `github.com/<owner>.png`（静态直链，⛔ 不走 api.github.com——匿名额度 60 次/时、国内常被墙）。\n- **加载失败不留白**：头像 404 / 断网 / 被墙时回落首字母色块（同一 src 不重复重试），作者名与简介照常显示。\n- **头像缓存在本地**：下载一次存进插件自己的数据目录 `avatars/<authorId>.png`（插件详情页右侧「数据位置」可见），**7 天**才自动更新一次；更新失败本次登录不再重试、下次启动再试（过期时先用旧图）。⛔ 不为头像单独做刷新按钮。"
+        },
         {
           "version": "1.4.1",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.1/marketplace.linkdesk-plugin",
@@ -1325,28 +1331,28 @@
     {
       "id": "theme-aurora-glass",
       "name": "极光玻璃",
-      "version": "1.0.13",
+      "version": "1.0.14",
       "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.13/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.14/resources/icon.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-2.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/HEAD/resources/cover.svg"
-      ],
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.13/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.13/theme-aurora-glass.linkdesk-plugin",
-      "size": 11680,
-      "publishedAt": "2026-11-22T16:02:12.412Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.14/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.14/theme-aurora-glass.linkdesk-plugin",
+      "size": 11591,
+      "publishedAt": "2026-11-22T19:11:52.470Z",
       "versions": [
+        {
+          "version": "1.0.14",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.14/theme-aurora-glass.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:11:52.470Z",
+          "changelog": "- **语义对齐壳 0.2.60「跟随主题也合成表面」**：`glass.opacity` 0.275 → **0.55**（贴合本主题原有 rgba 0.55 的表面观感）；`tint` alpha 0.35 → **0.175** 抵消 tint 盖片变厚——旧壳（≤0.2.59）与新壳（≥0.2.60）观感一致。\n- 旧壳行为：表面 rgba 0.55（colorway 自带 alpha）+ tint 有效 9.6%；新壳行为：表面按 `glass.opacity 0.55` 合成（基色）+ tint 有效 9.6%。自定义模式的表面 alpha 从「0.55×0.275≈0.15」纠正为「0.55」——与跟随主题一致。\n- 表面色保持 rgba 写法（旧壳回退）；无 `glass` 域的主题不受影响。"
+        },
         {
           "version": "1.0.13",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.13/theme-aurora-glass.linkdesk-plugin",
@@ -1374,8 +1380,7 @@
         {
           "version": "1.0.9",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.9/theme-aurora-glass.linkdesk-plugin",
-          "publishedAt": "2026-09-30T20:47:15.430Z",
-          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配方名与配色名 2 条现在都是纯中文（配色名「极光紫」本来就纯中文，此前它没有英文译名，本轮随判据扩域一起补进本仓字典）。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+          "publishedAt": "2026-09-30T20:47:15.430Z"
         },
         {
           "version": "1.0.8",
@@ -1403,7 +1408,12 @@
           "publishedAt": "2026-09-14T02:36:42.595Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass"
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-2.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/HEAD/resources/cover.svg"
+      ]
     },
     {
       "id": "theme-defaults",
@@ -1743,22 +1753,28 @@
     {
       "id": "theme-rose-window",
       "name": "玫瑰窗",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "教堂彩窗主题——午后阳光穿过彩色玫瑰窗，亮色磨砂玻璃面浮在深色石廊之上；金箔/青金石/晚祷紫三组彩窗配色",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.2/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.3/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.2/theme-rose-window.linkdesk-plugin",
-      "size": 1050385,
-      "publishedAt": "2026-11-22T18:48:51.409Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.3/theme-rose-window.linkdesk-plugin",
+      "size": 1050654,
+      "publishedAt": "2026-11-22T19:12:09.531Z",
       "versions": [
+        {
+          "version": "1.0.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.3/theme-rose-window.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:12:09.531Z",
+          "changelog": "- **文档语义对齐壳 0.2.60**：表面色 = **基色**；跟随主题也按 `glass.opacity` 合成（0.46）。本主题保留 `rgba(...,.46)` 仅作旧壳（≤0.2.59）回退——新壳不依赖它。无视觉变化。\n- 旧「表面色必须 rgba」的偏方已作废；`glass.tintOpacity` 可用于把 tint 厚度与表面 alpha 解耦（本主题未写，缺省 = opacity）。"
+        },
         {
           "version": "1.0.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.2/theme-rose-window.linkdesk-plugin",
