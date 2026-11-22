@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-22T18:35:24.924Z",
+  "updatedAt": "2026-11-22T18:49:02.326Z",
   "sources": [],
   "collections": [
     {
@@ -1743,22 +1743,28 @@
     {
       "id": "theme-rose-window",
       "name": "玫瑰窗",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "教堂彩窗主题——午后阳光穿过彩色玫瑰窗，亮色磨砂玻璃面浮在深色石廊之上；金箔/青金石/晚祷紫三组彩窗配色",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.1/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.2/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.1/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.1/theme-rose-window.linkdesk-plugin",
-      "size": 1049787,
-      "publishedAt": "2026-11-22T18:34:51.258Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.2/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.2/theme-rose-window.linkdesk-plugin",
+      "size": 1050385,
+      "publishedAt": "2026-11-22T18:48:51.409Z",
       "versions": [
+        {
+          "version": "1.0.2",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.2/theme-rose-window.linkdesk-plugin",
+          "publishedAt": "2026-11-22T18:48:51.409Z",
+          "changelog": "- **修复「跟随主题时前面板不透明、右键菜单没有磨砂」**：外观模式 = 跟随主题时，壳以用户配置键为玻璃激活闸（`getGlassSurfaceSpec`），**不做表面合成**——表面色写成什么就是什么。本主题此前把八个表面写成不透明 hex ⇒ 跟随主题下前面板全实、浮层也没有磨砂。现改为 `rgba(...,0.46)`：跟随主题直接透出彩窗，右键菜单/下拉恢复磨砂。\n- 自定义模式的表面不透明度 = 0.46（表面 alpha）× 玻璃不透明度（种子 46% ⇒ 约 21%，比跟随主题更透；把「玻璃不透明度」拉到 100% 即回到 46%）。这是壳既有语义，不是本主题独有。"
+        },
         {
           "version": "1.0.1",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.1/theme-rose-window.linkdesk-plugin",
@@ -1772,7 +1778,7 @@
           "changelog": "- **首发**：教堂彩窗主题「玫瑰窗」——亮色磨砂玻璃表面（标题栏 / 工具栏 / 图标栏 / 侧栏 / 主区 / 面板区 / 状态栏全部玻璃化）＋ 全窗巴黎圣母院玫瑰窗背景（公有领域，2560×1200 日光提亮与暖光合成）＋ 金色受光边（`specular 0.90` / `#FFF0C4`）。\n- **三组彩窗配色**：午后圣光（金箔 `#A6771B`）· 青金石（`#2F5D9E`）· 晚祷紫（`#6B3F8E`）；共用同一亮色玻璃基座与暖墨文字。\n- 内容面可读性 token（`surface-reading` / `surface-reading-strong` / `surface-media-scrim` / `surface-ink`）随首发写入，玻璃再透正文也不糊。"
         }
       ],
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.1/resources/cover.jpg",
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.2/resources/cover.jpg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-2.jpg",
