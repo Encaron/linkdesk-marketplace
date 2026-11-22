@@ -619,12 +619,12 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.3",
+      "version": "1.4.4",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.3/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.4/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
       "screenshots": [
@@ -632,15 +632,21 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
       ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.3/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.4/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.3/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.3/marketplace.linkdesk-plugin",
-      "size": 180333,
-      "publishedAt": "2026-11-22T19:15:10.224Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.4/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.4/marketplace.linkdesk-plugin",
+      "size": 179564,
+      "publishedAt": "2026-11-22T19:21:32.657Z",
       "versions": [
+        {
+          "version": "1.4.4",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.4/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:21:32.657Z",
+          "changelog": "- **发版后「检查更新」立刻能看到新版**：目录请求从 `cache:\"no-store\"` 改 `cache:\"reload\"`——本机实测旧写法会被 Chromium 的 HTTP 缓存挡住（同一地址反复拿回上一版），表现为「插件发了新版、软件里却一直提示已是最新」。"
+        },
         {
           "version": "1.4.3",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.3/marketplace.linkdesk-plugin",
