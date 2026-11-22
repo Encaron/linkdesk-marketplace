@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-22T19:13:16.124Z",
+  "updatedAt": "2026-11-22T20:01:00.207Z",
   "sources": [],
   "collections": [
     {
@@ -352,27 +352,28 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.64",
+      "version": "1.0.65",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.64/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.65/resources/icon.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
-      ],
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.64/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.64/lang-defaults.linkdesk-plugin",
-      "size": 33829,
-      "publishedAt": "2026-11-20T11:58:32.684Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.65/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.65/lang-defaults.linkdesk-plugin",
+      "size": 33584,
+      "publishedAt": "2026-11-22T19:58:55.393Z",
       "versions": [
+        {
+          "version": "1.0.65",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.65/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:58:55.393Z",
+          "changelog": "- 新增英文词条 **「亮色主题」→ \"Light Theme\"**——设置页自定义模式「配色」下拉的跨明暗标签使用（与既有「暗色主题」成对）。"
+        },
         {
           "version": "1.0.64",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.64/lang-defaults.linkdesk-plugin",
@@ -400,8 +401,7 @@
         {
           "version": "1.0.60",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.60/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-06T10:45:17.211Z",
-          "changelog": "- **补 v1.0.59 的漏项：一条「整句改名」词条**。壳侧「设置重置按钮称呼」归一化要把 `删除外观覆盖` 回执里引用的按钮名改成真名——那句话是**一条完整的可渲染串**（不是拼接），故词条必须整条换名：`该键在设置页还有一枚「重置为默认项」…` → `该键在设置页还有一枚「重置此设置」…`（英文同步 `“Reset to default”` → `“Reset Setting”`）。漏了它 = `audit-i18n --strict` 判「新句缺译 ＋ 旧句成孤儿」两条。\n- ⚠️ **v1.0.59 是本批的中间态**（6 增 12 删已就位，缺这条整句改名）——两版**都未进官方目录**，用户可见的只有最终版。已发布的 tag 一律不动（改写已发布 tag 是维护者的手）。\n- 键数 725（增 1 删 1，净 0）。零行为变化：纯数据词条。"
+          "publishedAt": "2026-10-06T10:45:17.211Z"
         },
         {
           "version": "1.0.59",
@@ -614,7 +614,11 @@
           "publishedAt": "2026-09-14T02:36:05.197Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-lang-defaults"
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
+      ]
     },
     {
       "id": "marketplace",
