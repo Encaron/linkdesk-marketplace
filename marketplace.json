@@ -2,6 +2,40 @@
   "version": "0.1.0",
   "updatedAt": "2026-11-20T12:00:25.132Z",
   "sources": [],
+  "collections": [
+    {
+      "id": "official-hero",
+      "title": "官方精选",
+      "layout": "banner",
+      "items": ["editor", "theme-panorama", "serial-monitor", "theme-aurora-glass"],
+      "order": 1
+    },
+    {
+      "id": "official-themes",
+      "title": "主题专区",
+      "hint": "一套配方换一个心情",
+      "layout": "mega",
+      "more": { "label": "全部主题", "target": "category:themes" },
+      "items": ["theme-defaults", "theme-aurora-glass", "theme-panorama", "theme-mint-soda", "theme-pill", "theme-songti", "theme-terminal", "theme-twilight-forest", "theme-iconset-pastel"],
+      "order": 2
+    },
+    {
+      "id": "official-must-have",
+      "title": "装机必备",
+      "hint": "官方内置与精选——第一次打开软件就用得上",
+      "layout": "strip",
+      "items": ["editor", "file-tree", "pdf-reader", "serial-monitor", "python", "settings", "lang-defaults", "marketplace"],
+      "order": 3
+    },
+    {
+      "id": "official-editor-picks",
+      "title": "编辑精选",
+      "hint": "两只官方大件：写代码与看串口",
+      "layout": "split",
+      "items": ["editor", "serial-monitor"],
+      "order": 4
+    }
+  ],
   "plugins": [
     {
       "id": "editor",
@@ -1210,6 +1244,12 @@
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.12/resources/icon.svg",
       "iconSource": "url",
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-2.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/HEAD/resources/cover.svg"
+      ],
       "category": "themes",
       "categories": [
         "color-scheme"
@@ -1282,6 +1322,12 @@
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.14/resources/icon.svg",
       "iconSource": "url",
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-1.jpg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-2.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-3.jpg"
+      ],
       "category": "themes",
       "categories": [
         "color-scheme"
@@ -1513,6 +1559,12 @@
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.10/resources/icon.svg",
       "iconSource": "url",
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-1.jpg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-2.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/HEAD/resources/sailor-moon.jpg"
+      ],
       "category": "themes",
       "categories": [
         "color-scheme"
