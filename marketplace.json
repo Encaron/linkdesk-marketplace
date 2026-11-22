@@ -1794,7 +1794,7 @@
           "changelog": "- **首发**：教堂彩窗主题「玫瑰窗」——亮色磨砂玻璃表面（标题栏 / 工具栏 / 图标栏 / 侧栏 / 主区 / 面板区 / 状态栏全部玻璃化）＋ 全窗巴黎圣母院玫瑰窗背景（公有领域，2560×1200 日光提亮与暖光合成）＋ 金色受光边（`specular 0.90` / `#FFF0C4`）。\n- **三组彩窗配色**：午后圣光（金箔 `#A6771B`）· 青金石（`#2F5D9E`）· 晚祷紫（`#6B3F8E`）；共用同一亮色玻璃基座与暖墨文字。\n- 内容面可读性 token（`surface-reading` / `surface-reading-strong` / `surface-media-scrim` / `surface-ink`）随首发写入，玻璃再透正文也不糊。"
         }
       ],
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.2/resources/cover.jpg",
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.3/resources/cover.jpg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-2.jpg",
