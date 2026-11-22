@@ -619,12 +619,12 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.4",
+      "version": "1.4.5",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.4/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.5/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
       "screenshots": [
@@ -632,15 +632,21 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
       ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.4/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.5/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.4/marketplace.linkdesk-plugin",
-      "size": 179564,
-      "publishedAt": "2026-11-22T19:21:32.657Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.5/marketplace.linkdesk-plugin",
+      "size": 179235,
+      "publishedAt": "2026-11-22T19:29:25.144Z",
       "versions": [
+        {
+          "version": "1.4.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.5/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:29:25.144Z",
+          "changelog": "- **「有新版本可用」不再是三行高**：更新引导按钮加 `white-space: nowrap`——此前 flex 里那段文字被挤成 5 字一行，把整条撑到 3 行（实测整条 123→87px）。\n- **作者头像三处统一**：作者卡、作者页来源行、作者坞胶囊此前各画各的（前两者只画首字母）；现在共用同一个取源口（远端 → 本地缓存 → 失败首字母），换了 GitHub 头像三处一起变。\n- **作者坞留白加大**：列表内边距改上 14 / 左右 18 / 下 18——第一张卡的上半圆角不再被面板上沿切掉，左右也不再贴着裁切边。"
+        },
         {
           "version": "1.4.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.4/marketplace.linkdesk-plugin",
