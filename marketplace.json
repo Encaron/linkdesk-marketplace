@@ -43,7 +43,7 @@
       "version": "1.0.26",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
-        "name": "官方"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.26/resources/icon.svg",
       "iconSource": "url",
@@ -162,7 +162,7 @@
       "version": "1.0.32",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
-        "name": "官方"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.32/resources/icon-bar.svg",
       "iconSource": "url",
@@ -328,7 +328,7 @@
       "version": "1.0.64",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
-        "name": "官方"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.64/resources/icon.svg",
       "iconSource": "url",
@@ -596,7 +596,7 @@
       "version": "1.4.0",
       "description": "浏览、安装和管理插件",
       "author": {
-        "name": "官方"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.0/resources/icon.svg",
       "iconSource": "url",
@@ -833,7 +833,7 @@
       "version": "1.0.10",
       "description": "Python 语言支持——语法高亮、跨文件跳转、智能补全",
       "author": {
-        "name": "官方"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/v1.0.10/resources/icon.svg",
       "iconSource": "url",
@@ -896,7 +896,7 @@
       "version": "1.0.38",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
-        "name": "官方"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.38/resources/icon-bar.svg",
       "iconSource": "url",
@@ -1082,7 +1082,7 @@
       "version": "1.0.43",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
-        "name": "官方"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.43/resources/icon-bar.svg",
       "iconSource": "url",
@@ -1300,7 +1300,7 @@
       "version": "1.0.13",
       "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）",
       "author": {
-        "name": "LinkDesk"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.13/resources/icon.svg",
       "iconSource": "url",
@@ -1383,7 +1383,7 @@
       "version": "1.0.15",
       "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的「内置／内置浅色」兜底配方",
       "author": {
-        "name": "官方"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.15/resources/icon.svg",
       "iconSource": "url",
@@ -1486,7 +1486,7 @@
       "version": "1.1.2",
       "description": "精简彩色图标集——Material Icon Theme 常用精选（MIT，303 条映射 + 5 默认图标，含文件夹/新建文件/根文件夹彩色图标与自绘的 Keil 单片机工程图标），图像资产形态应用（E5.8#133 图标主题闭环实例）",
       "author": {
-        "name": "LinkDesk"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.2/resources/icon.svg",
       "iconSource": "url",
@@ -1558,7 +1558,7 @@
       "version": "1.0.11",
       "description": "清凉薄荷色系主题合集——薄荷冰露/海盐薄荷/青柠薄荷/薄荷苏打，Claymorphism 软萌风，全系亮色",
       "author": {
-        "name": "LinkDesk"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.11/resources/icon.svg",
       "iconSource": "url",
@@ -1635,7 +1635,7 @@
       "version": "1.0.11",
       "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）",
       "author": {
-        "name": "LinkDesk"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.11/resources/icon.svg",
       "iconSource": "url",
@@ -1718,7 +1718,7 @@
       "version": "1.0.11",
       "description": "极限壳主题——radius 域：圆角八档全拉到 999px 全胶囊 + 悬浮形态（留缝/圆角/投影/发丝光边）+ 泡泡糖配色（#50.27 效果验收端到端裁决，gallery ① 壳真实落地）",
       "author": {
-        "name": "LinkDesk"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.11/resources/icon.svg",
       "iconSource": "url",
@@ -1800,7 +1800,7 @@
       "version": "1.0.11",
       "description": "极限壳主题——font 域·字族轴：全 UI 宋体 SimSun + 纸白墨黑文档感（#50.27 效果验收端到端裁决，gallery ⑩ 壳真实落地）",
       "author": {
-        "name": "LinkDesk"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.11/resources/icon.svg",
       "iconSource": "url",
@@ -1882,7 +1882,7 @@
       "version": "1.0.12",
       "description": "极限壳主题——font 域·字族轴：ui/mono 双键全指 Cascadia Mono 等宽族 + 绿字黑底终端配色（#50.27 效果验收端到端裁决，gallery ⑨ 壳真实落地）",
       "author": {
-        "name": "LinkDesk"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.12/resources/icon.svg",
       "iconSource": "url",
@@ -2042,7 +2042,7 @@
       "version": "0.1.3",
       "description": "便签板——侧栏列表 + 主区标签页双表面，用 @linkdesk/ui 控件与 window.linkdesk.* API 搭的便签应用。",
       "author": {
-        "name": "fengyili"
+        "name": "Encaron"
       },
       "icon": "https://raw.githubusercontent.com/Encaron/my-cool-plugin/v0.1.3/resources/icon.svg",
       "iconSource": "url",
