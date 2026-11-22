@@ -79,7 +79,7 @@
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/HEAD/resources/cover.svg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/editor/shot-1.jpg",
-        "https://picsum.photos/seed/ld-editor-1/1200/800"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/editor/shot-2.png"
       ],
       "minAppVersion": "0.2.13",
       "category": "development",
@@ -197,8 +197,7 @@
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/HEAD/resources/cover.svg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/HEAD/resources/cover.svg",
-        "https://picsum.photos/seed/ld-tree-1/1200/800",
-        "https://picsum.photos/seed/ld-tree-2/1200/800"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/file-tree/shot-2.png"
       ],
       "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.32/resources/icon.svg",
       "marketIconSource": "url",
@@ -363,8 +362,7 @@
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
-        "https://picsum.photos/seed/ld-lang-1/1200/800",
-        "https://picsum.photos/seed/ld-lang-2/1200/800"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
       ],
       "category": "development",
       "categories": [
@@ -632,7 +630,7 @@
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
-        "https://picsum.photos/seed/ld-market-1/1200/800"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
       ],
       "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.1/resources/icon-brand.svg",
       "marketIconSource": "url",
@@ -827,8 +825,7 @@
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/HEAD/resources/cover.svg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/HEAD/resources/cover.svg",
-        "https://picsum.photos/seed/ld-pdf-1/1200/800",
-        "https://picsum.photos/seed/ld-pdf-2/1200/800"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/pdf-reader/shot-2.jpg"
       ],
       "minAppVersion": "0.2.32",
       "category": "documents",
@@ -874,8 +871,7 @@
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/HEAD/resources/cover.svg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/HEAD/resources/cover.svg",
-        "https://picsum.photos/seed/ld-py-1/1200/800",
-        "https://picsum.photos/seed/ld-py-2/1200/800"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/python/shot-2.png"
       ],
       "category": "development",
       "categories": [
@@ -937,8 +933,7 @@
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/HEAD/resources/cover.svg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/HEAD/resources/cover.svg",
-        "https://picsum.photos/seed/ld-serial-1/1200/800",
-        "https://picsum.photos/seed/ld-serial-2/1200/800"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/serial-monitor/shot-2.jpg"
       ],
       "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.38/resources/icon.svg",
       "marketIconSource": "url",
@@ -1123,8 +1118,7 @@
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/HEAD/resources/cover.svg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/HEAD/resources/cover.svg",
-        "https://picsum.photos/seed/ld-set-1/1200/800",
-        "https://picsum.photos/seed/ld-set-2/1200/800"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/settings/shot-2.png"
       ],
       "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.43/resources/icon.svg",
       "marketIconSource": "url",
@@ -1917,8 +1911,7 @@
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/HEAD/resources/cover.svg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/HEAD/resources/cover.svg",
-        "https://picsum.photos/seed/ld-geme-1/1200/800",
-        "https://picsum.photos/seed/ld-geme-2/1200/800"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/geme-tihu-bicycle/shot-2.jpg"
       ],
       "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/v1.0.4/resources/icon.svg",
       "marketIconSource": "url",
