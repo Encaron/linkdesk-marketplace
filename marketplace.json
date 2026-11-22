@@ -619,12 +619,12 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.6",
+      "version": "1.4.7",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.6/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.7/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
       "screenshots": [
@@ -632,15 +632,21 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
       ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.6/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.7/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.6/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.6/marketplace.linkdesk-plugin",
-      "size": 179733,
-      "publishedAt": "2026-11-22T19:41:23.471Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.7/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.7/marketplace.linkdesk-plugin",
+      "size": 179335,
+      "publishedAt": "2026-11-22T19:57:46.288Z",
       "versions": [
+        {
+          "version": "1.4.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.7/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:57:46.288Z",
+          "changelog": "- **侧栏「作者」的数字不再被小圆点压住**：compact 模式下数字被顶到最右，而「有新内容」的点是绝对定位在右侧 8px，正好叠在数字上；现在点改为普通 flex 项、跟在数字后面并排显示。\n- **两个点不再叠成一个**：作者项此前「有新内容」与「有源加载失败」两个点都绝对定位在同一处；现在只画一个（失败优先）。"
+        },
         {
           "version": "1.4.6",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.6/marketplace.linkdesk-plugin",
