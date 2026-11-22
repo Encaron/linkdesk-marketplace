@@ -1180,7 +1180,7 @@
       "iconSource": "url",
       "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.45/resources/icon.svg",
       "marketIconSource": "url",
-      "minAppVersion": "0.2.60",
+      "minAppVersion": "0.2.53",
       "category": "productivity",
       "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.45/README.md",
       "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.45/settings.linkdesk-plugin",
