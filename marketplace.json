@@ -619,12 +619,12 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.2",
+      "version": "1.4.3",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.2/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.3/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
       "screenshots": [
@@ -632,15 +632,21 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
       ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.2/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.3/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.2/marketplace.linkdesk-plugin",
-      "size": 180477,
-      "publishedAt": "2026-11-22T19:13:07.614Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.3/marketplace.linkdesk-plugin",
+      "size": 180333,
+      "publishedAt": "2026-11-22T19:15:10.224Z",
       "versions": [
+        {
+          "version": "1.4.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.3/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:15:10.224Z",
+          "changelog": "- **头像缓存按真实类型落盘**：GitHub 头像实际是 JPEG，缓存文件现在按响应类型命名（`.jpg` / `.png` / `.webp`），不会出现「`.png` 里装 JPEG」；类型变了会清掉同作者的旧扩展名文件。"
+        },
         {
           "version": "1.4.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.2/marketplace.linkdesk-plugin",
