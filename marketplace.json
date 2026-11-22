@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-22T21:55:05.800Z",
+  "updatedAt": "2026-11-22T22:05:30.987Z",
   "sources": [],
   "collections": [
     {
@@ -352,22 +352,28 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.65",
+      "version": "1.0.66",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.65/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.66/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.65/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.65/lang-defaults.linkdesk-plugin",
-      "size": 33584,
-      "publishedAt": "2026-11-22T19:58:55.393Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.66/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.66/lang-defaults.linkdesk-plugin",
+      "size": 33700,
+      "publishedAt": "2026-11-22T22:05:30.987Z",
       "versions": [
+        {
+          "version": "1.0.66",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.66/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-22T22:05:30.987Z",
+          "changelog": "- ColorPicker 2 新串 ＋7：色相 / 不透明度 / 颜色值 / 无效的颜色值 / 只读说明 / 命令标题「调色器操作」/「应用名」。\n- 「应用」英文从 \"Application\" 改为 \"Apply\"；错误边界的应用名改用新键「应用名」→ \"Application\"。"
+        },
         {
           "version": "1.0.65",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.65/lang-defaults.linkdesk-plugin",
@@ -1165,22 +1171,28 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.44",
+      "version": "1.0.45",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.44/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.45/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.44/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.45/resources/icon.svg",
       "marketIconSource": "url",
-      "minAppVersion": "0.2.53",
+      "minAppVersion": "0.2.60",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.44/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.44/settings.linkdesk-plugin",
-      "size": 38971,
-      "publishedAt": "2026-11-22T20:21:13.195Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.45/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.45/settings.linkdesk-plugin",
+      "size": 37629,
+      "publishedAt": "2026-11-22T22:05:30.987Z",
       "versions": [
+        {
+          "version": "1.0.45",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.45/settings.linkdesk-plugin",
+          "publishedAt": "2026-11-22T22:05:30.987Z",
+          "changelog": "- 颜色行按配置声明 allowAlpha: true 把能力传给共享 ColorPicker——玻璃叠加色（app.glassTint）可调 alpha；未声明的颜色键保持不透明。\n- 依赖 @linkdesk/ui ^0.2.69；要求 LinkDesk 0.2.60 或更高。"
+        },
         {
           "version": "1.0.44",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.44/settings.linkdesk-plugin",
