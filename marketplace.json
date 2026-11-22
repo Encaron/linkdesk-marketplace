@@ -1,13 +1,18 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-22T16:04:52.345Z",
+  "updatedAt": "2026-11-22T18:09:34.807Z",
   "sources": [],
   "collections": [
     {
       "id": "official-hero",
       "title": "官方精选",
       "layout": "banner",
-      "items": ["editor", "theme-panorama", "serial-monitor", "theme-aurora-glass"],
+      "items": [
+        "editor",
+        "theme-panorama",
+        "serial-monitor",
+        "theme-aurora-glass"
+      ],
       "order": 1
     },
     {
@@ -15,8 +20,19 @@
       "title": "主题专区",
       "hint": "一套配方换一个心情",
       "layout": "mega",
-      "more": { "label": "全部主题", "target": "category:themes" },
-      "items": ["theme-defaults", "theme-aurora-glass", "theme-panorama", "theme-mint-soda", "theme-pill", "theme-songti", "theme-terminal", "theme-twilight-forest", "theme-iconset-pastel"],
+      "more": {
+        "label": "全部主题",
+        "target": "category:themes"
+      },
+      "items": [
+        "theme-defaults",
+        "theme-aurora-glass",
+        "theme-panorama",
+        "theme-rose-window",
+        "theme-mint-soda",
+        "theme-twilight-forest",
+        "theme-iconset-pastel"
+      ],
       "order": 2
     },
     {
@@ -24,7 +40,16 @@
       "title": "装机必备",
       "hint": "官方内置与精选——第一次打开软件就用得上",
       "layout": "strip",
-      "items": ["editor", "file-tree", "pdf-reader", "serial-monitor", "python", "settings", "lang-defaults", "marketplace"],
+      "items": [
+        "editor",
+        "file-tree",
+        "pdf-reader",
+        "serial-monitor",
+        "python",
+        "settings",
+        "lang-defaults",
+        "marketplace"
+      ],
       "order": 3
     },
     {
@@ -32,7 +57,10 @@
       "title": "编辑精选",
       "hint": "两只官方大件：写代码与看串口",
       "layout": "split",
-      "items": ["editor", "serial-monitor"],
+      "items": [
+        "editor",
+        "serial-monitor"
+      ],
       "order": 4
     }
   ],
@@ -1713,246 +1741,35 @@
       "repository": "https://github.com/Encaron/linkdesk-plugin-theme-panorama"
     },
     {
-      "id": "theme-pill",
-      "name": "全胶囊",
-      "version": "1.0.11",
-      "description": "极限壳主题——radius 域：圆角八档全拉到 999px 全胶囊 + 悬浮形态（留缝/圆角/投影/发丝光边）+ 泡泡糖配色（#50.27 效果验收端到端裁决，gallery ① 壳真实落地）",
+      "id": "theme-rose-window",
+      "name": "玫瑰窗",
+      "version": "1.0.0",
+      "description": "教堂彩窗主题——午后阳光穿过彩色玫瑰窗，亮色磨砂玻璃面浮在深色石廊之上；金箔/青金石/晚祷紫三组彩窗配色",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.11/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.0/resources/icon.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-pill/shot-1.jpg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-pill/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-pill/shot-2.jpg"
-      ],
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-pill/v1.0.11/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.11/theme-pill.linkdesk-plugin",
-      "size": 6631,
-      "publishedAt": "2026-11-22T16:03:07.483Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.0/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.0/theme-rose-window.linkdesk-plugin",
+      "size": 899367,
+      "publishedAt": "2026-11-22T18:09:02.807Z",
       "versions": [
         {
-          "version": "1.0.11",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.11/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-11-22T16:03:07.483Z",
-          "changelog": "- **内容面可读性 token**：colorway 新增 `surface-reading` / `surface-reading-strong` / `surface-media-scrim` / `surface-ink`——玻璃主题在浅色/深色截图、Hero 与卡片浮层上保持文字可读；与壳内容面契约同步。"
-        },
-        {
-          "version": "1.0.10",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.10/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-11-20T11:56:02.070Z",
-          "changelog": "- **分类声明（R4-2.8/2.9）**：`plugin.json` 顶层补 `category: \"themes\"` ＋ `categories: [\"color-scheme\"]`——商店分类抽屉归位，随本次发版进入官方目录条目。"
-        },
-        {
-          "version": "1.0.9",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.9/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-10-03T15:35:48.871Z",
-          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
-        },
-        {
-          "version": "1.0.8",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.8/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-09-30T22:00:07.677Z",
-          "changelog": "- **安装包瘦身**：包内更新日志只带最近 5 版（更早的更新记录仍在本插件仓库里）——由 SDK 自动施加，用户无需任何操作。"
-        },
-        {
-          "version": "1.0.7",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.7/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-09-30T20:48:23.751Z",
-          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配色名「泡泡糖」此前纯中文、无英文译名，本轮随判据扩域补进本仓字典。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
-        },
-        {
-          "version": "1.0.6",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.6/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:49:19.271Z"
-        },
-        {
-          "version": "1.0.5",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.5/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-09-17T16:19:48.559Z"
-        },
-        {
-          "version": "1.0.4",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.4/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:50:14.562Z"
-        },
-        {
-          "version": "1.0.3",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.3/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:31:03.290Z"
-        },
-        {
-          "version": "1.0.2",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-pill/releases/download/v1.0.2/theme-pill.linkdesk-plugin",
-          "publishedAt": "2026-09-14T02:37:19.669Z"
+          "version": "1.0.0",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.0/theme-rose-window.linkdesk-plugin",
+          "publishedAt": "2026-11-22T18:09:02.807Z",
+          "changelog": "- **首发**：教堂彩窗主题「玫瑰窗」——亮色磨砂玻璃表面（标题栏 / 工具栏 / 图标栏 / 侧栏 / 主区 / 面板区 / 状态栏全部玻璃化）＋ 全窗巴黎圣母院玫瑰窗背景（公有领域，2560×1200 日光提亮与暖光合成）＋ 金色受光边（`specular 0.90` / `#FFF0C4`）。\n- **三组彩窗配色**：午后圣光（金箔 `#A6771B`）· 青金石（`#2F5D9E`）· 晚祷紫（`#6B3F8E`）；共用同一亮色玻璃基座与暖墨文字。\n- 内容面可读性 token（`surface-reading` / `surface-reading-strong` / `surface-media-scrim` / `surface-ink`）随首发写入，玻璃再透正文也不糊。"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-pill"
-    },
-    {
-      "id": "theme-songti",
-      "name": "宋体印刷体",
-      "version": "1.0.11",
-      "description": "极限壳主题——font 域·字族轴：全 UI 宋体 SimSun + 纸白墨黑文档感（#50.27 效果验收端到端裁决，gallery ⑩ 壳真实落地）",
-      "author": {
-        "name": "Encaron"
-      },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.11/resources/icon.svg",
-      "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-songti/shot-1.jpg",
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/HEAD/resources/cover.svg",
       "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-songti/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-songti/shot-2.jpg"
-      ],
-      "category": "themes",
-      "categories": [
-        "color-scheme"
-      ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-songti/v1.0.11/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.11/theme-songti.linkdesk-plugin",
-      "size": 6621,
-      "publishedAt": "2026-11-22T16:03:23.549Z",
-      "versions": [
-        {
-          "version": "1.0.11",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.11/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-11-22T16:03:23.549Z",
-          "changelog": "- **内容面可读性 token**：colorway 新增 `surface-reading` / `surface-reading-strong` / `surface-media-scrim` / `surface-ink`——玻璃主题在浅色/深色截图、Hero 与卡片浮层上保持文字可读；与壳内容面契约同步。"
-        },
-        {
-          "version": "1.0.10",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.10/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-11-20T11:56:40.062Z",
-          "changelog": "- **分类声明（R4-2.8/2.9）**：`plugin.json` 顶层补 `category: \"themes\"` ＋ `categories: [\"color-scheme\"]`——商店分类抽屉归位，随本次发版进入官方目录条目。"
-        },
-        {
-          "version": "1.0.9",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.9/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-10-03T15:35:59.083Z",
-          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
-        },
-        {
-          "version": "1.0.8",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.8/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-09-30T22:00:16.296Z",
-          "changelog": "- **安装包瘦身**：包内更新日志只带最近 5 版（更早的更新记录仍在本插件仓库里）——由 SDK 自动施加，用户无需任何操作。"
-        },
-        {
-          "version": "1.0.7",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.7/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-09-30T20:49:49.141Z",
-          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配色名「纸白墨黑」此前纯中文、无英文译名，本轮随判据扩域补进本仓字典。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
-        },
-        {
-          "version": "1.0.6",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.6/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:49:30.424Z"
-        },
-        {
-          "version": "1.0.5",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.5/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-09-17T16:20:20.928Z"
-        },
-        {
-          "version": "1.0.4",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.4/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:50:21.573Z"
-        },
-        {
-          "version": "1.0.3",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.3/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:31:22.668Z"
-        },
-        {
-          "version": "1.0.2",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-songti/releases/download/v1.0.2/theme-songti.linkdesk-plugin",
-          "publishedAt": "2026-09-14T02:37:26.780Z"
-        }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-songti"
-    },
-    {
-      "id": "theme-terminal",
-      "name": "终端机",
-      "version": "1.0.12",
-      "description": "极限壳主题——font 域·字族轴：ui/mono 双键全指 Cascadia Mono 等宽族 + 绿字黑底终端配色（#50.27 效果验收端到端裁决，gallery ⑨ 壳真实落地）",
-      "author": {
-        "name": "Encaron"
-      },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.12/resources/icon.svg",
-      "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-terminal/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-terminal/shot-2.jpg"
-      ],
-      "category": "themes",
-      "categories": [
-        "color-scheme"
-      ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-terminal/v1.0.12/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.12/theme-terminal.linkdesk-plugin",
-      "size": 9507,
-      "publishedAt": "2026-11-22T16:03:40.404Z",
-      "versions": [
-        {
-          "version": "1.0.12",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.12/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-11-22T16:03:40.404Z",
-          "changelog": "- **内容面可读性 token**：colorway 新增 `surface-reading` / `surface-reading-strong` / `surface-media-scrim` / `surface-ink`——玻璃主题在浅色/深色截图、Hero 与卡片浮层上保持文字可读；与壳内容面契约同步。"
-        },
-        {
-          "version": "1.0.11",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.11/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-11-20T11:57:10.314Z",
-          "changelog": "- **分类声明（R4-2.8/2.9）**：`plugin.json` 顶层补 `category: \"themes\"` ＋ `categories: [\"color-scheme\"]`——商店分类抽屉归位，随本次发版进入官方目录条目。"
-        },
-        {
-          "version": "1.0.10",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.10/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-10-03T15:36:09.575Z",
-          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
-        },
-        {
-          "version": "1.0.9",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.9/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-09-30T22:00:25.167Z",
-          "changelog": "- **安装包瘦身**：包内更新日志只带最近 5 版（更早的更新记录仍在本插件仓库里）——由 SDK 自动施加，用户无需任何操作。"
-        },
-        {
-          "version": "1.0.8",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.8/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-09-30T20:50:24.249Z",
-          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配色名「磷光绿」此前纯中文、无英文译名，本轮随判据扩域补进本仓字典。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
-        },
-        {
-          "version": "1.0.7",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.7/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:49:42.176Z"
-        },
-        {
-          "version": "1.0.6",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.6/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-09-17T16:29:26.937Z"
-        },
-        {
-          "version": "1.0.5",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.5/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:31:29.568Z"
-        },
-        {
-          "version": "1.0.4",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-terminal/releases/download/v1.0.4/theme-terminal.linkdesk-plugin",
-          "publishedAt": "2026-09-14T02:37:33.549Z"
-        }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-terminal"
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/HEAD/resources/cover.svg"
+      ]
     },
     {
       "id": "theme-twilight-forest",
