@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T16:45:41.054Z",
+  "updatedAt": "2026-11-23T16:59:13.464Z",
   "sources": [],
   "collections": [
     {
@@ -104,27 +104,33 @@
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.28",
+      "version": "1.0.29",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.28/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.29/resources/icon.svg",
       "iconSource": "url",
       "minAppVersion": "0.2.13",
       "category": "development",
       "categories": [
         "code-editing"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.28/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.29/README.md",
       "readmeLocales": {
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.28/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.28/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.28/editor.linkdesk-plugin",
-      "size": 8660322,
-      "publishedAt": "2026-11-23T16:40:02.922Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.29/editor.linkdesk-plugin",
+      "size": 8661832,
+      "publishedAt": "2026-11-23T16:59:13.464Z",
       "versions": [
+        {
+          "version": "1.0.29",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.29/editor.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:59:13.464Z",
+          "changelog": "Monaco 主题 token 化：背景/前景/行号/光标/选区/悬浮件跟工作区 tokens；保留旧竞态防线。"
+        },
         {
           "version": "1.0.28",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.28/editor.linkdesk-plugin",
