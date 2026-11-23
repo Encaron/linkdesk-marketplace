@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-22T22:05:30.987Z",
+  "updatedAt": "2026-11-23T04:54:20.017Z",
   "sources": [],
   "collections": [
     {
@@ -629,12 +629,12 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.10",
+      "version": "1.4.11",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.10/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.11/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
       "screenshots": [
@@ -642,15 +642,21 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
       ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.10/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.11/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.10/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.10/marketplace.linkdesk-plugin",
-      "size": 181445,
-      "publishedAt": "2026-11-22T21:55:05.800Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.11/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.11/marketplace.linkdesk-plugin",
+      "size": 181456,
+      "publishedAt": "2026-11-23T04:54:20.017Z",
       "versions": [
+        {
+          "version": "1.4.11",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.11/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T04:54:20.017Z",
+          "changelog": "- Hero 压图文字改走 surface-ink 与其 alpha 派生——浅色主题下不再消失，深色主题观感不变。"
+        },
         {
           "version": "1.4.10",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.10/marketplace.linkdesk-plugin",
@@ -1820,22 +1826,28 @@
     {
       "id": "theme-rose-window",
       "name": "玫瑰窗",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "description": "教堂彩窗主题——午后阳光穿过彩色玫瑰窗，亮色磨砂玻璃面浮在深色石廊之上；金箔/青金石/晚祷紫三组彩窗配色",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.3/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.4/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.3/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.3/theme-rose-window.linkdesk-plugin",
-      "size": 1050654,
-      "publishedAt": "2026-11-22T19:12:09.531Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.4/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.4/theme-rose-window.linkdesk-plugin",
+      "size": 1051007,
+      "publishedAt": "2026-11-23T04:54:20.017Z",
       "versions": [
+        {
+          "version": "1.0.4",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.4/theme-rose-window.linkdesk-plugin",
+          "publishedAt": "2026-11-23T04:54:20.017Z",
+          "changelog": "- surface-ink 改暖白 #FFF7E6、遮罩转中性——修商店 Hero/封面文字在浅色主题下看不清。"
+        },
         {
           "version": "1.0.3",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.3/theme-rose-window.linkdesk-plugin",
