@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T18:15:50.279Z",
+  "updatedAt": "2026-11-23T18:57:33.796Z",
   "sources": [],
   "collections": [
     {
@@ -1992,26 +1992,32 @@
     {
       "id": "theme-panorama",
       "name": "整窗主视觉",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.1.0/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.1.1/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.1.0/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.1.1/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.1.1/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.1.1/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.1.0/theme-panorama.linkdesk-plugin",
-      "size": 1542521,
-      "publishedAt": "2026-11-23T17:08:23.895Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.1.1/theme-panorama.linkdesk-plugin",
+      "size": 1542741,
+      "publishedAt": "2026-11-23T18:55:18.207Z",
       "versions": [
+        {
+          "version": "1.1.1",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.1.1/theme-panorama.linkdesk-plugin",
+          "publishedAt": "2026-11-23T18:55:18.207Z",
+          "changelog": "- **暗色可读性修复（实机）**：`bg-card`/`bg-input` 曾写成白色提亮叠层（`rgba(255,255,255,.10/.14)`）——暗主题 + 白字压白玻璃，串口日志/卡片文字直接消失（跟随主题路径尤甚）。改为不透明基色 `#23262C` / `#2C3035`（与引擎 `*-solid` 合成结果一致；自定义玻璃仍按滑杆透）。\n- **环境面加厚**：标题栏/状态栏/图标栏/工具栏/侧栏 0.30–0.50 → 0.66–0.72；窗底 0.30 → 0.42；遮罩 0.22 → 0.35——亮照片上白字不再被吃掉，墙纸仍可见。"
+        },
         {
           "version": "1.1.0",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.1.0/theme-panorama.linkdesk-plugin",
