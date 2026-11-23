@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T06:34:13.321Z",
+  "updatedAt": "2026-11-23T13:53:01.403Z",
   "sources": [],
   "collections": [
     {
@@ -193,30 +193,31 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.33",
+      "version": "1.0.34",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.33/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.34/resources/icon-bar.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/file-tree/shot-2.png"
-      ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.33/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.34/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "documents",
       "categories": [
         "files"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.33/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.33/file-tree.linkdesk-plugin",
-      "size": 47465,
-      "publishedAt": "2026-11-23T04:55:38.228Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.34/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.34/file-tree.linkdesk-plugin",
+      "size": 46791,
+      "publishedAt": "2026-11-23T13:50:16.740Z",
       "versions": [
+        {
+          "version": "1.0.34",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.34/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-11-23T13:50:16.740Z",
+          "changelog": "- 圆角改吃宿主 `--radius-*`（零视觉）"
+        },
         {
           "version": "1.0.33",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.33/file-tree.linkdesk-plugin",
@@ -244,14 +245,12 @@
         {
           "version": "1.0.29",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.29/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-10-05T16:48:23.816Z",
-          "changelog": "- **清掉 `anchor` 死参（随宿主面板归一）**：宿主「打开方式」面板自 2026-10-05 起**一律居中＋遮罩**（锚定态废止，`OpenWithRequest.anchor` 已标 `@deprecated`、宿主侧不再消费）⇒ 本仓转发时不再计算、也不再传 `anchor`（右键菜单上下文与 `file-tree.openWith` 命令各清一处）。**零可见变化**——面板本来就已经恒居中，此前传了也被宿主忽略；右键菜单自身的定位不受影响（仍按 `event.clientX / clientY` 落在指针处）。契约字段宿主侧仍保留（禁减已发布面），故本仓只是**不再使用**，⛔ 不是删了别人的东西。\n- **订正一处失效引用**：右键菜单里「该扩展名无人认领 ⇒ 整项隐藏」的原注释引作 `E13`，但案 02 现行的 E13 是另一件事（「handler 很多·列表滚动」）；改指**不留死钮律**（案 02 E17 的同一条律，只是触发条件换成「该扩展名无 handler」）。\n- **读数**：`npx tsc --noEmit` 零错误 · `npm run verify` 九段全绿（lint 严格腿 75 文件零偏离 / 跨插件 import 73 文件零互引 / 字典 117 key 全覆盖）· `npm run test` **16 文件 149 例**全绿 · `npm run build` 产出 **45.6 KB**（4 表面）· `grep -rn \"anchor\" src` 只剩菜单自身定位三处（组件 props／`<ContextMenu anchor>`／`FoldersView` 传入），**命令侧零残留**。"
+          "publishedAt": "2026-10-05T16:48:23.816Z"
         },
         {
           "version": "1.0.28",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.28/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-10-05T13:56:25.064Z",
-          "changelog": "- **「打开方式…」面板移交宿主（文件打开方式与贡献点案 4.5 纠正案 · 住错层纠正）**：选择器面板与它的数据组装（扩展名归一、处理器表、图标裁决）整体搬到宿主侧——新宿主命令 `workbench.action.openWith` 承接；本仓删除私有面板、私有 store 与配套 CSS，右键「打开方式…」改为**转发**该宿主命令。外观与行为不变（锚定弹出、就近定位），但**数据来源归一**：行主标签是插件名、行图标与设置页同源、宿主不再依赖本插件也能升起面板。\n- **兼容过渡（⛔ 有到期日）**：`file-tree.openWith` 仍注册，仅把老调用方（旧版 editor/settings 传裸文件路径字符串）的入参收敛成宿主请求再转发；到期条件＝官方目录中所有插件的最低支持版本 ≥ 本版，届时整条删除（尾账记在主案任务清单）。\n- **右键这一项的前置条件多了一条**：除了「这个扩展名确实有人认领」（旧口径），还要**宿主命令 `workbench.action.openWith` 在册**——中间那版软件（有处理器查询面、还没有这条命令）上，本项**整条不显示**，不会出现一颗点下去没反应的项（与编辑器按钮同一律：探测不到就隐藏，⛔ 不留死钮）。\n- 依赖随宿主契约升级：`@linkdesk/contracts` ^0.1.39 / `@linkdesk/plugin-sdk` ^0.1.81（新增 `SHELL_COMMANDS` / `openWith()` 宿主命令调用面）。🔴 运行时代码从 SDK **子路径** `@linkdesk/plugin-sdk/shell-commands` 取这两个值——从根入口取会把 SDK 的构建工具链（vite → rollup）一起打进插件包，Windows 上直接 build 不过（SDK 0.1.81 的更正；0.1.80 的根入口写法是死路）。\n- **读数**：`npx tsc --noEmit` 零错误 · `npm run build` 出一个 ≈45 KB 的 `.linkdesk-plugin`（4 表面）· 自有九段自检全过 · 149 测试全过 · 私有面板 3 个文件 ＋ 2 个测试文件删除（`grep -rn \"OpenWithPanel\\|open-with.css\" src` = 0）。"
+          "publishedAt": "2026-10-05T13:56:25.064Z"
         },
         {
           "version": "1.0.27",
@@ -641,57 +640,33 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.15",
+      "version": "1.4.16",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.15/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.16/resources/icon.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
-      ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.15/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.16/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.60",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.15/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.15/marketplace.linkdesk-plugin",
-      "size": 180634,
-      "publishedAt": "2026-11-23T05:30:52.323Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.16/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.16/marketplace.linkdesk-plugin",
+      "size": 180848,
+      "publishedAt": "2026-11-23T13:48:23.579Z",
       "versions": [
+        {
+          "version": "1.4.16",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.16/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T13:48:23.579Z",
+          "changelog": "- **零视觉归一化（门禁 G-N1/N2）**：卡片/hero/作者卡/图标块/媒体框比例收成宿主 `--size-*` 或插件内 `--marketplace-*` 单出处（老壳自动走 fallback，视觉不变）；`CollectionBlock` 同名双实现改名 `AuthorCollectionBlock` / `RepoCollectionBlock`（行为不变）。真机 900×2800 截图像素零差。"
+        },
         {
           "version": "1.4.15",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.15/marketplace.linkdesk-plugin",
           "publishedAt": "2026-11-23T05:30:52.323Z",
           "changelog": "- **装机必备小卡 / 网格卡：常态不再磨砂**：这两种卡的可见面就是一层半透底（`.marketplace-store-x-over`），与 duo、热门下载行同一处境、同一「普通玻璃」语言；磨砂改到 hover/键盘聚焦时才上（面长大、压到邻居那一拍）。滚动实测 ≈ −0.2 s/2s（~15%）。作者坞、作者卡叠层（半透卡压半透卡）保持常态磨砂——那是遮挡需求。"
-        },
-        {
-          "version": "1.4.14",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.14/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-23T05:24:04.064Z",
-          "changelog": "- Hero 次级按钮（已安装/禁用态）改走 surface-media-ink，浅色主题下可见。"
-        },
-        {
-          "version": "1.4.13",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.13/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-23T05:11:01.118Z",
-          "changelog": "- Hero/封面用 surface-media-ink；卡面内容用 surface-ink。要求 LinkDesk 0.2.60+。"
-        },
-        {
-          "version": "1.4.12",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.12/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-23T05:04:08.645Z",
-          "changelog": "- 内容面墨色归位 text-primary；surface-ink 只服务压图文字。修正浅色主题下玻璃卡文字反白。"
-        },
-        {
-          "version": "1.4.11",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.11/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-23T04:54:20.017Z",
-          "changelog": "- Hero 压图文字改走 surface-ink 与其 alpha 派生——浅色主题下不再消失，深色主题观感不变。"
         },
         {
           "version": "1.4.10",
@@ -714,8 +689,7 @@
         {
           "version": "1.4.7",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.7/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-22T19:57:46.288Z",
-          "changelog": "- **侧栏「作者」的数字不再被小圆点压住**：compact 模式下数字被顶到最右，而「有新内容」的点是绝对定位在右侧 8px，正好叠在数字上；现在点改为普通 flex 项、跟在数字后面并排显示。\n- **两个点不再叠成一个**：作者项此前「有新内容」与「有源加载失败」两个点都绝对定位在同一处；现在只画一个（失败优先）。"
+          "publishedAt": "2026-11-22T19:57:46.288Z"
         },
         {
           "version": "1.4.6",
@@ -725,74 +699,62 @@
         {
           "version": "1.4.5",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.5/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-22T19:29:25.144Z",
-          "changelog": "- **「有新版本可用」不再是三行高**：更新引导按钮加 `white-space: nowrap`——此前 flex 里那段文字被挤成 5 字一行，把整条撑到 3 行（实测整条 123→87px）。\n- **作者头像三处统一**：作者卡、作者页来源行、作者坞胶囊此前各画各的（前两者只画首字母）；现在共用同一个取源口（远端 → 本地缓存 → 失败首字母），换了 GitHub 头像三处一起变。\n- **作者坞留白加大**：列表内边距改上 14 / 左右 18 / 下 18——第一张卡的上半圆角不再被面板上沿切掉，左右也不再贴着裁切边。"
+          "publishedAt": "2026-11-22T19:29:25.144Z"
         },
         {
           "version": "1.4.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.4/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-22T19:21:32.657Z",
-          "changelog": "- **发版后「检查更新」立刻能看到新版**：目录请求从 `cache:\"no-store\"` 改 `cache:\"reload\"`——本机实测旧写法会被 Chromium 的 HTTP 缓存挡住（同一地址反复拿回上一版），表现为「插件发了新版、软件里却一直提示已是最新」。"
+          "publishedAt": "2026-11-22T19:21:32.657Z"
         },
         {
           "version": "1.4.3",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.3/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-22T19:15:10.224Z",
-          "changelog": "- **头像缓存按真实类型落盘**：GitHub 头像实际是 JPEG，缓存文件现在按响应类型命名（`.jpg` / `.png` / `.webp`），不会出现「`.png` 里装 JPEG」；类型变了会清掉同作者的旧扩展名文件。"
+          "publishedAt": "2026-11-22T19:15:10.224Z"
         },
         {
           "version": "1.4.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.2/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-22T19:13:07.614Z",
-          "changelog": "- **作者头像从 GitHub 来**：官方作者显示 **Encaron 的 GitHub 头像**（不再跟市场自己的品牌图标混用）；第三方作者没声明头像时，自动用 `github.com/<owner>.png`（静态直链，⛔ 不走 api.github.com——匿名额度 60 次/时、国内常被墙）。\n- **加载失败不留白**：头像 404 / 断网 / 被墙时回落首字母色块（同一 src 不重复重试），作者名与简介照常显示。\n- **头像缓存在本地**：下载一次存进插件自己的数据目录 `avatars/<authorId>.png`（插件详情页右侧「数据位置」可见），**7 天**才自动更新一次；更新失败本次登录不再重试、下次启动再试（过期时先用旧图）。⛔ 不为头像单独做刷新按钮。"
+          "publishedAt": "2026-11-22T19:13:07.614Z"
         },
         {
           "version": "1.4.1",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.1/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-22T18:46:47.072Z",
-          "changelog": "- **作者坞不再截边**：展开面板 386→412，列表左右留 16px——卡片悬停的放大、头像光环、多仓 fan 都有地方长，不再贴到面板边缘被裁。\n- **作者页记住上次模式**：浏览/管理来源二选一，下次直接点作者沿用上次；坞的「作者页」「管理来源」按钮与命令面照旧强制切换并写回。存在本插件的 UI 偏好里（壳的 plugin-states.json），不写数据目录。\n- **设置页分组**：插件市场设置拆成「商店行为」「市场源」两节（各带一句说明），两个开关在前、源列表在后；用的是宿主已有的分节能力，不需要设置插件升级。\n- **图标换成购物袋**：图标栏线稿版与市场里彩色版都重画为购物袋（方袋身＋宽提手），彩色版沿用暖橙品牌底。"
+          "publishedAt": "2026-11-22T18:46:47.072Z"
         },
         {
           "version": "1.4.0",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.0/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-22T17:34:59Z",
-          "changelog": "- **作者与多仓呈现（A→F 全批）**：新增 `currentRepo` 唯一浏览上下文——首页锁当前仓库，左栏直点分类/搜索/排行则是全源，仓库页的「全部主题」等「更多」落当前仓预过滤（带「已过滤 · 仓库名 · ✕ · 显示全部」逃生门）；作者容器卡＋一页两模式（浏览/管理来源），来源页彻底并入作者页、删掉 rail 独立入口；作者坞改为右缘竖向标签（52px，展开 386px 面板）；首页槽位重排、槽 2 仓库卡可 swap；分类瓷片原地展开；全部插件页补返回/滚动位/Esc；单仓刷新给出结果化三态。\n- **分段钮不再是药丸**：作者页「浏览 / 管理来源」与官方/社区源徽标、当前徽标改用 `--radius-sm` / `--radius-md`（此前误用 `--radius-full`，组件圆角设置关闭时也不会变方）；头像保持圆形。\n- **「有新版本可用」块不再塌成一字一行**：插件侧给文本体 8em 可读地板＋吃掉剩余宽（旧壳没有宿主文本地板时也不会被压成单字列），块高度随内容收。\n- **详情侧栏删掉重复的「安装位置」**：「大小」的值本来就是链接（点开安装目录），同一落点不再画第二行。\n- **拖动与吸顶修正**：`⇄` 交换标记回到顶部居中且目标容器 `overflow:visible` 不再裁掉；hover 上抬接 `useStickyClearance({mode:\"lift\"})`，压到吸顶条才下移；松手残影原地淡出。\n- **玻璃/可读性**：压在媒体上的文字层改吃内容面 token（`--surface-reading` / `-strong` / `--surface-media-scrim` / `--surface-ink`），基础卡与面板仍走主题玻璃。"
+          "publishedAt": "2026-11-22T17:35:21.193Z"
         },
         {
           "version": "1.3.0",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.3.0/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-22T16:43:44.401Z",
-          "changelog": "- **插件市场长出「媒体丰富度」（首屏/大卡/主题墙/详情）**：作者的 `marketplace.json` 里的 `screenshots` / `cover` 现在是整站唯一的媒体来源——首屏 hero 满幅铺图（左文案压 scrim，视频带原生 controls、永不自动播），mega/duo/wall 卡 hover 在卡内轮播最多 3 帧，THEMES 默认变成封面图墙，编辑精选改用整行分栏卡（左文右图、媒体内嵌、无满幅）；详情画廊与卡片同一份选帧。\n- **没图的插件不再是一块空渐变**：新增生成式封面（身份色场＋细网格＋图标砖＋名字水印＋分类字）永远垫在帧下——无图/坏图/加载中都有设计过的底，图 404 只拆该帧、不白块不跳布局。\n- **换槽位/换图/换价只改 JSON**：官方目录补 `collections[]`（hero／主题 mega／装机必备／编辑精选），换谁上大屏＝改 `items`；`cover` 与 `screenshots` 支持封面视频（至多 1 段且必须第一、poster 优先）；这些目录元数据**不发版**，商店刷新即生效。\n- **作者自检两条命令**：`marketplace-kit validate` 对媒体给「文件:字段 → 期望 → 示例」四类可执行报错；新增 `marketplace-kit media:resolve` dry-run，打印实际会用的 kind/frames/video，坏输入非零退出。\n- **发版不再抹作者手改的目录元数据**：`publish` 的 upsert 会保留 `screenshots` / `cover` / `pricing` / `license` / `repository` / `authorId`（此前下一次发版会把作者补的图和价格静默抹掉）。\n- **详情无图时用同一个媒体 stage**，删掉旧的空档；小卡/行卡/榜行仍只显示图标（用户口径）。\n- 要求 LinkDesk **0.2.20 或更高**（未变）。"
+          "publishedAt": "2026-11-22T16:42:52.429Z"
         },
         {
           "version": "1.2.1",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.2.1/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-20T11:59:49.495Z",
-          "changelog": "- **目录解析层 v2（R4-2.1–2.3）**：根级 `sources[]`/`collections[]`/`categoryRail` 进解析面；三源合并序＝官方 → 收录（官方目录根 `sources[]`）→ 用户，同 id 高版本胜；`vendors.json` 判定链（authorId 命中 ⇒ 条目带 `vendorId`「官方 ✓」，UI 零再判）；K5 回落链（用户源仓库根无 `marketplace.json` ⇒ 同目录 `plugin.json` 合成 1 条）；分类封闭名单体检（名单外记声明警告、归「其他」桶不丢）；源记录新形态（`string` / `{url}` / 全记录）读兼容。\n- **服务面（R4-2.4–2.7）**：视图偏好 `ui.prefs` 六键持久化（库/作者/分类的视图与排序，重启后保持）；命令面新增 13 条（偏好/浏览/来源/安装类，安装复用壳 `pluginManager`）；探索列表补双击固定；删除 `tabBehavior.singleton` 死声明。\n- **分类声明**：`category: \"productivity\"`（内置件小类可空）——商店分类抽屉归位，随本次发版进入官方目录条目（R4-2.8/2.9）。"
+          "publishedAt": "2026-11-20T11:59:49.495Z"
         },
         {
           "version": "1.2.0",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.2.0/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-04T23:48:47.471Z",
-          "changelog": "- **详情页元数据侧栏滚动吸顶**：右侧「标识符／作者／版本／兼容性…」那栏滚动时**钉在原地**，不再跟着正文滚走；「详情／功能／更改日志」三个 tab 都生效（侧栏本就三 tab 常驻，一处生效全吃）。\n- **装前版本门补缝（minAppVersion）**：此前只有详情页「安装」会拦「需要更高版本 LinkDesk」的插件，**侧栏行内安装和手动更新都能装上、装完却用不了**（重启软件后报错跳过）。现在四个入口走**同一道门**——行内安装、手动更新同样先比对并说明原因；降级到旧版不受此门影响（旧版自身的要求由软件加载时核对包内声明）。\n- **自动更新遇「需要更高版本 LinkDesk」的候选 ⇒ 停在旧版**，并发一条通知说明原因（每个版本只提醒一次，不重复打扰），不再自动装上一个用不了的版本。\n- 要求 LinkDesk **0.2.20 或更高**（未变）。"
+          "publishedAt": "2026-11-04T23:48:47.471Z"
         },
         {
           "version": "1.1.10",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.10/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-10-04T15:10:19.877Z",
-          "changelog": "- **详情页「功能」tab 的配置行改显短名**（随「配置项短名」）：上行取配置项声明里的短名（`title`），**没有短名的照旧显示说明**（第三方存量零影响），下行仍保留配置键——「短名 ＋ key」两行式。\n- **英文界面的中文裸奔就此断根**：这一行的文案（短名与说明两种形态）此前**没过翻译**，英文界面里原样显示中文；现在两种都过译名（缺译时回退显中文原文，同 i18next 既有口径）。\n- 本插件自己的「市场源」（`marketplace.marketplaceSources`）配置项补上短名。\n- 要求 LinkDesk **0.2.20 或更高**（未变）。"
+          "publishedAt": "2026-10-04T15:10:19.877Z"
         },
         {
           "version": "1.1.9",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.9/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-09-30T21:47:18.515Z",
-          "changelog": "- **「已安装」那块标题改口径**：原「全部更新记录」→「**更新记录（最近 5 版）**」——包里只剩最近 5 版，标题与内容对上（更早的记录仍在插件仓库里）。\n- **安装包瘦身**：包内更新日志只带最近 5 版——由 SDK 自动施加，用户无需任何操作。"
+          "publishedAt": "2026-09-30T21:47:18.515Z"
         },
         {
           "version": "1.1.8",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.8/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:47:48.946Z",
-          "changelog": "- **自有翻译归位（E6#161「谁的仓谁译文」）**：本仓 5 条可渲染文案的英文译名住进**本仓字典** `i18n/en.json`（新增 5 条） ＋ `contributes.i18n` 声明——不再依赖 `lang-defaults` 代管：文案在本仓声明、译名却在别的仓的字典里，本仓加一条声明那只仓无从跟上（跨仓追不上）。译名取值：池里现成的照抄（同键同值 ⇒ 按 E6#161「同值覆盖不出声」规则运行时零变化），池里没有的 1 条新写。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` ^0.1.58 → **^0.1.61**——`npm run verify` 第 ⑧ 段「自有字典覆盖度」（manifest 渲染串缺口 🔴 / 源码 `t()` 缺口 ⚠️）由 `@linkdesk/plugin-sdk/own-dict-coverage` 判定（判据本体在 SDK，⛔ 不在本仓复制）。"
+          "publishedAt": "2026-09-30T03:47:48.946Z"
         },
         {
           "version": "1.1.7",
@@ -920,28 +882,29 @@
     {
       "id": "pdf-reader",
       "name": "PDF 阅读器",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "description": "单击 pdf 开真阅读器——渲染、翻页、缩放、搜索；卸载即退回。",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.2/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.3/resources/icon.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/pdf-reader/shot-2.jpg"
-      ],
       "minAppVersion": "0.2.32",
       "category": "documents",
       "categories": [
         "viewer"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-pdf-reader/releases/download/v0.1.2/pdf-reader.linkdesk-plugin",
-      "size": 2160239,
-      "publishedAt": "2026-11-20T11:48:42.810Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.3/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-pdf-reader/releases/download/v0.1.3/pdf-reader.linkdesk-plugin",
+      "size": 2160315,
+      "publishedAt": "2026-11-23T13:49:29.417Z",
       "versions": [
+        {
+          "version": "0.1.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-pdf-reader/releases/download/v0.1.3/pdf-reader.linkdesk-plugin",
+          "publishedAt": "2026-11-23T13:49:29.417Z",
+          "changelog": "- 控件高度接宿主 `--size-control-*`、圆角改吃 `--radius-*`（均带 fallback，零视觉）"
+        },
         {
           "version": "0.1.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-pdf-reader/releases/download/v0.1.2/pdf-reader.linkdesk-plugin",
@@ -1028,30 +991,31 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.38",
+      "version": "1.0.39",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.38/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.39/resources/icon-bar.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/serial-monitor/shot-2.jpg"
-      ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.38/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.39/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "hardware",
       "categories": [
         "serial"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.38/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.38/serial-monitor.linkdesk-plugin",
-      "size": 165340,
-      "publishedAt": "2026-11-20T11:42:52.412Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.39/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.39/serial-monitor.linkdesk-plugin",
+      "size": 164950,
+      "publishedAt": "2026-11-23T13:51:46.960Z",
       "versions": [
+        {
+          "version": "1.0.39",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.39/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-11-23T13:51:46.960Z",
+          "changelog": "- 圆角改吃宿主 `--radius-*`（零视觉）"
+        },
         {
           "version": "1.0.38",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.38/serial-monitor.linkdesk-plugin",
@@ -1079,8 +1043,7 @@
         {
           "version": "1.0.34",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.34/serial-monitor.linkdesk-plugin",
-          "publishedAt": "2026-11-06T18:05:48.474Z",
-          "changelog": "- **修复快捷发送右键菜单空白**：右键快捷发送按钮弹出的菜单是空的、没法删除——壳按命令声明的显示条件过滤菜单项时，「编辑／删除」带着「串口标签页激活」条件，而右键菜单没把这个条件带过去，整单被滤空。现在右键菜单自带该条件，三条菜单（回填到发送区／编辑／删除）稳定出现。\n- **发送历史下拉补失焦关闭**：点击面板外任意位置或按 Esc 即收起；选中一条历史自动收起（此前只能再点一次按钮收）。\n- **底部发送按钮不再被圆角裁角**：底栏右侧按钮的右边距随主题圆角自动让位——圆角拉得再大，「▼／清空发送区／发送」的右下角也不会被容器圆角裁掉。\n- **按钮圆角随主题**：工具栏与发送按钮的圆角从写死 4px 改为主题圆角档（默认外观不变，拉大圆角时跟随）。\n- 要求 LinkDesk **0.2.20 或更高**（未变）。"
+          "publishedAt": "2026-11-06T18:05:48.474Z"
         },
         {
           "version": "1.0.33",
@@ -1213,33 +1176,33 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.46",
+      "version": "1.0.47",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.46/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.47/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.46/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.47/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.53",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.46/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.46/settings.linkdesk-plugin",
-      "size": 37427,
-      "publishedAt": "2026-11-23T04:56:29.462Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.47/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.47/settings.linkdesk-plugin",
+      "size": 36623,
+      "publishedAt": "2026-11-23T13:51:02.313Z",
       "versions": [
+        {
+          "version": "1.0.47",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.47/settings.linkdesk-plugin",
+          "publishedAt": "2026-11-23T13:51:02.313Z",
+          "changelog": "- 圆角改吃宿主 `--radius-*`；导航图标接 `--size-icon-sm`（均带 fallback，零视觉）"
+        },
         {
           "version": "1.0.46",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.46/settings.linkdesk-plugin",
           "publishedAt": "2026-11-23T04:56:29.462Z",
           "changelog": "- **复制/恢复类回执改底部轻 Toast**：复制设置 ID / 名称 / 键位 / JSON、复制插件 ID、恢复自动、清除覆盖、改默认打开方式——这些「做完即弃」的回执不再进铃铛留档；失败/警告仍走铃铛。\n- 统一门面 `src/notify.ts`：`info`/`success` → `toasts.show`；`warning`/`error` → `notifications.show`；旧壳（< 0.2.55）无 `toasts` 面时自动回退，回执不消失。"
-        },
-        {
-          "version": "1.0.45",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.45/settings.linkdesk-plugin",
-          "publishedAt": "2026-11-22T22:05:30.987Z",
-          "changelog": "- 颜色行按配置声明 allowAlpha: true 把能力传给共享 ColorPicker——玻璃叠加色（app.glassTint）可调 alpha；未声明的颜色键保持不透明。\n- 依赖 @linkdesk/ui ^0.2.69；要求 LinkDesk 0.2.60 或更高。"
         },
         {
           "version": "1.0.44",
@@ -1262,14 +1225,12 @@
         {
           "version": "1.0.41",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.41/settings.linkdesk-plugin",
-          "publishedAt": "2026-11-07T04:39:14.420Z",
-          "changelog": "- ✨ **设置页左侧导航入口加图标**：每个入口行（「编辑器」「资源管理器」…）行首显示 16px 图标——插件组显**插件市场同款图标**（与市场卡片、标签栏同一台渲染件、同一份图标数据，零新增资产）；没设置图标的插件显示默认彩色块，不留空位。\n- 🏗️ **本体组（通用／主题／AI接入／默认打开方式）的图标走「声明制」**：渲染端已就位，等软件 0.2.53 的内置组声明带上图标字段后**自动显示、本插件无需再发版**；在那之前这四行维持原样（纯文字），不预留空位（图标需要专门设计，宁缺毋滥）。\n- 内部：图标来源裁决收进纯函数（manifest → 共享件 descriptor ＋ 声明 icon 形态归一：codicon 全名剥前缀防双拼、绝对 URL 跳过相对路径拼接），单测 6 例虚构值覆盖。要求 LinkDesk **0.2.52 或更高**（地板未变——本版消费的共享件同为 0.2.52 面）。"
+          "publishedAt": "2026-11-07T04:39:14.420Z"
         },
         {
           "version": "1.0.40",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.40/settings.linkdesk-plugin",
-          "publishedAt": "2026-10-06T16:32:44.047Z",
-          "changelog": "- 🔴 **修复：「跟随主题配方」预览色块在半透明主题下左右各有一条 1px 的串色**（深色那半边的最边上露出浅色、浅色那半边露出深色，看起来像最边上两个竖条换了位置）。根因不在配色，而在**色块的铺贴几何**：盒子是 `box-sizing: border-box`（可绘制区比外框每边小 1px），双色渐变本身又没有固有尺寸 ⇒ 图案铺满时多出的左右两列正好压在**半透明**的边框底下——边框不透明的主题看不出来，半透明主题（如 `theme-aurora-glass`）就露出来。修在**软件自带的分段预览组件**基类上（凡用到它的地方一并正确）。\n- 🔁 **本插件那两处自画的小色块（分段预览、字色深浅预览）改吃「软件自带」的同名组件**——外观与操作一字不变，差别是同一份几何、同一份配色只剩一处实现（换谁来渲染都画得对）。\n- 🌈 **「颜色」类配置行的色块与输入框也改用「软件自带」的组件画**——外观与操作一字不变（20×20 色块、点色块开调色板、旁边输入框边打边改），但这一件不再只属于本插件：任何人都能拿它把一条颜色配置画对。设置页里此前**同一段色块 JSX 抄了两遍**（`uiHint:\"color\"` 与 `renderHint:\"color\"` 两个分支），现在两处都调同一件。\n- 🧩 **对象／列表类配置项的键值编辑器改用「软件自带」的组件画**——键改名、开关、数值、文本、删行、加行一套照旧，行为一字不变（新增行的键名仍是**数据键名**、不参与翻译）；差别是**这类配置不再只有本插件画得出来**：别的渲染方拿到 `object` 类型的配置也能照画。\n- 内部：**本插件私有件再删 2 件**（`ObjectEditor.tsx` ＋ `SettingsView-objectEditor.css`）＋ 一段私有 CSS（`.settings-color-control` / `.settings-color-swatch`）——几何与外观逐值上移进「软件自带」组件（共享类名 `ldk-color-field*` / `ldk-object-editor*`）；编辑器的文案（添加／删除／已启用／已禁用）改由本插件经参数注入，共享件里**不含任何中文字面量、也不做翻译**。\n- 内部：**私有件整删 4 件**——`sharedUi.ts`（早期为「软件版本还不支持时自己顶一份」写的双轨取件层）＋ `imagePicker.tsx` ＋ `readonlyStatus.tsx` ＋ 对应的一份测试；来源徽标／生效徽标／只读值／背景图选择器／生效值格式化／混搭哨兵一律改为**静态具名 import**（`@linkdesk/ui`），并删掉随之作废的私有 CSS 族段（`.settings-source-badge*`／`.settings-effective-badge*`／`.settings-image-picker*`／`.settings-segmented-swatch*`／`.settings-font-tone-half*`），改吃共享件类名。原因记一笔：双轨取件按**变量键**取值，会**逃过**软件那套「插件最低版本地板」的账本（地板是按**静态具名导入**算的）——官方示例插件必须让声明与该插件真正用到的面**对得上**。\n- 要求 LinkDesk **0.2.52 或更高**（地板未变）：本版新用到的两件（色块输入件 `ColorField`、键值编辑器 `ObjectEditor`）同样是 **0.2.52** 面，不抬地板。"
+          "publishedAt": "2026-10-06T16:32:44.047Z"
         },
         {
           "version": "1.0.39",
@@ -1437,11 +1398,7 @@
           "publishedAt": "2026-09-14T02:35:15.124Z"
         }
       ],
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/settings/shot-2.png"
-      ]
+      "repository": "https://github.com/Encaron/linkdesk-plugin-settings"
     },
     {
       "id": "theme-aurora-glass",
@@ -2058,30 +2015,31 @@
     {
       "id": "geme-tihu-bicycle",
       "name": "鹈鹕骑行",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "description": "鹈鹕骑车海边公路无尽冲刺——跳跃、俯冲、吃鱼连击、躲避海鸥，昼夜循环 + 程序合成 BGM 的小游戏",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/v1.0.4/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/v1.0.5/resources/icon-bar.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/geme-tihu-bicycle/shot-2.jpg"
-      ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/v1.0.4/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/v1.0.5/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.13",
       "category": "entertainment",
       "categories": [
         "game"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/v1.0.4/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/releases/download/v1.0.4/geme-tihu-bicycle.linkdesk-plugin",
-      "size": 24216,
-      "publishedAt": "2026-11-20T11:52:31.247Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/v1.0.5/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/releases/download/v1.0.5/geme-tihu-bicycle.linkdesk-plugin",
+      "size": 23788,
+      "publishedAt": "2026-11-23T13:52:33.984Z",
       "versions": [
+        {
+          "version": "1.0.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/releases/download/v1.0.5/geme-tihu-bicycle.linkdesk-plugin",
+          "publishedAt": "2026-11-23T13:52:33.984Z",
+          "changelog": "- 主钮高度接宿主 `--size-control-lg`、圆角改吃 `--radius-*`（均带 fallback，零视觉）"
+        },
         {
           "version": "1.0.4",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/releases/download/v1.0.4/geme-tihu-bicycle.linkdesk-plugin",
@@ -2109,8 +2067,7 @@
         {
           "version": "1.0.0",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/releases/download/v1.0.0/geme-tihu-bicycle.linkdesk-plugin",
-          "publishedAt": "2026-09-19T17:23:38.482Z",
-          "changelog": "- 首个公开版本：海边公路无尽骑行小游戏——Canvas 全矢量美术，零图片 / 零音频资产\n- 玩法：跳跃（空格/↑/点击）、俯冲（↓）、吃鱼连击（最高 ×5）、金鱼 +60、三条命；锥桶与螃蟹地面拦路，低飞海鸥要低头、高空海鸥别起跳\n- 昼夜循环（白天→日落→夜晚→黎明）、双层云视差、海浪碎光、棕榈 / 遮阳伞 / 礁石路景\n- WebAudio 程序合成芯片 BGM（132 BPM 八小节循环）与全套合成音效，音乐可随时关闭且记住偏好\n- 最高分与音乐偏好经 `window.linkdesk.configuration` 持久化\n- keep-alive 适配：切离标签自动暂停；引擎（物理 / 碰撞 / 连击 / 生成公平性 / 确定性）有 vitest 单测覆盖"
+          "publishedAt": "2026-09-19T17:23:38.482Z"
         }
       ],
       "repository": "https://github.com/Encaron/linkdesk-plugin-geme-tihu-bicycle"
