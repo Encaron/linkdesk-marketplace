@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T19:00:22.335Z",
+  "updatedAt": "2026-11-23T19:00:39.224Z",
   "sources": [],
   "collections": [
     {
@@ -751,26 +751,32 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.23",
+      "version": "1.4.24",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.23/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.24/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.23/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.24/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.60",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.23/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.24/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.23/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.23/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.24/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.24/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.23/marketplace.linkdesk-plugin",
-      "size": 195121,
-      "publishedAt": "2026-11-23T18:05:00.547Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.24/marketplace.linkdesk-plugin",
+      "size": 195239,
+      "publishedAt": "2026-11-23T18:59:43.919Z",
       "versions": [
+        {
+          "version": "1.4.24",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.24/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T18:59:43.919Z",
+          "changelog": "- **插件商店标签页改为正体常驻**：`openStoreTab` 显式传 `pinned:true`。此前新标签默认预览态（斜体），会被下一次预览打开顶掉——用户实机反馈「Plugins Store 极容易被替换」。壳侧 `reduceOpenOrFocus` 同步补上「已存在标签页按 `pinned:true` 补 pin」，老会话里的斜体页点一次入口即转正。"
+        },
         {
           "version": "1.4.23",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.23/marketplace.linkdesk-plugin",
