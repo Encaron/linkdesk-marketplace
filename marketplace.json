@@ -30,7 +30,15 @@
       "layout": "mega",
       "more": {
         "label": "全部主题",
-        "target": "category:themes"
+        "target": "category:themes",
+        "locales": {
+          "zh": {
+            "label": "全部主题"
+          },
+          "en": {
+            "label": "All themes"
+          }
+        }
       },
       "items": [
         "theme-defaults",
@@ -242,7 +250,13 @@
           "name": "Editor",
           "description": "Monaco code editor — syntax highlighting, IntelliSense, diff view"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/HEAD/resources/cover.svg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/HEAD/resources/cover.svg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/editor/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/editor/shot-2.png"
+      ]
     },
     {
       "id": "file-tree",
@@ -723,7 +737,12 @@
           "name": "Official Language Pack",
           "description": "Bundled Chinese/English language pack — uninstallable; missing keys fall back to the raw key"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
+      ]
     },
     {
       "id": "marketplace",
@@ -1698,7 +1717,13 @@
           "name": "Aurora Glass",
           "description": "Sample glass theme — Aurora UI night sky + liquid glass surfaces + a full-window aurora background"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-2.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/HEAD/resources/cover.svg"
+      ]
     },
     {
       "id": "theme-defaults",
@@ -1820,7 +1845,13 @@
           "name": "Official Themes",
           "description": "Bundled dark/light themes — uninstallable; falls back to the shell's built-in recipes"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-1.jpg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-2.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-3.jpg"
+      ]
     },
     {
       "id": "theme-iconset-pastel",
@@ -2013,7 +2044,13 @@
           "name": "Full-Window Hero",
           "description": "Extreme shell theme — the background domain pushed to the limit: a full-window low-mask hero with translucent chrome"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-1.jpg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-2.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/HEAD/resources/sailor-moon.jpg"
+      ]
     },
     {
       "id": "theme-rose-window",
@@ -2080,7 +2117,13 @@
           "name": "Rose Window",
           "description": "Stained-glass cathedral theme — afternoon light through a rose window; light frosted glass over dark stone"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.3/resources/cover.jpg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-2.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-3.jpg"
+      ]
     },
     {
       "id": "my-cool-plugin",
