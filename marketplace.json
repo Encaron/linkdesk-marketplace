@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T04:54:20.017Z",
+  "updatedAt": "2026-11-23T04:58:35.094Z",
   "sources": [],
   "collections": [
     {
@@ -68,12 +68,12 @@
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.26",
+      "version": "1.0.27",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.26/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.27/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/HEAD/resources/cover.svg",
       "screenshots": [
@@ -86,11 +86,17 @@
       "categories": [
         "code-editing"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.26/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.26/editor.linkdesk-plugin",
-      "size": 8658562,
-      "publishedAt": "2026-11-20T11:47:02.736Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.27/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.27/editor.linkdesk-plugin",
+      "size": 8658403,
+      "publishedAt": "2026-11-23T04:58:07.768Z",
       "versions": [
+        {
+          "version": "1.0.27",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.27/editor.linkdesk-plugin",
+          "publishedAt": "2026-11-23T04:58:07.768Z",
+          "changelog": "- **「语言服务器正在启动——请稍候再试」改底部轻 Toast**：启动期的「等一等」不再是铃铛里的一条留档；「语言支持不可用——无法跳转到定义」仍走铃铛（失败需回看）。\n- 旧壳（< 0.2.55）没有 `toasts` 面时自动回退通知面板，提示不消失。"
+        },
         {
           "version": "1.0.26",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.26/editor.linkdesk-plugin",
@@ -187,30 +193,36 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.32",
+      "version": "1.0.33",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.32/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.33/resources/icon-bar.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/HEAD/resources/cover.svg",
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/HEAD/resources/cover.svg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/file-tree/shot-2.png"
       ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.32/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.33/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "documents",
       "categories": [
         "files"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.32/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.32/file-tree.linkdesk-plugin",
-      "size": 48242,
-      "publishedAt": "2026-11-20T11:47:41.666Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.33/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.33/file-tree.linkdesk-plugin",
+      "size": 47465,
+      "publishedAt": "2026-11-23T04:55:38.228Z",
       "versions": [
+        {
+          "version": "1.0.33",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.33/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-11-23T04:55:38.228Z",
+          "changelog": "- **「没有选中的文件——请先在文件树中选中一个文件」改底部轻 Toast**：一次性引导不再占铃铛留档；复制/移动/删除等**失败**仍走铃铛常驻。\n- 旧壳（< 0.2.55）没有 `toasts` 面时自动回退通知面板。"
+        },
         {
           "version": "1.0.32",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.32/file-tree.linkdesk-plugin",
@@ -1177,22 +1189,28 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.45",
+      "version": "1.0.46",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.45/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.46/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.45/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.46/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.53",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.45/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.45/settings.linkdesk-plugin",
-      "size": 37629,
-      "publishedAt": "2026-11-22T22:05:30.987Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.46/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.46/settings.linkdesk-plugin",
+      "size": 37427,
+      "publishedAt": "2026-11-23T04:56:29.462Z",
       "versions": [
+        {
+          "version": "1.0.46",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.46/settings.linkdesk-plugin",
+          "publishedAt": "2026-11-23T04:56:29.462Z",
+          "changelog": "- **复制/恢复类回执改底部轻 Toast**：复制设置 ID / 名称 / 键位 / JSON、复制插件 ID、恢复自动、清除覆盖、改默认打开方式——这些「做完即弃」的回执不再进铃铛留档；失败/警告仍走铃铛。\n- 统一门面 `src/notify.ts`：`info`/`success` → `toasts.show`；`warning`/`error` → `notifications.show`；旧壳（< 0.2.55）无 `toasts` 面时自动回退，回执不消失。"
+        },
         {
           "version": "1.0.45",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.45/settings.linkdesk-plugin",
