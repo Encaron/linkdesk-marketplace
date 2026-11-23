@@ -445,7 +445,12 @@
           "name": "File Tree",
           "description": "Browse and manage files — the VS Code Explorer equivalent"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/HEAD/resources/cover.svg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/HEAD/resources/cover.svg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/file-tree/shot-2.png"
+      ]
     },
     {
       "id": "lang-defaults",
@@ -1033,7 +1038,13 @@
           "name": "Marketplace",
           "description": "Browse, install, and manage plugins"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
+      ]
     },
     {
       "id": "pdf-reader",
@@ -1100,7 +1111,12 @@
           "name": "PDF Reader",
           "description": "Open PDFs in a real reader — render, page, zoom, search; falls back on uninstall"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/HEAD/resources/cover.svg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/HEAD/resources/cover.svg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/pdf-reader/shot-2.jpg"
+      ]
     },
     {
       "id": "python",
@@ -1384,7 +1400,12 @@
           "name": "Serial Monitor",
           "description": "Serial data monitor — receive pane (CM6) + send bar (Monaco) + sidebar settings. LinkDesk's first view plugin; validates the generic container infrastructure."
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/HEAD/resources/cover.svg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/HEAD/resources/cover.svg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/serial-monitor/shot-2.jpg"
+      ]
     },
     {
       "id": "settings",
@@ -1630,7 +1651,12 @@
           "name": "Settings",
           "description": "Software settings — themes, language, plugin management"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/HEAD/resources/cover.svg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/HEAD/resources/cover.svg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/settings/shot-2.png"
+      ]
     },
     {
       "id": "theme-aurora-glass",
@@ -2267,7 +2293,12 @@
           "name": "Pelican Ride",
           "description": "Pelican cycling endless runner — jump, dive, fish combos, dodge seagulls, day/night cycle, procedurally synthesized BGM"
         }
-      }
+      },
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/HEAD/resources/cover.svg",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-geme-tihu-bicycle/HEAD/resources/cover.svg",
+        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/geme-tihu-bicycle/shot-2.jpg"
+      ]
     }
   ]
 }
