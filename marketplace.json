@@ -503,6 +503,268 @@
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.70/lang-defaults.linkdesk-plugin",
           "publishedAt": "2026-11-23T20:05:21.060Z",
           "changelog": "- 外观复位两行动作改名后的词条：`重置为当前主题` / `分区来源改回主题` 及其长说明（按钮取 title、说明留 description）。"
+        },
+        {
+          "version": "1.0.69",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.69/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-23T19:49:59.692Z",
+          "changelog": "- 新增 4 条外观设置词条：`以当前主题为起点` / `复位分区来源` 及其说明（配合外观复位入口归位）。"
+        },
+        {
+          "version": "1.0.68",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.68/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-23T17:09:45.346Z",
+          "changelog": "对比度设置词条（标准/高对比）。"
+        },
+        {
+          "version": "1.0.67",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.67/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:40:41.872Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
+        {
+          "version": "1.0.65",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.65/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:58:55.393Z",
+          "changelog": "- 新增英文词条 **「亮色主题」→ \"Light Theme\"**——设置页自定义模式「配色」下拉的跨明暗标签使用（与既有「暗色主题」成对）。"
+        },
+        {
+          "version": "1.0.64",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.64/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-20T11:58:32.684Z",
+          "changelog": "- **分类声明（R4-2.8/2.9）**：`plugin.json` 顶层补 `category: \"development\"` ＋ `categories: [\"i18n\"]`——商店分类抽屉归位，随本次发版进入官方目录条目。"
+        },
+        {
+          "version": "1.0.63",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.63/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-19T21:40:29.119Z",
+          "changelog": "- **Marketplace-Store 壳三刀（R4-1.2/1.3）新串 ＋8 条**：本地安装流（installFromDirectory）的阶段与解压段错误文案（`校验插件包`／`解压插件包`既有、`校验插件`／`复制插件文件`新增）、解压段判据串四条（`不是有效的 .linkdesk-plugin 包`／`包内 pluginId 非法`／`已存在安装目录`／`包内含非法条目（zip-slip）`——自 electron 安装 handler 单源常量随串入册）、付费安装门拦截文案（`此插件需要许可——请先在详情页输入许可密钥`）。零行为变化：纯数据词条，键数 763 → 771。"
+        },
+        {
+          "version": "1.0.62",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.62/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-06T11:44:38.232Z",
+          "changelog": "- **「默认打开方式」管理器共享化批：壳侧新串 ＋ 归属转移共 39 条**。管理器视图从官方设置插件搬进 `@linkdesk/ui` 共享件后，它的文案要在**应用级字典**里有译名——否则换上第三方设置插件（那台插件不带这些词条）时，英文界面会漏出中文。\n  - ＋16（壳侧新串）：`多候选类型`、`（当前没有多候选的类型）`、`没有匹配的类型`、`按字母序`、`按默认排序`、`过滤文件类型（先扩展名、后类型名；仅类型名命中的行有标注）`、`过滤 {{count}} 类…`、`命中 {{done}} / {{total}}`、`行序：按字母序 ／ 按默认排序（插件声明原始次序）`、`类型名`、`.{{ext}} 的更多操作`、`· 下拉＝整格生效`、` · 候选 {{count}} 个`、`{{count}} 个候选`、`系统「打开方式」登记`、`单击文件时由哪个插件打开——与文件右键菜单的「打开方式」同写一处，即时互见`。\n  - ＋23（原只在设置插件字典里，随件搬到共享件 ⇒ 归属转应用级字典）：六态胶囊文案（`当前默认（用户锁定）`／`当前默认（用户指定）`／`默认（自动）`／`候选 · 默认：{{name}}`／`唯一处理者（自动）`／`无人处理 · 角色兜底（{{name}}）`／`失效覆盖`／`显式锁定：其他插件后续声明此类亦不漂移`）、两区标题与空态（`按插件浏览`／`没有匹配的类型或插件`／`（没有声明了文件类型的插件）`）、行控件（`.{{ext}} 的默认打开方式`／`{{types}} 的默认打开方式`／`声明串 {{raw}} → 归一存储键 .{{ext}}`）、卡头三数（`竞争`／`默认持有`／`声明` 已在）、拼句（` 等 {{count}} 类`／` · 整组 {{total}} 类中 {{count}} 类单独设置`／`当前单击打开：`／`（自动）`／`（用户指定）`／`（含用户指定）`）、错误态（`加载默认打开方式失败：{{msg}}`）。**英文逐字沿用设置插件的既有译文，用户可见文案零变化。**\n  - ＋1 换名（同笔删旧）：`单击文件时由哪个插件打开——文件树右键「打开方式」与本页同写一处，两边即时互见` → `单击文件时由哪个插件打开——与文件右键菜单的「打开方式」同写一处，即时互见`（C3d 泛称版，零插件名）。\n- 键数 725 → 763（＋39 −1）。\n- 🔴 两条易错点已按壳侧源串逐字对齐：`· 下拉＝整格生效` **不带前导空格**（源串的前导空格在模板里、不在 `t()` 字面量里）；` · 候选 {{count}} 个`／` 等 {{count}} 类`／` · 整组 …` **带前导空格**（源串本身带）。\n- 零行为变化：纯数据词条。"
+        },
+        {
+          "version": "1.0.61",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.61/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-06T11:26:09.822Z"
+        },
+        {
+          "version": "1.0.60",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.60/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-06T10:45:17.211Z"
+        },
+        {
+          "version": "1.0.59",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.59/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-06T10:43:25.314Z"
+        },
+        {
+          "version": "1.0.58",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.58/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-05T15:34:06.567Z"
+        },
+        {
+          "version": "1.0.57",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.57/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-05T05:57:40.934Z"
+        },
+        {
+          "version": "1.0.56",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.56/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-05T04:59:17.909Z"
+        },
+        {
+          "version": "1.0.55",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.55/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-05T04:12:56.312Z"
+        },
+        {
+          "version": "1.0.54",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.54/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-05T02:04:09.016Z"
+        },
+        {
+          "version": "1.0.53",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.53/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-04T16:12:34.808Z"
+        },
+        {
+          "version": "1.0.52",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.52/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-04T14:51:48.595Z"
+        },
+        {
+          "version": "1.0.51",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.51/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-04T14:28:57.406Z"
+        },
+        {
+          "version": "1.0.50",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.50/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-04T14:16:08.030Z"
+        },
+        {
+          "version": "1.0.49",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.49/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T19:16:28.590Z"
+        },
+        {
+          "version": "1.0.48",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.48/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T18:22:10.126Z"
+        },
+        {
+          "version": "1.0.47",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.47/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T18:03:57.288Z"
+        },
+        {
+          "version": "1.0.46",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.46/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T17:10:12.808Z"
+        },
+        {
+          "version": "1.0.45",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.45/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T16:10:22.924Z"
+        },
+        {
+          "version": "1.0.44",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.44/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-03T13:47:35.451Z"
+        },
+        {
+          "version": "1.0.43",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.43/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-01T15:04:01.248Z"
+        },
+        {
+          "version": "1.0.42",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.42/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-10-01T14:01:14.661Z"
+        },
+        {
+          "version": "1.0.41",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.41/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T21:44:53.268Z"
+        },
+        {
+          "version": "1.0.40",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.40/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T12:50:29.694Z"
+        },
+        {
+          "version": "1.0.39",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.39/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T12:22:23.324Z"
+        },
+        {
+          "version": "1.0.38",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.38/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T11:40:31.867Z"
+        },
+        {
+          "version": "1.0.37",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.37/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T03:47:36.869Z"
+        },
+        {
+          "version": "1.0.36",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.36/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-30T02:45:06.301Z"
+        },
+        {
+          "version": "1.0.35",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.35/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-29T11:26:41.474Z"
+        },
+        {
+          "version": "1.0.34",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.34/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-29T09:33:03.936Z"
+        },
+        {
+          "version": "1.0.33",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.33/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-29T08:22:28.261Z"
+        },
+        {
+          "version": "1.0.32",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.32/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-29T05:25:08.199Z"
+        },
+        {
+          "version": "1.0.31",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.31/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-29T05:10:45.810Z"
+        },
+        {
+          "version": "1.0.30",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.30/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-28T14:38:04.098Z"
+        },
+        {
+          "version": "1.0.29",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.29/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-28T11:21:51.935Z"
+        },
+        {
+          "version": "1.0.27",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.27/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-27T06:28:26.433Z"
+        },
+        {
+          "version": "1.0.26",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.26/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-26T19:27:06.742Z"
+        },
+        {
+          "version": "1.0.25",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.25/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-26T17:43:38.408Z"
+        },
+        {
+          "version": "1.0.24",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.24/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-26T15:38:54.682Z"
+        },
+        {
+          "version": "1.0.23",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.23/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-26T15:11:31.969Z"
+        },
+        {
+          "version": "1.0.22",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.22/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-26T13:54:56.384Z"
+        },
+        {
+          "version": "1.0.21",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.21/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-26T12:57:22.803Z"
+        },
+        {
+          "version": "1.0.20",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.20/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-19T13:45:48.731Z"
+        },
+        {
+          "version": "1.0.19",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.19/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-19T12:45:25.695Z"
+        },
+        {
+          "version": "1.0.18",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.18/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-14T18:09:21.544Z"
+        },
+        {
+          "version": "1.0.17",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.17/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-09-14T02:36:05.197Z"
         }
       ],
       "repository": "https://github.com/Encaron/linkdesk-plugin-lang-defaults",
@@ -574,6 +836,249 @@
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.22/marketplace.linkdesk-plugin",
           "publishedAt": "2026-11-23T17:42:16.152Z",
           "changelog": "- **作者/仓库卡名走目录 locales**：`AuthorSwitchCard` / 仓卡标题此前裸读 `r.name`（intro 已本地化、name 没走 lt），英文界面仍显示「官方目录」；作者仓卡/仓库页/来源管理三处统一 `lt(r,\"name\")`。\n- **防复发**：新增 `catalogTextResolution.test.ts`，扫视图里的 `title={r.name}` / `tag: banner.title` / `more.label` 裸读，命中即红。"
+        },
+        {
+          "version": "1.4.21",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.21/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T17:32:01.522Z",
+          "changelog": "- **rail 紧凑行不再省略**：112px + gap 6 / padding 7 / 计数 10px / 点 margin 4；英文 Library、Author 与中文「我的库 / 作者」完整显示（2026-11-24 实机「Lib… / A..」）。"
+        },
+        {
+          "version": "1.4.20",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.20/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T17:28:23.857Z",
+          "changelog": "- **修复首页宣传图消失**：官方目录合并改为 `{...existing,...entry}`，保留只在目录侧维护的 `cover`/`screenshots`（实体在 linkdesk-marketplace/media/），不再被插件仓条目整条替换。\n- **修复「官方精选 / 全部主题」英文界面仍中文**：Hero tag 与合集 more.label 走 `lt()`；合集 more 支持 `locales`。"
+        },
+        {
+          "version": "1.4.19",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.19/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T17:04:14.192Z",
+          "changelog": "- **语言切换重拉已装列表**：宿主 list() 按当前语言解析显示文本；切换语言时市场显式 refreshData，否则详情/功能页停留在启动语言。"
+        },
+        {
+          "version": "1.4.18",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.18/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:43:51.106Z"
+        },
+        {
+          "version": "1.4.17",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.17/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T15:08:12.343Z"
+        },
+        {
+          "version": "1.4.16",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.16/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T13:48:23.579Z"
+        },
+        {
+          "version": "1.4.15",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.15/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T05:30:52.323Z"
+        },
+        {
+          "version": "1.4.10",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.10/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T21:55:05.800Z"
+        },
+        {
+          "version": "1.4.9",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.9/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T20:46:34.002Z"
+        },
+        {
+          "version": "1.4.8",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.8/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T20:17:01.128Z"
+        },
+        {
+          "version": "1.4.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.7/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:57:46.288Z"
+        },
+        {
+          "version": "1.4.6",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.6/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:41:23.471Z"
+        },
+        {
+          "version": "1.4.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.5/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:29:25.144Z"
+        },
+        {
+          "version": "1.4.4",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.4/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:21:32.657Z"
+        },
+        {
+          "version": "1.4.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.3/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:15:10.224Z"
+        },
+        {
+          "version": "1.4.2",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.2/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T19:13:07.614Z"
+        },
+        {
+          "version": "1.4.1",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.1/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T18:46:47.072Z"
+        },
+        {
+          "version": "1.4.0",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.0/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T17:35:21.193Z"
+        },
+        {
+          "version": "1.3.0",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.3.0/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-22T16:42:52.429Z"
+        },
+        {
+          "version": "1.2.1",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.2.1/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-20T11:59:49.495Z"
+        },
+        {
+          "version": "1.2.0",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.2.0/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-04T23:48:47.471Z"
+        },
+        {
+          "version": "1.1.10",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.10/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-10-04T15:10:19.877Z"
+        },
+        {
+          "version": "1.1.9",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.9/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-30T21:47:18.515Z"
+        },
+        {
+          "version": "1.1.8",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.8/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-30T03:47:48.946Z"
+        },
+        {
+          "version": "1.1.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.7/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-30T01:26:14.432Z"
+        },
+        {
+          "version": "1.1.6",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.6/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-30T00:36:08.628Z"
+        },
+        {
+          "version": "1.1.5",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.5/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-30T00:10:00.997Z"
+        },
+        {
+          "version": "1.1.4",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.4/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-29T19:42:02.882Z"
+        },
+        {
+          "version": "1.1.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.3/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-29T19:05:32.421Z"
+        },
+        {
+          "version": "1.1.2",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.2/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-29T18:41:43.042Z"
+        },
+        {
+          "version": "1.1.1",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.1/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-29T05:40:40.403Z"
+        },
+        {
+          "version": "1.1.0",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.1.0/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-27T18:09:45.250Z"
+        },
+        {
+          "version": "1.0.45",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.45/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-27T07:09:56.583Z"
+        },
+        {
+          "version": "1.0.44",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.44/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-25T18:56:36.794Z"
+        },
+        {
+          "version": "1.0.43",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.43/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-20T00:08:04.441Z"
+        },
+        {
+          "version": "1.0.42",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.42/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-19T13:46:55.372Z"
+        },
+        {
+          "version": "1.0.41",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.41/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-19T12:49:27.445Z"
+        },
+        {
+          "version": "1.0.40",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.40/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-19T10:12:24.090Z"
+        },
+        {
+          "version": "1.0.39",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.39/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-19T06:01:44.842Z"
+        },
+        {
+          "version": "1.0.38",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.38/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-19T01:50:19.814Z"
+        },
+        {
+          "version": "1.0.37",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.37/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-18T18:08:05.856Z"
+        },
+        {
+          "version": "1.0.35",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.35/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-17T13:39:29.641Z"
+        },
+        {
+          "version": "1.0.34",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.34/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-16T03:01:45.681Z"
+        },
+        {
+          "version": "1.0.33",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.33/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-15T17:44:37.880Z"
+        },
+        {
+          "version": "1.0.32",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.32/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-15T06:16:39.318Z"
+        },
+        {
+          "version": "1.0.31",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.31/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-14T18:09:31.417Z"
+        },
+        {
+          "version": "1.0.30",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.30/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-14T10:03:37.595Z"
+        },
+        {
+          "version": "1.0.29",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.0.29/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-09-14T02:36:19.060Z"
         }
       ],
       "repository": "https://github.com/Encaron/linkdesk-plugin-marketplace",
