@@ -13,7 +13,15 @@
         "serial-monitor",
         "theme-aurora-glass"
       ],
-      "order": 1
+      "order": 1,
+      "locales": {
+        "zh": {
+          "title": "官方精选"
+        },
+        "en": {
+          "title": "Official Picks"
+        }
+      }
     },
     {
       "id": "official-themes",
@@ -33,7 +41,17 @@
         "theme-twilight-forest",
         "theme-iconset-pastel"
       ],
-      "order": 2
+      "order": 2,
+      "locales": {
+        "zh": {
+          "title": "主题专区",
+          "hint": "一套配方换一个心情"
+        },
+        "en": {
+          "title": "Themes",
+          "hint": "One recipe, a whole new mood"
+        }
+      }
     },
     {
       "id": "official-must-have",
@@ -50,7 +68,17 @@
         "lang-defaults",
         "marketplace"
       ],
-      "order": 3
+      "order": 3,
+      "locales": {
+        "zh": {
+          "title": "装机必备",
+          "hint": "官方内置与精选——第一次打开软件就用得上"
+        },
+        "en": {
+          "title": "Must-have",
+          "hint": "Official built-ins and picks — useful from the first launch"
+        }
+      }
     },
     {
       "id": "official-editor-picks",
@@ -61,7 +89,17 @@
         "editor",
         "serial-monitor"
       ],
-      "order": 4
+      "order": 4,
+      "locales": {
+        "zh": {
+          "title": "编辑精选",
+          "hint": "两只官方大件：写代码与看串口"
+        },
+        "en": {
+          "title": "Editor's Picks",
+          "hint": "Two flagship official plugins: write code and watch serial"
+        }
+      }
     }
   ],
   "plugins": [
@@ -188,7 +226,17 @@
           "publishedAt": "2026-09-14T02:35:51.977Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-editor"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-editor",
+      "locales": {
+        "zh": {
+          "name": "编辑器",
+          "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比"
+        },
+        "en": {
+          "name": "Editor",
+          "description": "Monaco code editor — syntax highlighting, IntelliSense, diff view"
+        }
+      }
     },
     {
       "id": "file-tree",
@@ -358,7 +406,17 @@
           "publishedAt": "2026-09-14T02:35:58.751Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-file-tree"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-file-tree",
+      "locales": {
+        "zh": {
+          "name": "文件树",
+          "description": "浏览和管理文件——对标 VS Code 资源管理器"
+        },
+        "en": {
+          "name": "File Tree",
+          "description": "Browse and manage files — the VS Code Explorer equivalent"
+        }
+      }
     },
     {
       "id": "lang-defaults",
@@ -635,7 +693,17 @@
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
-      ]
+      ],
+      "locales": {
+        "zh": {
+          "name": "官方语言",
+          "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文"
+        },
+        "en": {
+          "name": "Official Language Pack",
+          "description": "Bundled Chinese/English language pack — uninstallable; missing keys fall back to the raw key"
+        }
+      }
     },
     {
       "id": "marketplace",
@@ -877,7 +945,17 @@
           "publishedAt": "2026-09-14T02:36:19.060Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-marketplace"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-marketplace",
+      "locales": {
+        "zh": {
+          "name": "插件市场",
+          "description": "浏览、安装和管理插件"
+        },
+        "en": {
+          "name": "Marketplace",
+          "description": "Browse, install, and manage plugins"
+        }
+      }
     },
     {
       "id": "pdf-reader",
@@ -924,7 +1002,17 @@
           "changelog": "首个版本：一份 `.pdf` 在 LinkDesk 里第一次真正「能读」——从双击打开到卸载退回，一条链走完。\n\n**打开与渲染**\n\n- 认领 `.pdf`：在文件树 / 资源管理器里双击即开，新标签页里是**真渲染**（pdf.js 逐页画到 canvas），不是缩略图预览；同一文件再次打开会聚焦已有标签。\n- cmaps 与标准字体随包带走——中日韩与 CID 字体文档不画成方块。\n\n**读得舒服**\n\n- 翻页：上一页 / 下一页 / 跳转到指定页；缩放：放大 / 缩小 / 设置倍率 / **适宽** / **适页**，适宽适页随窗口尺寸变化重算。\n- 阅读底色两档：**纸白 / 夜间**。阅读区**有意不跟壳主题**（工具栏与状态条照旧跟）——PDF 的观感基准是纸，理由写在 README 里。\n\n**找得到**\n\n- 左缘侧栏（180px 真列，不是浮层）：**缩略图 ＋ 目录树**一夹两个面。缩略图页位整本都铺、位图只挂当前窗口内 ±2（滚动条长度等于整本文档），当前页描边并带 `aria-current=\"page\"`；目录的三种 dest 形（引用形 / 具名 / 0-based 整数）都真跳，解不出页码的条目渲染成**不可点的标题**，不立假按钮。\n- 文本层：划选复制；**页内与整篇搜索**，命中逐处高亮、当前命中用强调色标出，浮条报「第几处 / 共几处」。\n\n**给命令与 AI 读数**\n\n- **12 条命令**（翻页 / 跳页 / 缩放 / 适宽适页 / 底色 / 侧栏 / 搜索 / 读状态），命令面板与 `linkdeskctl` 走同一张注册表，一条命令两处都在。\n- 回执纪律：到边界如实回 `noop`、参数不合法回 `ok:false ＋ reason`——**不把「没动」说成「动了」**。\n\n**设置**\n\n- `pdf-reader.defaultZoom`：打开时的初始缩放档（适宽 / 适页 / 100%）；手动缩放过之后本次阅读不再跟随它。\n\n**卸载即退回**\n\n- `.pdf` 的关联是**声明式**的（`contributes.fileAssociations`）：插件卸掉，`.pdf` 立刻交还系统默认程序，软件里不留痕迹。"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-pdf-reader"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-pdf-reader",
+      "locales": {
+        "zh": {
+          "name": "PDF 阅读器",
+          "description": "单击 pdf 开真阅读器——渲染、翻页、缩放、搜索；卸载即退回。"
+        },
+        "en": {
+          "name": "PDF Reader",
+          "description": "Open PDFs in a real reader — render, page, zoom, search; falls back on uninstall"
+        }
+      }
     },
     {
       "id": "python",
@@ -986,7 +1074,17 @@
           "publishedAt": "2026-09-14T02:36:26.607Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-python"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-python",
+      "locales": {
+        "zh": {
+          "name": "Python",
+          "description": "Python 语言支持——语法高亮、跨文件跳转、智能补全"
+        },
+        "en": {
+          "name": "Python",
+          "description": "Python language support — syntax highlighting, cross-file navigation, IntelliSense"
+        }
+      }
     },
     {
       "id": "serial-monitor",
@@ -1171,7 +1269,17 @@
           "publishedAt": "2026-09-14T02:36:36.417Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-serial-monitor"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-serial-monitor",
+      "locales": {
+        "zh": {
+          "name": "串口监视器",
+          "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。"
+        },
+        "en": {
+          "name": "Serial Monitor",
+          "description": "Serial data monitor — receive pane (CM6) + send bar (Monaco) + sidebar settings. LinkDesk's first view plugin; validates the generic container infrastructure."
+        }
+      }
     },
     {
       "id": "settings",
@@ -1398,7 +1506,17 @@
           "publishedAt": "2026-09-14T02:35:15.124Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-settings"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-settings",
+      "locales": {
+        "zh": {
+          "name": "设置",
+          "description": "软件设置——主题、语言、插件管理"
+        },
+        "en": {
+          "name": "Settings",
+          "description": "Software settings — themes, language, plugin management"
+        }
+      }
     },
     {
       "id": "theme-aurora-glass",
@@ -1485,7 +1603,17 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-2.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/HEAD/resources/cover.svg"
-      ]
+      ],
+      "locales": {
+        "zh": {
+          "name": "极光玻璃",
+          "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）"
+        },
+        "en": {
+          "name": "Aurora Glass",
+          "description": "Sample glass theme — Aurora UI night sky + liquid glass surfaces + a full-window aurora background"
+        }
+      }
     },
     {
       "id": "theme-defaults",
@@ -1588,7 +1716,17 @@
           "publishedAt": "2026-09-14T02:36:49.840Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-defaults"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-defaults",
+      "locales": {
+        "zh": {
+          "name": "官方主题",
+          "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的「内置／内置浅色」兜底配方"
+        },
+        "en": {
+          "name": "Official Themes",
+          "description": "Bundled dark/light themes — uninstallable; falls back to the shell's built-in recipes"
+        }
+      }
     },
     {
       "id": "theme-iconset-pastel",
@@ -1660,7 +1798,17 @@
           "publishedAt": "2026-09-14T02:36:56.611Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel",
+      "locales": {
+        "zh": {
+          "name": "粉彩图标集",
+          "description": "精简彩色图标集——Material Icon Theme 常用精选（MIT，303 条映射 + 5 默认图标，含文件夹/新建文件/根文件夹彩色图标与自绘的 Keil 单片机工程图标），图像资产形态应用（E5.8#133 图标主题闭环实例）"
+        },
+        "en": {
+          "name": "Pastel Icon Set",
+          "description": "Curated color icon set — Material Icon Theme picks (MIT; 303 mappings + 5 defaults), including folder/new-file/root-folder icons and hand-drawn Keil MCU project icons"
+        }
+      }
     },
     {
       "id": "theme-mint-soda",
@@ -1737,7 +1885,17 @@
           "publishedAt": "2026-09-14T02:37:02.855Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda",
+      "locales": {
+        "zh": {
+          "name": "薄荷苏打",
+          "description": "清凉薄荷色系主题合集——薄荷冰露/海盐薄荷/青柠薄荷/薄荷苏打，Claymorphism 软萌风，全系亮色"
+        },
+        "en": {
+          "name": "Mint Soda",
+          "description": "Cool mint color themes — Mint Ice, Sea Salt Mint, Lime Mint, Mint Soda; Claymorphism, all light"
+        }
+      }
     },
     {
       "id": "theme-panorama",
@@ -1820,7 +1978,17 @@
           "publishedAt": "2026-09-14T02:37:09.812Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-panorama"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-panorama",
+      "locales": {
+        "zh": {
+          "name": "整窗主视觉",
+          "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）"
+        },
+        "en": {
+          "name": "Full-Window Hero",
+          "description": "Extreme shell theme — the background domain pushed to the limit: a full-window low-mask hero with translucent chrome"
+        }
+      }
     },
     {
       "id": "theme-rose-window",
@@ -1884,7 +2052,17 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-2.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-3.jpg"
       ],
-      "minAppVersion": "0.2.60"
+      "minAppVersion": "0.2.60",
+      "locales": {
+        "zh": {
+          "name": "玫瑰窗",
+          "description": "教堂彩窗主题——午后阳光穿过彩色玫瑰窗，亮色磨砂玻璃面浮在深色石廊之上；金箔/青金石/晚祷紫三组彩窗配色"
+        },
+        "en": {
+          "name": "Rose Window",
+          "description": "Stained-glass cathedral theme — afternoon light through a rose window; light frosted glass over dark stone"
+        }
+      }
     },
     {
       "id": "theme-twilight-forest",
@@ -1966,7 +2144,17 @@
           "publishedAt": "2026-09-14T02:37:39.991Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest",
+      "locales": {
+        "zh": {
+          "name": "暮色森林",
+          "description": "暗色主题合集——青澜/暮紫/翠微，森林色系"
+        },
+        "en": {
+          "name": "Twilight Forest",
+          "description": "Dark theme collection — Qinglan, Twilight Purple, Cuihui; forest palette"
+        }
+      }
     },
     {
       "id": "my-cool-plugin",
@@ -2010,7 +2198,17 @@
         }
       ],
       "repository": "https://github.com/Encaron/my-cool-plugin",
-      "minAppVersion": "0.2.60"
+      "minAppVersion": "0.2.60",
+      "locales": {
+        "zh": {
+          "name": "我的酷插件",
+          "description": "便签板——侧栏列表 + 主区标签页双表面，用 @linkdesk/ui 控件与 window.linkdesk.* API 搭的便签应用。"
+        },
+        "en": {
+          "name": "My Cool Plugin",
+          "description": "Sticky-note board — sidebar list + main-area tab; built with @linkdesk/ui controls and window.linkdesk.* APIs"
+        }
+      }
     },
     {
       "id": "geme-tihu-bicycle",
@@ -2070,7 +2268,17 @@
           "publishedAt": "2026-09-19T17:23:38.482Z"
         }
       ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-geme-tihu-bicycle"
+      "repository": "https://github.com/Encaron/linkdesk-plugin-geme-tihu-bicycle",
+      "locales": {
+        "zh": {
+          "name": "鹈鹕骑行",
+          "description": "鹈鹕骑车海边公路无尽冲刺——跳跃、俯冲、吃鱼连击、躲避海鸥，昼夜循环 + 程序合成 BGM 的小游戏"
+        },
+        "en": {
+          "name": "Pelican Ride",
+          "description": "Pelican cycling endless runner — jump, dive, fish combos, dodge seagulls, day/night cycle, procedurally synthesized BGM"
+        }
+      }
     }
   ]
 }
