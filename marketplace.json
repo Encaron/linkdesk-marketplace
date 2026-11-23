@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T17:04:27.784Z",
+  "updatedAt": "2026-11-23T17:08:23.895Z",
   "sources": [],
   "collections": [
     {
@@ -1590,26 +1590,32 @@
     {
       "id": "theme-aurora-glass",
       "name": "极光玻璃",
-      "version": "1.0.16",
+      "version": "1.1.0",
       "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.16/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.1.0/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.16/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.1.0/README.md",
       "readmeLocales": {
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.16/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.16/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.16/theme-aurora-glass.linkdesk-plugin",
-      "size": 12465,
-      "publishedAt": "2026-11-23T16:42:05.716Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.1.0/theme-aurora-glass.linkdesk-plugin",
+      "size": 12538,
+      "publishedAt": "2026-11-23T17:08:23.895Z",
       "versions": [
+        {
+          "version": "1.1.0",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.1.0/theme-aurora-glass.linkdesk-plugin",
+          "publishedAt": "2026-11-23T17:08:23.895Z",
+          "changelog": "主题升级：高对比 / 可读性 / 第二配色（详见主题仓 CHANGELOG）。"
+        },
         {
           "version": "1.0.16",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.16/theme-aurora-glass.linkdesk-plugin",
@@ -1691,26 +1697,32 @@
     {
       "id": "theme-defaults",
       "name": "官方主题",
-      "version": "1.0.17",
+      "version": "1.1.0",
       "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的「内置／内置浅色」兜底配方",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.17/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.1.0/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.17/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.1.0/README.md",
       "readmeLocales": {
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.17/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.17/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.17/theme-defaults.linkdesk-plugin",
-      "size": 7270,
-      "publishedAt": "2026-11-23T16:42:18.119Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.1.0/theme-defaults.linkdesk-plugin",
+      "size": 7560,
+      "publishedAt": "2026-11-23T17:08:23.895Z",
       "versions": [
+        {
+          "version": "1.1.0",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.1.0/theme-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-23T17:08:23.895Z",
+          "changelog": "主题升级：高对比 / 可读性 / 第二配色（详见主题仓 CHANGELOG）。"
+        },
         {
           "version": "1.0.17",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.17/theme-defaults.linkdesk-plugin",
@@ -1898,26 +1910,32 @@
     {
       "id": "theme-panorama",
       "name": "整窗主视觉",
-      "version": "1.0.13",
+      "version": "1.1.0",
       "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.1.0/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.1.0/README.md",
       "readmeLocales": {
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.13/theme-panorama.linkdesk-plugin",
-      "size": 1542509,
-      "publishedAt": "2026-11-23T16:42:43.170Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.1.0/theme-panorama.linkdesk-plugin",
+      "size": 1542521,
+      "publishedAt": "2026-11-23T17:08:23.895Z",
       "versions": [
+        {
+          "version": "1.1.0",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.1.0/theme-panorama.linkdesk-plugin",
+          "publishedAt": "2026-11-23T17:08:23.895Z",
+          "changelog": "主题升级：高对比 / 可读性 / 第二配色（详见主题仓 CHANGELOG）。"
+        },
         {
           "version": "1.0.13",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.13/theme-panorama.linkdesk-plugin",
