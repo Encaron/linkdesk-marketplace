@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T16:10:46.000Z",
+  "updatedAt": "2026-11-23T16:12:45.000Z",
   "sources": [],
   "collections": [
     {
@@ -37,7 +37,6 @@
         "theme-aurora-glass",
         "theme-panorama",
         "theme-rose-window",
-        "theme-mint-soda",
         "theme-iconset-pastel"
       ],
       "order": 2,
@@ -1823,99 +1822,6 @@
         "en": {
           "name": "Pastel Icon Set",
           "description": "Curated color icon set — Material Icon Theme picks (MIT; 303 mappings + 5 defaults), including folder/new-file/root-folder icons and hand-drawn Keil MCU project icons"
-        }
-      }
-    },
-    {
-      "id": "theme-mint-soda",
-      "name": "薄荷苏打",
-      "version": "1.0.12",
-      "description": "清凉薄荷色系主题合集——薄荷冰露/海盐薄荷/青柠薄荷/薄荷苏打，Claymorphism 软萌风，全系亮色",
-      "author": {
-        "name": "Encaron"
-      },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.12/resources/icon.svg",
-      "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-mint-soda/shot-1.jpg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-mint-soda/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-mint-soda/shot-2.jpg"
-      ],
-      "category": "themes",
-      "categories": [
-        "color-scheme"
-      ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.12/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.12/theme-mint-soda.linkdesk-plugin",
-      "size": 5881,
-      "publishedAt": "2026-11-23T16:02:31.263Z",
-      "versions": [
-        {
-          "version": "1.0.12",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.12/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-11-23T16:02:31.263Z",
-          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
-        },
-        {
-          "version": "1.0.11",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.11/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-11-22T16:02:42.083Z",
-          "changelog": "- **内容面可读性 token**：colorway 新增 `surface-reading` / `surface-reading-strong` / `surface-media-scrim` / `surface-ink`——玻璃主题在浅色/深色截图、Hero 与卡片浮层上保持文字可读；与壳内容面契约同步。"
-        },
-        {
-          "version": "1.0.10",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.10/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-11-20T11:54:57.386Z",
-          "changelog": "- **分类声明（R4-2.8/2.9）**：`plugin.json` 顶层补 `category: \"themes\"` ＋ `categories: [\"color-scheme\"]`——商店分类抽屉归位，随本次发版进入官方目录条目。"
-        },
-        {
-          "version": "1.0.9",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.9/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-10-03T15:35:27.109Z",
-          "changelog": "- **清掉一个壳从不读的死键**：colorway 里的 `icon-active` 已删（主题写它无效——图标墨色由壳按当前主题的文字色自动派生，作者无需也无法给图标指定颜色）；**`icon-inactive` 保留**（它是欢迎页「非激活图标」的真实用色，删掉会改观感）。"
-        },
-        {
-          "version": "1.0.8",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.8/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-09-30T21:59:43.422Z",
-          "changelog": "- **安装包瘦身**：包内更新日志只带最近 5 版（更早的更新记录仍在本插件仓库里）——由 SDK 自动施加，用户无需任何操作。"
-        },
-        {
-          "version": "1.0.7",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.7/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-09-30T20:46:41.841Z",
-          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 四个配色名全部纯中文化；英文译名沿用本仓详情说明里既有的那套（Mint Frost / Sea-Salt Mint / Lime Mint / Mint Soda），口径与旧双语字面量一致。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
-        },
-        {
-          "version": "1.0.6",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.6/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:48:54.680Z"
-        },
-        {
-          "version": "1.0.5",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.5/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-09-17T16:29:21.317Z"
-        },
-        {
-          "version": "1.0.4",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.4/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-09-14T17:30:48.557Z"
-        },
-        {
-          "version": "1.0.3",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.3/theme-mint-soda.linkdesk-plugin",
-          "publishedAt": "2026-09-14T02:37:02.855Z"
-        }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda",
-      "locales": {
-        "zh": {
-          "name": "薄荷苏打",
-          "description": "清凉薄荷色系主题合集——薄荷冰露/海盐薄荷/青柠薄荷/薄荷苏打，Claymorphism 软萌风，全系亮色"
-        },
-        "en": {
-          "name": "Mint Soda",
-          "description": "Cool mint color themes — Mint Ice, Sea Salt Mint, Lime Mint, Mint Soda; Claymorphism, all light"
         }
       }
     },
