@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T20:52:44.859Z",
+  "updatedAt": "2026-11-23T21:02:34.627Z",
   "sources": [],
   "collections": [
     {
@@ -454,26 +454,32 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.72",
+      "version": "1.0.73",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.72/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.72/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.72/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.72/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.72/lang-defaults.linkdesk-plugin",
-      "size": 33408,
-      "publishedAt": "2026-11-23T20:52:32.601Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.73/lang-defaults.linkdesk-plugin",
+      "size": 33593,
+      "publishedAt": "2026-11-23T21:00:51.325Z",
       "versions": [
+        {
+          "version": "1.0.73",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.73/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-23T21:00:51.325Z",
+          "changelog": "- 降级脸（错误/缺失态）词条：标题说明、诊断信息四行、缺失态建议。"
+        },
         {
           "version": "1.0.72",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.72/lang-defaults.linkdesk-plugin",
