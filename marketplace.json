@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T15:09:49.363Z",
+  "updatedAt": "2026-11-23T16:02:31.263Z",
   "sources": [],
   "collections": [
     {
@@ -1526,22 +1526,28 @@
     {
       "id": "theme-aurora-glass",
       "name": "极光玻璃",
-      "version": "1.0.14",
+      "version": "1.0.15",
       "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.14/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.15/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.14/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.14/theme-aurora-glass.linkdesk-plugin",
-      "size": 11591,
-      "publishedAt": "2026-11-22T19:11:52.470Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.15/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.15/theme-aurora-glass.linkdesk-plugin",
+      "size": 11562,
+      "publishedAt": "2026-11-23T16:02:31.263Z",
       "versions": [
+        {
+          "version": "1.0.15",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.15/theme-aurora-glass.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:02:31.263Z",
+          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
+        },
         {
           "version": "1.0.14",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.14/theme-aurora-glass.linkdesk-plugin",
@@ -1623,12 +1629,12 @@
     {
       "id": "theme-defaults",
       "name": "官方主题",
-      "version": "1.0.15",
+      "version": "1.0.16",
       "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的「内置／内置浅色」兜底配方",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.15/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.16/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-1.jpg",
       "screenshots": [
@@ -1640,11 +1646,17 @@
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.15/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.15/theme-defaults.linkdesk-plugin",
-      "size": 6805,
-      "publishedAt": "2026-11-22T16:02:26.982Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.16/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.16/theme-defaults.linkdesk-plugin",
+      "size": 6349,
+      "publishedAt": "2026-11-23T16:02:31.263Z",
       "versions": [
+        {
+          "version": "1.0.16",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.16/theme-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:02:31.263Z",
+          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
+        },
         {
           "version": "1.0.15",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.15/theme-defaults.linkdesk-plugin",
@@ -1818,12 +1830,12 @@
     {
       "id": "theme-mint-soda",
       "name": "薄荷苏打",
-      "version": "1.0.11",
+      "version": "1.0.12",
       "description": "清凉薄荷色系主题合集——薄荷冰露/海盐薄荷/青柠薄荷/薄荷苏打，Claymorphism 软萌风，全系亮色",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.11/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.12/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-mint-soda/shot-1.jpg",
       "screenshots": [
@@ -1834,11 +1846,17 @@
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.11/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.11/theme-mint-soda.linkdesk-plugin",
-      "size": 6350,
-      "publishedAt": "2026-11-22T16:02:42.083Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-mint-soda/v1.0.12/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.12/theme-mint-soda.linkdesk-plugin",
+      "size": 5881,
+      "publishedAt": "2026-11-23T16:02:31.263Z",
       "versions": [
+        {
+          "version": "1.0.12",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.12/theme-mint-soda.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:02:31.263Z",
+          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
+        },
         {
           "version": "1.0.11",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-mint-soda/releases/download/v1.0.11/theme-mint-soda.linkdesk-plugin",
@@ -1905,12 +1923,12 @@
     {
       "id": "theme-panorama",
       "name": "整窗主视觉",
-      "version": "1.0.11",
+      "version": "1.0.12",
       "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.11/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.12/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-1.jpg",
       "screenshots": [
@@ -1922,11 +1940,17 @@
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.11/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.11/theme-panorama.linkdesk-plugin",
-      "size": 1542003,
-      "publishedAt": "2026-11-22T16:01:34.708Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.12/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.12/theme-panorama.linkdesk-plugin",
+      "size": 1541608,
+      "publishedAt": "2026-11-23T16:02:31.263Z",
       "versions": [
+        {
+          "version": "1.0.12",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.12/theme-panorama.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:02:31.263Z",
+          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
+        },
         {
           "version": "1.0.11",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.11/theme-panorama.linkdesk-plugin",
@@ -1998,22 +2022,28 @@
     {
       "id": "theme-rose-window",
       "name": "玫瑰窗",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "description": "教堂彩窗主题——午后阳光穿过彩色玫瑰窗，亮色磨砂玻璃面浮在深色石廊之上；金箔/青金石/晚祷紫三组彩窗配色",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.5/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.6/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.5/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.5/theme-rose-window.linkdesk-plugin",
-      "size": 1050859,
-      "publishedAt": "2026-11-23T05:11:01.118Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.6/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.6/theme-rose-window.linkdesk-plugin",
+      "size": 1050257,
+      "publishedAt": "2026-11-23T16:02:31.263Z",
       "versions": [
+        {
+          "version": "1.0.6",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.6/theme-rose-window.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:02:31.263Z",
+          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
+        },
         {
           "version": "1.0.5",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.5/theme-rose-window.linkdesk-plugin",
@@ -2072,12 +2102,12 @@
     {
       "id": "theme-twilight-forest",
       "name": "暮色森林",
-      "version": "1.0.11",
+      "version": "1.0.12",
       "description": "暗色主题合集——青澜/暮紫/翠微，森林色系",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.11/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.12/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-twilight-forest/shot-1.jpg",
       "screenshots": [
@@ -2088,11 +2118,17 @@
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.11/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.11/theme-twilight-forest.linkdesk-plugin",
-      "size": 6904,
-      "publishedAt": "2026-11-22T16:03:57.364Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-twilight-forest/v1.0.12/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.12/theme-twilight-forest.linkdesk-plugin",
+      "size": 6502,
+      "publishedAt": "2026-11-23T16:02:31.263Z",
       "versions": [
+        {
+          "version": "1.0.12",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.12/theme-twilight-forest.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:02:31.263Z",
+          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
+        },
         {
           "version": "1.0.11",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-twilight-forest/releases/download/v1.0.11/theme-twilight-forest.linkdesk-plugin",
