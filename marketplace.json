@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T19:00:39.224Z",
+  "updatedAt": "2026-11-23T19:50:12.440Z",
   "sources": [],
   "collections": [
     {
@@ -454,26 +454,32 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.68",
+      "version": "1.0.69",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.68/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.69/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.68/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.69/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.67/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.67/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.69/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.69/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.68/lang-defaults.linkdesk-plugin",
-      "size": 33485,
-      "publishedAt": "2026-11-23T17:09:45.346Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.69/lang-defaults.linkdesk-plugin",
+      "size": 33627,
+      "publishedAt": "2026-11-23T19:49:59.692Z",
       "versions": [
+        {
+          "version": "1.0.69",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.69/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-23T19:49:59.692Z",
+          "changelog": "- 新增 4 条外观设置词条：`以当前主题为起点` / `复位分区来源` 及其说明（配合外观复位入口归位）。"
+        },
         {
           "version": "1.0.68",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.68/lang-defaults.linkdesk-plugin",
