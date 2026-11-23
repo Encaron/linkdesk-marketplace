@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T16:12:45.000Z",
+  "updatedAt": "2026-11-23T16:45:41.054Z",
   "sources": [],
   "collections": [
     {
@@ -104,29 +104,33 @@
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.27",
+      "version": "1.0.28",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.27/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.28/resources/icon.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/editor/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/editor/shot-2.png"
-      ],
       "minAppVersion": "0.2.13",
       "category": "development",
       "categories": [
         "code-editing"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.27/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.27/editor.linkdesk-plugin",
-      "size": 8658403,
-      "publishedAt": "2026-11-23T04:58:07.768Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.28/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.28/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.28/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.28/editor.linkdesk-plugin",
+      "size": 8660322,
+      "publishedAt": "2026-11-23T16:40:02.922Z",
       "versions": [
+        {
+          "version": "1.0.28",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.28/editor.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:40:02.922Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
         {
           "version": "1.0.27",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.27/editor.linkdesk-plugin",
@@ -154,14 +158,12 @@
         {
           "version": "1.0.23",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.23/editor.linkdesk-plugin",
-          "publishedAt": "2026-10-05T13:57:04.487Z",
-          "changelog": "- **二进制提示块的两颗按钮改用软件自己的按钮**（此前是编辑器自绘的一套样式）——主题、字号、悬停反馈现在与其他地方的按钮完全一致，不再是「编辑器里长着另一副样子」。\n- 「**打开方式…**」按钮改走**软件自己的「打开方式」命令**（以前借文件树的命令，那条要的是「文件树里选中的文件」，从编辑器点有歧义）。现在它带着**你正在看的这个文件**打开选择面板，由你挑用哪个插件打开。\n- 这颗按钮的出现方式也改了：以前靠编辑器内部一个**写死的开关**决定显不显示（那种开关迟早会跟软件实际能力对不上）；现在改为**问软件「这条命令在不在」**，在才显示、不在就整颗不出现——老软件上**不会**出现一颗点了没反应的按钮。\n- 要求 LinkDesk **0.2.48 或更高**才有「打开方式…」这颗按钮（更低的软件上它整颗不显示，其余功能一字不变，本插件仍可正常使用）。\n- 内部：`SHELL_COMMANDS` / `openWith()` 从 SDK **子路径** `@linkdesk/plugin-sdk/shell-commands` 取（`@linkdesk/plugin-sdk` ^0.1.81）——从根入口取会把 SDK 的构建工具链（vite → rollup）一起打进插件包，Windows 上直接 build 不过。\n\n# 更新日志"
+          "publishedAt": "2026-10-05T13:57:04.487Z"
         },
         {
           "version": "1.0.22",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.22/editor.linkdesk-plugin",
-          "publishedAt": "2026-10-05T02:03:19.601Z",
-          "changelog": "- **「打开方式…」钮上屏（T1 特性开关合龙）**：1.0.20 起二进制提示块里的「打开方式…」钮被 `OPEN_WITH_WIRED=false` 钉着不显示——当时 file-tree 的同名命令还是占位（真机撞出死钮的第 1 波教训）。现在 file-tree 1.0.27 已真接选择器（列全部 handler＋仅此一次/设为默认/恢复自动），本版把开关翻 true，二进制文件标签内的「打开方式…」从此可用。命令以裸 filePath 字符串首参调用，无文件/旧宿主时命令自身 no-op，不留死响应。\n- **读数**：`npm run verify` 九段全绿 · `npm test` 78 例全绿。"
+          "publishedAt": "2026-10-05T02:03:19.601Z"
         },
         {
           "version": "1.0.21",
@@ -239,25 +241,35 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.34",
+      "version": "1.0.35",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.34/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.35/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.34/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.35/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "documents",
       "categories": [
         "files"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.34/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.34/file-tree.linkdesk-plugin",
-      "size": 46791,
-      "publishedAt": "2026-11-23T13:50:16.740Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.35/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.35/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.35/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.35/file-tree.linkdesk-plugin",
+      "size": 51935,
+      "publishedAt": "2026-11-23T16:39:31.024Z",
       "versions": [
+        {
+          "version": "1.0.35",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.35/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:39:31.024Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
         {
           "version": "1.0.34",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.34/file-tree.linkdesk-plugin",
@@ -285,8 +297,7 @@
         {
           "version": "1.0.30",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.30/file-tree.linkdesk-plugin",
-          "publishedAt": "2026-10-06T18:05:22.736Z",
-          "changelog": "- **两个筛选框改用共享件 `InlineInput`（D1 翻案 · 判据 A）**：「要包含的文件」／「要排除的文件」原是本仓自绘 `<input>`——外观、22px 紧凑高、焦点环、底色全在 `SearchView.css` 里自己维护（1.0.24 还在给它补圆角）。现整只换共享件：**外观／尺寸／焦点环／`aria-label` 归 `@linkdesk/ui`，壳升一次所有插件跟随**；本仓 CSS 只剩一句「兄弟等分」（`flex:1 ＋ min-width:0`——input 的 min-content 是 `size` 属性宽度，不给 0 会撑破侧栏），自绘那五条声明整段删除。接线照同族既有写法（C5 卡内过滤框）：`onChange` 即时回灌 ＋ `syncValue`（Esc → `onCancel` 清父侧值时框里跟着**真清空**）＋ `onConfirm` 空实现（blur 那一下与 `onChange` 是同一笔）。顺带补上此前**完全没有**的无障碍名——过滤框没有可见 label，只有 placeholder。\n- **搜索历史下拉改走共享浮层 `OverlayPortal`——与右键菜单／通知面板同一套磨砂**：下拉原是本行内 `position:absolute` 的自绘面板，**不进 `#ld-float-layer`**；玻璃模式下 `--bg-card` 被合成半透明、又没有 `backdrop-filter` 兜底 ⇒ 背后内容直接透出、前后字叠成一片。现 portal 进池侧浮层：**结构隔离地板按 DOM 深度发磨砂**（`#ld-float-layer > * > [data-overlay-wrapper] > 表面`），**插件侧零私有磨砂配方**。定位改按字段壳 `getBoundingClientRect()` 算 fixed 坐标（顶边留 30px 拖拽区下限）；补 `--shadow-pop`（浮层族契约，选择框下拉同款）。交互零改动：聚焦开／失焦关／Esc 与外部点击关（`onClose` ＋ `triggerRef`）／点选历史项回填。\n- **壳侧同笔（另仓，随壳批次下发）**：`InlineInput` 的 `isActive` 是一次性 latch，此前只支持「挂载即编辑、确认即卸载」（rename 语义）；**常驻**过滤框二次聚焦后 blur 不进确认分支、退出清理 effect 也不再跑 ⇒ `inputFocus` ＋ `keybindingCapture` 永久卡 `true`，而 `captureActive=true` 会让 `KeybindingRegistry` 吞掉**全部**全局快捷键。壳仓已在聚焦时复位 latch ＋ 补回归测试（去掉那一行，新测试即红）。⚠️ 该缺陷在**同族既有用法上就存在**（设置页「默认打开方式」卡内过滤框），本笔一并治好。\n- 依赖随共享件升级：`@linkdesk/ui` ^0.2.13 → **^0.2.53**（`syncValue` ／ `ariaLabel` ／ `OverlayPortal` 的承载版本）。\n- **读数**：`npx tsc --noEmit` 零错误 · `npm run verify` 九段全绿 · `npm run test` 16 文件 149 例全绿 · `npm run build` 产出 **46.2 KB**（4 表面）· 自绘残留 0（`grep -rn \"file-tree-search-filter-input\" src` = 0）· 浮层深度选择器 jsdom `matches()` 实测：深度 3 = `true` ／ 深度 2 = `false` ／ 包装盒 = `false`——磨砂确实落在下拉表面上。"
+          "publishedAt": "2026-10-06T18:05:22.736Z"
         },
         {
           "version": "1.0.29",
@@ -419,27 +430,31 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.66",
+      "version": "1.0.67",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.66/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.67/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.66/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.66/lang-defaults.linkdesk-plugin",
-      "size": 33700,
-      "publishedAt": "2026-11-22T22:05:30.987Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.67/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.67/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.67/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.67/lang-defaults.linkdesk-plugin",
+      "size": 33584,
+      "publishedAt": "2026-11-23T16:40:41.872Z",
       "versions": [
         {
-          "version": "1.0.66",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.66/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-22T22:05:30.987Z",
-          "changelog": "- ColorPicker 2 新串 ＋7：色相 / 不透明度 / 颜色值 / 无效的颜色值 / 只读说明 / 命令标题「调色器操作」/「应用名」。\n- 「应用」英文从 \"Application\" 改为 \"Apply\"；错误边界的应用名改用新键「应用名」→ \"Application\"。"
+          "version": "1.0.67",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.67/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:40:41.872Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
         },
         {
           "version": "1.0.65",
@@ -468,8 +483,7 @@
         {
           "version": "1.0.61",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.61/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-06T11:26:09.822Z",
-          "changelog": "- **补 v1.0.59 漏项：内存告警那条词条的键写短了**。壳侧源串是一整句 `内存使用率偏高（{{used}} MB / {{limit}} MB），建议关闭不活跃的插件`（`src/hooks/useMemoryMonitor.ts`），而 v1.0.59 建键时漏了后半句「，建议关闭不活跃的插件」⇒ 键对不上源串，`audit-i18n --strict` 仍判缺译。本版把键改成源串原文、译文补全整句。\n- 键数 725（增 1 删 1，净 0）：`内存使用率偏高（{{used}} MB / {{limit}} MB）` → `内存使用率偏高（{{used}} MB / {{limit}} MB），建议关闭不活跃的插件`。\n- ⚠️ **v1.0.59／v1.0.60 均为中间态、都未进官方目录**——用户可见的只有本版（收录链只认最新版）。已发布的 tag 一律不动。\n- 零行为变化：纯数据词条。"
+          "publishedAt": "2026-10-06T11:26:09.822Z"
         },
         {
           "version": "1.0.60",
@@ -687,11 +701,7 @@
           "publishedAt": "2026-09-14T02:36:05.197Z"
         }
       ],
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
-      ],
+      "repository": "https://github.com/Encaron/linkdesk-plugin-lang-defaults",
       "locales": {
         "zh": {
           "name": "官方语言",
@@ -706,22 +716,32 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.17",
+      "version": "1.4.18",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.17/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.18/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.17/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.18/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.60",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.17/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.17/marketplace.linkdesk-plugin",
-      "size": 184197,
-      "publishedAt": "2026-11-23T15:08:12.343Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.18/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.18/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.18/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.18/marketplace.linkdesk-plugin",
+      "size": 195271,
+      "publishedAt": "2026-11-23T16:43:51.106Z",
       "versions": [
+        {
+          "version": "1.4.18",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.18/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:43:51.106Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
         {
           "version": "1.4.17",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.17/marketplace.linkdesk-plugin",
@@ -749,8 +769,7 @@
         {
           "version": "1.4.9",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.9/marketplace.linkdesk-plugin",
-          "publishedAt": "2026-11-22T20:46:34.002Z",
-          "changelog": "- **点市场图标 = 一条命令（入口归一化）**：`viewsContainers.marketplace.iconCommand = \"marketplace.openStore\"`——点图标 = 切到市场侧栏**且**打开/复位商店首页，与侧栏「进入插件市场」按钮、AI 调 `marketplace.openStore` 走**同一条命令**。需要壳 0.2.60+（旧壳忽略该字段，行为不变）。\n- **侧栏「进入插件市场」改成实体主按钮**：实色底 + 描边 + 悬停提亮 + 按下缩放/压暗/内阴影 + 键盘焦点环——它是进市场的唯一正门，不再是一颗没有点击欲的透明描边钮。\n- **中文界面不再露出 `Plugin Store`**：按钮文案走 i18n（`进入 Plugin Store` → 中文「进入插件市场」）。"
+          "publishedAt": "2026-11-22T20:46:34.002Z"
         },
         {
           "version": "1.4.8",
@@ -963,23 +982,33 @@
     {
       "id": "pdf-reader",
       "name": "PDF 阅读器",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "description": "单击 pdf 开真阅读器——渲染、翻页、缩放、搜索；卸载即退回。",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.3/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.4/resources/icon.svg",
       "iconSource": "url",
       "minAppVersion": "0.2.32",
       "category": "documents",
       "categories": [
         "viewer"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.3/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-pdf-reader/releases/download/v0.1.3/pdf-reader.linkdesk-plugin",
-      "size": 2160315,
-      "publishedAt": "2026-11-23T13:49:29.417Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.4/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.4/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-pdf-reader/v0.1.4/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-pdf-reader/releases/download/v0.1.4/pdf-reader.linkdesk-plugin",
+      "size": 2165937,
+      "publishedAt": "2026-11-23T16:41:02.222Z",
       "versions": [
+        {
+          "version": "0.1.4",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-pdf-reader/releases/download/v0.1.4/pdf-reader.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:41:02.222Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
         {
           "version": "0.1.3",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-pdf-reader/releases/download/v0.1.3/pdf-reader.linkdesk-plugin",
@@ -1020,27 +1049,32 @@
     {
       "id": "python",
       "name": "Python",
-      "version": "1.0.10",
+      "version": "1.0.11",
       "description": "Python 语言支持——语法高亮、跨文件跳转、智能补全",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/v1.0.10/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/v1.0.11/resources/icon.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/python/shot-2.png"
-      ],
       "category": "development",
       "categories": [
         "runtime"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/v1.0.10/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-python/releases/download/v1.0.10/python.linkdesk-plugin",
-      "size": 6264599,
-      "publishedAt": "2026-11-20T11:49:57.654Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/v1.0.11/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/v1.0.11/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/v1.0.11/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-python/releases/download/v1.0.11/python.linkdesk-plugin",
+      "size": 6265180,
+      "publishedAt": "2026-11-23T16:41:15.037Z",
       "versions": [
+        {
+          "version": "1.0.11",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-python/releases/download/v1.0.11/python.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:41:15.037Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
         {
           "version": "1.0.10",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-python/releases/download/v1.0.10/python.linkdesk-plugin",
@@ -1068,8 +1102,7 @@
         {
           "version": "1.0.6",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-python/releases/download/v1.0.6/python.linkdesk-plugin",
-          "publishedAt": "2026-09-14T18:09:41.852Z",
-          "changelog": "- **分发件补上 MIT LICENSE**：`LICENSE` 早就在本仓里（E6#108g 那批加的），但**已发布的那版产物比它早** ⇒ 用户手上那份 zip 里一直没有版权声明。MIT 要求「副本里带声明」，而 zip 才是用户真正拿到的那份\n- **不再夹带仓库面文件**：`@linkdesk/plugin-sdk` 升到 0.1.19（^0.1.14 → ^0.1.19）——旧 SDK 的打包通道会把 `marketplace.json` / `scripts/ci-verify.mjs` / `AGENTS.md` 这类**仓库面文件**一起装进 zip（那是给仓库看的，不是给用户看的），0.1.19 的排除表已覆盖\n- 无功能变化——本版只为让「用户拿到的产物」与仓库对齐"
+          "publishedAt": "2026-09-14T18:09:41.852Z"
         },
         {
           "version": "1.0.5",
@@ -1077,6 +1110,10 @@
           "publishedAt": "2026-09-14T02:36:26.607Z"
         }
       ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/HEAD/resources/cover.svg"
+      ],
+      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-python/HEAD/resources/cover.svg",
       "repository": "https://github.com/Encaron/linkdesk-plugin-python",
       "locales": {
         "zh": {
@@ -1092,25 +1129,35 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.39",
+      "version": "1.0.40",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.39/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.39/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "hardware",
       "categories": [
         "serial"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.39/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.39/serial-monitor.linkdesk-plugin",
-      "size": 164950,
-      "publishedAt": "2026-11-23T13:51:46.960Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.40/serial-monitor.linkdesk-plugin",
+      "size": 180891,
+      "publishedAt": "2026-11-23T16:41:28.189Z",
       "versions": [
+        {
+          "version": "1.0.40",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.40/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:41:28.189Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
         {
           "version": "1.0.39",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.39/serial-monitor.linkdesk-plugin",
@@ -1138,8 +1185,7 @@
         {
           "version": "1.0.35",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.35/serial-monitor.linkdesk-plugin",
-          "publishedAt": "2026-11-06T18:32:38.782Z",
-          "changelog": "- **按钮全面收编壳共享组件（试验刀）**：顶部工具栏（暂停／导出日志／清空接收区／搜索）、发送栏（▼／清空发送区／发送）、控制条（打开／断开）、快捷发送（药丸／确认／取消／＋添加）全部从插件自绘样式换成**壳共享 Button**（`@linkdesk/ui`）——悬停提示、禁用态、焦点环、圆角随主题全部由壳统一供给，插件侧删掉四段自绘按钮 CSS。\n- **视觉变化（本刀的试验点，不合口味随时说，回退很快）**：打开＝**绿色实心**／断开＝**红色描边**（语义动作层级，同市场详情页「安装／卸载」）、发送＝实心主题色、快捷发送药丸从胶囊形变标准按钮形（等宽字体暂失）、暂停／搜索的按下高亮暂缺（暂停态由图标切换表达）。\n- 本刀纯视觉／组件替换，**行为零变更**（所有 onClick／悬停提示／右键菜单原样）。\n- 要求 LinkDesk **0.2.20 或更高**（未变）。"
+          "publishedAt": "2026-11-06T18:32:38.782Z"
         },
         {
           "version": "1.0.34",
@@ -1287,22 +1333,32 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.47",
+      "version": "1.0.48",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.47/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.48/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.47/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.48/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.53",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.47/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.47/settings.linkdesk-plugin",
-      "size": 36623,
-      "publishedAt": "2026-11-23T13:51:02.313Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.48/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.48/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.48/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.48/settings.linkdesk-plugin",
+      "size": 40642,
+      "publishedAt": "2026-11-23T16:41:44.696Z",
       "versions": [
+        {
+          "version": "1.0.48",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.48/settings.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:41:44.696Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
         {
           "version": "1.0.47",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.47/settings.linkdesk-plugin",
@@ -1330,8 +1386,7 @@
         {
           "version": "1.0.42",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.42/settings.linkdesk-plugin",
-          "publishedAt": "2026-11-17T19:27:05.215Z",
-          "changelog": "- ✨ **本体组四行图标点亮**（通用／主题／AI接入／默认打开方式）：软件 0.2.53 把本体组声明改为 **IconRegistry 共享图标名**（宿主默认项 `app.group-*`，B 方案墨线设计稿定稿几何）。本版消费端接上这条新形态：声明裸串按名查共享图标快照（随 `iconTheme:changed` 广播进池，订阅时回放缓存兜晚订阅），有 url 默认项即渲染——**ink 剪影**（mask ＋ `--icon-ink`，随主题墨色自动翻亮暗）。\n- ⚠️ **1.0.41「本体组无需再发版」的承诺就此作废**：壳侧 2026-11-18 拍板把值形态从「codicon 名或地址」改为「注册表图标名」（可被图标主题成套覆盖、替换口三层全占）——解读新形态的代码必须落在本插件。这是**一次性的能力装进**：此后任何插件声明 `iconSource:\"shared\"` 都走同一段代码，不再随插件更新。\n- 🏗️ 图标裁决纯函数加第三形态（裸串＝共享图标名；快照缺省／名字不在／纯字体默认项仍拒收——「宁缺毋滥」口径不变）；渲染统一走共享件 `PluginIcon` 的 `sharedIcons` 注入面。\n- 🧹 依赖追新（@linkdesk/contracts 0.1.45／@linkdesk/ui 0.2.58／plugin-sdk 0.1.92）暴露的存量类型隐患顺手修：分段选项映射只按下标读**数组形态** `enumDescriptions`（对象形态用数字下标本来就拿不到档）。\n- 要求 LinkDesk **0.2.53 或更高**（地板抬升：`iconSource:\"shared\"` 契约、共享图标快照广播、`PluginIcon` ink 分支都是 0.2.53 面）。"
+          "publishedAt": "2026-11-17T19:27:05.215Z"
         },
         {
           "version": "1.0.41",
@@ -1524,27 +1579,31 @@
     {
       "id": "theme-aurora-glass",
       "name": "极光玻璃",
-      "version": "1.0.15",
+      "version": "1.0.16",
       "description": "示例玻璃主题——Aurora UI 极光夜空 + 液态玻璃表面 + 全窗极光背景图（#50.6-#50.11 壳机制第一个真实消费者）",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.15/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.16/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.15/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.15/theme-aurora-glass.linkdesk-plugin",
-      "size": 11562,
-      "publishedAt": "2026-11-23T16:02:31.263Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.16/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.16/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/v1.0.16/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.16/theme-aurora-glass.linkdesk-plugin",
+      "size": 12465,
+      "publishedAt": "2026-11-23T16:42:05.716Z",
       "versions": [
         {
-          "version": "1.0.15",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.15/theme-aurora-glass.linkdesk-plugin",
-          "publishedAt": "2026-11-23T16:02:31.263Z",
-          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
+          "version": "1.0.16",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.16/theme-aurora-glass.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:42:05.716Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
         },
         {
           "version": "1.0.14",
@@ -1573,8 +1632,7 @@
         {
           "version": "1.0.10",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass/releases/download/v1.0.10/theme-aurora-glass.linkdesk-plugin",
-          "publishedAt": "2026-09-30T21:59:34.680Z",
-          "changelog": "- **安装包瘦身**：包内更新日志只带最近 5 版（更早的更新记录仍在本插件仓库里）——由 SDK 自动施加，用户无需任何操作。"
+          "publishedAt": "2026-09-30T21:59:34.680Z"
         },
         {
           "version": "1.0.9",
@@ -1607,12 +1665,7 @@
           "publishedAt": "2026-09-14T02:36:42.595Z"
         }
       ],
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-aurora-glass/shot-2.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-aurora-glass/HEAD/resources/cover.svg"
-      ],
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-aurora-glass",
       "locales": {
         "zh": {
           "name": "极光玻璃",
@@ -1627,33 +1680,31 @@
     {
       "id": "theme-defaults",
       "name": "官方主题",
-      "version": "1.0.16",
+      "version": "1.0.17",
       "description": "出厂暗色/亮色主题——可卸载，卸载后回落到壳内置的「内置／内置浅色」兜底配方",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.16/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.17/resources/icon.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-1.jpg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-2.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-defaults/shot-3.jpg"
-      ],
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.16/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.16/theme-defaults.linkdesk-plugin",
-      "size": 6349,
-      "publishedAt": "2026-11-23T16:02:31.263Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.17/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.17/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-defaults/v1.0.17/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.17/theme-defaults.linkdesk-plugin",
+      "size": 7270,
+      "publishedAt": "2026-11-23T16:42:18.119Z",
       "versions": [
         {
-          "version": "1.0.16",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.16/theme-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T16:02:31.263Z",
-          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
+          "version": "1.0.17",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.17/theme-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:42:18.119Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
         },
         {
           "version": "1.0.15",
@@ -1682,8 +1733,7 @@
         {
           "version": "1.0.11",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-defaults/releases/download/v1.0.11/theme-defaults.linkdesk-plugin",
-          "publishedAt": "2026-09-30T20:47:39.832Z",
-          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 两只出厂配方的配色名（浅色/深色）与主题名一样纯中文化；译名「Light」/「Dark」与壳内置兜底、语言包里的同名词条取值一致（同键同值 ⇒ 运行时零变化）。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+          "publishedAt": "2026-09-30T20:47:39.832Z"
         },
         {
           "version": "1.0.10",
@@ -1746,22 +1796,32 @@
     {
       "id": "theme-iconset-pastel",
       "name": "粉彩图标集",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "description": "精简彩色图标集——Material Icon Theme 常用精选（MIT，303 条映射 + 5 默认图标，含文件夹/新建文件/根文件夹彩色图标与自绘的 Keil 单片机工程图标），图像资产形态应用（E5.8#133 图标主题闭环实例）",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.2/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.3/resources/icon.svg",
       "iconSource": "url",
       "category": "themes",
       "categories": [
         "icon-pack"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.2/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.2/theme-iconset-pastel.linkdesk-plugin",
-      "size": 112810,
-      "publishedAt": "2026-11-20T11:54:15.546Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.3/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.3/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-iconset-pastel/v1.1.3/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.3/theme-iconset-pastel.linkdesk-plugin",
+      "size": 113530,
+      "publishedAt": "2026-11-23T16:42:30.069Z",
       "versions": [
+        {
+          "version": "1.1.3",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.3/theme-iconset-pastel.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:42:30.069Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+        },
         {
           "version": "1.1.2",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.1.2/theme-iconset-pastel.linkdesk-plugin",
@@ -1789,8 +1849,7 @@
         {
           "version": "1.0.5",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-iconset-pastel/releases/download/v1.0.5/theme-iconset-pastel.linkdesk-plugin",
-          "publishedAt": "2026-09-30T03:48:42.530Z",
-          "changelog": "- **自有翻译归位（E6#161「谁的仓谁译文」）**：本仓 2 条可渲染文案的英文译名住进**本仓字典** `i18n/en.json`（新增 2 条） ＋ `contributes.i18n` 声明——不再依赖 `lang-defaults` 代管：文案在本仓声明、译名却在别的仓的字典里，本仓加一条声明那只仓无从跟上（跨仓追不上）。译名取值：池里现成的照抄（同键同值 ⇒ 按 E6#161「同值覆盖不出声」规则运行时零变化），池里没有的 2 条新写。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` ^0.1.19 → **^0.1.61**——`npm run verify` 第 ⑧ 段「自有字典覆盖度」（manifest 渲染串缺口 🔴 / 源码 `t()` 缺口 ⚠️）由 `@linkdesk/plugin-sdk/own-dict-coverage` 判定（判据本体在 SDK，⛔ 不在本仓复制）。"
+          "publishedAt": "2026-09-30T03:48:42.530Z"
         },
         {
           "version": "1.0.4",
@@ -1828,33 +1887,31 @@
     {
       "id": "theme-panorama",
       "name": "整窗主视觉",
-      "version": "1.0.12",
+      "version": "1.0.13",
       "description": "极限壳主题——background 域极限：sailor-moon.jpg 全窗低遮罩当主视觉，chrome 半透明让位（#50.27 效果验收端到端裁决，gallery ⑪ 壳真实落地）",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.12/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/resources/icon.svg",
       "iconSource": "url",
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-1.jpg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-panorama/shot-2.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/HEAD/resources/sailor-moon.jpg"
-      ],
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.12/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.12/theme-panorama.linkdesk-plugin",
-      "size": 1541608,
-      "publishedAt": "2026-11-23T16:02:31.263Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-panorama/v1.0.13/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.13/theme-panorama.linkdesk-plugin",
+      "size": 1542509,
+      "publishedAt": "2026-11-23T16:42:43.170Z",
       "versions": [
         {
-          "version": "1.0.12",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.12/theme-panorama.linkdesk-plugin",
-          "publishedAt": "2026-11-23T16:02:31.263Z",
-          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
+          "version": "1.0.13",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.13/theme-panorama.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:42:43.170Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
         },
         {
           "version": "1.0.11",
@@ -1883,8 +1940,7 @@
         {
           "version": "1.0.7",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.7/theme-panorama.linkdesk-plugin",
-          "publishedAt": "2026-09-30T20:54:34.743Z",
-          "changelog": "- **去掉双语音译名（「我不要双语了」）**：字面量只留中文原文（中文界面显示中文），英文界面由壳过 `t()` 显示本仓字典里的英文。作者把译名写进字面量（`\"薄荷苏打 Mint Soda\"`）时，中文界面会中英混排——这条病只能靠「字面量纯中文 ＋ 译名住字典」治。\n- 配色名「月夜主视觉」此前纯中文、无英文译名，本轮随判据扩域补进本仓字典。\n- **判据随 SDK 下发**：`@linkdesk/plugin-sdk` → **^0.1.64**——`npm run verify` 第 ⑧ 段的判域**扩到主题数据文件里的名字**（`contributes.themes[].label` ＋ 数据文件 `name`/`colorways[].name`，`@linkdesk/plugin-sdk/own-dict-coverage`）：名字同样「谁的仓谁译文」，双语字面量在旧判据里溜得过去、在新判据里当场红。"
+          "publishedAt": "2026-09-30T20:54:34.743Z"
         },
         {
           "version": "1.0.6",
@@ -1927,39 +1983,32 @@
     {
       "id": "theme-rose-window",
       "name": "玫瑰窗",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "description": "教堂彩窗主题——午后阳光穿过彩色玫瑰窗，亮色磨砂玻璃面浮在深色石廊之上；金箔/青金石/晚祷紫三组彩窗配色",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.6/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.7/resources/icon.svg",
       "iconSource": "url",
+      "minAppVersion": "0.2.60",
       "category": "themes",
       "categories": [
         "color-scheme"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.6/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.6/theme-rose-window.linkdesk-plugin",
-      "size": 1050257,
-      "publishedAt": "2026-11-23T16:02:31.263Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.7/README.md",
+      "readmeLocales": {
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.7/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.7/docs/readme/en.md"
+      },
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.7/theme-rose-window.linkdesk-plugin",
+      "size": 1050930,
+      "publishedAt": "2026-11-23T16:42:56.685Z",
       "versions": [
         {
-          "version": "1.0.6",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.6/theme-rose-window.linkdesk-plugin",
-          "publishedAt": "2026-11-23T16:02:31.263Z",
-          "changelog": "清理已退役 token：toggle-knob / toggle-knob-on（开关颜色由壳按有效强调色派生）。无视觉变化。"
-        },
-        {
-          "version": "1.0.5",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.5/theme-rose-window.linkdesk-plugin",
-          "publishedAt": "2026-11-23T05:11:01.118Z",
-          "changelog": "- 墨色契约拆分：surface-ink 归内容面，surface-media-ink 归压图面；商店 Hero 文字在浅色主题下清晰。"
-        },
-        {
-          "version": "1.0.4",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.4/theme-rose-window.linkdesk-plugin",
-          "publishedAt": "2026-11-23T04:54:20.017Z",
-          "changelog": "- surface-ink 改暖白 #FFF7E6、遮罩转中性——修商店 Hero/封面文字在浅色主题下看不清。"
+          "version": "1.0.7",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window/releases/download/v1.0.7/theme-rose-window.linkdesk-plugin",
+          "publishedAt": "2026-11-23T16:42:56.685Z",
+          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
         },
         {
           "version": "1.0.3",
@@ -1986,13 +2035,7 @@
           "changelog": "- **首发**：教堂彩窗主题「玫瑰窗」——亮色磨砂玻璃表面（标题栏 / 工具栏 / 图标栏 / 侧栏 / 主区 / 面板区 / 状态栏全部玻璃化）＋ 全窗巴黎圣母院玫瑰窗背景（公有领域，2560×1200 日光提亮与暖光合成）＋ 金色受光边（`specular 0.90` / `#FFF0C4`）。\n- **三组彩窗配色**：午后圣光（金箔 `#A6771B`）· 青金石（`#2F5D9E`）· 晚祷紫（`#6B3F8E`）；共用同一亮色玻璃基座与暖墨文字。\n- 内容面可读性 token（`surface-reading` / `surface-reading-strong` / `surface-media-scrim` / `surface-ink`）随首发写入，玻璃再透正文也不糊。"
         }
       ],
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-theme-rose-window/v1.0.3/resources/cover.jpg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-1.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-2.jpg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/theme-rose-window/shot-3.jpg"
-      ],
-      "minAppVersion": "0.2.60",
+      "repository": "https://github.com/Encaron/linkdesk-plugin-theme-rose-window",
       "locales": {
         "zh": {
           "name": "玫瑰窗",
