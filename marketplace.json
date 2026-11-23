@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T04:58:35.094Z",
+  "updatedAt": "2026-11-23T05:04:08.645Z",
   "sources": [],
   "collections": [
     {
@@ -641,12 +641,12 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.11",
+      "version": "1.4.12",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.11/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.12/resources/icon.svg",
       "iconSource": "url",
       "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/HEAD/resources/cover.svg",
       "screenshots": [
@@ -654,15 +654,21 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-1.jpg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/marketplace/shot-2.jpg"
       ],
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.11/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.12/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.11/README.md",
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.11/marketplace.linkdesk-plugin",
-      "size": 181456,
-      "publishedAt": "2026-11-23T04:54:20.017Z",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.12/README.md",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.12/marketplace.linkdesk-plugin",
+      "size": 181324,
+      "publishedAt": "2026-11-23T05:04:08.645Z",
       "versions": [
+        {
+          "version": "1.4.12",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.12/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-23T05:04:08.645Z",
+          "changelog": "- 内容面墨色归位 text-primary；surface-ink 只服务压图文字。修正浅色主题下玻璃卡文字反白。"
+        },
         {
           "version": "1.4.11",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.11/marketplace.linkdesk-plugin",
