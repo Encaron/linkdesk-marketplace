@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-23T18:57:33.796Z",
+  "updatedAt": "2026-11-23T19:00:22.335Z",
   "sources": [],
   "collections": [
     {
@@ -1200,12 +1200,12 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.40",
+      "version": "1.0.41",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.41/resources/icon-bar.svg",
       "iconSource": "url",
       "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/resources/icon.svg",
       "marketIconSource": "url",
@@ -1214,15 +1214,21 @@
       "categories": [
         "serial"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.41/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.40/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.41/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.41/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.40/serial-monitor.linkdesk-plugin",
-      "size": 180891,
-      "publishedAt": "2026-11-23T16:41:28.189Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.41/serial-monitor.linkdesk-plugin",
+      "size": 180759,
+      "publishedAt": "2026-11-23T19:00:08.675Z",
       "versions": [
+        {
+          "version": "1.0.41",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.41/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-11-23T19:00:08.675Z",
+          "changelog": "- **封面图对比度**：`resources/cover.svg` 的时间戳/`RX`/`TX` 用色提亮（`#4d5b7d/#55638a` → `#93A5C9/#8FA0C4`）——旧值在深底 `#0c161e` 上约 2.6:1，市场详情页压暗后几乎看不见字。"
+        },
         {
           "version": "1.0.40",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.40/serial-monitor.linkdesk-plugin",
