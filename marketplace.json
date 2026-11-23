@@ -260,7 +260,7 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.35",
+      "version": "1.0.36",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "Encaron"
@@ -279,10 +279,16 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.35/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.35/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.35/file-tree.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.36/file-tree.linkdesk-plugin",
       "size": 51935,
       "publishedAt": "2026-11-23T16:39:31.024Z",
       "versions": [
+        {
+          "version": "1.0.36",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.36/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-11-24T00:00:00.000Z",
+          "sha256": "ae5682a62d9601d758d7f558f585a44fc0b5abfd721433db2fa9cb1467be4f4f"
+        },
         {
           "version": "1.0.35",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.35/file-tree.linkdesk-plugin",
@@ -454,7 +460,7 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.75",
+      "version": "1.0.76",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
@@ -470,10 +476,16 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.75/lang-defaults.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.76/lang-defaults.linkdesk-plugin",
       "size": 33593,
       "publishedAt": "2026-11-23T21:00:51.325Z",
       "versions": [
+        {
+          "version": "1.0.76",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.76/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-24T00:00:00.000Z",
+          "sha256": "07b2f3479245734dbeb485509e6e6a1964fe5b15ec74e9435d3cb7324bf44f19"
+        },
         {
           "version": "1.0.75",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.75/lang-defaults.linkdesk-plugin",
@@ -1260,7 +1272,7 @@
     {
       "id": "serial-monitor",
       "name": "串口监视器",
-      "version": "1.0.41",
+      "version": "1.0.42",
       "description": "串口数据监视器——接收区（CM6）+ 发送栏（Monaco）+ 侧栏设置。LinkDesk 第一个视图插件，通用容器基础设施在此验证。不绑定任何特定用途。",
       "author": {
         "name": "Encaron"
@@ -1279,10 +1291,16 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.41/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-serial-monitor/v1.0.41/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.41/serial-monitor.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.42/serial-monitor.linkdesk-plugin",
       "size": 180759,
       "publishedAt": "2026-11-23T19:00:08.675Z",
       "versions": [
+        {
+          "version": "1.0.42",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.42/serial-monitor.linkdesk-plugin",
+          "publishedAt": "2026-11-24T00:00:00.000Z",
+          "sha256": "872ba5fb58a565d778a248e1f5327f26e5183f1054385d366346ee48196d009d"
+        },
         {
           "version": "1.0.41",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-serial-monitor/releases/download/v1.0.41/serial-monitor.linkdesk-plugin",
@@ -1475,7 +1493,7 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.50",
+      "version": "1.0.51",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "Encaron"
@@ -1491,10 +1509,16 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.50/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.50/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.50/settings.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.51/settings.linkdesk-plugin",
       "size": 40653,
       "publishedAt": "2026-11-23T20:45:42.293Z",
       "versions": [
+        {
+          "version": "1.0.51",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.51/settings.linkdesk-plugin",
+          "publishedAt": "2026-11-24T00:00:00.000Z",
+          "sha256": "69973c6d74316ab4daca216c01016c315f9eb352b32a13c412219fdb30c5ece5"
+        },
         {
           "version": "1.0.50",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.50/settings.linkdesk-plugin",
