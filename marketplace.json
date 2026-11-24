@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-24T22:03:44.514Z",
+  "updatedAt": "2026-11-24T22:08:33.077Z",
   "sources": [],
   "collections": [
     {
@@ -471,26 +471,32 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.84",
+      "version": "1.0.85",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.84/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.85/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.84/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.85/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.84/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.84/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.85/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.85/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.84/lang-defaults.linkdesk-plugin",
-      "size": 43245,
-      "publishedAt": "2026-11-24T18:46:51.030Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.85/lang-defaults.linkdesk-plugin",
+      "size": 43173,
+      "publishedAt": "2026-11-24T22:06:07.744Z",
       "versions": [
+        {
+          "version": "1.0.85",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.85/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-24T22:06:07.744Z",
+          "changelog": "- 补壳侧 AI 权限确认框两条新串的英文译名（查异步命令相位 / 只读 op 状态）——opStatus（S6/T11）落地。"
+        },
         {
           "version": "1.0.84",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.84/lang-defaults.linkdesk-plugin",
@@ -501,9 +507,8 @@
         {
           "version": "1.0.82",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.82/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T17:46:13Z",
-          "sha256": "479fa008d28dfb085ad478027dc52dae818282acebf947af903349ef8c1792b4",
-          "changelog": "- 补 5 条英文（发起方/AI + 市场三条错误提示）。"
+          "publishedAt": "2026-11-24T17:40:06.484Z",
+          "changelog": "- 补 5 条英文：安装确认卡的「发起方 / AI」＋ 市场三条错误提示（版本过旧 / 目录无此插件 / 缺目录条目）。"
         },
         {
           "version": "1.0.81",
@@ -522,9 +527,8 @@
         {
           "version": "1.0.79",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.79/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T13:37:25.465Z",
-          "sha256": "b3a7b3d2e89e263aa4a9b6d82e2aca4e9f1d0eca54c47d8ccfc736502b39c659",
-          "changelog": "- 补 AI 权限风险表（读取档位/只读表格/user-only/恢复默认/主软件更新/安装插件）与主进程对话框（应用无响应/工作区外写入/选择图片）共 11 条英文；源串去掉 Markdown 星号。"
+          "publishedAt": "2026-11-24T13:35:32.199Z",
+          "changelog": "- 补 AI 权限档位 · 风险登记表 6 条：读取权限档位 / 只读表格 / 改门本身（user-only）/ 恢复默认 / 主软件更新 what·why / 安装插件 why。\n- 补主进程对话框 3 条：应用无响应 / 工作区外写入确认 / 选择图片。\n- 源串去掉 Markdown 星号（表格不渲染 Markdown，会原样显示 `**`）。"
         },
         {
           "version": "1.0.78",
@@ -540,20 +544,17 @@
         {
           "version": "1.0.76",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.76/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T22:34:40.702Z",
-          "changelog": "- 补最后 1 条：`只有你能改`（敏感矩阵值文案）。"
+          "publishedAt": "2026-11-23T22:34:40.702Z"
         },
         {
           "version": "1.0.75",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.75/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T22:30:38.918Z",
-          "changelog": "- **AI 权限档位批 3 词条**（线 1，13 条）：每次询问 / 允许 / 细分管理 / 按档位决定 / 风险表不可用兜底 / 高风险动作名（安装卸载插件 · 修改权限设置 · 打开调试端口 · 其余操作）等；英文全齐。"
+          "publishedAt": "2026-11-23T22:30:38.918Z"
         },
         {
           "version": "1.0.74",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.74/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T22:08:47.854Z",
-          "changelog": "- **插件安装/更新确认（P1 壳托管）词条**：安装卡（首装/来源变更/降级/官方）、批量汇总卡（总数/需确认/免问/分组/改设置/逐个确认）、来源信任清单与两条开关、完成汇总与失败行、HTTPS 限制 —— 共 55 条。\n- **AI 权限档位词条**（线 1）：档位说明、完全访问确认、风险表、命令面回执 —— 共 23 条。\n- **外观资源域与打开方式词条**（线 2）：背景图片选择、assetDomain/pickTarget 说明、配色域来源 —— 共 4 条。"
+          "publishedAt": "2026-11-23T22:08:47.854Z"
         },
         {
           "version": "1.0.73",
