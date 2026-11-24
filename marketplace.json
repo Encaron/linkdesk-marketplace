@@ -460,7 +460,7 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.81",
+      "version": "1.0.82",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
@@ -476,10 +476,17 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.81/lang-defaults.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.82/lang-defaults.linkdesk-plugin",
       "size": 42604,
       "publishedAt": "2026-11-24T17:15:01.258Z",
       "versions": [
+        {
+          "version": "1.0.82",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.82/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-24T17:46:13Z",
+          "sha256": "479fa008d28dfb085ad478027dc52dae818282acebf947af903349ef8c1792b4",
+          "changelog": "- 补 5 条英文（发起方/AI + 市场三条错误提示）。"
+        },
         {
           "version": "1.0.81",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.81/lang-defaults.linkdesk-plugin",
@@ -822,7 +829,7 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.32",
+      "version": "1.4.33",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
@@ -838,10 +845,17 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.32/marketplace.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.33/marketplace.linkdesk-plugin",
       "size": 198075,
       "publishedAt": "2026-11-23T20:30:31.417Z",
       "versions": [
+        {
+          "version": "1.4.33",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.33/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-24T17:46:13Z",
+          "sha256": "12c62bcb21b53b50383bb15dcfcf889bfbbe455888e6c00a8e7de6ae74f49692",
+          "changelog": "- 确认卡改由市场自绘（壳出计划，市场用共享件画，commit 才执行）；全免问不弹卡。"
+        },
         {
           "version": "1.4.32",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.32/marketplace.linkdesk-plugin",
