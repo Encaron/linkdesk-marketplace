@@ -460,26 +460,33 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.82",
+      "version": "1.0.84",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.84/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.84/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.84/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.84/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.82/lang-defaults.linkdesk-plugin",
-      "size": 42604,
-      "publishedAt": "2026-11-24T17:15:01.258Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.84/lang-defaults.linkdesk-plugin",
+      "size": 43245,
+      "publishedAt": "2026-11-24T18:46:51.030Z",
       "versions": [
+        {
+          "version": "1.0.84",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.84/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-24T18:46:51.030Z",
+          "sha256": "78290603180bb001d53ef812c84fff9cadafab0b03855a3fc03cadf4e37be779",
+          "changelog": "- CLI 接入行补提权指引。"
+        },
         {
           "version": "1.0.82",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.82/lang-defaults.linkdesk-plugin",
@@ -824,7 +831,7 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
       ],
-      "sha256": "12dd8a178c288f57924f2d5264cbe3855ab1bdef913abbea43fa48818a6fe211"
+      "sha256": "78290603180bb001d53ef812c84fff9cadafab0b03855a3fc03cadf4e37be779"
     },
     {
       "id": "marketplace",
