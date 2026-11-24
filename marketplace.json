@@ -460,7 +460,7 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.76",
+      "version": "1.0.77",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
@@ -476,10 +476,16 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.76/lang-defaults.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.77/lang-defaults.linkdesk-plugin",
       "size": 33593,
       "publishedAt": "2026-11-23T21:00:51.325Z",
       "versions": [
+        {
+          "version": "1.0.77",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.77/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-24T00:00:00.000Z",
+          "sha256": "c3cdf450764ed00e3a42d567bfa4436e557e79bf4e1408d9f84aa1b918e38b31"
+        },
         {
           "version": "1.0.76",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.76/lang-defaults.linkdesk-plugin",
