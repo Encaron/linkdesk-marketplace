@@ -836,7 +836,7 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.34",
+      "version": "1.4.35",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
@@ -852,10 +852,17 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.34/marketplace.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.35/marketplace.linkdesk-plugin",
       "size": 198075,
       "publishedAt": "2026-11-23T20:30:31.417Z",
       "versions": [
+        {
+          "version": "1.4.35",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.35/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-24T19:34:41Z",
+          "sha256": "1ae1912cd3315fab7db681bc9e9c56ee8c5f2e8f53181a9b3be9489a3f58a165",
+          "changelog": "- 风险分档：高风险（首装/来源变更/降级/未信任来源）交回壳画，市场收到 cardOwner=host 时让路。"
+        },
         {
           "version": "1.4.34",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.34/marketplace.linkdesk-plugin",
