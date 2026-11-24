@@ -465,26 +465,27 @@
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.78/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.79/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.78/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.79/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.78/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.78/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.79/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.79/docs/readme/en.md"
       },
       "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.79/lang-defaults.linkdesk-plugin",
-      "size": 39206,
-      "publishedAt": "2026-11-24T13:23:44.618Z",
+      "size": 39373,
+      "publishedAt": "2026-11-24T13:37:25.465Z",
       "versions": [
         {
           "version": "1.0.79",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.79/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T00:00:00.000Z",
-          "sha256": "b3a7b3d2e89e263aa4a9b6d82e2aca4e9f1d0eca54c47d8ccfc736502b39c659"
+          "publishedAt": "2026-11-24T13:37:25.465Z",
+          "sha256": "b3a7b3d2e89e263aa4a9b6d82e2aca4e9f1d0eca54c47d8ccfc736502b39c659",
+          "changelog": "- 补 AI 权限风险表（读取档位/只读表格/user-only/恢复默认/主软件更新/安装插件）与主进程对话框（应用无响应/工作区外写入/选择图片）共 11 条英文；源串去掉 Markdown 星号。"
         },
         {
           "version": "1.0.78",
@@ -801,7 +802,8 @@
       "screenshots": [
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
-      ]
+      ],
+      "sha256": "b3a7b3d2e89e263aa4a9b6d82e2aca4e9f1d0eca54c47d8ccfc736502b39c659"
     },
     {
       "id": "marketplace",
