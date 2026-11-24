@@ -460,26 +460,32 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.77",
+      "version": "1.0.78",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.77/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.78/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.77/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.78/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.77/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.77/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.78/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.78/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.77/lang-defaults.linkdesk-plugin",
-      "size": 38981,
-      "publishedAt": "2026-11-24T10:43:48.181Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.78/lang-defaults.linkdesk-plugin",
+      "size": 39206,
+      "publishedAt": "2026-11-24T13:23:44.618Z",
       "versions": [
+        {
+          "version": "1.0.78",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.78/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-24T13:23:44.618Z",
+          "changelog": "- 补 AI 权限档位 11 条（能力摘要与操作/敏感表行：打开标签/写入文件/安装与更新/工作区文件/仅限你本人操作/始终询问/调试端口等）。"
+        },
         {
           "version": "1.0.77",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.77/lang-defaults.linkdesk-plugin",
@@ -506,8 +512,7 @@
         {
           "version": "1.0.73",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.73/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T21:00:51.325Z",
-          "changelog": "- 降级脸（错误/缺失态）词条：标题说明、诊断信息四行、缺失态建议。"
+          "publishedAt": "2026-11-23T21:00:51.325Z"
         },
         {
           "version": "1.0.72",
