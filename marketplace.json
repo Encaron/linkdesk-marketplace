@@ -465,44 +465,43 @@
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.77/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.77/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.73/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.77/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.77/docs/readme/en.md"
       },
       "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.77/lang-defaults.linkdesk-plugin",
-      "size": 33593,
-      "publishedAt": "2026-11-23T21:00:51.325Z",
+      "size": 38981,
+      "publishedAt": "2026-11-24T10:43:48.181Z",
       "versions": [
         {
           "version": "1.0.77",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.77/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T00:00:00.000Z",
-          "sha256": "c3cdf450764ed00e3a42d567bfa4436e557e79bf4e1408d9f84aa1b918e38b31"
+          "publishedAt": "2026-11-24T10:43:48.181Z"
         },
         {
           "version": "1.0.76",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.76/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T00:00:00.000Z",
-          "sha256": "07b2f3479245734dbeb485509e6e6a1964fe5b15ec74e9435d3cb7324bf44f19"
+          "publishedAt": "2026-11-23T22:34:40.702Z",
+          "changelog": "- 补最后 1 条：`只有你能改`（敏感矩阵值文案）。"
         },
         {
           "version": "1.0.75",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.75/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T00:00:00.000Z",
-          "sha256": "82a1ab016a29c7b570c283a0a829a0819fb4cebeb9ee8b3966878bf1733d2bcb"
+          "publishedAt": "2026-11-23T22:30:38.918Z",
+          "changelog": "- **AI 权限档位批 3 词条**（线 1，13 条）：每次询问 / 允许 / 细分管理 / 按档位决定 / 风险表不可用兜底 / 高风险动作名（安装卸载插件 · 修改权限设置 · 打开调试端口 · 其余操作）等；英文全齐。"
         },
         {
           "version": "1.0.74",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.74/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T00:00:00.000Z",
-          "sha256": "459ca4f8bed261277835d6ab22772ccf1468cbe22228c5aa066d5876f06c1015"
+          "publishedAt": "2026-11-23T22:08:47.854Z",
+          "changelog": "- **插件安装/更新确认（P1 壳托管）词条**：安装卡（首装/来源变更/降级/官方）、批量汇总卡（总数/需确认/免问/分组/改设置/逐个确认）、来源信任清单与两条开关、完成汇总与失败行、HTTPS 限制 —— 共 55 条。\n- **AI 权限档位词条**（线 1）：档位说明、完全访问确认、风险表、命令面回执 —— 共 23 条。\n- **外观资源域与打开方式词条**（线 2）：背景图片选择、assetDomain/pickTarget 说明、配色域来源 —— 共 4 条。"
         },
         {
           "version": "1.0.73",
@@ -513,62 +512,47 @@
         {
           "version": "1.0.72",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.72/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T20:52:32.601Z",
-          "changelog": "- 新增词条：`自定义`（外观模式下拉短标签）。"
+          "publishedAt": "2026-11-23T20:52:32.601Z"
         },
         {
           "version": "1.0.71",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.71/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T20:45:20.967Z",
-          "changelog": "- 新增词条：`用主题样式重来`（外观模式行伴生按钮 + 齿轮菜单动作）。"
+          "publishedAt": "2026-11-23T20:45:20.967Z"
         },
         {
           "version": "1.0.70",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.70/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T20:05:21.060Z",
-          "changelog": "- 外观复位两行动作改名后的词条：`重置为当前主题` / `分区来源改回主题` 及其长说明（按钮取 title、说明留 description）。"
+          "publishedAt": "2026-11-23T20:05:21.060Z"
         },
         {
           "version": "1.0.69",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.69/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T19:49:59.692Z",
-          "changelog": "- 新增 4 条外观设置词条：`以当前主题为起点` / `复位分区来源` 及其说明（配合外观复位入口归位）。"
-        },
-        {
-          "version": "1.0.68",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.68/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T17:09:45.346Z",
-          "changelog": "对比度设置词条（标准/高对比）。"
+          "publishedAt": "2026-11-23T19:49:59.692Z"
         },
         {
           "version": "1.0.67",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.67/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-23T16:40:41.872Z",
-          "changelog": "- **i18n 收口**：命令/设置等 manifest 显示文本补齐英文；宿主按插件命名空间解析显示文本（市场/命令面板/菜单不再自己 t() 插件数据）。\n- **README 多语言**：新增 `docs/readme/en.md`，`plugin.json` 声明 `readme.locales`（zh→README.md，en→docs/readme/en.md）；共享图仍住 `resources/`。"
+          "publishedAt": "2026-11-23T16:40:41.872Z"
         },
         {
           "version": "1.0.65",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.65/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-22T19:58:55.393Z",
-          "changelog": "- 新增英文词条 **「亮色主题」→ \"Light Theme\"**——设置页自定义模式「配色」下拉的跨明暗标签使用（与既有「暗色主题」成对）。"
+          "publishedAt": "2026-11-22T19:58:55.393Z"
         },
         {
           "version": "1.0.64",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.64/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-20T11:58:32.684Z",
-          "changelog": "- **分类声明（R4-2.8/2.9）**：`plugin.json` 顶层补 `category: \"development\"` ＋ `categories: [\"i18n\"]`——商店分类抽屉归位，随本次发版进入官方目录条目。"
+          "publishedAt": "2026-11-20T11:58:32.684Z"
         },
         {
           "version": "1.0.63",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.63/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-19T21:40:29.119Z",
-          "changelog": "- **Marketplace-Store 壳三刀（R4-1.2/1.3）新串 ＋8 条**：本地安装流（installFromDirectory）的阶段与解压段错误文案（`校验插件包`／`解压插件包`既有、`校验插件`／`复制插件文件`新增）、解压段判据串四条（`不是有效的 .linkdesk-plugin 包`／`包内 pluginId 非法`／`已存在安装目录`／`包内含非法条目（zip-slip）`——自 electron 安装 handler 单源常量随串入册）、付费安装门拦截文案（`此插件需要许可——请先在详情页输入许可密钥`）。零行为变化：纯数据词条，键数 763 → 771。"
+          "publishedAt": "2026-11-19T21:40:29.119Z"
         },
         {
           "version": "1.0.62",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.62/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-10-06T11:44:38.232Z",
-          "changelog": "- **「默认打开方式」管理器共享化批：壳侧新串 ＋ 归属转移共 39 条**。管理器视图从官方设置插件搬进 `@linkdesk/ui` 共享件后，它的文案要在**应用级字典**里有译名——否则换上第三方设置插件（那台插件不带这些词条）时，英文界面会漏出中文。\n  - ＋16（壳侧新串）：`多候选类型`、`（当前没有多候选的类型）`、`没有匹配的类型`、`按字母序`、`按默认排序`、`过滤文件类型（先扩展名、后类型名；仅类型名命中的行有标注）`、`过滤 {{count}} 类…`、`命中 {{done}} / {{total}}`、`行序：按字母序 ／ 按默认排序（插件声明原始次序）`、`类型名`、`.{{ext}} 的更多操作`、`· 下拉＝整格生效`、` · 候选 {{count}} 个`、`{{count}} 个候选`、`系统「打开方式」登记`、`单击文件时由哪个插件打开——与文件右键菜单的「打开方式」同写一处，即时互见`。\n  - ＋23（原只在设置插件字典里，随件搬到共享件 ⇒ 归属转应用级字典）：六态胶囊文案（`当前默认（用户锁定）`／`当前默认（用户指定）`／`默认（自动）`／`候选 · 默认：{{name}}`／`唯一处理者（自动）`／`无人处理 · 角色兜底（{{name}}）`／`失效覆盖`／`显式锁定：其他插件后续声明此类亦不漂移`）、两区标题与空态（`按插件浏览`／`没有匹配的类型或插件`／`（没有声明了文件类型的插件）`）、行控件（`.{{ext}} 的默认打开方式`／`{{types}} 的默认打开方式`／`声明串 {{raw}} → 归一存储键 .{{ext}}`）、卡头三数（`竞争`／`默认持有`／`声明` 已在）、拼句（` 等 {{count}} 类`／` · 整组 {{total}} 类中 {{count}} 类单独设置`／`当前单击打开：`／`（自动）`／`（用户指定）`／`（含用户指定）`）、错误态（`加载默认打开方式失败：{{msg}}`）。**英文逐字沿用设置插件的既有译文，用户可见文案零变化。**\n  - ＋1 换名（同笔删旧）：`单击文件时由哪个插件打开——文件树右键「打开方式」与本页同写一处，两边即时互见` → `单击文件时由哪个插件打开——与文件右键菜单的「打开方式」同写一处，即时互见`（C3d 泛称版，零插件名）。\n- 键数 725 → 763（＋39 −1）。\n- 🔴 两条易错点已按壳侧源串逐字对齐：`· 下拉＝整格生效` **不带前导空格**（源串的前导空格在模板里、不在 `t()` 字面量里）；` · 候选 {{count}} 个`／` 等 {{count}} 类`／` · 整组 …` **带前导空格**（源串本身带）。\n- 零行为变化：纯数据词条。"
+          "publishedAt": "2026-10-06T11:44:38.232Z"
         },
         {
           "version": "1.0.61",
@@ -790,22 +774,6 @@
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.17/lang-defaults.linkdesk-plugin",
           "publishedAt": "2026-09-14T02:36:05.197Z"
         }
-      ],
-      "repository": "https://github.com/Encaron/linkdesk-plugin-lang-defaults",
-      "locales": {
-        "zh": {
-          "name": "官方语言",
-          "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文"
-        },
-        "en": {
-          "name": "Official Language Pack",
-          "description": "Bundled Chinese/English language pack — uninstallable; missing keys fall back to the raw key"
-        }
-      },
-      "cover": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
-        "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
       ]
     },
     {
