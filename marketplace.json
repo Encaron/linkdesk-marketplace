@@ -836,7 +836,7 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.35",
+      "version": "1.4.36",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
@@ -852,10 +852,17 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.35/marketplace.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.36/marketplace.linkdesk-plugin",
       "size": 198075,
       "publishedAt": "2026-11-23T20:30:31.417Z",
       "versions": [
+        {
+          "version": "1.4.36",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.36/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-24T19:44:27Z",
+          "sha256": "efd069b02b316659dd12a50d1b960f78ede1af6e1d0ce51fff26984d14de61b0",
+          "changelog": "- 确认计划过期不再静默：提示「已过期，请重新发起」。"
+        },
         {
           "version": "1.4.35",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.35/marketplace.linkdesk-plugin",
