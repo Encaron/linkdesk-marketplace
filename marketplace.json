@@ -829,7 +829,7 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.33",
+      "version": "1.4.34",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
@@ -845,10 +845,17 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.33/marketplace.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.34/marketplace.linkdesk-plugin",
       "size": 198075,
       "publishedAt": "2026-11-23T20:30:31.417Z",
       "versions": [
+        {
+          "version": "1.4.34",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.34/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-24T17:52:24Z",
+          "sha256": "d4081cef03f6ff2c943b4a8763b576b55512bf64c9a54a035be9f5e738461e78",
+          "changelog": "- 补 5 条插件字典英文（版本过旧/目录无条目）。"
+        },
         {
           "version": "1.4.33",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.33/marketplace.linkdesk-plugin",
