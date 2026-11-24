@@ -815,7 +815,7 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.30",
+      "version": "1.4.31",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
@@ -831,10 +831,17 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.30/marketplace.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.31/marketplace.linkdesk-plugin",
       "size": 198075,
       "publishedAt": "2026-11-23T20:30:31.417Z",
       "versions": [
+        {
+          "version": "1.4.31",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.31/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-24T15:57:28Z",
+          "sha256": "d9ffc695a026bc5bb6b7e4b2235cb16e48e72aef61d52c695940929078cf382d",
+          "changelog": "- 安装失败的提示改走归因（「文件校验未通过」＋重试），兜底原文剥掉 IPC 管道前缀。"
+        },
         {
           "version": "1.4.30",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.30/marketplace.linkdesk-plugin",
