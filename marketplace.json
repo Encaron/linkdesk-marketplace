@@ -815,7 +815,7 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.31",
+      "version": "1.4.32",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
@@ -831,10 +831,17 @@
         "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/README.md",
         "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.25/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.31/marketplace.linkdesk-plugin",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.32/marketplace.linkdesk-plugin",
       "size": 198075,
       "publishedAt": "2026-11-23T20:30:31.417Z",
       "versions": [
+        {
+          "version": "1.4.32",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.32/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-24T16:16:10Z",
+          "sha256": "12a7a817af36a0dcb43e8db82bd68a5ff1c7fc576872cff014b1822fcd2f4e53",
+          "changelog": "- 内务：批量更新回执类型去掉壳从不返回的 jobIds；行为零变化。"
+        },
         {
           "version": "1.4.31",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.31/marketplace.linkdesk-plugin",
