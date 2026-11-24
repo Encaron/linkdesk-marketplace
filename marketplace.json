@@ -460,26 +460,33 @@
     {
       "id": "lang-defaults",
       "name": "官方语言",
-      "version": "1.0.80",
+      "version": "1.0.81",
       "description": "出厂中文/English 语言包——可卸载，卸载后 t(key) 返回 key 原文",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.80/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/resources/icon.svg",
       "iconSource": "url",
       "category": "development",
       "categories": [
         "i18n"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.80/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.80/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.80/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/v1.0.81/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.80/lang-defaults.linkdesk-plugin",
-      "size": 40075,
-      "publishedAt": "2026-11-24T13:43:28.293Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.81/lang-defaults.linkdesk-plugin",
+      "size": 42604,
+      "publishedAt": "2026-11-24T17:15:01.258Z",
       "versions": [
+        {
+          "version": "1.0.81",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.81/lang-defaults.linkdesk-plugin",
+          "publishedAt": "2026-11-24T17:15:01.258Z",
+          "sha256": "12dd8a178c288f57924f2d5264cbe3855ab1bdef913abbea43fa48818a6fe211",
+          "changelog": "- AI 确认卡归一（敏感动作/提权/完全访问）中英词条。"
+        },
         {
           "version": "1.0.80",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.80/lang-defaults.linkdesk-plugin",
@@ -810,7 +817,7 @@
         "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-lang-defaults/HEAD/resources/cover.svg",
         "https://raw.githubusercontent.com/Encaron/linkdesk-marketplace/HEAD/media/lang-defaults/shot-2.png"
       ],
-      "sha256": "7c92c9821f656f11895272c9f8218ea93be5b924839912b1582eb10789fe6133"
+      "sha256": "12dd8a178c288f57924f2d5264cbe3855ab1bdef913abbea43fa48818a6fe211"
     },
     {
       "id": "marketplace",
