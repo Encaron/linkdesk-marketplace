@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-25T17:17:02.928Z",
+  "updatedAt": "2026-11-25T17:57:41.976Z",
   "sources": [],
   "collections": [
     {
@@ -112,27 +112,34 @@
     {
       "id": "editor",
       "name": "编辑器",
-      "version": "1.0.32",
+      "version": "1.0.33",
       "description": "Monaco 代码编辑器——语法高亮、智能提示、Diff 对比",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.32/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.33/resources/icon.svg",
       "iconSource": "url",
       "minAppVersion": "0.2.13",
       "category": "development",
       "categories": [
         "code-editing"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.32/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.33/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.32/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.32/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.33/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-editor/v1.0.33/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.32/editor.linkdesk-plugin",
-      "size": 8664521,
-      "publishedAt": "2026-11-25T16:54:43.762Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.33/editor.linkdesk-plugin",
+      "size": 8663100,
+      "publishedAt": "2026-11-25T17:57:13.832Z",
       "versions": [
+        {
+          "version": "1.0.33",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.33/editor.linkdesk-plugin",
+          "publishedAt": "2026-11-25T17:57:13.832Z",
+          "changelog": "- **`core: true` → `essential: true`**（插件语义二分，硬切无兼容）：`essential` 只表示「UI 不显示卸载入口」，与「随包出厂」（lock `seed`）和「能否更新」（住所 `updatable`）彻底分家；旧 `core` 已退役。\n- 随 `@linkdesk/plugin-sdk` ^0.1.122（schema 删 core 加 essential）。\n- 行为零变化：本插件在详情/列表依旧不显示卸载按钮。",
+          "sha256": "eab7468adb05c5eb48a9ee9551c78bd55fd689e9105e6bc4bb5e0874e21fbecd"
+        },
         {
           "version": "1.0.32",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.32/editor.linkdesk-plugin",
@@ -162,8 +169,7 @@
         {
           "version": "1.0.27",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-editor/releases/download/v1.0.27/editor.linkdesk-plugin",
-          "publishedAt": "2026-11-23T04:58:07.768Z",
-          "changelog": "- **「语言服务器正在启动——请稍候再试」改底部轻 Toast**：启动期的「等一等」不再是铃铛里的一条留档；「语言支持不可用——无法跳转到定义」仍走铃铛（失败需回看）。\n- 旧壳（< 0.2.55）没有 `toasts` 面时自动回退通知面板，提示不消失。"
+          "publishedAt": "2026-11-23T04:58:07.768Z"
         },
         {
           "version": "1.0.26",
@@ -272,29 +278,36 @@
     {
       "id": "file-tree",
       "name": "文件树",
-      "version": "1.0.42",
+      "version": "1.0.43",
       "description": "浏览和管理文件——对标 VS Code 资源管理器",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.42/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.43/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.42/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.43/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.20",
       "category": "documents",
       "categories": [
         "files"
       ],
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.42/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.43/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.42/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.42/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.43/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-file-tree/v1.0.43/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.42/file-tree.linkdesk-plugin",
-      "size": 61480,
-      "publishedAt": "2026-11-25T16:54:33.269Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.43/file-tree.linkdesk-plugin",
+      "size": 61481,
+      "publishedAt": "2026-11-25T17:57:04.687Z",
       "versions": [
+        {
+          "version": "1.0.43",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.43/file-tree.linkdesk-plugin",
+          "publishedAt": "2026-11-25T17:57:04.687Z",
+          "changelog": "- **`core: true` → `essential: true`**（插件语义二分，硬切无兼容）：`essential` 只表示「UI 不显示卸载入口」，与「随包出厂」（lock `seed`）和「能否更新」（住所 `updatable`）彻底分家；旧 `core` 已退役。\n- 随 `@linkdesk/plugin-sdk` ^0.1.122（schema 删 core 加 essential）。\n- 行为零变化：本插件在详情/列表依旧不显示卸载按钮。",
+          "sha256": "8339ece18a6a72de08993206faa43d33a84dd9c85fd90e184e28820f692f62f6"
+        },
         {
           "version": "1.0.42",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.42/file-tree.linkdesk-plugin",
@@ -327,7 +340,6 @@
           "version": "1.0.38",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-file-tree/releases/download/v1.0.38/file-tree.linkdesk-plugin",
           "publishedAt": "2026-11-25T12:00:56.658Z",
-          "changelog": "- **状态命令试点（T-B · 13-状态命令约定）**：\n  - `file-tree.refresh` 改为回可判读快照：`ok/viewMounted/rootCount/roots/expanded/stateVersion/updatedAt`（无视图也回，如实 `viewMounted:false`）。\n  - `file-tree.rename` 支持**程序化带参**（`uri`/`newName`/`expectedVersion?`/`idempotencyKey?`，无视图可用）：成功回后置状态（`newUri`/`name`/`stateVersion`）；`expectedVersion` 与当前 `stateVersion` 不一致 ⇒ `ECONFLICT` ＋ `details.stateVersion`（零副作用）；目标已存在 ⇒ `EEXIST`；参数非法/宿主失败 ⇒ `EBADARGS`/`EFS` 结构化返回（⛔ throw）；不带参仍进入行内重命名。\n  - 声明 `idempotencyKey`：同键重试由宿主回放首次结果（`replayed:true`，⛔ 再改一次）——rename 是「目标路径收敛」的写，同参重放不会产生第二份实体。\n  - 新增插件级 `stateVersion`（`services/FileTreeState.ts`）：经插件完成的树变更（rename/newFile/newFolder/delete/paste/行内改名）各 +1；外部改盘不计（文档已注明）。",
           "sha256": "efad298c3e74763cb5f1eaa24e5228f7f51642c08fae1c88c0484bd820eda690"
         },
         {
@@ -863,26 +875,33 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.39",
+      "version": "1.4.40",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.40/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.40/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.63",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.40/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.40/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.40/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.39/marketplace.linkdesk-plugin",
-      "size": 201586,
-      "publishedAt": "2026-11-25T17:15:29.015Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.40/marketplace.linkdesk-plugin",
+      "size": 201810,
+      "publishedAt": "2026-11-25T17:56:42.854Z",
       "versions": [
+        {
+          "version": "1.4.40",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.40/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-25T17:56:42.854Z",
+          "changelog": "- **`core` → `essential` 硬切（无兼容别名）**：随包 / 重要 / 可更新 三事实分家——随包＝lock `seed`（构建期事实）；`essential` 只表示「UI 不显示卸载入口」，仅随包件可声明；可否更新只看住所 `updatable`。\n  - 全仓换读 `essential`：库行/卡片/详情/已装与内置分组/卸载与更多菜单/商店读面；徽标文案「内置」与外观零变化。\n  - 更新域（`libraryData.selectUpdateAllTargets` / 详情更新钮 / 发现腿）**不消费任何**「内置/重要」旗标——1.4.39 已把「全部更新」里的 `!core` 剔除，本版把剩余同族读点一并换名。\n  - 随 `@linkdesk/contracts` 0.1.62、`@linkdesk/plugin-sdk` 0.1.122（schema 删 `core` 加 `essential`）。",
+          "sha256": "bef0a839d984f408482d22041e582da79592cd9ebceda04e5c18d8d5f23e9f45"
+        },
         {
           "version": "1.4.39",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.39/marketplace.linkdesk-plugin",
@@ -915,7 +934,6 @@
           "version": "1.4.35",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.35/marketplace.linkdesk-plugin",
           "publishedAt": "2026-11-24T19:34:31.814Z",
-          "changelog": "- **风险分档**：壳在 `prepare*` 回执里给出 `cardOwner`——首装 / 来源变更 / 降级 / 未信任来源 = `host`（壳画，用户看到的内容有壳背书）；官方同源、已信任来源只是开关关着 = `market`（市场自绘）。市场收到 `host` 时丢弃计划、改走 `requestInstall`/`requestUpdateBatch`，不硬画。",
           "sha256": "1ae1912cd3315fab7db681bc9e9c56ee8c5f2e8f53181a9b3be9489a3f58a165"
         },
         {
@@ -1636,26 +1654,33 @@
     {
       "id": "settings",
       "name": "设置",
-      "version": "1.0.57",
+      "version": "1.0.58",
       "description": "软件设置——主题、语言、插件管理",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.57/resources/icon-bar.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.58/resources/icon-bar.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.57/resources/icon.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.58/resources/icon.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.63",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.57/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.58/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.57/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.57/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.58/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-settings/v1.0.58/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.57/settings.linkdesk-plugin",
-      "size": 43494,
-      "publishedAt": "2026-11-25T16:54:52.632Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.58/settings.linkdesk-plugin",
+      "size": 43684,
+      "publishedAt": "2026-11-25T17:56:57.083Z",
       "versions": [
+        {
+          "version": "1.0.58",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.58/settings.linkdesk-plugin",
+          "publishedAt": "2026-11-25T17:56:57.083Z",
+          "changelog": "- **`core: true` → `essential: true`**（插件语义二分，硬切无兼容）：`essential` 只表示「UI 不显示卸载入口」，与「随包出厂」（lock `seed`）和「能否更新」（住所 `updatable`）彻底分家；旧 `core` 已退役。\n- 随 `@linkdesk/plugin-sdk` ^0.1.122（schema 删 core 加 essential）。\n- 行为零变化：本插件在详情/列表依旧不显示卸载按钮。",
+          "sha256": "728b2fae4ed8aa25fb29686dadfd2e45d8e897ad267952bc4b14eb735dcc2915"
+        },
         {
           "version": "1.0.57",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-settings/releases/download/v1.0.57/settings.linkdesk-plugin",
