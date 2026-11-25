@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updatedAt": "2026-11-25T16:55:24.831Z",
+  "updatedAt": "2026-11-25T17:17:02.928Z",
   "sources": [],
   "collections": [
     {
@@ -534,31 +534,10 @@
           "changelog": "- 补壳侧 AI 权限确认框两条新串的英文译名（查异步命令相位 / 只读 op 状态）——opStatus（S6/T11）落地。"
         },
         {
-          "version": "1.0.84",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.84/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T18:46:51.030Z",
-          "sha256": "78290603180bb001d53ef812c84fff9cadafab0b03855a3fc03cadf4e37be779",
-          "changelog": "- CLI 接入行补提权指引。"
-        },
-        {
           "version": "1.0.82",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.82/lang-defaults.linkdesk-plugin",
           "publishedAt": "2026-11-24T17:40:06.484Z",
           "changelog": "- 补 5 条英文：安装确认卡的「发起方 / AI」＋ 市场三条错误提示（版本过旧 / 目录无此插件 / 缺目录条目）。"
-        },
-        {
-          "version": "1.0.81",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.81/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T17:15:01.258Z",
-          "sha256": "12dd8a178c288f57924f2d5264cbe3855ab1bdef913abbea43fa48818a6fe211",
-          "changelog": "- AI 确认卡归一（敏感动作/提权/完全访问）中英词条。"
-        },
-        {
-          "version": "1.0.80",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-lang-defaults/releases/download/v1.0.80/lang-defaults.linkdesk-plugin",
-          "publishedAt": "2026-11-24T13:43:28.293Z",
-          "sha256": "7c92c9821f656f11895272c9f8218ea93be5b924839912b1582eb10789fe6133",
-          "changelog": "- 翻译根治：AI 确认框 / 提权框只传 i18n key，渲染侧翻译；补 8 条英文。"
         },
         {
           "version": "1.0.79",
@@ -884,26 +863,33 @@
     {
       "id": "marketplace",
       "name": "插件市场",
-      "version": "1.4.38",
+      "version": "1.4.39",
       "description": "浏览、安装和管理插件",
       "author": {
         "name": "Encaron"
       },
-      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.38/resources/icon.svg",
+      "icon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/resources/icon.svg",
       "iconSource": "url",
-      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.38/resources/icon-brand.svg",
+      "marketIcon": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/resources/icon-brand.svg",
       "marketIconSource": "url",
       "minAppVersion": "0.2.63",
       "category": "productivity",
-      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.38/README.md",
+      "readmeUrl": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/README.md",
       "readmeLocales": {
-        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.38/README.md",
-        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.38/docs/readme/en.md"
+        "zh": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/README.md",
+        "en": "https://raw.githubusercontent.com/Encaron/linkdesk-plugin-marketplace/v1.4.39/docs/readme/en.md"
       },
-      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.38/marketplace.linkdesk-plugin",
-      "size": 200863,
-      "publishedAt": "2026-11-25T13:26:58.165Z",
+      "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.39/marketplace.linkdesk-plugin",
+      "size": 201586,
+      "publishedAt": "2026-11-25T17:15:29.015Z",
       "versions": [
+        {
+          "version": "1.4.39",
+          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.39/marketplace.linkdesk-plugin",
+          "publishedAt": "2026-11-25T17:15:29.015Z",
+          "changelog": "- **修「全部更新」撒谎（用户实机报障）**：库里亮着「N 个可更新」，点「全部更新」却弹「所有插件已是最新」。\n  - 根因：`LibraryView.onUpdateAll` 的选择式 `state === \"update\" && !r.core` 把 `core:true` 整批排掉——而待更新恰好全是随包件（editor / file-tree / settings）时，统计头（含 core）与动作集（排 core）自相矛盾，随后落进「0 条 ⇒ 已是最新」分支。\n  - `core: true` 唯一语义 = UI 不给卸载按钮，**不定义更新/版本行为**；能否真更新由住所闸 `updatable` 决定。选择判据收敛到唯一出口 `libraryData.selectUpdateAllTargets`（⛔ 视图自己再 filter）。\n  - 顺修同族谎话：有更新但目录缺可下载地址 ⇒ 如实报「N 个更新缺少下载地址，暂时无法更新」，⛔ 不冒充「已是最新」。\n  - 回归：`libraryUpdateAll` 走真实数据链断言 core 行入批 + 零「已是最新」toast；`libraryData` 三条纯函数断言（旧实现下两处必红）。",
+          "sha256": "acefc067eac2025416070d19ea99f9d4f8bb2d4c93f37e0c36d762423aafc3c9"
+        },
         {
           "version": "1.4.38",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.38/marketplace.linkdesk-plugin",
@@ -936,7 +922,6 @@
           "version": "1.4.34",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-marketplace/releases/download/v1.4.34/marketplace.linkdesk-plugin",
           "publishedAt": "2026-11-24T17:52:15.447Z",
-          "changelog": "- 补 5 条插件字典英文（版本过旧 ×3 / 目录无此插件 / 缺目录条目）——`check-i18n-surface` 转绿。",
           "sha256": "d4081cef03f6ff2c943b4a8763b576b55512bf64c9a54a035be9f5e738461e78"
         },
         {
@@ -2292,12 +2277,6 @@
           "changelog": "- **暗色可读性修复（实机）**：`bg-card`/`bg-input` 曾写成白色提亮叠层（`rgba(255,255,255,.10/.14)`）——暗主题 + 白字压白玻璃，串口日志/卡片文字直接消失（跟随主题路径尤甚）。改为不透明基色 `#23262C` / `#2C3035`（与引擎 `*-solid` 合成结果一致；自定义玻璃仍按滑杆透）。\n- **环境面加厚**：标题栏/状态栏/图标栏/工具栏/侧栏 0.30–0.50 → 0.66–0.72；窗底 0.30 → 0.42；遮罩 0.22 → 0.35——亮照片上白字不再被吃掉，墙纸仍可见。"
         },
         {
-          "version": "1.1.0",
-          "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.1.0/theme-panorama.linkdesk-plugin",
-          "publishedAt": "2026-11-23T17:08:23.895Z",
-          "changelog": "主题升级：高对比 / 可读性 / 第二配色（详见主题仓 CHANGELOG）。"
-        },
-        {
           "version": "1.0.13",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.13/theme-panorama.linkdesk-plugin",
           "publishedAt": "2026-11-23T16:42:43.170Z",
@@ -2324,8 +2303,7 @@
         {
           "version": "1.0.8",
           "downloadUrl": "https://github.com/Encaron/linkdesk-plugin-theme-panorama/releases/download/v1.0.8/theme-panorama.linkdesk-plugin",
-          "publishedAt": "2026-09-30T21:59:54.949Z",
-          "changelog": "- **安装包瘦身**：包内更新日志只带最近 5 版（更早的更新记录仍在本插件仓库里）——由 SDK 自动施加，用户无需任何操作。"
+          "publishedAt": "2026-09-30T21:59:54.949Z"
         },
         {
           "version": "1.0.7",
